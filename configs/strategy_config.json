@@ -1,0 +1,14 @@
+{
+  "version": "v3_optimized",
+  "weights": {
+    "gap_ge16": 0.8,
+    "gap_ge10": 1.0,
+    "gap_ge6": 0.5,
+    "r3": 2.3,
+    "streak": 1.4
+  },
+  "hit_rate": 0.0,
+  "std": 0.0,
+  "updated_at": "2026-05-22",
+  "source": "weight_optimization"
+}
