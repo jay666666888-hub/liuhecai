@@ -16,26 +16,50 @@ TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID", "")
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PUSH_HISTORY_FILE = os.path.join(BASE_DIR, "configs", "push_history.json")
+MAX_HISTORY_ENTRIES = 100  # 最多保留历史记录条数
 
 
 def get_last_push_info() -> Dict:
     """获取上次推送信息"""
     if os.path.exists(PUSH_HISTORY_FILE):
         with open(PUSH_HISTORY_FILE) as f:
-            return json.load(f)
+            data = json.load(f)
+            if isinstance(data, list) and len(data) > 0:
+                return data[-1]  # 返回最近一条
+            return data
     return {}
 
 
 def save_push_history(pending_period: str, pending_top6: list) -> None:
-    """保存推送历史"""
-    history = {
+    """保存推送历史（带清理机制）"""
+    # 读取现有历史
+    history_list = []
+    if os.path.exists(PUSH_HISTORY_FILE):
+        with open(PUSH_HISTORY_FILE) as f:
+            data = json.load(f)
+            # 支持旧格式（单条）或新格式（列表）
+            if isinstance(data, list):
+                history_list = data
+            else:
+                # 旧格式转为列表
+                history_list = [data]
+
+    # 添加新记录
+    new_entry = {
         "last_push_period": pending_period,
         "last_push_top6": pending_top6,
         "last_push_time": datetime.now().isoformat(),
     }
+    history_list.append(new_entry)
+
+    # 清理：保留最近 MAX_HISTORY_ENTRIES 条
+    if len(history_list) > MAX_HISTORY_ENTRIES:
+        history_list = history_list[-MAX_HISTORY_ENTRIES:]
+
+    # 原子写入
     temp_file = PUSH_HISTORY_FILE + ".tmp"
     with open(temp_file, "w") as f:
-        json.dump(history, f, ensure_ascii=False, indent=2)
+        json.dump(history_list, f, ensure_ascii=False, indent=2)
     os.replace(temp_file, PUSH_HISTORY_FILE)
 
 

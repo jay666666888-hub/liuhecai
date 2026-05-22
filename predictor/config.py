@@ -64,9 +64,11 @@ def load_verification_state() -> Dict[str, Any]:
 
 
 def save_verification_state(state: Dict[str, Any]) -> None:
-    """保存验证状态"""
-    with open(VERIFICATION_STATE_FILE, "w") as f:
+    """保存验证状态（原子操作）"""
+    temp_file = VERIFICATION_STATE_FILE + ".tmp"
+    with open(temp_file, "w") as f:
         json.dump(state, f, ensure_ascii=False, indent=2)
+    os.replace(temp_file, VERIFICATION_STATE_FILE)
 
 
 def should_update_strategy(
