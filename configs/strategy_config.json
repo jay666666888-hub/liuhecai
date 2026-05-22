@@ -1,14 +1,15 @@
 {
-  "version": "v3_optimized",
+  "version": "v4_hot",
   "weights": {
-    "gap_ge16": 0.8,
-    "gap_ge10": 1.0,
-    "gap_ge6": 0.5,
-    "r3": 2.3,
-    "streak": 1.4
+    "gap_ge16": 0.3,
+    "gap_ge10": 0.3,
+    "gap_ge6": 0.2,
+    "r3": 3.5,
+    "streak": 2.0
   },
-  "hit_rate": 0.0,
+  "hit_rate": 0.592,
   "std": 0.0,
   "updated_at": "2026-05-22",
-  "source": "weight_optimization"
+  "source": "hot_strategy_optimization",
+  "notes": "热门策略：顺势而为，提高近期频率权重"
 }
