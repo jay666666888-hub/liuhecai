@@ -43,6 +43,8 @@ def build_cache(records: List[Dict], upto: int) -> Dict:
         for i in range(upto - 1, -1, -1):
             if records[i]["特码生肖"] == z:
                 cache[z]["streak"] += 1
+            else:
+                break  # 遇到不匹配的生肖，停止继续计数
 
     return cache
 
