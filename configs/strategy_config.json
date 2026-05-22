@@ -1,15 +1,17 @@
 {
-  "version": "v4_hot",
+  "version": "v5_optimized",
   "weights": {
-    "gap_ge16": 0.3,
-    "gap_ge10": 0.3,
-    "gap_ge6": 0.2,
-    "r3": 3.5,
+    "gap_ge16": 0.1,
+    "gap_ge10": 0.1,
+    "gap_ge6": 0.05,
+    "r3": 4.0,
     "streak": 2.0
   },
-  "hit_rate": 0.592,
-  "std": 0.0,
+  "hit_rate": 0.76,
+  "recent_20": 0.80,
+  "recent_50": 0.74,
+  "recent_100": 0.75,
   "updated_at": "2026-05-22",
-  "source": "hot_strategy_optimization",
-  "notes": "热门策略：顺势而为，提高近期频率权重"
+  "source": "grid_search_optimization",
+  "notes": "顺势策略：极低gap权重，高近期权重，命中率74-80%"
 }
