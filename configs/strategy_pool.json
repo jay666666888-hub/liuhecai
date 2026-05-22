@@ -1,0 +1,75 @@
+{
+  "version": "v1.0",
+  "description": "策略信息压缩：从66个策略压缩到12个真正独立的信息源策略",
+  "compression_date": "2026-05-22",
+  "info_sources": {
+    "Gap": {
+      "representative": "遗漏7期",
+      "merged": ["遗漏10期", "遗漏15期", "遗漏20期", "马尔可夫+遗漏", "反弹策略", "遗传线性"]
+    },
+    "Frequency": {
+      "representative": "冷号10",
+      "merged": ["组合遗漏", "频率10", "频率30", "冷号30", "冷热混合", "搭档频率"]
+    },
+    "Probabilistic": {
+      "representative": "马尔可夫",
+      "merged": ["K近邻"]
+    },
+    "Technical": {
+      "representative": "三重EMA",
+      "merged": ["MACD风格", "卡尔曼滤波", "布林带", "双重指数平滑"]
+    },
+    "Statistical": {
+      "representative": "核密度估计",
+      "merged": ["关联规则", "状态切换", "布朗运动", "VWAP近似", "Z-score", "百分位排名", "波动率调整"]
+    },
+    "Independent": {
+      "representative": "奇偶期",
+      "merged": ["随机6肖", "阶梯策略", "分位数", "CUSUM", "L-Z复杂度", "近似熵"]
+    }
+  },
+  "final_pool": [
+    {
+      "name": "遗漏7期",
+      "info_source": "Gap",
+      "hit_rate": 49,
+      "description": "gap遗漏评分"
+    },
+    {
+      "name": "冷号10",
+      "info_source": "Frequency",
+      "hit_rate": 49,
+      "description": "近期冷号频率"
+    },
+    {
+      "name": "马尔可夫",
+      "info_source": "Probabilistic",
+      "hit_rate": 50,
+      "description": "概率转移模型"
+    },
+    {
+      "name": "三重EMA",
+      "info_source": "Technical",
+      "hit_rate": 56,
+      "description": "趋势跟踪"
+    },
+    {
+      "name": "核密度估计",
+      "info_source": "Statistical",
+      "hit_rate": 55,
+      "description": "分布估计"
+    },
+    {
+      "name": "奇偶期",
+      "info_source": "Independent",
+      "hit_rate": 55,
+      "description": "期号奇偶特征"
+    }
+  ],
+  "notes": [
+    "原66策略中大量高度相关(r>0.9)策略已合并",
+    "最终保留6个真正独立的信息源策略",
+    "所有策略均为6肖预测",
+    "回测样本: 100期 (2026011-2026110)"
+  ]
+}
