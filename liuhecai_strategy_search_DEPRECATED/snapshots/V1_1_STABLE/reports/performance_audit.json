@@ -1,0 +1,30 @@
+{
+  "audit_date": "2026-05-21",
+  "data_range": {
+    "start": 200,
+    "end": 801,
+    "actual_periods": 602
+  },
+  "metrics": {
+    "walk_forward_mean": 0.418,
+    "seed_std": 0.0,
+    "regime_distribution": {
+      "UNCERTAIN": 10
+    },
+    "drawdown": -0.0051,
+    "sample_size": 602,
+    "window_means": {
+      "50": 0.4206,
+      "100": 0.4155,
+      "200": 0.4179
+    }
+  },
+  "findings": [
+    "Sample size 602 periods (data index 200-801) - SUFFICIENT",
+    "Seed stability std=0.0000 - STABLE",
+    "Walk-forward mean=0.4180 vs baseline=0.5402 (diff: -0.1222)",
+    "Regime distribution: {'UNCERTAIN': 10}",
+    "Window performance: 50=0.4206, 100=0.4155, 200=0.4179"
+  ],
+  "gate_status": "PASS"
+}

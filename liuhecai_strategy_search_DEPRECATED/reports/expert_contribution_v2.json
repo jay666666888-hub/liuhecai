@@ -1,0 +1,138 @@
+{
+  "expert_contribution": {
+    "Gap": {
+      "raw_hit": 0.43333333333333335,
+      "marginal_gain": -0.033333333333333326,
+      "importance": -0.016666666666666663,
+      "weight_sensitivity": 0.033333333333333326,
+      "synergy": {
+        "Trend": 0.4,
+        "Momentum": 0.43333333333333335,
+        "Frequency": 0.4,
+        "Color": 0.5333333333333333,
+        "AntiTrend": 0.5,
+        "Cycle": 0.5
+      },
+      "rank": 4,
+      "role": "NOISE_EXPERT"
+    },
+    "Trend": {
+      "raw_hit": 0.26666666666666666,
+      "marginal_gain": -0.033333333333333326,
+      "importance": 0.06666666666666668,
+      "weight_sensitivity": 0.2,
+      "synergy": {
+        "Gap": 0.4,
+        "Gap_AntiTrend": 0.5,
+        "Momentum": 0.3,
+        "Frequency": 0.3333333333333333,
+        "Color": 0.5666666666666667,
+        "AntiTrend": 0.43333333333333335,
+        "Cycle": 0.3,
+        "Momentum_AntiTrend": 0.43333333333333335,
+        "Frequency_AntiTrend": 0.4666666666666667,
+        "Color_AntiTrend": 0.6,
+        "AntiCycle": 0.4666666666666667
+      },
+      "rank": 2,
+      "role": "NOISE_EXPERT"
+    },
+    "Momentum": {
+      "raw_hit": 0.6,
+      "marginal_gain": 0.0,
+      "importance": -0.04999999999999999,
+      "weight_sensitivity": -0.09999999999999998,
+      "synergy": {
+        "Gap": 0.43333333333333335,
+        "Trend": 0.3,
+        "Frequency": 0.5,
+        "Color": 0.5333333333333333,
+        "AntiTrend": 0.43333333333333335,
+        "Cycle": 0.6333333333333333
+      },
+      "rank": 7,
+      "role": "NOISE_EXPERT"
+    },
+    "Frequency": {
+      "raw_hit": 0.5,
+      "marginal_gain": -0.033333333333333326,
+      "importance": -0.016666666666666663,
+      "weight_sensitivity": 0.033333333333333326,
+      "synergy": {
+        "Gap": 0.4,
+        "Trend": 0.3333333333333333,
+        "Momentum": 0.5,
+        "Color": 0.5666666666666667,
+        "AntiTrend": 0.4666666666666667,
+        "Cycle": 0.5333333333333333
+      },
+      "rank": 5,
+      "role": "NOISE_EXPERT"
+    },
+    "Color": {
+      "raw_hit": 0.6,
+      "marginal_gain": 0.06666666666666665,
+      "importance": 0.0,
+      "weight_sensitivity": -0.1333333333333333,
+      "synergy": {
+        "Gap": 0.5333333333333333,
+        "Trend": 0.5666666666666667,
+        "Momentum": 0.5333333333333333,
+        "Frequency": 0.5666666666666667,
+        "AntiTrend": 0.6,
+        "Cycle": 0.5666666666666667
+      },
+      "rank": 3,
+      "role": "SECONDARY_EXPERT"
+    },
+    "AntiTrend": {
+      "raw_hit": 0.43333333333333335,
+      "marginal_gain": 0.09999999999999998,
+      "importance": 0.1333333333333333,
+      "weight_sensitivity": 0.06666666666666665,
+      "synergy": {
+        "Gap": 0.5,
+        "Trend": 0.43333333333333335,
+        "Momentum": 0.43333333333333335,
+        "Frequency": 0.4666666666666667,
+        "Color": 0.6,
+        "Cycle": 0.4666666666666667
+      },
+      "rank": 1,
+      "role": "PRIMARY_EXPERT"
+    },
+    "Cycle": {
+      "raw_hit": 0.6333333333333333,
+      "marginal_gain": 0.0,
+      "importance": -0.033333333333333326,
+      "weight_sensitivity": -0.06666666666666665,
+      "synergy": {
+        "Gap": 0.5,
+        "Trend": 0.3,
+        "Momentum": 0.6333333333333333,
+        "Frequency": 0.5333333333333333,
+        "Color": 0.5666666666666667,
+        "AntiTrend": 0.4666666666666667
+      },
+      "rank": 6,
+      "role": "NOISE_EXPERT"
+    }
+  },
+  "expert_priority_order": [
+    "AntiTrend",
+    "Trend",
+    "Color",
+    "Gap",
+    "Frequency",
+    "Cycle",
+    "Momentum"
+  ],
+  "noise_experts": [
+    "Gap",
+    "Trend",
+    "Momentum",
+    "Frequency",
+    "Cycle"
+  ],
+  "primary_expert": "AntiTrend"
+}

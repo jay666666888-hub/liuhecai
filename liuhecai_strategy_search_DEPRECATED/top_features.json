@@ -1,0 +1,108 @@
+{
+  "top_20_features": [
+    {
+      "rank": 1,
+      "feature": "streak_鼠",
+      "importance": 1.0
+    },
+    {
+      "rank": 2,
+      "feature": "streak_牛",
+      "importance": 1.0
+    },
+    {
+      "rank": 3,
+      "feature": "streak_虎",
+      "importance": 1.0
+    },
+    {
+      "rank": 4,
+      "feature": "streak_兔",
+      "importance": 1.0
+    },
+    {
+      "rank": 5,
+      "feature": "streak_龍",
+      "importance": 1.0
+    },
+    {
+      "rank": 6,
+      "feature": "streak_蛇",
+      "importance": 1.0
+    },
+    {
+      "rank": 7,
+      "feature": "gap_马",
+      "importance": 1.0
+    },
+    {
+      "rank": 8,
+      "feature": "streak_马",
+      "importance": 1.0
+    },
+    {
+      "rank": 9,
+      "feature": "streak_羊",
+      "importance": 1.0
+    },
+    {
+      "rank": 10,
+      "feature": "streak_猴",
+      "importance": 1.0
+    },
+    {
+      "rank": 11,
+      "feature": "streak_雞",
+      "importance": 1.0
+    },
+    {
+      "rank": 12,
+      "feature": "streak_狗",
+      "importance": 1.0
+    },
+    {
+      "rank": 13,
+      "feature": "streak_豬",
+      "importance": 1.0
+    },
+    {
+      "rank": 14,
+      "feature": "freq_50_鼠",
+      "importance": 0.96
+    },
+    {
+      "rank": 15,
+      "feature": "freq_50_虎",
+      "importance": 0.96
+    },
+    {
+      "rank": 16,
+      "feature": "freq_50_狗",
+      "importance": 0.96
+    },
+    {
+      "rank": 17,
+      "feature": "freq_50_兔",
+      "importance": 0.8
+    },
+    {
+      "rank": 18,
+      "feature": "freq_50_羊",
+      "importance": 0.72
+    },
+    {
+      "rank": 19,
+      "feature": "freq_50_猴",
+      "importance": 0.72
+    },
+    {
+      "rank": 20,
+      "feature": "freq_50_雞",
+      "importance": 0.72
+    }
+  ],
+  "avg_importance_top20": 0.942,
+  "total_importance": 18.84,
+  "has_signal": true,
+  "signal_flag": "SIGNAL_DETECTED"
+}

@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>澳门六合预测面板 - 改进版</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Hiragino Sans GB', sans-serif;
+            background: #f5f5f7;
+            color: #1d1d1f;
+            min-height: 100vh;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        /* Header */
+        .header {
+            background: #fff;
+            padding: 20px 16px;
+            text-align: center;
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        .header h1 {
+            font-size: 20px;
+            font-weight: 600;
+            color: #1d1d1f;
+        }
+
+        .header-sub {
+            font-size: 12px;
+            color: #86868b;
+            margin-top: 4px;
+        }
+
+        .refresh-btn {
+            position: absolute;
+            right: 16px;
+            top: 16px;
+            background: #007aff;
+            color: white;
+            border: none;
+            padding: 6px 16px;
+            border-radius: 6px;
+            font-size: 13px;
+            cursor: pointer;
+        }
+
+        /* Stats Row */
+        .stats-row {
+            display: flex;
+            background: #fff;
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        .stat-item {
+            flex: 1;
+            padding: 16px 8px;
+            text-align: center;
+            border-right: 1px solid #e5e5e5;
+        }
+
+        .stat-item:last-child { border-right: none; }
+
+        .stat-num {
+            font-size: 24px;
+            font-weight: 700;
+            color: #1d1d1f;
+        }
+
+        .stat-num.green { color: #34c759; }
+        .stat-num.red { color: #ff3b30; }
+
+        .stat-label {
+            font-size: 11px;
+            color: #86868b;
+            margin-top: 4px;
+        }
+
+        /* Version Cards */
+        .version-section {
+            padding: 12px;
+        }
+
+        .version-section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 13px;
+            color: #86868b;
+            font-weight: 500;
+            padding: 12px 16px 8px;
+        }
+
+        .back-btn {
+            font-size: 12px;
+            color: #007aff;
+            background: none;
+            border: none;
+            padding: 4px 8px;
+            cursor: pointer;
+            display: none;
+        }
+
+        .back-btn.show {
+            display: block;
+        }
+
+        .version-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+
+        .version-card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 14px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+            cursor: pointer;
+            transition: transform 0.1s, box-shadow 0.1s;
+            border: 2px solid transparent;
+        }
+
+        .version-card:active {
+            transform: scale(0.98);
+        }
+
+        .version-card.current {
+            border: 2px solid #007aff;
+        }
+
+        .version-card.frozen {
+            opacity: 0.7;
+        }
+
+        .version-card.selected {
+            background: #e8f0fe;
+            border: 2px solid #007aff;
+        }
+
+        .version-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+
+        .version-name {
+            font-size: 16px;
+            font-weight: 700;
+            color: #1d1d1f;
+        }
+
+        .version-badge {
+            font-size: 10px;
+            padding: 2px 6px;
+            border-radius: 4px;
+            background: #007aff;
+            color: #fff;
+        }
+
+        .version-badge.frozen {
+            background: #c7c7c7;
+        }
+
+        .version-badge.best {
+            background: #34c759;
+        }
+
+        /* 改进：命中率大字号 */
+        .version-hitrate {
+            text-align: center;
+            padding: 8px 0;
+        }
+
+        .hitrate-value {
+            font-size: 28px;
+            font-weight: 700;
+            color: #34c759;
+        }
+
+        .hitrate-label {
+            font-size: 10px;
+            color: #86868b;
+        }
+
+        /* 简化版本统计 */
+        .version-stats-mini {
+            display: flex;
+            justify-content: space-between;
+            font-size: 11px;
+            color: #86868b;
+            padding-top: 8px;
+            border-top: 1px solid #f0f0f0;
+        }
+
+        /* Current Prediction Card - 改进 */
+        .current-section {
+            background: linear-gradient(135deg, #007aff 0%, #5856d6 100%);
+            margin: 12px;
+            border-radius: 12px;
+            padding: 20px;
+            color: #fff;
+        }
+
+        .current-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .current-label {
+            font-size: 12px;
+            opacity: 0.8;
+            margin-bottom: 4px;
+        }
+
+        .current-issue {
+            font-size: 28px;
+            font-weight: 700;
+        }
+
+        .current-all-versions {
+            text-align: right;
+            font-size: 11px;
+            opacity: 0.8;
+        }
+
+        .current-zodiac {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin: 16px 0;
+        }
+
+        .zodiac-tag {
+            background: rgba(255,255,255,0.2);
+            padding: 10px 16px;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        /* 各版本预测对比 */
+        .all-versions-pred {
+            background: rgba(255,255,255,0.1);
+            border-radius: 8px;
+            padding: 12px;
+            margin-top: 12px;
+        }
+
+        .all-versions-pred-title {
+            font-size: 11px;
+            opacity: 0.8;
+            margin-bottom: 8px;
+        }
+
+        .versions-pred-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 8px;
+        }
+
+        .vp-item {
+            display: flex;
+            justify-content: space-between;
+            font-size: 12px;
+        }
+
+        .vp-version {
+            font-weight: 600;
+        }
+
+        .vp-pred {
+            color: rgba(255,255,255,0.9);
+        }
+
+        /* Record List */
+        .section-header {
+            font-size: 13px;
+            color: #86868b;
+            font-weight: 500;
+            padding: 12px 16px 8px;
+        }
+
+        .record-list {
+            background: #fff;
+            margin: 0 12px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+        }
+
+        .record-item {
+            padding: 14px 16px;
+            border-bottom: 1px solid #f0f0f0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .record-item:last-child { border-bottom: none; }
+
+        .record-left {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .record-issue {
+            font-size: 16px;
+            font-weight: 600;
+            color: #1d1d1f;
+            min-width: 70px;
+        }
+
+        /* 增加版本标签 */
+        .record-version-tag {
+            font-size: 10px;
+            padding: 2px 8px;
+            border-radius: 4px;
+            background: #f5f5f7;
+            color: #007aff;
+            font-weight: 500;
+        }
+
+        .record-prediction {
+            display: flex;
+            gap: 4px;
+        }
+
+        .pred-tag {
+            font-size: 12px;
+            color: #86868b;
+            background: #f5f5f7;
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+
+        .record-right {
+            text-align: right;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .record-result {
+            font-size: 20px;
+            font-weight: 700;
+            color: #1d1d1f;
+            min-width: 30px;
+        }
+
+        .record-status {
+            font-size: 12px;
+            font-weight: 500;
+            min-width: 60px;
+        }
+
+        .record-status.hit { color: #34c759; }
+        .record-status.miss { color: #ff3b30; }
+        .record-status.pending { color: #ff9500; }
+
+        /* Spinner */
+        .spinner {
+            width: 24px;
+            height: 24px;
+            border: 2px solid #e5e5e5;
+            border-top-color: #007aff;
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+            margin: 20px auto;
+        }
+
+        @keyframes spin { to { transform: rotate(360deg); } }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 20px;
+            color: #c7c7c7;
+            font-size: 11px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>澳门六合预测</h1>
+        <div class="header-sub">版本账本 · 只展示事实</div>
+        <button class="refresh-btn">刷新</button>
+    </div>
+
+    <div class="stats-row">
+        <div class="stat-item">
+            <div class="stat-num">55.6%</div>
+            <div class="stat-label">总命中率</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-num green">54%</div>
+            <div class="stat-label">近100期</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-num">55%</div>
+            <div class="stat-label">近50期</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-num red">7期</div>
+            <div class="stat-label">最高连错</div>
+        </div>
+    </div>
+
+    <div class="version-section">
+        <div class="version-section-header">
+            <span id="version-section-title">版本账本</span>
+            <button class="back-btn" id="back-btn">← 返回v12</button>
+        </div>
+        <div class="version-grid">
+            <div class="version-card">
+                <div class="version-header">
+                    <span class="version-name">V5</span>
+                    <span class="version-badge">运行中</span>
+                </div>
+                <div class="version-hitrate">
+                    <div class="hitrate-value">53.0%</div>
+                    <div class="hitrate-label">回测命中率</div>
+                </div>
+                <div class="version-stats-mini">
+                    <span>845期</span>
+                    <span>连错6</span>
+                </div>
+            </div>
+
+            <div class="version-card">
+                <div class="version-header">
+                    <span class="version-name">V7</span>
+                    <span class="version-badge">运行中</span>
+                </div>
+                <div class="version-hitrate">
+                    <div class="hitrate-value">52.7%</div>
+                    <div class="hitrate-label">回测命中率</div>
+                </div>
+                <div class="version-stats-mini">
+                    <span>845期</span>
+                    <span>连错5</span>
+                </div>
+            </div>
+
+            <div class="version-card current">
+                <div class="version-header">
+                    <span class="version-name">V12</span>
+                    <span class="version-badge frozen">已冻结</span>
+                </div>
+                <div class="version-hitrate">
+                    <div class="hitrate-value">55.6%</div>
+                    <div class="hitrate-label">回测命中率</div>
+                </div>
+                <div class="version-stats-mini">
+                    <span>863期</span>
+                    <span>连错5</span>
+                </div>
+            </div>
+
+            <div class="version-card selected">
+                <div class="version-header">
+                    <span class="version-name">V21</span>
+                    <span class="version-badge best">最佳</span>
+                </div>
+                <div class="version-hitrate">
+                    <div class="hitrate-value">56.4%</div>
+                    <div class="hitrate-label">回测命中率</div>
+                </div>
+                <div class="version-stats-mini">
+                    <span>855期</span>
+                    <span>连错7</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="current-section">
+        <div class="current-top">
+            <div>
+                <div class="current-label">下一期预测</div>
+                <div class="current-issue">2026144</div>
+            </div>
+            <div class="current-all-versions">
+                点击卡片切换版本视图
+            </div>
+        </div>
+        <div class="current-zodiac">
+            <span class="zodiac-tag">雞</span>
+            <span class="zodiac-tag">蛇</span>
+            <span class="zodiac-tag">猴</span>
+            <span class="zodiac-tag">豬</span>
+            <span class="zodiac-tag">羊</span>
+            <span class="zodiac-tag">鼠</span>
+        </div>
+        <div class="all-versions-pred">
+            <div class="all-versions-pred-title">各版本预测对比</div>
+            <div class="versions-pred-grid">
+                <div class="vp-item">
+                    <span class="vp-version">V5:</span>
+                    <span class="vp-pred">豬 雞 龍 虎 鼠 牛</span>
+                </div>
+                <div class="vp-item">
+                    <span class="vp-version">V7:</span>
+                    <span class="vp-pred">龍 鼠 蛇 豬 雞 猴</span>
+                </div>
+                <div class="vp-item">
+                    <span class="vp-version">V12:</span>
+                    <span class="vp-pred">雞 蛇 猴 豬 羊 鼠</span>
+                </div>
+                <div class="vp-item">
+                    <span class="vp-version">V21:</span>
+                    <span class="vp-pred">雞 蛇 猴 豬 羊 鼠</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-header" id="records-header">近期记录</div>
+
+    <div class="record-list">
+        <div class="record-item">
+            <div class="record-left">
+                <div class="record-issue">2026144</div>
+                <div class="record-version-tag">v21</div>
+                <div class="record-prediction">
+                    <span class="pred-tag">雞</span>
+                    <span class="pred-tag">蛇</span>
+                    <span class="pred-tag">猴</span>
+                    <span class="pred-tag">豬</span>
+                    <span class="pred-tag">羊</span>
+                    <span class="pred-tag">鼠</span>
+                </div>
+            </div>
+            <div class="record-right">
+                <div class="record-result">-</div>
+                <div class="record-status pending">待开奖</div>
+            </div>
+        </div>
+
+        <div class="record-item">
+            <div class="record-left">
+                <div class="record-issue">2026143</div>
+                <div class="record-version-tag">v21</div>
+                <div class="record-prediction">
+                    <span class="pred-tag">牛</span>
+                    <span class="pred-tag">虎</span>
+                    <span class="pred-tag">鼠</span>
+                    <span class="pred-tag">雞</span>
+                    <span class="pred-tag">豬</span>
+                    <span class="pred-tag">龍</span>
+                </div>
+            </div>
+            <div class="record-right">
+                <div class="record-result">豬</div>
+                <div class="record-status hit">✓ 命中</div>
+            </div>
+        </div>
+
+        <div class="record-item">
+            <div class="record-left">
+                <div class="record-issue">2026142</div>
+                <div class="record-version-tag">v12</div>
+                <div class="record-prediction">
+                    <span class="pred-tag">猴</span>
+                    <span class="pred-tag">豬</span>
+                    <span class="pred-tag">雞</span>
+                    <span class="pred-tag">龍</span>
+                    <span class="pred-tag">虎</span>
+                    <span class="pred-tag">牛</span>
+                </div>
+            </div>
+            <div class="record-right">
+                <div class="record-result">猴</div>
+                <div class="record-status hit">✓ 命中</div>
+            </div>
+        </div>
+
+        <div class="record-item">
+            <div class="record-left">
+                <div class="record-issue">2026141</div>
+                <div class="record-version-tag">v12</div>
+                <div class="record-prediction">
+                    <span class="pred-tag">雞</span>
+                    <span class="pred-tag">豬</span>
+                    <span class="pred-tag">兔</span>
+                    <span class="pred-tag">狗</span>
+                    <span class="pred-tag">猴</span>
+                    <span class="pred-tag">龍</span>
+                </div>
+            </div>
+            <div class="record-right">
+                <div class="record-result">狗</div>
+                <div class="record-status hit">✓ 命中</div>
+            </div>
+        </div>
+
+        <div class="record-item">
+            <div class="record-left">
+                <div class="record-issue">2026140</div>
+                <div class="record-version-tag">v5</div>
+                <div class="record-prediction">
+                    <span class="pred-tag">兔</span>
+                    <span class="pred-tag">猴</span>
+                    <span class="pred-tag">豬</span>
+                    <span class="pred-tag">雞</span>
+                    <span class="pred-tag">龍</span>
+                    <span class="pred-tag">狗</span>
+                </div>
+            </div>
+            <div class="record-right">
+                <div class="record-result">兔</div>
+                <div class="record-status hit">✓ 命中</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        有变更时自动刷新
+    </div>
+</body>
+</html>

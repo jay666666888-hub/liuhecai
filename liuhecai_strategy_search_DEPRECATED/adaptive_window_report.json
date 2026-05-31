@@ -1,0 +1,28 @@
+{
+  "windows": {
+    "10": {
+      "mean_hit": 0.5167,
+      "std_hit": 0.4997,
+      "rolling30": 0.6
+    },
+    "20": {
+      "mean_hit": 0.5167,
+      "std_hit": 0.4997,
+      "rolling30": 0.6
+    },
+    "30": {
+      "mean_hit": 0.5167,
+      "std_hit": 0.4997,
+      "rolling30": 0.6
+    },
+    "50": {
+      "mean_hit": 0.5167,
+      "std_hit": 0.4997,
+      "rolling30": 0.6
+    }
+  },
+  "best_window": 10,
+  "best_std": 0.4997,
+  "worst_window": 10,
+  "verdict": "WINDOW_ADAPTIVE_NEEDED"
+}

@@ -1,0 +1,35 @@
+{
+  "timestamp": "2026-05-19T06:12:40.081567",
+  "grade": "RED",
+  "issues_found": 3,
+  "issues": [
+    "RANDOM_BASELINE_SUSPICIOUS",
+    "HIGH_OVERFITTING_RISK",
+    "NO_STATISTICAL_EDGE"
+  ],
+  "details": {
+    "random_baseline": {
+      "observed": 0.493,
+      "expected_mean": 0.46218804597701146,
+      "p95": 0.4885057471264368,
+      "is_suspicious": true
+    },
+    "feature_scale": {
+      "n_samples": 870,
+      "n_features": 278,
+      "ratio": 0.3195402298850575,
+      "is_high_risk": true
+    },
+    "feature_contribution": {
+      "top20_avg_importance": 0.942,
+      "has_signal": true
+    },
+    "statistical_significance": {
+      "z_score": 1.8929,
+      "p_value": 0.0584,
+      "is_significant": false
+    }
+  },
+  "recommendation": "禁止启动100000策略搜索，需要先解决上述问题",
+  "can_run_100k": false
+}

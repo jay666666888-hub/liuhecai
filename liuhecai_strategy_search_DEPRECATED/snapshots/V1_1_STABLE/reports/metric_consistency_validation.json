@@ -1,0 +1,15 @@
+{
+  "walk_forward_mean": 0.4649016666666667,
+  "regime_weighted_mean": 0.4584466666666666,
+  "delta": 0.0064550000000000995,
+  "regime_samples": 30,
+  "regime_distribution": {
+    "HOT": 17,
+    "COLD": 0,
+    "TRANSITION": 12,
+    "CHAOTIC": 0,
+    "UNCERTAIN": 1
+  },
+  "gate_pass": true,
+  "issues": []
+}

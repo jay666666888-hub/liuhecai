@@ -1,0 +1,47 @@
+{
+  "market_state": "HOT",
+  "expert_weights": {
+    "Gap": 0.1,
+    "Trend": 0.7,
+    "Momentum": 0.2,
+    "Color": 0.0
+  },
+  "expert_recent_hit": {
+    "Gap": 0.4,
+    "Trend": 0.65,
+    "Momentum": 0.7,
+    "Color": 0.65
+  },
+  "expert_drawdown": {
+    "Gap": 0,
+    "Trend": 0,
+    "Momentum": 0,
+    "Color": 0
+  },
+  "disabled_experts": [
+    "Momentum"
+  ],
+  "mean_hit_rate": 0.5067,
+  "rolling_30_hit": 0.5667,
+  "max_drawdown": -14.0,
+  "stability_score": 0.5064,
+  "state_distribution": {
+    "HOT": 300
+  },
+  "expert_utilization": {
+    "Gap": 300,
+    "Trend": 300,
+    "Momentum": 300,
+    "Color": 300
+  },
+  "freeze_count": 1,
+  "transition_count": 0,
+  "total_predictions": 1200,
+  "timestamp": "2026-05-21T01:04:52.481418",
+  "verdict": "NOT_EDGE_CONFIRMED",
+  "verdict_reason": "状态分布异常",
+  "uncertain_percentage": 22.333333333333332,
+  "max_drawdown_improved": true,
+  "old_max_drawdown": -20.0,
+  "new_max_drawdown": -14.0
+}

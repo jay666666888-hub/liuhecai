@@ -1,0 +1,13 @@
+{
+  "expert_pairwise_corr": {
+    "Gap_Trend": 0.0738,
+    "Gap_Momentum": 0.1072,
+    "Gap_Color": 0.3439,
+    "Trend_Momentum": 0.6114,
+    "Trend_Color": 0.357,
+    "Momentum_Color": 0.3968
+  },
+  "mean_corr": 0.315,
+  "gate": "PASS",
+  "verdict": "EXPERTS_DIVERSE"
+}

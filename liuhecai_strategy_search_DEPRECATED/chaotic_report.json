@@ -1,0 +1,18 @@
+{
+  "market_entropy": 2.5,
+  "weights_before": {
+    "Gap": 0.25,
+    "Trend": 0.25,
+    "Momentum": 0.25,
+    "Color": 0.25
+  },
+  "weights_after": {
+    "Gap": 0.24367665167876104,
+    "Trend": 0.24281929266060406,
+    "Momentum": 0.24465187889104817,
+    "Color": 0.2688521767695868
+  },
+  "explore_triggered": false,
+  "replaced_zodiac": null,
+  "replacement_reason": "test"
+}

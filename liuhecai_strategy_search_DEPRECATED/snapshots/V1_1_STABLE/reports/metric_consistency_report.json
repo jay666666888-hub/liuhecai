@@ -1,0 +1,16 @@
+{
+  "walk_forward_mean": 0.4649,
+  "regime_weighted_mean": 0.4584,
+  "delta": 0.0065,
+  "sample_alignment": "Walk-forward uses full 200-500 range. Regime uses 10-period windows. Both measure same data range.",
+  "index_alignment": "Both use indices 200-499. Walk-forward aggregates per-index, regime aggregates per-window.",
+  "root_cause": "PREVIOUS REPORT: regime_hits was EMPTY due to BROKEN METRIC PIPELINE - missing dominant_state key. FIXED: Added dominant_state to run_backtest results. Now regime tracking works correctly.",
+  "fix_applied": "meta_strategy_v2.py:537 - Added dominant_state: new_state to results dict",
+  "gate_status": "PASS",
+  "gate_requirements": {
+    "regime_samples > 0": "PASS (30 samples)",
+    "state_counts > 0": "PASS (HOT=17, TRANSITION=12, UNCERTAIN=1)",
+    "weighted_regime_mean != 0": "PASS (0.4584)",
+    "abs(delta) < 0.05": "PASS (0.0065)"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "id": "v23",
+  "status": "active",
+  "created_at": "2026-05-24T20:44:44",
+  "predictor": "v23_interval_predictor",
+  "data_source": "data_fetcher",
+  "strategy_type": "2026_focused",
+  "params": {
+    "decay": 0.85,
+    "gap_weight": 4.0,
+    "freq_weight": 1.5
+  },
+  "notes": "专注2026年，衰减0.85+间隔4.0+频率1.5，2026年59.86%",
+  "frozen": false,
+  "play_type": "liuhe",
+  "updated_at": "2026-05-26T03:10:46.112825"
+}

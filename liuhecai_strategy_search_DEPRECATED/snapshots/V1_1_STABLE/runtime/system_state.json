@@ -1,0 +1,8 @@
+{
+  "mode": "SHADOW_MODE_V1",
+  "status": "PREDICTION_GENERATED",
+  "total_predictions": 1,
+  "last_update": "2026-05-22T04:38:21.589628",
+  "fault_triggers": [],
+  "consecutive_low_hit_rate": 1
+}

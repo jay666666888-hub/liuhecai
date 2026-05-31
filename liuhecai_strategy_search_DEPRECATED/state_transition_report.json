@@ -1,0 +1,9 @@
+{
+  "old_state": "HOT",
+  "new_state": "COLD",
+  "transition_active": true,
+  "transition_period": 3,
+  "current_step": 0,
+  "alpha": 0.3333333333333333,
+  "current_state": "HOT"
+}

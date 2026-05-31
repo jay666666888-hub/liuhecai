@@ -1,0 +1,26 @@
+{
+  "expert_weights": {
+    "Gap": 0.19227144203581525,
+    "Trend": 0.40819981149858625,
+    "Momentum": 0.22045240339302546,
+    "Color": 0.17907634307257306
+  },
+  "expert_states": {
+    "Gap": "NORMAL",
+    "Trend": "HOT",
+    "Momentum": "NORMAL",
+    "Color": "NORMAL"
+  },
+  "ensemble_hit_rate": 0.4917,
+  "gain": -0.83,
+  "stability": 0.5001,
+  "p_value": 0.05,
+  "total_predictions": 669,
+  "recent_window": 30,
+  "timestamp": "2026-05-21T00:05:24.463699",
+  "backtest_results": {
+    "total_predictions": 669,
+    "hit_rate": 0.5321,
+    "hits": 356
+  }
+}

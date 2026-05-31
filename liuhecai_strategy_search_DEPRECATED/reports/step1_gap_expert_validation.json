@@ -1,0 +1,39 @@
+{
+  "phase": "STEP_1_GAP_EXPERT_REFACTOR",
+  "timestamp": "2026-05-21",
+  "description": "GapExpert refactored: missing_rank + gap_acceleration (z-score normalized)",
+  "hard_gate": {
+    "max_error_corr": {
+      "value": 0.24955278422754634,
+      "threshold": "< 0.30",
+      "pass": true
+    },
+    "max_jaccard_overlap": {
+      "value": 0.5167857142857143,
+      "threshold": "< 0.50",
+      "pass": false
+    }
+  },
+  "soft_gate": {
+    "max_prediction_corr": {
+      "value": 0.5167857142857143,
+      "threshold": "< 0.40",
+      "pass": false
+    }
+  },
+  "pairwise_correlations": {
+    "Gap_Color": {
+      "prediction_corr": 0.32049242424242425,
+      "error_corr": -0.08848584682607634
+    },
+    "Gap_Cycle": {
+      "prediction_corr": 0.3389448051948052,
+      "error_corr": -0.13601644851837433
+    },
+    "Trend_Cycle": {
+      "prediction_corr": 0.3003787878787879,
+      "error_corr": 0.12394371660990723
+    }
+  },
+  "verdict": "FAIL"
+}

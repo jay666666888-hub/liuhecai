@@ -1,0 +1,18 @@
+{
+  "version": "v28",
+  "status": "active",
+  "strategy_type": "pingte_yixiao",
+  "play_type": "pingte_yixiao",
+  "params": {
+    "lookback": 137,
+    "gap_weight": -1.0077,
+    "freq_weight": 0.9211,
+    "streak_weight": -0.1236,
+    "trend_weight": 1.6992,
+    "variance_weight": 1.6857
+  },
+  "notes": "平特一肖 - Walk-Forward验证55.72%，参数优化搜索20000+10000次",
+  "frozen": false,
+  "created_at": "2026-05-26T01:40:00.000000",
+  "updated_at": "2026-05-26T01:40:00.000000"
+}

@@ -1,0 +1,18 @@
+{
+  "baseline": "55.33%",
+  "new_best": "56.40%",
+  "improvement": "1.93%",
+  "p_value": "N/A",
+  "edge_status": "EDGE_CONFIRMED",
+  "stability": {
+    "mean_per_seed": "56.31%",
+    "std_per_seed": "0.0023",
+    "seeds_tested": 3
+  },
+  "decision": {
+    "status": "CONTINUE",
+    "action": "ALLOWED: 300000 scaling",
+    "threshold": "1.0%"
+  },
+  "timestamp": "2026-05-20T22:28:08.103227"
+}

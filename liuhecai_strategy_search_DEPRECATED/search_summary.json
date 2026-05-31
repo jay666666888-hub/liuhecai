@@ -1,0 +1,19 @@
+{
+  "config": {
+    "initial": 100000,
+    "generations": 20,
+    "population": 300,
+    "seeds": [
+      42,
+      123,
+      456
+    ]
+  },
+  "results": {
+    "best_overall_hit_rate": 0.564,
+    "mean_best_per_seed": 0.5631,
+    "std_best_per_seed": 0.0022553639765382793,
+    "total_strategies_evaluated": 390000.0
+  },
+  "timestamp": "2026-05-20T22:11:58.631724"
+}

@@ -1,0 +1,25 @@
+{
+  "top12_overlap": 1.0,
+  "top6_overlap": 0.5167857142857143,
+  "score_distribution_similarity": 0.3080995354392342,
+  "rank_swap_count": 10.175,
+  "candidate_pool_size": {
+    "momentum_mean": 0.9375,
+    "momentum_std": 0.24206145913796356,
+    "frequency_mean": 6.525,
+    "frequency_std": 0.9871043511199816
+  },
+  "root_cause": {
+    "type": "Candidate Pool Asymmetry + Ranking Space Collapse",
+    "details": [
+      "Momentum has extremely sparse candidate pool (mean=0.94 out of 12)",
+      "93.8% of time points: only 1 zodiac has streak > 0, rest tie at score 0",
+      "Frequency has dense candidate pool (mean=6.53 out of 12)",
+      "Score distribution correlation is LOW (0.31) - different signals",
+      "Rank swaps are HIGH (10.18/12) - different orderings",
+      "BUT TOP6 overlap is HIGH (0.52) - same winners despite different signals"
+    ],
+    "explanation": "When 11/12 zodiacs tie at score 0 in Momentum, their ranking follows ZODIACS order. This creates a 'frozen' ranking for the zero-score group. Frequency's ranking for the same zodiacs also tends to put them low (because they have low frequency). So despite using different signals, both experts end up selecting similar zodiacs for TOP6 due to the data distribution, not algorithm similarity."
+  },
+  "recommended_fix": "Do NOT modify Momentum or Frequency formulas. The overlap is inherent to the data distribution (certain zodiacs are simply 'recent' by both measures). Possible fixes: 1) Accept as-is if error_corr remains low, 2) Add more diverse experts that use completely different feature spaces, 3) Adjust ensemble weighting to reduce Momentum/Frequency combined weight."
+}

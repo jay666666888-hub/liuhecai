@@ -1,0 +1,16 @@
+# DEPRECATED 文件列表 (2026-05-25)
+# 确认稳定后可逐步删除
+
+## 待废弃
+- predictor/main.py          → 已由 scripts/run_pipeline.py 替代
+- liuhecai_prediction.json   → 已由 storage/aggregated_live.jsonl 替代
+
+## 废弃原因
+- 两套入口导致数据不一致
+- 现在统一使用 Orchestrator 作为唯一数据源
+
+## 清理计划
+1. 确认 scripts/run_pipeline.py + cron/predict_cycle.py 稳定运行
+2. 确认 notification.py 从 aggregated_live.jsonl 正常读取
+3. 删除 predictor/main.py
+4. 删除 liuhecai_prediction.json

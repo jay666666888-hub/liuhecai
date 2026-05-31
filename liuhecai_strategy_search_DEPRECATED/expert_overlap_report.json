@@ -1,0 +1,46 @@
+{
+  "phase": "EXPERT_OVERLAP_AUDIT",
+  "timestamp": "2026-05-21",
+
+  "summary": {
+    "target": "Momentum-Frequency corr < 0.6",
+    "before": {
+      "prediction_corr": 0.7886,
+      "feature_overlap": 0.7979,
+      "decision_overlap": "5.24/6"
+    },
+    "after": {
+      "prediction_corr": 0.3866,
+      "feature_overlap": 0.1776,
+      "decision_overlap": "3.27/6"
+    },
+    "verdict": "PASS"
+  },
+
+  "refactor": {
+    "MomentumExpert": {
+      "removed": ["freq_10", "(freq_10 - freq_20)"],
+      "kept": ["streak", "(freq_20 - freq_30)"],
+      "new_formula": "streak * 0.6 + (freq_20 - freq_30) * 0.4"
+    },
+    "FrequencyExpert": {
+      "unchanged": "freq_10 / (freq_window / 12)"
+    }
+  },
+
+  "all_pair_correlations_after": {
+    "Gap_Trend": 0.0736,
+    "Gap_Momentum": 0.3037,
+    "Gap_Frequency": 0.0865,
+    "Gap_Color": 0.4036,
+    "Trend_Momentum": 0.3402,
+    "Trend_Frequency": 0.6767,
+    "Trend_Color": 0.2435,
+    "Momentum_Frequency": 0.3866,
+    "Momentum_Color": 0.4991,
+    "Frequency_Color": 0.3803
+  },
+
+  "verdict": "PASS",
+  "recommendation": "Momentum-Frequency correlation reduced from 0.79 to 0.39. Now each expert provides distinct signal."
+}

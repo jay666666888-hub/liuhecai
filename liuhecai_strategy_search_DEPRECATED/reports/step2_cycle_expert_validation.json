@@ -1,0 +1,111 @@
+{
+  "phase": "STEP_2_CYCLE_EXPERT_REFACTOR",
+  "timestamp": "2026-05-21",
+  "description": "CycleExpert refactored: fft_peak_strength * (1 - entropy_norm)",
+  "hard_gate": {
+    "max_error_corr": {
+      "value": 0.24955278422754634,
+      "threshold": "< 0.30",
+      "pass": true
+    },
+    "max_jaccard_overlap": {
+      "value": 0.5167857142857143,
+      "threshold": "< 0.50",
+      "pass": false
+    }
+  },
+  "soft_gate": {
+    "max_prediction_corr": {
+      "value": 0.5167857142857143,
+      "threshold": "< 0.40",
+      "pass": false
+    }
+  },
+  "pairwise_correlations": {
+    "Gap_Trend": {
+      "prediction_corr": 0.3325270562770563,
+      "error_corr": -0.10604405843765963
+    },
+    "Gap_Momentum": {
+      "prediction_corr": 0.3628246753246754,
+      "error_corr": 0.24955278422754634
+    },
+    "Gap_Frequency": {
+      "prediction_corr": 0.37836038961038965,
+      "error_corr": 0.16906717432657695
+    },
+    "Gap_Color": {
+      "prediction_corr": 0.32049242424242425,
+      "error_corr": -0.08848584682607634
+    },
+    "Gap_AntiTrend": {
+      "prediction_corr": 0.3723430735930736,
+      "error_corr": 0.050080692948682615
+    },
+    "Gap_Cycle": {
+      "prediction_corr": 0.34816017316017317,
+      "error_corr": -0.0375587407391259
+    },
+    "Trend_Momentum": {
+      "prediction_corr": 0.32328463203463204,
+      "error_corr": 0.049405878674171455
+    },
+    "Trend_Frequency": {
+      "prediction_corr": 0.32574675324675323,
+      "error_corr": 0.023787177935234743
+    },
+    "Trend_Color": {
+      "prediction_corr": 0.2779166666666667,
+      "error_corr": 0.052037781194329454
+    },
+    "Trend_AntiTrend": {
+      "prediction_corr": 0.3018939393939394,
+      "error_corr": 0.021499893607407398
+    },
+    "Trend_Cycle": {
+      "prediction_corr": 0.31245129870129873,
+      "error_corr": 0.10219467873103251
+    },
+    "Momentum_Frequency": {
+      "prediction_corr": 0.5167857142857143,
+      "error_corr": 0.023787177935234754
+    },
+    "Momentum_Color": {
+      "prediction_corr": 0.3948809523809524,
+      "error_corr": 0.2025084738044389
+    },
+    "Momentum_AntiTrend": {
+      "prediction_corr": 0.3989339826839827,
+      "error_corr": 0.12267586352461858
+    },
+    "Momentum_Cycle": {
+      "prediction_corr": 0.3599404761904762,
+      "error_corr": 0.1523515762677356
+    },
+    "Frequency_Color": {
+      "prediction_corr": 0.37518398268398273,
+      "error_corr": 0.12927533951740283
+    },
+    "Frequency_AntiTrend": {
+      "prediction_corr": 0.4826785714285714,
+      "error_corr": 0.14431119704646944
+    },
+    "Frequency_Cycle": {
+      "prediction_corr": 0.3493127705627706,
+      "error_corr": -0.07154072186885405
+    },
+    "Color_AntiTrend": {
+      "prediction_corr": 0.38809523809523816,
+      "error_corr": 0.036768382872350215
+    },
+    "Color_Cycle": {
+      "prediction_corr": 0.4117316017316018,
+      "error_corr": 0.09490886235072275
+    },
+    "AntiTrend_Cycle": {
+      "prediction_corr": 0.33198593073593075,
+      "error_corr": -0.06466163884447815
+    }
+  },
+  "verdict": "FAIL"
+}

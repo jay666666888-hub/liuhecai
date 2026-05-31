@@ -1,0 +1,126 @@
+{
+  "walk_forward": {
+    "windows": [
+      {
+        "window": 50,
+        "mean": 0.4701403333333334,
+        "std": 0.02663518266629057,
+        "min": 0.45099200000000006,
+        "max": 0.5350499999999999
+      },
+      {
+        "window": 100,
+        "mean": 0.45970333333333335,
+        "std": 0.004732615593470013,
+        "min": 0.455385,
+        "max": 0.4705069999999999
+      },
+      {
+        "window": 200,
+        "mean": 0.45774170000000003,
+        "std": 0.0018377409801166125,
+        "min": 0.455856,
+        "max": 0.46139899999999995
+      },
+      {
+        "window": 300,
+        "mean": 0.45781020000000006,
+        "std": 0.0004770175212249129,
+        "min": 0.457313,
+        "max": 0.4585523333333334
+      }
+    ]
+  },
+  "regime_performance": {
+    "HOT": {
+      "sample_count": 0,
+      "hit_rate": null,
+      "hit_rate_std": null,
+      "drawdown": null
+    },
+    "COLD": {
+      "sample_count": 0,
+      "hit_rate": null,
+      "hit_rate_std": null,
+      "drawdown": null
+    },
+    "TRANSITION": {
+      "sample_count": 0,
+      "hit_rate": null,
+      "hit_rate_std": null,
+      "drawdown": null
+    },
+    "CHAOTIC": {
+      "sample_count": 0,
+      "hit_rate": null,
+      "hit_rate_std": null,
+      "drawdown": null
+    },
+    "UNCERTAIN": {
+      "sample_count": 0,
+      "hit_rate": null,
+      "hit_rate_std": null,
+      "drawdown": null
+    }
+  },
+  "seed_stability": {
+    "seed_range": "0-20",
+    "mean_of_means": 0.4612179206349206,
+    "std_of_means": 0.001401781998557187,
+    "min_mean_hit": 0.458363,
+    "max_mean_hit": 0.4630909999999999,
+    "note": "Current system uses deterministic seed=0. Seed variation analysis shows stability across seed range."
+  },
+  "drawdown_analysis": {
+    "max_drawdown": 300,
+    "max_drawdown_length": 300,
+    "max_recovery_length": 0,
+    "mean_drawdown_length": 0,
+    "drawdown_count": 0
+  },
+  "state_distribution": {
+    "HOT": 7776,
+    "COLD": 0,
+    "TRANSITION": 5024,
+    "CHAOTIC": 0,
+    "UNCERTAIN": 0
+  },
+  "expert_contribution": {
+    "Gap": {
+      "hit_rate": 0.4166666666666667,
+      "std": 0.4930066485916346,
+      "sample_count": 60
+    },
+    "Trend": {
+      "hit_rate": 0.36666666666666664,
+      "std": 0.4818944098266986,
+      "sample_count": 60
+    },
+    "Momentum": {
+      "hit_rate": 0.48333333333333334,
+      "std": 0.49972214501883166,
+      "sample_count": 60
+    },
+    "Frequency": {
+      "hit_rate": 0.48333333333333334,
+      "std": 0.49972214501883166,
+      "sample_count": 60
+    },
+    "Color": {
+      "hit_rate": 0.5166666666666667,
+      "std": 0.4997221450188316,
+      "sample_count": 60
+    },
+    "AntiTrend": {
+      "hit_rate": 0.4,
+      "std": 0.48989794855663565,
+      "sample_count": 60
+    },
+    "Cycle": {
+      "hit_rate": 0.6,
+      "std": 0.48989794855663565,
+      "sample_count": 60
+    }
+  },
+  "failure_windows": []
+}

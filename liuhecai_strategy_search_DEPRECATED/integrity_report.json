@@ -1,0 +1,19 @@
+{
+  "total_records": 870,
+  "issues_found": 1,
+  "issues": [
+    "缺失期号: 1个年份"
+  ],
+  "details": {
+    "missing_periods": [
+      {
+        "2023": [
+          1,
+          2,
+          3
+        ]
+      }
+    ]
+  },
+  "date_range": "2023004 ~ 2026138"
+}

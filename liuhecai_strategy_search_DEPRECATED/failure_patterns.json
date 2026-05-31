@@ -1,0 +1,105 @@
+{
+  "period": "200-300",
+  "total_failures": 55,
+  "state_distribution": {
+    "UNCERTAIN": 11,
+    "HOT": 44
+  },
+  "actual_distribution": {
+    "雞": 11,
+    "羊": 10,
+    "猴": 9,
+    "马": 9,
+    "狗": 8,
+    "豬": 8
+  },
+  "avg_entropy": 2.172,
+  "avg_volatility": 0.696,
+  "sample": [
+    {
+      "idx": 201,
+      "state": "UNCERTAIN",
+      "actual": "狗",
+      "entropy": 1.921,
+      "volatility": 1.02,
+      "stability": 0.5,
+      "regime_shift": false,
+      "top6": [
+        "鼠",
+        "牛",
+        "虎",
+        "兔",
+        "龍",
+        "蛇"
+      ]
+    },
+    {
+      "idx": 203,
+      "state": "UNCERTAIN",
+      "actual": "猴",
+      "entropy": 1.999,
+      "volatility": 0.86,
+      "stability": 0.5,
+      "regime_shift": false,
+      "top6": [
+        "鼠",
+        "牛",
+        "虎",
+        "兔",
+        "龍",
+        "蛇"
+      ]
+    },
+    {
+      "idx": 204,
+      "state": "UNCERTAIN",
+      "actual": "羊",
+      "entropy": 1.999,
+      "volatility": 0.86,
+      "stability": 0.5,
+      "regime_shift": false,
+      "top6": [
+        "鼠",
+        "牛",
+        "虎",
+        "兔",
+        "龍",
+        "蛇"
+      ]
+    },
+    {
+      "idx": 206,
+      "state": "UNCERTAIN",
+      "actual": "雞",
+      "entropy": 1.861,
+      "volatility": 0.99,
+      "stability": 0.5,
+      "regime_shift": false,
+      "top6": [
+        "鼠",
+        "牛",
+        "虎",
+        "兔",
+        "龍",
+        "蛇"
+      ]
+    },
+    {
+      "idx": 207,
+      "state": "UNCERTAIN",
+      "actual": "羊",
+      "entropy": 1.973,
+      "volatility": 0.894,
+      "stability": 0.5,
+      "regime_shift": false,
+      "top6": [
+        "鼠",
+        "牛",
+        "虎",
+        "兔",
+        "龍",
+        "蛇"
+      ]
+    }
+  ]
+}

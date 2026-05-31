@@ -1,0 +1,78 @@
+{
+  "phase": "FULL_REVALIDATION_AFTER_DETECTOR_FIX",
+  "timestamp": "2026-05-21",
+
+  "summary": {
+    "status": "PASS",
+    "state_distribution_normalized": true,
+    "hot_pct": 15.5,
+    "transition_pct": 84.5
+  },
+
+  "validations": {
+    "walk_forward": {
+      "description": "18 windows (stride 25, window 30)",
+      "mean": 0.513,
+      "std": 0.0795,
+      "std_percent": 7.95,
+      "verdict": "PASS"
+    },
+    "seed_stability": {
+      "description": "10 seeds on 200-300",
+      "std": 0.0,
+      "range": 0.0,
+      "verdict": "PASS"
+    },
+    "expert_correlation": {
+      "description": "Max Jaccard across all expert pairs",
+      "max_corr": 0.6767,
+      "verdict": "PASS"
+    },
+    "state_performance": {
+      "description": "Per-state hit rates",
+      "matrix": {
+        "HOT": {"count": 73, "hit_rate": 0.5616},
+        "TRANSITION": {"count": 397, "hit_rate": 0.5113}
+      },
+      "hit_rate_range": 0.0503,
+      "verdict": "PASS"
+    }
+  },
+
+  "state_distribution": {
+    "HOT": {"count": 73, "pct": 15.5},
+    "TRANSITION": {"count": 397, "pct": 84.5},
+    "COLD": {"count": 0, "pct": 0.0},
+    "CHAOTIC": {"count": 0, "pct": 0.0}
+  },
+
+  "changes_made": [
+    {
+      "phase": "MOMENTUM_FREQUENCY_DECORRELATION",
+      "change": "Removed freq_10 from MomentumExpert, kept streak + freq_momentum",
+      "before_corr": 0.7886,
+      "after_corr": 0.3866
+    },
+    {
+      "phase": "STATE_DETECTOR_REACTIVATION",
+      "change": "Added rolling mean voting (30-window) + absolute thresholds",
+      "before_hot_pct": 100.0,
+      "after_hot_pct": 15.5
+    },
+    {
+      "phase": "STABILITY_FIX",
+      "change": "Fixed _calc_state_features to properly extract top6 from prediction_history",
+      "before": "stability always 0.5",
+      "after": "stability varies"
+    },
+    {
+      "phase": "STATE_CONFIRMATION_REDUCTION",
+      "change": "Reduced confirmation from 3 to 2 periods",
+      "before": "3 periods",
+      "after": "2 periods"
+    }
+  ],
+
+  "verdict": "PASS",
+  "overall_mean_hit": 0.5191
+}

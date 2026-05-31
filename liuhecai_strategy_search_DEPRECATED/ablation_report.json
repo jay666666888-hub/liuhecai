@@ -1,0 +1,50 @@
+{
+  "full_system_hit": 0.5167,
+  "ablation_results": [
+    {
+      "module": "FULL_SYSTEM",
+      "delta_hit": 0.0,
+      "contribution": "BASELINE"
+    },
+    {
+      "module": "MarketStateDetector",
+      "delta_hit": 0.0,
+      "contribution": "REMOVE"
+    },
+    {
+      "module": "StateRouter",
+      "delta_hit": 0.0,
+      "contribution": "REMOVE"
+    },
+    {
+      "module": "ColorActivator",
+      "delta_hit": 0.0,
+      "contribution": "REMOVE"
+    },
+    {
+      "module": "ChaosHandler",
+      "delta_hit": 0.0,
+      "contribution": "REMOVE"
+    },
+    {
+      "module": "ExpertFreeze",
+      "delta_hit": 0.0,
+      "contribution": "REMOVE"
+    },
+    {
+      "module": "DiversityPenalty",
+      "delta_hit": 0.0,
+      "contribution": "REMOVE"
+    }
+  ],
+  "to_remove": [
+    "MarketStateDetector",
+    "StateRouter",
+    "ColorActivator",
+    "ChaosHandler",
+    "ExpertFreeze",
+    "DiversityPenalty"
+  ],
+  "gate": "FAIL",
+  "verdict": "MODULE_REMOVAL_NEEDED"
+}

@@ -1,0 +1,86 @@
+{
+  "state_detector_recalibration_report": {
+    "date": "2026-05-22",
+    "mode": "V1.2 DESIGN_FIX_ONLY",
+    "system_status": "SYSTEM_FROZEN",
+
+    "fix_applied": {
+      "file": "meta_v2/state_detector.py",
+      "action": "Replaced fixed thresholds with percentile-based thresholds",
+      "old_thresholds": {
+        "entropy_HOT": 2.05,
+        "entropy_CHAOTIC": 2.40,
+        "volatility_COLD": 0.85,
+        "volatility_HOT": 0.55
+      },
+      "new_thresholds": {
+        "entropy_P20": 1.8591,
+        "entropy_P80": 2.1155,
+        "vol_P20": 0.5745,
+        "vol_P80": 0.7921
+      },
+      "constants_added": [
+        "ENTROPY_P20 = 1.86",
+        "ENTROPY_P80 = 2.12",
+        "VOL_P20 = 0.57",
+        "VOL_P80 = 0.79"
+      ]
+    },
+
+    "state_distribution_after_fix": {
+      "HOT": 73,
+      "COLD": 13,
+      "CHAOTIC": 35,
+      "TRANSITION": 460,
+      "UNCERTAIN": 19,
+      "total": 600
+    },
+
+    "gate_check": {
+      "single_state_ratio_max": 0.7667,
+      "single_state_ratio_required": "< 0.60",
+      "single_state_check": "FAIL",
+      "all_required_states_present": {
+        "HOT": "PASS (73 > 0)",
+        "COLD": "PASS (13 > 0)",
+        "CHAOTIC": "PASS (35 > 0)",
+        "TRANSITION": "PASS (460 > 0)"
+      },
+      "overall_gate": "FAIL"
+    },
+
+    "limitation_encountered": {
+      "issue": "TRANSITION dominates at 76.67%",
+      "root_cause": "Stability is hardcoded to 0.5 in MetaStrategyV2._calc_state_features (line 133) which is frozen",
+      "explanation": "Every period receives exactly 1 TRANSITION vote from stability (stability < 0.6), plus regime_shift is always False. This creates a floor of ~460 TRANSITION votes that cannot be reduced by entropy/volatility threshold adjustment alone.",
+      "attempted_fix": "Adjusted entropy and volatility thresholds to percentile-based",
+      "why_insufficient": "Stability voting is fixed-threshold (not percentile-based), and its value is hardcoded in frozen MetaStrategyV2. Threshold adjustment for entropy/volatility cannot offset guaranteed TRANSITION votes from stability.",
+      "scope_of_fix": "Entropy/volatility thresholds adjusted but stability mechanism untouched (frozen)"
+    },
+
+    "comparison": {
+      "before_fix": {
+        "HOT": 375,
+        "COLD": 0,
+        "CHAOTIC": 0,
+        "TRANSITION": 206,
+        "UNCERTAIN": 19
+      },
+      "after_fix": {
+        "HOT": 73,
+        "COLD": 13,
+        "CHAOTIC": 35,
+        "TRANSITION": 460,
+        "UNCERTAIN": 19
+      },
+      "improvement": "COLD and CHAOTIC now present; HOT dominance eliminated",
+      "new_problem": "TRANSITION now dominates (76.67%)"
+    },
+
+    "output_status": "STATE_SPACE_PARTIALLY_RESTORED",
+
+    "gate_result": "FAIL - TRANSITION dominates due to frozen stability mechanism",
+
+    "recommendation": "To fully restore state space balance, would need to either: (1) unfreeze MetaStrategyV2 to fix stability calculation, or (2) accept TRANSITION dominance as data/system characteristic"
+  }
+}

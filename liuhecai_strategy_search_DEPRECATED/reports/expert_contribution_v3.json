@@ -1,0 +1,180 @@
+{
+  "expert_contribution": {
+    "Gap": {
+      "raw_hit": 0.43448275862068964,
+      "marginal_gain": -0.0195,
+      "importance": -0.0132,
+      "weight_sensitivity": 0.4523,
+      "synergy": {
+        "Trend": 0.4287,
+        "Momentum": 0.4034,
+        "Frequency": 0.4264,
+        "Color": 0.4276,
+        "AntiTrend": 0.4276,
+        "Cycle": 0.4092
+      },
+      "rank": 7,
+      "role": "NOISE_EXPERT"
+    },
+    "Trend": {
+      "raw_hit": 0.46781609195402296,
+      "marginal_gain": -0.0046,
+      "importance": -0.0026,
+      "weight_sensitivity": 0.4549,
+      "synergy": {
+        "Gap": 0.4287,
+        "Momentum": 0.3931,
+        "Frequency": 0.4184,
+        "Color": 0.4057,
+        "AntiTrend": 0.4379,
+        "Cycle": 0.3851
+      },
+      "rank": 4,
+      "role": "SUPPORT_EXPERT"
+    },
+    "Momentum": {
+      "raw_hit": 0.4436781609195402,
+      "marginal_gain": 0.0103,
+      "importance": 0.0047,
+      "weight_sensitivity": 0.4493,
+      "synergy": {
+        "Gap": 0.4034,
+        "Trend": 0.3931,
+        "Frequency": 0.4103,
+        "Color": 0.4264,
+        "AntiTrend": 0.4218,
+        "Cycle": 0.3977
+      },
+      "rank": 6,
+      "role": "NOISE_EXPERT"
+    },
+    "Frequency": {
+      "raw_hit": 0.4747126436781609,
+      "marginal_gain": 0.0138,
+      "importance": 0.0094,
+      "weight_sensitivity": 0.4569,
+      "synergy": {
+        "Gap": 0.4264,
+        "Trend": 0.4184,
+        "Momentum": 0.4103,
+        "Color": 0.4368,
+        "AntiTrend": 0.4356,
+        "Cycle": 0.4253
+      },
+      "rank": 1,
+      "role": "SUPPORT_EXPERT"
+    },
+    "Color": {
+      "raw_hit": 0.4689655172413793,
+      "marginal_gain": -0.0172,
+      "importance": 0.0164,
+      "weight_sensitivity": 0.457,
+      "synergy": {
+        "Gap": 0.4276,
+        "Trend": 0.4057,
+        "Momentum": 0.4264,
+        "Frequency": 0.4368,
+        "AntiTrend": 0.4402,
+        "Cycle": 0.3954
+      },
+      "rank": 3,
+      "role": "SUPPORT_EXPERT"
+    },
+    "AntiTrend": {
+      "raw_hit": 0.46206896551724136,
+      "marginal_gain": -0.0046,
+      "importance": 0.0087,
+      "weight_sensitivity": 0.4561,
+      "synergy": {
+        "Gap": 0.4276,
+        "Trend": 0.4379,
+        "Momentum": 0.4218,
+        "Frequency": 0.4356,
+        "Color": 0.4402,
+        "Cycle": 0.4161
+      },
+      "rank": 5,
+      "role": "SUPPORT_EXPERT"
+    },
+    "Cycle": {
+      "raw_hit": 0.47011494252873565,
+      "marginal_gain": -0.0092,
+      "importance": 0.0127,
+      "weight_sensitivity": 0.452,
+      "synergy": {
+        "Gap": 0.4092,
+        "Trend": 0.3851,
+        "Momentum": 0.3977,
+        "Frequency": 0.4253,
+        "Color": 0.3954,
+        "AntiTrend": 0.4161
+      },
+      "rank": 2,
+      "role": "SUPPORT_EXPERT"
+    }
+  },
+  "expert_priority_order": [
+    "Frequency",
+    "Cycle",
+    "Color",
+    "Trend",
+    "AntiTrend",
+    "Momentum",
+    "Gap"
+  ],
+  "noise_experts": [
+    "Momentum",
+    "Gap"
+  ],
+  "primary_expert": null,
+  "pair_synergy": {
+    "Gap_Trend": 0.4287,
+    "Gap_Momentum": 0.4034,
+    "Gap_Frequency": 0.4264,
+    "Gap_Color": 0.4276,
+    "Gap_AntiTrend": 0.4276,
+    "Gap_Cycle": 0.4092,
+    "Trend_Momentum": 0.3931,
+    "Trend_Frequency": 0.4184,
+    "Trend_Color": 0.4057,
+    "Trend_AntiTrend": 0.4379,
+    "Trend_Cycle": 0.3851,
+    "Momentum_Frequency": 0.4103,
+    "Momentum_Color": 0.4264,
+    "Momentum_AntiTrend": 0.4218,
+    "Momentum_Cycle": 0.3977,
+    "Frequency_Color": 0.4368,
+    "Frequency_AntiTrend": 0.4356,
+    "Frequency_Cycle": 0.4253,
+    "Color_AntiTrend": 0.4402,
+    "Color_Cycle": 0.3954,
+    "AntiTrend_Cycle": 0.4161
+  },
+  "pair_redundancy": {
+    "Gap_Trend": 0.3423,
+    "Gap_Momentum": 0.3391,
+    "Gap_Frequency": 0.3504,
+    "Gap_Color": 0.3503,
+    "Gap_AntiTrend": 0.3483,
+    "Gap_Cycle": 0.3444,
+    "Trend_Momentum": 0.3498,
+    "Trend_Frequency": 0.3493,
+    "Trend_Color": 0.3479,
+    "Trend_AntiTrend": 0.3498,
+    "Trend_Cycle": 0.3505,
+    "Momentum_Frequency": 0.3483,
+    "Momentum_Color": 0.3445,
+    "Momentum_AntiTrend": 0.3504,
+    "Momentum_Cycle": 0.349,
+    "Frequency_Color": 0.3444,
+    "Frequency_AntiTrend": 0.3568,
+    "Frequency_Cycle": 0.3373,
+    "Color_AntiTrend": 0.3404,
+    "Color_Cycle": 0.3389,
+    "AntiTrend_Cycle": 0.3416
+  },
+  "metadata": {
+    "n_periods": 870,
+    "n_shuffles_perm": 20
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "phase": "POST_REFACTOR_BASELINE",
+  "timestamp": "2026-05-21",
+  "description": "New baseline after Gap/Cycle/Trend refactoring and metric pipeline fix",
+  "metrics": {
+    "walk_forward_mean": 0.4535,
+    "regime_weighted_mean": 0.4645,
+    "gap_color_corr": 0.3044,
+    "gap_cycle_corr": 0.3565,
+    "trend_cycle_corr": 0.3921,
+    "momentum_frequency_corr": 0.4995,
+    "seed_std": 0.018
+  },
+  "expert_contribution": {
+    "Gap": 0.4333,
+    "Trend": 0.2667,
+    "Momentum": 0.6000,
+    "Frequency": 0.5000,
+    "Color": 0.6000,
+    "AntiTrend": 0.4333,
+    "Cycle": 0.6333
+  },
+  "regime_performance": {
+    "HOT": {"sample_count": 18, "hit_rate": 0.4649},
+    "TRANSITION": {"sample_count": 12, "hit_rate": 0.4639}
+  },
+  "status": "ACTIVE_BASELINE",
+  "invalidated_pre_refactor_metrics": [
+    "Trend_hit (0.475 -> 0.2667)",
+    "Momentum_hit (0.445 -> 0.6000)",
+    "Color_hit (0.478 -> 0.6000)",
+    "Cycle_hit (0.461 -> 0.6333)"
+  ],
+  "note": "Invalidated metrics are EXPECTED due to expert refactoring. New baseline reflects new expert formulas."
+}

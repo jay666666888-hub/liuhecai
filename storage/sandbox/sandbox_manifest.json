@@ -1,0 +1,18 @@
+{
+  "sandbox_created": "2026-05-27T06:16:07.096914",
+  "files": [
+    "aggregated_live.jsonl",
+    "prediction_index.json",
+    "version_book/index.json",
+    "predictors/retired/v10.json",
+    "predictors/retired/v11.json",
+    "predictors/retired/v13.json",
+    "predictors/retired/v14.json",
+    "predictors/retired/v17.json",
+    "predictors/retired/v19.json",
+    "predictors/retired/v20.json",
+    "predictors/retired/v22.json",
+    "predictors/retired/v26_predictor.py",
+    "predictors/retired/v9.json"
+  ]
+}

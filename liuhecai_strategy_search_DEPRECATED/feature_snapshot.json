@@ -1,0 +1,107 @@
+{
+  "total_checked": 50,
+  "all_valid": true,
+  "feature_time_check": "PASS",
+  "samples": [
+    {
+      "period": "2025318",
+      "predict_date": "2025-11-14",
+      "train_end_date": "2025-11-13",
+      "train_size": 684,
+      "feature_time_check": "valid",
+      "details": [
+        "训练数据最后日期: 2025-11-13 < 预测日期: 2025-11-14"
+      ]
+    },
+    {
+      "period": "2024144",
+      "predict_date": "2024-05-23",
+      "train_end_date": "2024-05-22",
+      "train_size": 144,
+      "feature_time_check": "valid",
+      "details": [
+        "训练数据最后日期: 2024-05-22 < 预测日期: 2024-05-23"
+      ]
+    },
+    {
+      "period": "2024055",
+      "predict_date": "2024-02-24",
+      "train_end_date": "2024-02-23",
+      "train_size": 55,
+      "feature_time_check": "valid",
+      "details": [
+        "训练数据最后日期: 2024-02-23 < 预测日期: 2024-02-24"
+      ]
+    },
+    {
+      "period": "2026058",
+      "predict_date": "2026-02-27",
+      "train_end_date": "2026-02-26",
+      "train_size": 789,
+      "feature_time_check": "valid",
+      "details": [
+        "训练数据最后日期: 2026-02-26 < 预测日期: 2026-02-27"
+      ]
+    },
+    {
+      "period": "2024311",
+      "predict_date": "2024-11-06",
+      "train_end_date": "2024-11-05",
+      "train_size": 311,
+      "feature_time_check": "valid",
+      "details": [
+        "训练数据最后日期: 2024-11-05 < 预测日期: 2024-11-06"
+      ]
+    },
+    {
+      "period": "2024280",
+      "predict_date": "2024-10-06",
+      "train_end_date": "2024-10-05",
+      "train_size": 280,
+      "feature_time_check": "valid",
+      "details": [
+        "训练数据最后日期: 2024-10-05 < 预测日期: 2024-10-06"
+      ]
+    },
+    {
+      "period": "2024258",
+      "predict_date": "2024-09-14",
+      "train_end_date": "2024-09-13",
+      "train_size": 258,
+      "feature_time_check": "valid",
+      "details": [
+        "训练数据最后日期: 2024-09-13 < 预测日期: 2024-09-14"
+      ]
+    },
+    {
+      "period": "2024172",
+      "predict_date": "2024-06-20",
+      "train_end_date": "2024-06-19",
+      "train_size": 172,
+      "feature_time_check": "valid",
+      "details": [
+        "训练数据最后日期: 2024-06-19 < 预测日期: 2024-06-20"
+      ]
+    },
+    {
+      "period": "2026053",
+      "predict_date": "2026-02-22",
+      "train_end_date": "2026-02-21",
+      "train_size": 784,
+      "feature_time_check": "valid",
+      "details": [
+        "训练数据最后日期: 2026-02-21 < 预测日期: 2026-02-22"
+      ]
+    },
+    {
+      "period": "2024134",
+      "predict_date": "2024-05-13",
+      "train_end_date": "2024-05-12",
+      "train_size": 134,
+      "feature_time_check": "valid",
+      "details": [
+        "训练数据最后日期: 2024-05-12 < 预测日期: 2024-05-13"
+      ]
+    }
+  ]
+}

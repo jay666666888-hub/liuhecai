@@ -1,0 +1,151 @@
+{
+  "sample_size": 100,
+  "hit_count": 48,
+  "hit_rate": 0.48,
+  "expected_rate": 0.5,
+  "formula": "predicted ∩ actual > 0",
+  "definition": "六肖中有任意1个命中特码生肖即为命中",
+  "status": "PASS",
+  "samples": [
+    {
+      "period": "2024053",
+      "actual_zodiac": "龍",
+      "predicted_6": [
+        "狗",
+        "雞",
+        "牛",
+        "鼠",
+        "蛇",
+        "豬"
+      ],
+      "hit": false,
+      "formula": "predicted ∩ actual > 0"
+    },
+    {
+      "period": "2024274",
+      "actual_zodiac": "龍",
+      "predicted_6": [
+        "狗",
+        "马",
+        "猴",
+        "龍",
+        "鼠",
+        "兔"
+      ],
+      "hit": true,
+      "formula": "predicted ∩ actual > 0"
+    },
+    {
+      "period": "2024089",
+      "actual_zodiac": "龍",
+      "predicted_6": [
+        "狗",
+        "牛",
+        "虎",
+        "羊",
+        "猴",
+        "兔"
+      ],
+      "hit": false,
+      "formula": "predicted ∩ actual > 0"
+    },
+    {
+      "period": "2026056",
+      "actual_zodiac": "蛇",
+      "predicted_6": [
+        "狗",
+        "羊",
+        "马",
+        "猴",
+        "鼠",
+        "豬"
+      ],
+      "hit": false,
+      "formula": "predicted ∩ actual > 0"
+    },
+    {
+      "period": "2025051",
+      "actual_zodiac": "蛇",
+      "predicted_6": [
+        "虎",
+        "羊",
+        "马",
+        "龍",
+        "鼠",
+        "兔"
+      ],
+      "hit": false,
+      "formula": "predicted ∩ actual > 0"
+    },
+    {
+      "period": "2024272",
+      "actual_zodiac": "雞",
+      "predicted_6": [
+        "狗",
+        "马",
+        "猴",
+        "龍",
+        "鼠",
+        "蛇"
+      ],
+      "hit": false,
+      "formula": "predicted ∩ actual > 0"
+    },
+    {
+      "period": "2024110",
+      "actual_zodiac": "兔",
+      "predicted_6": [
+        "雞",
+        "牛",
+        "羊",
+        "猴",
+        "蛇",
+        "豬"
+      ],
+      "hit": false,
+      "formula": "predicted ∩ actual > 0"
+    },
+    {
+      "period": "2026127",
+      "actual_zodiac": "虎",
+      "predicted_6": [
+        "雞",
+        "牛",
+        "马",
+        "猴",
+        "鼠",
+        "豬"
+      ],
+      "hit": false,
+      "formula": "predicted ∩ actual > 0"
+    },
+    {
+      "period": "2024039",
+      "actual_zodiac": "雞",
+      "predicted_6": [
+        "狗",
+        "虎",
+        "马",
+        "猴",
+        "鼠",
+        "蛇"
+      ],
+      "hit": false,
+      "formula": "predicted ∩ actual > 0"
+    },
+    {
+      "period": "2025022",
+      "actual_zodiac": "羊",
+      "predicted_6": [
+        "虎",
+        "羊",
+        "马",
+        "猴",
+        "鼠",
+        "蛇"
+      ],
+      "hit": true,
+      "formula": "predicted ∩ actual > 0"
+    }
+  ]
+}

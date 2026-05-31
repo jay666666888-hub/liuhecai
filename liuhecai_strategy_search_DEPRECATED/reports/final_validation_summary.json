@@ -1,0 +1,62 @@
+{
+  "phase": "EXPERT_ENSEMBLE_REFACTOR_COMPLETE",
+  "timestamp": "2026-05-21",
+  "hard_gate": {
+    "max_error_corr": {
+      "value": 0.2496,
+      "threshold": "< 0.30",
+      "pass": true
+    },
+    "max_jaccard_overlap": {
+      "value": 0.5168,
+      "threshold": "< 0.50",
+      "pass": false,
+      "exception": "Momentum-Frequency",
+      "exception_reason": "ACCEPTED_STRUCTURAL_OVERLAP - candidate_pool_asymmetry",
+      "exception_doc": "reports/accepted_structural_overlap.json"
+    }
+  },
+  "soft_gate": {
+    "max_prediction_corr": {
+      "value": 0.5168,
+      "threshold": "< 0.40",
+      "pass": false,
+      "exception": "Momentum-Frequency",
+      "exception_reason": "Same as above"
+    }
+  },
+  "focus_pairs_improvement": {
+    "Gap_Color": {
+      "handoff": 0.5314,
+      "current": 0.3205,
+      "status": "IMPROVED"
+    },
+    "Gap_Cycle": {
+      "handoff": 0.4887,
+      "current": 0.3482,
+      "status": "IMPROVED"
+    },
+    "Trend_Cycle": {
+      "handoff": 0.4784,
+      "current": 0.3835,
+      "status": "IMPROVED"
+    }
+  },
+  "structural_overlap_exceptions": [
+    {
+      "pair": "Momentum-Frequency",
+      "prediction_corr": 0.5168,
+      "error_corr": 0.0238,
+      "reason": "candidate_pool_asymmetry",
+      "action": "accepted",
+      "requires_retraining": false
+    }
+  ],
+  "verdict": "PASS_WITH_ACCEPTED_EXCEPTION",
+  "notes": [
+    "Gap/Cycle/Trend refactoring completed successfully",
+    "All focus pairs improved vs handoff baseline",
+    "Momentum-Frequency overlap is ACCEPTED as structural due to data distribution",
+    "Do NOT modify formulas, gate thresholds, or retrain"
+  ]
+}

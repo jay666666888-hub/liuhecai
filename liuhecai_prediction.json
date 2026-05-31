@@ -1,0 +1,18 @@
+{
+  "version": "2026-05-25T15:43:03.146674",
+  "strategy": "v12_ultra_search",
+  "verified_period": null,
+  "verified_hit": null,
+  "verified_actual": null,
+  "pending_period": "2026145",
+  "pending_top6": [
+    "雞",
+    "鼠",
+    "蛇",
+    "猴",
+    "豬",
+    "羊"
+  ],
+  "total_records": 876,
+  "timestamp": "2026-05-25T15:43:03.148804"
+}

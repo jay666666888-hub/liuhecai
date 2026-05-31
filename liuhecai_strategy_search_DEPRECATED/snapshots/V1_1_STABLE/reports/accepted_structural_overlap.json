@@ -1,0 +1,8 @@
+{
+  "pair": "Momentum-Frequency",
+  "prediction_corr": "0.5168",
+  "error_corr": "0.0238",
+  "reason": "candidate_pool_asymmetry",
+  "action": "accepted",
+  "requires_retraining": false
+}

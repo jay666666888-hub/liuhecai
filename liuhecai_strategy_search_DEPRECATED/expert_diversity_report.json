@@ -1,0 +1,18 @@
+{
+  "similarity_threshold": 0.8,
+  "penalty_factor": 0.7,
+  "last_penalty_report": [
+    {
+      "expert_a": "Gap",
+      "expert_b": "Trend",
+      "similarity": 1.0,
+      "penalty": 0.7
+    },
+    {
+      "expert_a": "Momentum",
+      "expert_b": "Color",
+      "similarity": 1.0,
+      "penalty": 0.7
+    }
+  ]
+}

@@ -1,0 +1,235 @@
+{
+  "timestamp": "2026-05-21",
+  "phase": "expert_decorrelation_v2",
+  "test_range": "last_200_records",
+  "gate_criteria": {
+    "max_prediction_corr": {
+      "target": "< 0.40",
+      "actual": 0.5314,
+      "pass": false
+    },
+    "max_error_corr": {
+      "target": "< 0.30",
+      "actual": 0.5314,
+      "pass": false
+    },
+    "max_jaccard": {
+      "target": "< 0.50",
+      "actual": 0.5,
+      "pass": false
+    }
+  },
+  "pairwise_correlations": [
+    {
+      "pair": "Gap-Trend",
+      "prediction_corr": 0.3571,
+      "error_corr": 0.3571,
+      "jaccard": 0.2
+    },
+    {
+      "pair": "Gap-Momentum",
+      "prediction_corr": 0.1079,
+      "error_corr": 0.1079,
+      "jaccard": 0.0
+    },
+    {
+      "pair": "Gap-Frequency",
+      "prediction_corr": 0.3405,
+      "error_corr": 0.3405,
+      "jaccard": 0.0
+    },
+    {
+      "pair": "Gap-Color",
+      "prediction_corr": 0.5314,
+      "error_corr": 0.5314,
+      "jaccard": 0.5
+    },
+    {
+      "pair": "Gap-AntiTrend",
+      "prediction_corr": 0.2787,
+      "error_corr": 0.2787,
+      "jaccard": 0.0
+    },
+    {
+      "pair": "Gap-Cycle",
+      "prediction_corr": 0.4887,
+      "error_corr": 0.4887,
+      "jaccard": 0.2
+    },
+    {
+      "pair": "Trend-Momentum",
+      "prediction_corr": 0.4077,
+      "error_corr": 0.4077,
+      "jaccard": 0.0
+    },
+    {
+      "pair": "Trend-Frequency",
+      "prediction_corr": 0.0,
+      "error_corr": 0.0,
+      "jaccard": 0.2
+    },
+    {
+      "pair": "Trend-Color",
+      "prediction_corr": 0.3129,
+      "error_corr": 0.3129,
+      "jaccard": 0.0
+    },
+    {
+      "pair": "Trend-AntiTrend",
+      "prediction_corr": 0.4199,
+      "error_corr": 0.4199,
+      "jaccard": 0.0
+    },
+    {
+      "pair": "Trend-Cycle",
+      "prediction_corr": 0.4784,
+      "error_corr": 0.4784,
+      "jaccard": 0.2
+    },
+    {
+      "pair": "Momentum-Frequency",
+      "prediction_corr": 0.1044,
+      "error_corr": 0.1044,
+      "jaccard": 0.2
+    },
+    {
+      "pair": "Momentum-Color",
+      "prediction_corr": 0.0137,
+      "error_corr": 0.0137,
+      "jaccard": 0.2
+    },
+    {
+      "pair": "Momentum-AntiTrend",
+      "prediction_corr": 0.1647,
+      "error_corr": 0.1647,
+      "jaccard": 0.5
+    },
+    {
+      "pair": "Momentum-Cycle",
+      "prediction_corr": 0.0874,
+      "error_corr": 0.0874,
+      "jaccard": 0.0
+    },
+    {
+      "pair": "Frequency-Color",
+      "prediction_corr": 0.0859,
+      "error_corr": 0.0859,
+      "jaccard": 0.2
+    },
+    {
+      "pair": "Frequency-AntiTrend",
+      "prediction_corr": 0.0865,
+      "error_corr": 0.0865,
+      "jaccard": 0.0
+    },
+    {
+      "pair": "Frequency-Cycle",
+      "prediction_corr": 0.0291,
+      "error_corr": 0.0291,
+      "jaccard": 0.0
+    },
+    {
+      "pair": "Color-AntiTrend",
+      "prediction_corr": 0.0773,
+      "error_corr": 0.0773,
+      "jaccard": 0.0
+    },
+    {
+      "pair": "Color-Cycle",
+      "prediction_corr": 0.0339,
+      "error_corr": 0.0339,
+      "jaccard": 0.2
+    },
+    {
+      "pair": "AntiTrend-Cycle",
+      "prediction_corr": 0.2286,
+      "error_corr": 0.2286,
+      "jaccard": 0.2
+    }
+  ],
+  "verdict": "FAIL",
+  "analysis": {
+    "worst_pairs": [
+      {
+        "pair": "Gap-Color",
+        "pred_corr": 0.5314,
+        "reason": "Both relate to timing patterns"
+      },
+      {
+        "pair": "Gap-Cycle",
+        "pred_corr": 0.4887,
+        "reason": "Both measure periodic behavior"
+      },
+      {
+        "pair": "Trend-Cycle",
+        "pred_corr": 0.4784,
+        "reason": "Both detect trend/cycle patterns"
+      },
+      {
+        "pair": "Trend-AntiTrend",
+        "pred_corr": 0.4199,
+        "reason": "Both detect trend reversals"
+      },
+      {
+        "pair": "Trend-Momentum",
+        "pred_corr": 0.4077,
+        "reason": "Both measure recent trend"
+      }
+    ],
+    "observations": [
+      "Momentum-Color correlation reduced from 0.86 to 0.01 (PASS)",
+      "All 5 AntiTrend features work correctly - only uses trend_acceleration, sign_change_rate, reversal_strength, local_peak_distance, overshoot_score",
+      "The remaining high correlations are structural - experts measure overlapping market phenomena",
+      "Gap-TimeSince and Color-Boundary are fundamentally correlated because timing affects boundaries"
+    ],
+    "decorrelation_attempts": [
+      {
+        "method": "tanh normalization",
+        "result": "Made correlations worse"
+      },
+      {
+        "method": "rank-based signals",
+        "result": "Made correlations worse"
+      },
+      {
+        "method": "power transforms",
+        "result": "Made correlations worse"
+      },
+      {
+        "method": "AntiTrend rewrite to reversal features",
+        "result": "Reduced Gap-AntiTrend from 0.46 to 0.28"
+      },
+      {
+        "method": "Color rewrite to boundary probability",
+        "result": "Reduced Momentum-Color from 0.86 to 0.01"
+      }
+    ]
+  },
+  "final_status": {
+    "verdict": "FAIL",
+    "reason": "Structural correlations in timing-based signals cannot be decorrelated without fundamental formula changes",
+    "key_achievements": [
+      "Momentum-Color: 0.8626 \u2192 0.0137 (88x reduction, PASS)",
+      "Gap-AntiTrend: 0.4620 \u2192 0.2787 (40% reduction, PASS for this pair)",
+      "Momentum-Color jaccard: 1.0 \u2192 0.2 (PASS)"
+    ],
+    "remaining_failures": [
+      {
+        "pair": "Gap-Color",
+        "pred_corr": 0.5314,
+        "reason": "Both measure temporal timing - structural"
+      },
+      {
+        "pair": "Gap-Cycle",
+        "pred_corr": 0.4887,
+        "reason": "Both measure periodic patterns - structural"
+      },
+      {
+        "pair": "Trend-Cycle",
+        "pred_corr": 0.4784,
+        "reason": "Both measure trend and cycle - structural"
+      }
+    ],
+    "conclusion": "Expert decorrelation has been pushed as far as possible. Further reduction requires either: (1) relaxing gate thresholds, or (2) fundamentally changing what Gap/Trend/Cycle measure (abandoning their core purpose)."
+  }
+}

@@ -1,0 +1,288 @@
+{
+  "windows": [
+    {
+      "train_start": 200,
+      "test_start": 200,
+      "test_end": 250,
+      "dynamic_hit": 0.48,
+      "static_hit": 0.4,
+      "delta": 0.08,
+      "rolling30": 0.4667,
+      "max_drawdown": -1.5,
+      "stability": 0.5004
+    },
+    {
+      "train_start": 225,
+      "test_start": 225,
+      "test_end": 275,
+      "dynamic_hit": 0.5,
+      "static_hit": 0.5,
+      "delta": 0.0,
+      "rolling30": 0.5667,
+      "max_drawdown": -2.5,
+      "stability": 0.5
+    },
+    {
+      "train_start": 250,
+      "test_start": 250,
+      "test_end": 300,
+      "dynamic_hit": 0.42,
+      "static_hit": 0.44,
+      "delta": -0.02,
+      "rolling30": 0.4333,
+      "max_drawdown": -5.0,
+      "stability": 0.5064
+    },
+    {
+      "train_start": 275,
+      "test_start": 275,
+      "test_end": 325,
+      "dynamic_hit": 0.46,
+      "static_hit": 0.4,
+      "delta": 0.06,
+      "rolling30": 0.5333,
+      "max_drawdown": -3.0,
+      "stability": 0.5016
+    },
+    {
+      "train_start": 300,
+      "test_start": 300,
+      "test_end": 350,
+      "dynamic_hit": 0.44,
+      "static_hit": 0.44,
+      "delta": 0.0,
+      "rolling30": 0.4333,
+      "max_drawdown": -5.5,
+      "stability": 0.5036
+    },
+    {
+      "train_start": 325,
+      "test_start": 325,
+      "test_end": 375,
+      "dynamic_hit": 0.56,
+      "static_hit": 0.46,
+      "delta": 0.1,
+      "rolling30": 0.6,
+      "max_drawdown": -2.0,
+      "stability": 0.5036
+    },
+    {
+      "train_start": 350,
+      "test_start": 350,
+      "test_end": 400,
+      "dynamic_hit": 0.58,
+      "static_hit": 0.58,
+      "delta": 0.0,
+      "rolling30": 0.5667,
+      "max_drawdown": -0.5,
+      "stability": 0.5064
+    },
+    {
+      "train_start": 375,
+      "test_start": 375,
+      "test_end": 425,
+      "dynamic_hit": 0.54,
+      "static_hit": 0.6,
+      "delta": -0.06,
+      "rolling30": 0.5667,
+      "max_drawdown": -0.5,
+      "stability": 0.5016
+    },
+    {
+      "train_start": 400,
+      "test_start": 400,
+      "test_end": 450,
+      "dynamic_hit": 0.56,
+      "static_hit": 0.54,
+      "delta": 0.02,
+      "rolling30": 0.6,
+      "max_drawdown": -2.0,
+      "stability": 0.5036
+    },
+    {
+      "train_start": 425,
+      "test_start": 425,
+      "test_end": 475,
+      "dynamic_hit": 0.54,
+      "static_hit": 0.6,
+      "delta": -0.06,
+      "rolling30": 0.5,
+      "max_drawdown": -0.5,
+      "stability": 0.5016
+    },
+    {
+      "train_start": 450,
+      "test_start": 450,
+      "test_end": 500,
+      "dynamic_hit": 0.6,
+      "static_hit": 0.64,
+      "delta": -0.04,
+      "rolling30": 0.6,
+      "max_drawdown": -1.0,
+      "stability": 0.5101
+    },
+    {
+      "train_start": 475,
+      "test_start": 475,
+      "test_end": 525,
+      "dynamic_hit": 0.58,
+      "static_hit": 0.6,
+      "delta": -0.02,
+      "rolling30": 0.6333,
+      "max_drawdown": 0.0,
+      "stability": 0.5064
+    },
+    {
+      "train_start": 500,
+      "test_start": 500,
+      "test_end": 550,
+      "dynamic_hit": 0.6,
+      "static_hit": 0.54,
+      "delta": 0.06,
+      "rolling30": 0.5,
+      "max_drawdown": 0.5,
+      "stability": 0.5101
+    },
+    {
+      "train_start": 525,
+      "test_start": 525,
+      "test_end": 575,
+      "dynamic_hit": 0.52,
+      "static_hit": 0.42,
+      "delta": 0.1,
+      "rolling30": 0.5333,
+      "max_drawdown": -1.5,
+      "stability": 0.5004
+    },
+    {
+      "train_start": 550,
+      "test_start": 550,
+      "test_end": 600,
+      "dynamic_hit": 0.54,
+      "static_hit": 0.4,
+      "delta": 0.14,
+      "rolling30": 0.5667,
+      "max_drawdown": -1.0,
+      "stability": 0.5016
+    },
+    {
+      "train_start": 575,
+      "test_start": 575,
+      "test_end": 625,
+      "dynamic_hit": 0.62,
+      "static_hit": 0.48,
+      "delta": 0.14,
+      "rolling30": 0.6333,
+      "max_drawdown": -1.0,
+      "stability": 0.5146
+    },
+    {
+      "train_start": 600,
+      "test_start": 600,
+      "test_end": 650,
+      "dynamic_hit": 0.46,
+      "static_hit": 0.42,
+      "delta": 0.04,
+      "rolling30": 0.3667,
+      "max_drawdown": -3.0,
+      "stability": 0.5016
+    },
+    {
+      "train_start": 625,
+      "test_start": 625,
+      "test_end": 675,
+      "dynamic_hit": 0.4,
+      "static_hit": 0.38,
+      "delta": 0.02,
+      "rolling30": 0.4,
+      "max_drawdown": -6.5,
+      "stability": 0.5101
+    },
+    {
+      "train_start": 650,
+      "test_start": 650,
+      "test_end": 700,
+      "dynamic_hit": 0.4,
+      "static_hit": 0.4,
+      "delta": 0.0,
+      "rolling30": 0.3667,
+      "max_drawdown": -5.5,
+      "stability": 0.5101
+    },
+    {
+      "train_start": 675,
+      "test_start": 675,
+      "test_end": 725,
+      "dynamic_hit": 0.36,
+      "static_hit": 0.4,
+      "delta": -0.04,
+      "rolling30": 0.4667,
+      "max_drawdown": -8.5,
+      "stability": 0.52
+    },
+    {
+      "train_start": 700,
+      "test_start": 700,
+      "test_end": 750,
+      "dynamic_hit": 0.42,
+      "static_hit": 0.38,
+      "delta": 0.04,
+      "rolling30": 0.5,
+      "max_drawdown": -5.0,
+      "stability": 0.5064
+    },
+    {
+      "train_start": 725,
+      "test_start": 725,
+      "test_end": 775,
+      "dynamic_hit": 0.4,
+      "static_hit": 0.42,
+      "delta": -0.02,
+      "rolling30": 0.3333,
+      "max_drawdown": -6.0,
+      "stability": 0.5101
+    },
+    {
+      "train_start": 750,
+      "test_start": 750,
+      "test_end": 800,
+      "dynamic_hit": 0.4,
+      "static_hit": 0.54,
+      "delta": -0.14,
+      "rolling30": 0.5,
+      "max_drawdown": -5.5,
+      "stability": 0.5101
+    },
+    {
+      "train_start": 775,
+      "test_start": 775,
+      "test_end": 825,
+      "dynamic_hit": 0.5,
+      "static_hit": 0.54,
+      "delta": -0.04,
+      "rolling30": 0.5,
+      "max_drawdown": -1.5,
+      "stability": 0.5
+    },
+    {
+      "train_start": 800,
+      "test_start": 800,
+      "test_end": 850,
+      "dynamic_hit": 0.48,
+      "static_hit": 0.5,
+      "delta": -0.02,
+      "rolling30": 0.4667,
+      "max_drawdown": -2.0,
+      "stability": 0.5004
+    }
+  ],
+  "summary": {
+    "mean_hit": 0.4944,
+    "std_hit": 0.0745,
+    "mean_static": 0.4808,
+    "delta": 0.0136,
+    "windows_count": 25
+  },
+  "gate": "FAIL",
+  "verdict": "WALK_FORWARD_FAIL"
+}

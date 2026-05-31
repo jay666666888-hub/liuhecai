@@ -1,0 +1,157 @@
+{
+  "combinations": {
+    "cycle": {
+      "features": [
+        "cycle"
+      ],
+      "hit_rate": 0.5333,
+      "gain": 0.0,
+      "p_value": NaN,
+      "status": "REMOVE"
+    },
+    "decay": {
+      "features": [
+        "decay"
+      ],
+      "hit_rate": 0.5333,
+      "gain": 0.0,
+      "p_value": NaN,
+      "status": "REMOVE"
+    },
+    "volatility": {
+      "features": [
+        "volatility"
+      ],
+      "hit_rate": 0.5333,
+      "gain": 0.0,
+      "p_value": NaN,
+      "status": "REMOVE"
+    },
+    "state": {
+      "features": [
+        "state"
+      ],
+      "hit_rate": 0.5333,
+      "gain": 0.0,
+      "p_value": NaN,
+      "status": "REMOVE"
+    },
+    "cycle+decay": {
+      "features": [
+        "cycle",
+        "decay"
+      ],
+      "hit_rate": 0.5333,
+      "gain": 0.0,
+      "p_value": NaN,
+      "status": "REMOVE"
+    },
+    "cycle+volatility": {
+      "features": [
+        "cycle",
+        "volatility"
+      ],
+      "hit_rate": 0.5333,
+      "gain": 0.0,
+      "p_value": NaN,
+      "status": "REMOVE"
+    },
+    "cycle+state": {
+      "features": [
+        "cycle",
+        "state"
+      ],
+      "hit_rate": 0.5333,
+      "gain": 0.0,
+      "p_value": NaN,
+      "status": "REMOVE"
+    },
+    "decay+volatility": {
+      "features": [
+        "decay",
+        "volatility"
+      ],
+      "hit_rate": 0.5333,
+      "gain": 0.0,
+      "p_value": NaN,
+      "status": "REMOVE"
+    },
+    "decay+state": {
+      "features": [
+        "decay",
+        "state"
+      ],
+      "hit_rate": 0.5333,
+      "gain": 0.0,
+      "p_value": NaN,
+      "status": "REMOVE"
+    },
+    "state+volatility": {
+      "features": [
+        "state",
+        "volatility"
+      ],
+      "hit_rate": 0.5333,
+      "gain": 0.0,
+      "p_value": NaN,
+      "status": "REMOVE"
+    },
+    "cycle+decay+volatility": {
+      "features": [
+        "cycle",
+        "decay",
+        "volatility"
+      ],
+      "hit_rate": 0.5333,
+      "gain": 0.0,
+      "p_value": NaN,
+      "status": "REMOVE"
+    },
+    "cycle+decay+state": {
+      "features": [
+        "cycle",
+        "decay",
+        "state"
+      ],
+      "hit_rate": 0.5333,
+      "gain": 0.0,
+      "p_value": NaN,
+      "status": "REMOVE"
+    },
+    "cycle+state+volatility": {
+      "features": [
+        "cycle",
+        "state",
+        "volatility"
+      ],
+      "hit_rate": 0.5333,
+      "gain": 0.0,
+      "p_value": NaN,
+      "status": "REMOVE"
+    },
+    "decay+state+volatility": {
+      "features": [
+        "decay",
+        "state",
+        "volatility"
+      ],
+      "hit_rate": 0.5333,
+      "gain": 0.0,
+      "p_value": NaN,
+      "status": "REMOVE"
+    },
+    "all": {
+      "features": [
+        "cycle",
+        "decay",
+        "volatility",
+        "state"
+      ],
+      "hit_rate": 0.5333,
+      "gain": 0.0,
+      "p_value": NaN,
+      "status": "REMOVE"
+    }
+  },
+  "timestamp": "2026-05-20T23:57:11.509648"
+}

@@ -1,0 +1,8 @@
+{
+  "current_baseline": 0.493,
+  "random_mean": 0.46218804597701146,
+  "z_score": 1.8929,
+  "p_value": 0.0584,
+  "is_significant": false,
+  "interpretation": "NO_STATISTICAL_EDGE - p > 0.05，无统计显著优势"
+}

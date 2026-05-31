@@ -1,0 +1,32 @@
+{
+  "matrix": {
+    "HOT": {
+      "count": 10,
+      "hit": 0.7,
+      "std": 0.4583
+    },
+    "COLD": {
+      "count": 0,
+      "hit": 0.0,
+      "std": 0.0
+    },
+    "TRANSITION": {
+      "count": 271,
+      "hit": 0.5129,
+      "std": 0.4998
+    },
+    "CHAOTIC": {
+      "count": 0,
+      "hit": 0.0,
+      "std": 0.0
+    },
+    "UNCERTAIN": {
+      "count": 19,
+      "hit": 0.4737,
+      "std": 0.4993
+    }
+  },
+  "worst_state": "UNCERTAIN",
+  "worst_hit": 0.4737,
+  "verdict": "STATE_OK"
+}

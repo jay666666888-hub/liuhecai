@@ -1,0 +1,101 @@
+{
+  "date": "2026-05-18",
+  "period": 2026138,
+  "market_state": "UNCERTAIN",
+  "top6": [
+    "鼠",
+    "兔",
+    "虎",
+    "牛",
+    "羊",
+    "猴"
+  ],
+  "expert_weights": {
+    "Gap": 0.25,
+    "Trend": 0.25,
+    "Momentum": 0.15,
+    "Frequency": 0.1,
+    "Color": 0.1,
+    "AntiTrend": 0.1,
+    "Cycle": 0.05
+  },
+  "expert_confidences": {
+    "Gap": 0.7766,
+    "Trend": 0.7766,
+    "Momentum": 0.7766,
+    "Frequency": 0.7766,
+    "Color": 0.7766,
+    "AntiTrend": 0.7766,
+    "Cycle": 0.7766
+  },
+  "confidence": 0.7766,
+  "zodiac_scores": {
+    "猴": 0.453,
+    "兔": 0.5533,
+    "鼠": 0.6795,
+    "虎": 0.5339,
+    "羊": 0.4563,
+    "牛": 0.4918,
+    "雞": 0.3074,
+    "龍": 0.3203,
+    "馬": 0.4465,
+    "狗": 0.2589,
+    "豬": 0.22,
+    "蛇": 0.3268
+  },
+  "raw_report": {
+    "market_state": "HOT",
+    "base_weights": {
+      "Gap": 0.25,
+      "Trend": 0.25,
+      "Momentum": 0.15,
+      "Frequency": 0.1,
+      "Color": 0.1,
+      "AntiTrend": 0.1,
+      "Cycle": 0.05
+    },
+    "color_weight": 0.0,
+    "aggregation": {
+      "expert_weights": {
+        "Gap": 0.25,
+        "Trend": 0.25,
+        "Momentum": 0.15,
+        "Frequency": 0.1,
+        "Color": 0.1,
+        "AntiTrend": 0.1,
+        "Cycle": 0.05
+      },
+      "expert_confidences": {
+        "Gap": 0.7766,
+        "Trend": 0.7766,
+        "Momentum": 0.7766,
+        "Frequency": 0.7766,
+        "Color": 0.7766,
+        "AntiTrend": 0.7766,
+        "Cycle": 0.7766
+      },
+      "zodiac_scores": {
+        "猴": 0.453,
+        "兔": 0.5533,
+        "鼠": 0.6795,
+        "虎": 0.5339,
+        "羊": 0.4563,
+        "牛": 0.4918,
+        "雞": 0.3074,
+        "龍": 0.3203,
+        "馬": 0.4465,
+        "狗": 0.2589,
+        "豬": 0.22,
+        "蛇": 0.3268
+      },
+      "top6": [
+        "鼠",
+        "兔",
+        "虎",
+        "牛",
+        "羊",
+        "猴"
+      ]
+    }
+  }
+}

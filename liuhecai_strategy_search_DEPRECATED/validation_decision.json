@@ -1,0 +1,9 @@
+{
+  "avg_feature_gain": 0.0,
+  "best_combination": "cycle",
+  "ensemble_gain": 0.0,
+  "ensemble_p_value": NaN,
+  "decision": "STOP",
+  "allowed_to_modularize": false,
+  "timestamp": "2026-05-20T23:57:11.510000"
+}

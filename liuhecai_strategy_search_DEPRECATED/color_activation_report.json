@@ -1,0 +1,8 @@
+{
+  "state": "HOT",
+  "color_confidence": 1.2,
+  "color_weight": 0.15,
+  "activated": true,
+  "rolling_hit_20": 0.6,
+  "baseline": 0.5
+}

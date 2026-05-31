@@ -1,0 +1,25 @@
+{
+  "repair_id": "repair_20260527_061550",
+  "timestamp": "2026-05-27T06:15:50.166366",
+  "phase": "P0_preparation",
+  "files": [
+    {
+      "src": "storage/aggregated_live.jsonl",
+      "dst": "storage/backup_pre_repair/aggregated_live.jsonl.pre_repair_20260527_061550",
+      "size": 2878323,
+      "sha256": "81373b2cd5603db02f5da9f1a3e3de3978375659aa0cc65fa369990823b8144e"
+    },
+    {
+      "src": "storage/prediction_index.json",
+      "dst": "storage/backup_pre_repair/prediction_index.json.pre_repair_20260527_061550",
+      "size": 2194,
+      "sha256": "1d587e02a66c0f1e22820e1b43980078751488d09cd78433fd945148852bc386"
+    },
+    {
+      "src": "version_book/index.json",
+      "dst": "storage/backup_pre_repair/version_book.index.json.pre_repair_20260527_061550",
+      "size": 2783,
+      "sha256": "f6aee5c0bdd143ad3c59507b62cbc7542ddccd9bab327bab2380a28dfbe36141"
+    }
+  ]
+}

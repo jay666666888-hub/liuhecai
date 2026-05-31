@@ -1,0 +1,1169 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>澳门六合预测面板</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Hiragino Sans GB', sans-serif;
+            background: #f5f5f7;
+            color: #1d1d1f;
+            min-height: 100vh;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        /* Header */
+        .header {
+            background: #fff;
+            padding: 20px 16px;
+            text-align: center;
+            border-bottom: 1px solid #e5e5e5;
+            position: relative;
+        }
+
+        .header h1 {
+            font-size: 20px;
+            font-weight: 600;
+            color: #1d1d1f;
+        }
+
+        .header-sub {
+            font-size: 12px;
+            color: #86868b;
+            margin-top: 4px;
+        }
+
+        /* Health Status Capsule */
+        .health-capsule {
+            position: absolute;
+            right: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: transform 0.15s, box-shadow 0.15s;
+            background: #f5f5f7;
+            border: 1px solid #e5e5e5;
+        }
+
+        .health-capsule:hover {
+            transform: translateY(-50%) scale(1.03);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .health-capsule.healthy { background: #e8f5e9; color: #2e7d32; border-color: #a5d6a7; }
+        .health-capsule.degraded { background: #fff8e1; color: #f57c00; border-color: #ffe082; }
+        .health-capsule.critical { background: #ffebee; color: #c62828; border-color: #ef9a9a; }
+        .health-capsule.unknown { background: #f5f5f7; color: #757575; border-color: #e0e0e0; }
+
+        .health-dot {
+            font-size: 8px;
+        }
+
+        /* Health Popover */
+        .health-popover {
+            position: absolute;
+            right: 16px;
+            top: 100%;
+            margin-top: 8px;
+            width: 260px;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+            padding: 16px;
+            z-index: 1000;
+            display: none;
+            opacity: 0;
+            transform: translateY(-8px);
+            transition: opacity 0.2s, transform 0.2s;
+        }
+
+        .health-popover.show {
+            display: block;
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .health-popover-header {
+            font-size: 14px;
+            font-weight: 600;
+            color: #1d1d1f;
+            margin-bottom: 4px;
+        }
+
+        .health-popover-time {
+            font-size: 11px;
+            color: #86868b;
+            margin-bottom: 12px;
+        }
+
+        .health-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px 0;
+            border-bottom: 1px solid #f0f0f0;
+            font-size: 13px;
+        }
+
+        .health-item:last-of-type {
+            border-bottom: none;
+        }
+
+        .health-item-label {
+            color: #1d1d1f;
+        }
+
+        .health-item-status {
+            font-weight: 600;
+        }
+
+        .health-item-status.ok { color: #34c759; }
+        .health-item-status.warn { color: #ff9500; }
+        .health-item-status.error { color: #ff3b30; }
+        .health-item-status.unknown { color: #c7c7c7; }
+
+        .health-popover-footer {
+            margin-top: 12px;
+            padding-top: 12px;
+            border-top: 1px solid #e5e5e5;
+            font-size: 12px;
+            color: #86868b;
+            text-align: center;
+        }
+
+        .health-popover-footer .status-label {
+            font-weight: 500;
+            color: #1d1d1f;
+        }
+
+        /* Dark mode support */
+        @media (prefers-color-scheme: dark) {
+            body { background: #1d1d1f; color: #f5f5f7; }
+            .header { background: #2d2d2f; border-bottom-color: #3d3d3f; }
+            .header h1 { color: #f5f5f7; }
+            .header-sub { color: #98989d; }
+            .health-capsule { background: #2d2d2f; border-color: #3d3d3f; }
+            .health-capsule.healthy { background: #1b3d1b; color: #6f6; border-color: #2e7d32; }
+            .health-capsule.degraded { background: #3d3020; color: #fa0; border-color: #f57c00; }
+            .health-capsule.critical { background: #3d1b1b; color: #f66; border-color: #c62828; }
+            .health-capsule.unknown { background: #2d2d2f; color: #98989d; border-color: #3d3d3f; }
+            .health-popover { background: #2d2d2f; box-shadow: 0 4px 20px rgba(0,0,0,0.4); }
+            .health-popover-header { color: #f5f5f7; }
+            .health-popover-time { color: #98989d; }
+            .health-item { border-bottom-color: #3d3d3f; }
+            .health-item-label { color: #f5f5f7; }
+            .health-popover-footer { border-top-color: #3d3d3f; color: #98989d; }
+            .health-popover-footer .status-label { color: #f5f5f7; }
+            .stats-row { background: #2d2d2f; border-bottom-color: #3d3d3f; }
+            .stat-item { border-right-color: #3d3d3f; }
+            .stat-num { color: #f5f5f7; }
+            .stat-label { color: #98989d; }
+            .version-section-header { color: #98989d; }
+            .version-card { background: #2d2d2f; box-shadow: 0 1px 3px rgba(0,0,0,0.3); }
+            .version-name { color: #f5f5f7; }
+            .version-stat-num { color: #f5f5f7; }
+            .section-header { color: #98989d; }
+            .record-list { background: #2d2d2f; }
+            .record-item { border-bottom-color: #3d3d3f; }
+            .record-issue { color: #f5f5f7; }
+            .pred-tag { background: #3d3d3f; color: #98989d; }
+            .current-section { background: linear-gradient(135deg, #0051a8 0%, #4240d6 100%); }
+            .footer { color: #98989d; }
+            .foundation-stats-section .section-header { color: #98989d; }
+            .foundation-category-header { color: #98989d; }
+            .foundation-card { background: #2d2d2f; box-shadow: 0 1px 3px rgba(0,0,0,0.3); }
+            .foundation-card-title { color: #f5f5f7; }
+            .foundation-row { color: #f5f5f7; }
+            .foundation-row-label { color: #98989d; }
+            .foundation-row-value { color: #f5f5f7; }
+        }
+
+        .refresh-btn {
+            position: absolute;
+            right: 16px;
+            top: 16px;
+            background: #007aff;
+            color: white;
+            border: none;
+            padding: 6px 16px;
+            border-radius: 6px;
+            font-size: 13px;
+            cursor: pointer;
+        }
+
+        .refresh-btn:active {
+            background: #0051a8;
+        }
+
+        /* Stats Row */
+        .stats-row {
+            display: flex;
+            background: #fff;
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        .stat-item {
+            flex: 1;
+            padding: 16px 8px;
+            text-align: center;
+            border-right: 1px solid #e5e5e5;
+        }
+
+        .stat-item:last-child { border-right: none; }
+
+        .stat-num {
+            font-size: 24px;
+            font-weight: 700;
+            color: #1d1d1f;
+        }
+
+        .stat-num.green { color: #34c759; }
+        .stat-num.red { color: #ff3b30; }
+
+        .stat-label {
+            font-size: 11px;
+            color: #86868b;
+            margin-top: 4px;
+        }
+
+        /* Version Cards */
+        .version-section {
+            padding: 12px;
+        }
+
+        .version-section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 13px;
+            color: #86868b;
+            font-weight: 500;
+            padding: 12px 16px 8px;
+        }
+
+        .back-btn {
+            font-size: 12px;
+            color: #007aff;
+            background: none;
+            border: none;
+            padding: 4px 8px;
+            cursor: pointer;
+            display: none;
+        }
+
+        .back-btn.show {
+            display: block;
+        }
+
+        .version-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+
+        .version-card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 14px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+            cursor: pointer;
+            transition: transform 0.1s, box-shadow 0.1s;
+        }
+
+        .version-card:active {
+            transform: scale(0.98);
+        }
+
+        .version-card.current {
+            border: 2px solid #007aff;
+        }
+
+        .version-card.frozen {
+            opacity: 0.7;
+        }
+
+        .version-card.selected {
+            background: #e8f0fe;
+            border: 2px solid #007aff;
+        }
+
+        .version-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .version-name {
+            font-size: 16px;
+            font-weight: 700;
+            color: #1d1d1f;
+        }
+
+        .version-badge {
+            font-size: 10px;
+            padding: 2px 6px;
+            border-radius: 4px;
+            background: #007aff;
+            color: #fff;
+        }
+
+        .version-badge.frozen {
+            background: #c7c7c7;
+        }
+
+        .version-stats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 8px;
+        }
+
+        .version-stat {
+            text-align: center;
+        }
+
+        .version-stat-num {
+            font-size: 18px;
+            font-weight: 700;
+            color: #1d1d1f;
+        }
+
+        .version-stat-num.highlight {
+            color: #007aff;
+        }
+
+        .version-stat-num.red { color: #ff3b30; }
+
+        .version-stat-label {
+            font-size: 10px;
+            color: #86868b;
+            margin-top: 2px;
+        }
+
+        /* Current Prediction Card */
+        .current-section {
+            background: linear-gradient(135deg, #007aff 0%, #5856d6 100%);
+            margin: 12px;
+            border-radius: 12px;
+            padding: 20px;
+            color: #fff;
+        }
+
+        .current-label {
+            font-size: 12px;
+            opacity: 0.8;
+            margin-bottom: 8px;
+        }
+
+        .current-issue {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 16px;
+        }
+
+        .current-zodiac {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .current-prediction {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .zodiac-tag {
+            background: rgba(255,255,255,0.2);
+            padding: 10px 16px;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        /* Record List */
+        .section-header {
+            font-size: 13px;
+            color: #86868b;
+            font-weight: 500;
+            padding: 12px 16px 8px;
+        }
+
+        .record-list {
+            background: #fff;
+            margin: 0 12px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+        }
+
+        .record-item {
+            padding: 14px 16px;
+            border-bottom: 1px solid #f0f0f0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .record-item:last-child { border-bottom: none; }
+
+        .record-left {}
+
+        .record-issue {
+            font-size: 16px;
+            font-weight: 600;
+            color: #1d1d1f;
+        }
+
+        .record-prediction {
+            display: flex;
+            gap: 4px;
+            margin-top: 6px;
+        }
+
+        .pred-tag {
+            font-size: 12px;
+            color: #86868b;
+            background: #f5f5f7;
+            padding: 2px 6px;
+            border-radius: 4px;
+        }
+
+        .record-right {
+            text-align: right;
+        }
+
+        .record-result {
+            font-size: 20px;
+            font-weight: 700;
+            color: #1d1d1f;
+        }
+
+        .record-status {
+            font-size: 12px;
+            font-weight: 500;
+            margin-top: 4px;
+        }
+
+        .record-status.hit { color: #34c759; }
+        .record-status.miss { color: #ff3b30; }
+        .record-status.pending { color: #ff9500; }
+
+        /* Spinner */
+        .spinner {
+            width: 24px;
+            height: 24px;
+            border: 2px solid #e5e5e5;
+            border-top-color: #007aff;
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+            margin: 20px auto;
+        }
+
+        @keyframes spin { to { transform: rotate(360deg); } }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 20px;
+            color: #c7c7c7;
+            font-size: 11px;
+        }
+
+        /* Foundation Stats Section */
+        .foundation-stats-section {
+            padding: 0 12px 12px;
+        }
+
+        .foundation-stats-section .section-header {
+            padding-left: 0;
+        }
+
+        .foundation-category {
+            margin-bottom: 12px;
+        }
+
+        .foundation-category-header {
+            font-size: 12px;
+            font-weight: 600;
+            color: #86868b;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .foundation-meta {
+            font-size: 10px;
+            font-weight: 400;
+            color: #c7c7c7;
+        }
+
+        .foundation-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 8px;
+        }
+
+        .foundation-card {
+            background: #fff;
+            border-radius: 10px;
+            padding: 12px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+        }
+
+        .foundation-card-title {
+            font-size: 13px;
+            font-weight: 600;
+            color: #1d1d1f;
+            margin-bottom: 8px;
+        }
+
+        .foundation-card-data {
+            font-size: 12px;
+        }
+
+        .foundation-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 3px 0;
+            color: #1d1d1f;
+        }
+
+        .foundation-row-label {
+            color: #86868b;
+        }
+
+        .foundation-row-value {
+            font-weight: 600;
+        }
+
+        .foundation-row-value.miss {
+            color: #ff3b30;
+        }
+
+        .foundation-row-value.hot {
+            color: #ff9500;
+        }
+
+        .foundation-error {
+            font-size: 12px;
+            color: #ff3b30;
+            padding: 8px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>澳门六合预测</h1>
+        <div class="header-sub">版本账本 · 只展示事实</div>
+        <button class="refresh-btn" onclick="refreshData()">刷新</button>
+
+        <div class="health-capsule unknown" id="health-capsule" onclick="toggleHealthPopover()">
+            <span class="health-dot" id="health-dot">⚪️</span>
+            <span id="health-text">状态加载中</span>
+        </div>
+
+        <div class="health-popover" id="health-popover">
+            <div class="health-popover-header">系统健康状态</div>
+            <div class="health-popover-time" id="health-update-time">更新时间: --:--:--</div>
+            <div class="health-item">
+                <span class="health-item-label">数据源</span>
+                <span class="health-item-status unknown" id="health-data">-</span>
+            </div>
+            <div class="health-item">
+                <span class="health-item-label">缓存层</span>
+                <span class="health-item-status unknown" id="health-cache">-</span>
+            </div>
+            <div class="health-item">
+                <span class="health-item-label">Hash链</span>
+                <span class="health-item-status unknown" id="health-hash">-</span>
+            </div>
+            <div class="health-item">
+                <span class="health-item-label">预测流水线</span>
+                <span class="health-item-status unknown" id="health-pipeline">-</span>
+            </div>
+            <div class="health-popover-footer">
+                状态: <span class="status-label" id="health-popover-status">加载中</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="stats-row" id="stats-row">
+        <div class="stat-item">
+            <div class="stat-num" id="stat-total">-</div>
+            <div class="stat-label">总命中率</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-num green" id="stat-hit">-</div>
+            <div class="stat-label">近100期</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-num" id="stat-rate">-</div>
+            <div class="stat-label">近50期</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-num red" id="stat-streak">-</div>
+            <div class="stat-label">最高连错</div>
+        </div>
+    </div>
+
+    <div class="foundation-stats-section" id="foundation-stats-section" style="display:none;">
+        <div class="section-header" id="foundation-header">统计数据</div>
+        <div id="foundation-content">
+            <div class="spinner"></div>
+        </div>
+    </div>
+
+    <div class="version-section">
+        <div class="version-section-header">
+            <span id="version-section-title">版本账本</span>
+            <button class="back-btn" id="back-btn" onclick="showCurrentVersion()">← 返回v12</button>
+        </div>
+        <div class="version-grid" id="version-grid">
+            <div class="spinner"></div>
+        </div>
+    </div>
+
+    <div class="current-section" id="current-section">
+        <div class="current-label">下一期预测</div>
+        <div class="current-issue" id="current-issue">-</div>
+        <div class="current-prediction" id="current-prediction"></div>
+    </div>
+
+    <div class="section-header" id="records-header">近期记录</div>
+
+    <div class="record-list" id="record-list">
+        <div class="spinner"></div>
+    </div>
+
+    <div class="footer">
+        有变更时自动刷新
+    </div>
+
+    <script>
+        let currentView = 'v23';
+        let versionsData = null;
+
+        function renderCurrentPrediction(data) {
+            const currentSection = document.getElementById('current-section');
+            const currentIssue = document.getElementById('current-issue');
+            const currentPrediction = document.getElementById('current-prediction');
+
+            // 找pending的记录
+            const pending = data.records.find(r => r.actual === undefined || r.actual === null);
+            if (pending) {
+                currentIssue.textContent = pending.issue;
+                currentPrediction.innerHTML = pending.prediction.map(z =>
+                    `<span class="zodiac-tag">${z}</span>`
+                ).join('');
+                currentSection.style.display = 'block';
+            } else {
+                currentSection.style.display = 'none';
+            }
+        }
+
+        async function loadData() {
+            try {
+                const [dataRes, versionsRes] = await Promise.all([
+                    fetch('/api/data'),
+                    fetch('/api/versions')
+                ]);
+                const data = await dataRes.json();
+                versionsData = await versionsRes.json();
+                renderStats(data.stats);
+                renderVersionGrid(versionsData);
+                renderCurrentPrediction(data);
+                await loadRecords(currentView);
+            } catch (e) {
+                console.error('加载失败:', e);
+            }
+        }
+
+        function renderStats(stats) {
+            document.getElementById('stat-total').textContent = (stats.hit_rate * 100).toFixed(2) + '%';
+            document.getElementById('stat-hit').textContent = (stats.hit_rate_100 * 100).toFixed(2) + '%';
+            document.getElementById('stat-rate').textContent = (stats.hit_rate_50 * 100).toFixed(2) + '%';
+            document.getElementById('stat-streak').textContent = stats.max_streak + '期';
+        }
+
+        function renderVersionGrid(versions) {
+            const currentVersion = versions.current;
+            const summary = versions.summary || [];
+
+            const versionGrid = document.getElementById('version-grid');
+            versionGrid.innerHTML = summary.map(v => {
+                const isCurrent = v.version === currentVersion;
+                const frozenClass = v.frozen ? 'frozen' : '';
+                const currentClass = isCurrent ? 'current' : '';
+                const selectedClass = currentView === v.version ? 'selected' : '';
+                return `
+                    <div class="version-card ${currentClass} ${frozenClass} ${selectedClass}"
+                         onclick="selectVersion('${v.version}')">
+                        <div class="version-header">
+                            <span class="version-name">${v.version.toUpperCase()}</span>
+                            <span class="version-badge ${frozenClass}">${v.frozen ? '已冻结' : '运行中'}</span>
+                        </div>
+                        <div class="version-stats">
+                            <div class="version-stat">
+                                <div class="version-stat-num highlight">${(v.backtest_hit_rate * 100).toFixed(2)}%</div>
+                                <div class="version-stat-label">回测命中率</div>
+                            </div>
+                            <div class="version-stat">
+                                <div class="version-stat-num">${(v.live_hit_rate * 100).toFixed(2)}%</div>
+                                <div class="version-stat-label">实盘命中率</div>
+                            </div>
+                            <div class="version-stat">
+                                <div class="version-stat-num">${v.live_predictions || 0}</div>
+                                <div class="version-stat-label">预测期数</div>
+                            </div>
+                            <div class="version-stat">
+                                <div class="version-stat-num red">${v.live_max_streak || 0}</div>
+                                <div class="version-stat-label">最高连错</div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        async function selectVersion(version) {
+            currentView = version;
+            const backBtn = document.getElementById('back-btn');
+            const sectionTitle = document.getElementById('version-section-title');
+
+            if (version !== 'v12') {
+                backBtn.classList.add('show');
+                sectionTitle.textContent = '查看: ' + version.toUpperCase();
+            } else {
+                backBtn.classList.remove('show');
+                sectionTitle.textContent = '版本账本';
+            }
+
+            renderVersionGrid(versionsData);
+            await loadRecords(version);
+        }
+
+        async function showCurrentVersion() {
+            await selectVersion('v12');
+        }
+
+        async function loadRecords(version) {
+            try {
+                const recordsRes = await fetch(`/api/records?source=backtest&version=${version}`);
+                const data = await recordsRes.json();
+
+                renderStats(data.stats);
+                renderRecords(data.records, version);
+            } catch (e) {
+                console.error('加载记录失败:', e);
+            }
+        }
+
+        function renderRecords(records, version) {
+            const currentVersion = versionsData ? versionsData.current : 'v12';
+            const recordsHeader = document.getElementById('records-header');
+            recordsHeader.textContent = version === currentVersion ? '近期记录' : version.toUpperCase() + ' 记录';
+
+            // 按期号排序（最新在前）
+            const sorted = [...records].sort((a, b) => b.issue - a.issue);
+            // 优先显示 pending（最新待开奖）
+            const pendingRecords = sorted.filter(r => r.actual === undefined || r.actual === null);
+            const verifiedRecords = sorted.filter(r => r.actual !== undefined && r.actual !== null);
+            const displayRecords = pendingRecords.concat(verifiedRecords);
+
+            if (displayRecords.length === 0) {
+                document.getElementById('record-list').innerHTML = '<div class="spinner"></div>';
+                return;
+            }
+
+            const html = displayRecords.map(r => {
+                let statusClass, statusText;
+                const actual = r.actual;
+                if (actual === undefined || actual === null) {
+                    statusClass = 'pending';
+                    statusText = '待开奖';
+                } else if (r.hit) {
+                    statusClass = 'hit';
+                    statusText = '命中 ✓';
+                } else {
+                    statusClass = 'miss';
+                    statusText = '未中 ✗';
+                }
+
+                return `
+                    <div class="record-item">
+                        <div class="record-left">
+                            <div class="record-issue">${r.issue}</div>
+                            <div class="record-prediction">
+                                ${r.prediction.map(z => `<span class="pred-tag">${z}</span>`).join('')}
+                            </div>
+                        </div>
+                        <div class="record-right">
+                            <div class="record-result">${actual || '-'}</div>
+                            <div class="record-status ${statusClass}">${statusText}</div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+
+            document.getElementById('record-list').innerHTML = html;
+        }
+
+        // 手动刷新按钮
+        function refreshData() {
+            loadData();
+        }
+
+        // 有变更时刷新（每5分钟检查一次）
+        async function pollForUpdates() {
+            try {
+                const res = await fetch('/api/data');
+                const data = await res.json();
+                const firstRecord = data.records[0];
+
+                // 如果最新记录变了，刷新页面
+                if (window.lastestIssue && window.lastestIssue !== firstRecord.issue) {
+                    location.reload();
+                }
+                window.lastestIssue = firstRecord.issue;
+            } catch (e) {}
+        }
+
+        loadData();
+        setInterval(pollForUpdates, 300000); // 5分钟检查一次
+
+        // Health Status
+        let healthPopoverOpen = false;
+        let healthCache = null;
+        let healthInterval = null;
+
+        const STATUS_MAP = {
+            healthy: { dot: '🟢', text: '正常运行', class: 'healthy', popoverClass: 'healthy' },
+            degraded: { dot: '🟡', text: '部分异常', class: 'degraded', popoverClass: 'degraded' },
+            critical: { dot: '🔴', text: '严重异常', class: 'critical', popoverClass: 'critical' },
+            unknown: { dot: '⚪️', text: '状态不可用', class: 'unknown', popoverClass: 'unknown' }
+        };
+
+        const ITEM_STATUS_MAP = {
+            ok: { symbol: '✓', class: 'ok' },
+            warn: { symbol: '⚠️', class: 'warn' },
+            error: { symbol: '✗', class: 'error' },
+            unknown: { symbol: '?', class: 'unknown' }
+        };
+
+        function getItemStatus(status) {
+            if (status === 'ok') return ITEM_STATUS_MAP.ok;
+            if (status === 'degraded') return ITEM_STATUS_MAP.warn;
+            if (status === 'critical') return ITEM_STATUS_MAP.error;
+            return ITEM_STATUS_MAP.unknown;
+        }
+
+        async function fetchHealthSummary() {
+            try {
+                const controller = new AbortController();
+                const timeoutId = setTimeout(() => controller.abort(), 3000);
+                const res = await fetch('/health', { signal: controller.signal });
+                clearTimeout(timeoutId);
+                if (!res.ok) throw new Error('health endpoint error');
+                const data = await res.json();
+                healthCache = data;
+                updateHealthCapsule(data);
+            } catch (e) {
+                healthCache = { status: 'unknown', timestamp: new Date().toISOString(), checks: [] };
+                updateHealthCapsule(healthCache);
+            }
+        }
+
+        function updateHealthCapsule(data) {
+            const statusInfo = STATUS_MAP[data.status] || STATUS_MAP.unknown;
+            const capsule = document.getElementById('health-capsule');
+            const dot = document.getElementById('health-dot');
+            const text = document.getElementById('health-text');
+
+            capsule.className = 'health-capsule ' + statusInfo.class;
+            dot.textContent = statusInfo.dot;
+            text.textContent = statusInfo.text;
+
+            // Update popover if open
+            if (healthPopoverOpen) {
+                updateHealthPopover(data);
+            }
+        }
+
+        async function fetchDetailedHealth() {
+            try {
+                const [dataRes, cacheRes, hashRes, pipelineRes] = await Promise.all([
+                    fetch('/health/data', { signal: AbortSignal.timeout(3000) }),
+                    fetch('/health/cache', { signal: AbortSignal.timeout(3000) }),
+                    fetch('/health/hashchain', { signal: AbortSignal.timeout(3000) }),
+                    fetch('/health/pipeline', { signal: AbortSignal.timeout(3000) })
+                ]);
+
+                const data = await dataRes.json();
+                const cache = await cacheRes.json();
+                const hash = await hashRes.json();
+                const pipeline = await pipelineRes.json();
+
+                const now = new Date();
+                document.getElementById('health-update-time').textContent = '更新时间: ' +
+                    now.toLocaleTimeString('zh-CN', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+
+                updateItemStatus('health-data', data.status || 'unknown');
+                updateItemStatus('health-cache', cache.status || 'unknown');
+                updateItemStatus('health-hash', hash.status || 'unknown');
+                updateItemStatus('health-pipeline', pipeline.status || 'unknown');
+
+                // Determine overall status from individual checks
+                const statuses = [data.status, cache.status, hash.status, pipeline.status];
+                let overall = 'healthy';
+                if (statuses.includes('critical')) overall = 'critical';
+                else if (statuses.includes('degraded')) overall = 'degraded';
+
+                const statusInfo = STATUS_MAP[overall] || STATUS_MAP.unknown;
+                document.getElementById('health-popover-status').textContent = statusInfo.text;
+
+            } catch (e) {
+                document.getElementById('health-update-time').textContent = '更新时间: --:--:--';
+                updateItemStatus('health-data', 'unknown');
+                updateItemStatus('health-cache', 'unknown');
+                updateItemStatus('health-hash', 'unknown');
+                updateItemStatus('health-pipeline', 'unknown');
+                document.getElementById('health-popover-status').textContent = '状态不可用';
+            }
+        }
+
+        function updateItemStatus(id, status) {
+            const el = document.getElementById(id);
+            const info = getItemStatus(status);
+            el.textContent = info.symbol;
+            el.className = 'health-item-status ' + info.class;
+        }
+
+        function updateHealthPopover(data) {
+            if (!data || !data.checks) return;
+            const checkMap = {};
+            data.checks.forEach(c => { checkMap[c.name] = c.status; });
+
+            const now = new Date();
+            document.getElementById('health-update-time').textContent = '更新时间: ' +
+                now.toLocaleTimeString('zh-CN', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+
+            updateItemStatus('health-data', checkMap.data || 'unknown');
+            updateItemStatus('health-cache', checkMap.cache || 'unknown');
+            updateItemStatus('health-hash', checkMap.hashchain || 'unknown');
+            updateItemStatus('health-pipeline', checkMap.pipeline || 'unknown');
+
+            const statusInfo = STATUS_MAP[data.status] || STATUS_MAP.unknown;
+            document.getElementById('health-popover-status').textContent = statusInfo.text;
+        }
+
+        function toggleHealthPopover() {
+            healthPopoverOpen = !healthPopoverOpen;
+            const popover = document.getElementById('health-popover');
+            popover.classList.toggle('show', healthPopoverOpen);
+
+            if (healthPopoverOpen) {
+                // If we have cached data, show it immediately
+                if (healthCache) {
+                    updateHealthPopover(healthCache);
+                }
+                // Then fetch detailed data
+                fetchDetailedHealth();
+            }
+        }
+
+        // Close popover when clicking outside
+        document.addEventListener('click', function(e) {
+            const capsule = document.getElementById('health-capsule');
+            const popover = document.getElementById('health-popover');
+            if (!capsule.contains(e.target) && !popover.contains(e.target)) {
+                popover.classList.remove('show');
+                healthPopoverOpen = false;
+            }
+        });
+
+        // Initial load - fetch summary every 30s
+        fetchHealthSummary();
+        healthInterval = setInterval(fetchHealthSummary, 30000);
+
+        // Foundation Stats - Auto Discover, Fetch, Render
+        async function loadFoundationStats() {
+            const container = document.getElementById('foundation-stats-section');
+            const content = document.getElementById('foundation-content');
+            const header = document.getElementById('foundation-header');
+
+            try {
+                // Step 1: Discover categories
+                const catRes = await fetch('/api/stats/categories');
+                if (!catRes.ok) throw new Error('categories endpoint error');
+                const categories = await catRes.json();
+
+                // Check if any category has stats
+                const hasStats = Object.keys(categories).some(cat =>
+                    categories[cat].stats_files && categories[cat].stats_files.length > 0
+                );
+
+                if (!hasStats) {
+                    container.style.display = 'none';
+                    return;
+                }
+
+                container.style.display = 'block';
+
+                // Step 2: Fetch all stats files for each category
+                const statsPromises = [];
+                const categoryNames = [];
+
+                for (const [catName, catData] of Object.entries(categories)) {
+                    if (catData.stats_files && catData.stats_files.length > 0) {
+                        categoryNames.push({ name: catName, data: catData });
+                        for (const statFile of catData.stats_files) {
+                            const statType = statFile.replace('.json', '');
+                            statsPromises.push(
+                                fetch(`/api/stats/${catName}/${statType}`)
+                                    .then(res => res.json())
+                                    .then(data => ({ category: catName, type: statType, data: data.data || data }))
+                                    .catch(() => null)
+                            );
+                        }
+                    }
+                }
+
+                const results = await Promise.all(statsPromises);
+                const validResults = results.filter(r => r && r.data);
+
+                if (validResults.length === 0) {
+                    content.innerHTML = '<div class="foundation-error">暂无统计数据</div>';
+                    return;
+                }
+
+                // Step 3: Render by category
+                let html = '';
+                for (const { name: catName, data: catData } of categoryNames) {
+                    const catStats = validResults.filter(r => r.category === catName);
+                    if (catStats.length === 0) continue;
+
+                    const latestIssue = catData.latest_issue || '-';
+                    const computedAt = catData.computed_at
+                        ? new Date(catData.computed_at).toLocaleTimeString('zh-CN', { hour: '2-digit', minute: '2-digit', second: '2-digit' })
+                        : '-';
+
+                    html += `
+                        <div class="foundation-category">
+                            <div class="foundation-category-header">
+                                ${catName}
+                                <span class="foundation-meta">期号: ${latestIssue} | 更新: ${computedAt}</span>
+                            </div>
+                            <div class="foundation-cards">
+                                ${catStats.map(stat => renderFoundationCard(stat.type, stat.data)).join('')}
+                            </div>
+                        </div>
+                    `;
+                }
+
+                content.innerHTML = html;
+
+            } catch (e) {
+                console.error('Foundation stats load failed:', e);
+                content.innerHTML = '<div class="foundation-error">加载失败</div>';
+            }
+        }
+
+        function renderFoundationCard(type, statData) {
+            // Direct render: no computation, no filtering, no ranking
+            // statData is the full stats object with data.data as the actual data
+            const data = statData.data || statData;
+
+            let rows = '';
+
+            if (type === 'zodiac_miss') {
+                const items = data.data || data;
+                for (const [zodiac, info] of Object.entries(items)) {
+                    if (typeof info !== 'object') continue;
+                    const missClass = info.current_miss > 50 ? 'miss' : '';
+                    rows += `
+                        <div class="foundation-row">
+                            <span class="foundation-row-label">${zodiac}</span>
+                            <span class="foundation-row-value ${missClass}">${info.current_miss}期</span>
+                        </div>
+                    `;
+                }
+            } else if (type === 'wave_miss') {
+                const items = data.data || data;
+                for (const [wave, info] of Object.entries(items)) {
+                    if (typeof info !== 'object') continue;
+                    const missClass = info.current_miss > 10 ? 'miss' : '';
+                    rows += `
+                        <div class="foundation-row">
+                            <span class="foundation-row-label">${wave}</span>
+                            <span class="foundation-row-value ${missClass}">${info.current_miss}期</span>
+                        </div>
+                    `;
+                }
+            } else if (type === 'hot_stats') {
+                const items = data.data || data;
+                const firstZodiac = Object.values(items)[0] || {};
+                const effectiveWindow = firstZodiac.effective_window || 50;
+
+                for (const [zodiac, info] of Object.entries(items)) {
+                    if (typeof info !== 'object') continue;
+                    const hotClass = info.hot_50 > 40 ? 'hot' : '';
+                    rows += `
+                        <div class="foundation-row">
+                            <span class="foundation-row-label">${zodiac}</span>
+                            <span class="foundation-row-value ${hotClass}">${info.hot_10 || 0}|${info.hot_30 || 0}|${info.hot_50 || 0}</span>
+                        </div>
+                    `;
+                }
+                rows = `
+                    <div class="foundation-row" style="font-size:10px;color:#c7c7c7;">
+                        窗口: ${effectiveWindow}期 | 显示: 10|30|50期
+                    </div>
+                ` + rows;
+            } else {
+                // Generic fallback for other stats types - only iterate data.data
+                const items = data.data || data;
+                for (const [key, value] of Object.entries(items)) {
+                    if (typeof value !== 'object') continue;
+                    const displayValue = Object.entries(value)
+                        .map(([k, v]) => `${k}=${v}`)
+                        .join(', ');
+                    rows += `
+                        <div class="foundation-row">
+                            <span class="foundation-row-label">${key}</span>
+                            <span class="foundation-row-value">${displayValue}</span>
+                        </div>
+                    `;
+                }
+            }
+
+            return `
+                <div class="foundation-card">
+                    <div class="foundation-card-title">${type}</div>
+                    <div class="foundation-card-data">
+                        ${rows}
+                    </div>
+                </div>
+            `;
+        }
+
+        // Load foundation stats on initial load
+        loadFoundationStats();
+        setInterval(loadFoundationStats, 300000); // 5分钟刷新
+    </script>
+</body>
+</html>

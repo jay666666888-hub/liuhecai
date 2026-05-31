@@ -1,0 +1,41 @@
+{
+  "dynamic_hit": 0.515,
+  "static_hit": 0.5081,
+  "avg_delta_hit": 0.0069,
+  "per_start": [
+    {
+      "start": 200,
+      "dynamic_hit": 0.465,
+      "static_hit": 0.4963,
+      "dynamic_r30": 0.6333333333333333,
+      "static_r30": 0.5333,
+      "delta_hit": -0.031299999999999994
+    },
+    {
+      "start": 300,
+      "dynamic_hit": 0.54,
+      "static_hit": 0.5262,
+      "dynamic_r30": 0.6666666666666666,
+      "static_r30": 0.5667,
+      "delta_hit": 0.013800000000000034
+    },
+    {
+      "start": 400,
+      "dynamic_hit": 0.54,
+      "static_hit": 0.5088,
+      "dynamic_r30": 0.5,
+      "static_r30": 0.4333,
+      "delta_hit": 0.031200000000000006
+    },
+    {
+      "start": 450,
+      "dynamic_hit": 0.515,
+      "static_hit": 0.5012,
+      "dynamic_r30": 0.36666666666666664,
+      "static_r30": 0.4333,
+      "delta_hit": 0.013800000000000034
+    }
+  ],
+  "winner": "DYNAMIC_HIT",
+  "gate": "EDGE_CONFIRMED"
+}

@@ -1,0 +1,752 @@
+[
+  {
+    "rank": 1,
+    "strategy_id": "ind_81560",
+    "test_hit_rate": 0.564,
+    "train_hit_rate": 0.5224,
+    "score": 0.7112,
+    "top6": [
+      "gap_猴",
+      "gap_羊",
+      "freq_20_猴",
+      "gap_马",
+      "streak_马",
+      "freq_50_兔"
+    ]
+  },
+  {
+    "rank": 2,
+    "strategy_id": "ind_39847",
+    "test_hit_rate": 0.5653,
+    "train_hit_rate": 0.5292,
+    "score": 0.7108,
+    "top6": [
+      "gap_羊",
+      "gap_蛇",
+      "gap_马",
+      "gap_猴",
+      "freq_20_马",
+      "freq_10_豬"
+    ]
+  },
+  {
+    "rank": 3,
+    "strategy_id": "ind_15140",
+    "test_hit_rate": 0.56,
+    "train_hit_rate": 0.5332,
+    "score": 0.7102,
+    "top6": [
+      "gap_马",
+      "gap_羊",
+      "freq_20_兔",
+      "streak_羊",
+      "freq_20_鼠",
+      "freq_20_马"
+    ]
+  },
+  {
+    "rank": 4,
+    "strategy_id": "ind_27000",
+    "test_hit_rate": 0.5627,
+    "train_hit_rate": 0.5248,
+    "score": 0.7098,
+    "top6": [
+      "gap_羊",
+      "gap_马",
+      "gap_龍",
+      "gap_猴",
+      "gap_蛇",
+      "color_freq_10_red"
+    ]
+  },
+  {
+    "rank": 5,
+    "strategy_id": "ind_43685",
+    "test_hit_rate": 0.5587,
+    "train_hit_rate": 0.5284,
+    "score": 0.7097,
+    "top6": [
+      "gap_猴",
+      "gap_羊",
+      "gap_马",
+      "freq_10_豬",
+      "gap_兔",
+      "streak_马"
+    ]
+  },
+  {
+    "rank": 6,
+    "strategy_id": "ind_98438",
+    "test_hit_rate": 0.5547,
+    "train_hit_rate": 0.5196,
+    "score": 0.709,
+    "top6": [
+      "gap_猴",
+      "gap_羊",
+      "gap_蛇",
+      "gap_马",
+      "gap_兔",
+      "streak_马"
+    ]
+  },
+  {
+    "rank": 7,
+    "strategy_id": "ind_62965",
+    "test_hit_rate": 0.556,
+    "train_hit_rate": 0.5288,
+    "score": 0.7087,
+    "top6": [
+      "gap_羊",
+      "color_freq_10_green",
+      "gap_兔",
+      "freq_10_牛",
+      "streak_马",
+      "freq_10_虎"
+    ]
+  },
+  {
+    "rank": 8,
+    "strategy_id": "ind_28835",
+    "test_hit_rate": 0.552,
+    "train_hit_rate": 0.5216,
+    "score": 0.7079,
+    "top6": [
+      "color_freq_10_red",
+      "gap_羊",
+      "gap_兔",
+      "gap_猴",
+      "freq_20_马",
+      "streak_马"
+    ]
+  },
+  {
+    "rank": 9,
+    "strategy_id": "ind_93850",
+    "test_hit_rate": 0.5547,
+    "train_hit_rate": 0.5251,
+    "score": 0.7077,
+    "top6": [
+      "gap_羊",
+      "gap_兔",
+      "gap_鼠",
+      "streak_马",
+      "gap_蛇",
+      "freq_20_羊"
+    ]
+  },
+  {
+    "rank": 10,
+    "strategy_id": "ind_87799",
+    "test_hit_rate": 0.5573,
+    "train_hit_rate": 0.5201,
+    "score": 0.7075,
+    "top6": [
+      "gap_兔",
+      "gap_羊",
+      "gap_猴",
+      "freq_10_豬",
+      "streak_马",
+      "freq_50_兔"
+    ]
+  },
+  {
+    "rank": 11,
+    "strategy_id": "ind_63937",
+    "test_hit_rate": 0.548,
+    "train_hit_rate": 0.5261,
+    "score": 0.7075,
+    "top6": [
+      "gap_羊",
+      "gap_蛇",
+      "gap_猴",
+      "freq_10_马",
+      "freq_20_雞",
+      "color_freq_10_blue"
+    ]
+  },
+  {
+    "rank": 12,
+    "strategy_id": "ind_30147",
+    "test_hit_rate": 0.552,
+    "train_hit_rate": 0.5258,
+    "score": 0.7073,
+    "top6": [
+      "gap_羊",
+      "color_freq_10_red",
+      "freq_10_虎",
+      "freq_20_雞",
+      "freq_20_兔",
+      "freq_10_鼠"
+    ]
+  },
+  {
+    "rank": 13,
+    "strategy_id": "ind_44706",
+    "test_hit_rate": 0.5587,
+    "train_hit_rate": 0.5282,
+    "score": 0.7072,
+    "top6": [
+      "gap_蛇",
+      "gap_猴",
+      "streak_马",
+      "freq_10_马",
+      "freq_20_龍",
+      "freq_50_狗"
+    ]
+  },
+  {
+    "rank": 14,
+    "strategy_id": "ind_31593",
+    "test_hit_rate": 0.5627,
+    "train_hit_rate": 0.5222,
+    "score": 0.7072,
+    "top6": [
+      "gap_马",
+      "gap_羊",
+      "streak_马",
+      "freq_20_兔",
+      "freq_20_马",
+      "freq_50_狗"
+    ]
+  },
+  {
+    "rank": 15,
+    "strategy_id": "ind_51523",
+    "test_hit_rate": 0.5533,
+    "train_hit_rate": 0.5201,
+    "score": 0.707,
+    "top6": [
+      "gap_猴",
+      "gap_羊",
+      "freq_20_猴",
+      "streak_马",
+      "freq_50_兔",
+      "streak_兔"
+    ]
+  },
+  {
+    "rank": 16,
+    "strategy_id": "ind_40474",
+    "test_hit_rate": 0.5627,
+    "train_hit_rate": 0.5246,
+    "score": 0.707,
+    "top6": [
+      "gap_马",
+      "gap_猴",
+      "gap_兔",
+      "gap_羊",
+      "gap_蛇",
+      "freq_10_龍"
+    ]
+  },
+  {
+    "rank": 17,
+    "strategy_id": "ind_22610",
+    "test_hit_rate": 0.5547,
+    "train_hit_rate": 0.5206,
+    "score": 0.7069,
+    "top6": [
+      "gap_羊",
+      "streak_马",
+      "freq_20_马",
+      "gap_兔",
+      "freq_50_狗",
+      "freq_10_雞"
+    ]
+  },
+  {
+    "rank": 18,
+    "strategy_id": "ind_24911",
+    "test_hit_rate": 0.5533,
+    "train_hit_rate": 0.5208,
+    "score": 0.7065,
+    "top6": [
+      "gap_兔",
+      "gap_猴",
+      "gap_蛇",
+      "streak_马",
+      "freq_50_兔",
+      "freq_50_马"
+    ]
+  },
+  {
+    "rank": 19,
+    "strategy_id": "ind_22405",
+    "test_hit_rate": 0.5587,
+    "train_hit_rate": 0.5284,
+    "score": 0.7061,
+    "top6": [
+      "gap_猴",
+      "gap_兔",
+      "gap_蛇",
+      "freq_20_蛇",
+      "streak_马",
+      "freq_50_兔"
+    ]
+  },
+  {
+    "rank": 20,
+    "strategy_id": "ind_19792",
+    "test_hit_rate": 0.5547,
+    "train_hit_rate": 0.5206,
+    "score": 0.7054,
+    "top6": [
+      "gap_羊",
+      "streak_马",
+      "freq_20_虎",
+      "freq_10_马",
+      "streak_蛇",
+      "freq_20_雞"
+    ]
+  },
+  {
+    "rank": 21,
+    "strategy_id": "ind_84485",
+    "test_hit_rate": 0.552,
+    "train_hit_rate": 0.5239,
+    "score": 0.7051,
+    "top6": [
+      "gap_羊",
+      "gap_猴",
+      "gap_马",
+      "gap_蛇",
+      "streak_兔",
+      "freq_10_羊"
+    ]
+  },
+  {
+    "rank": 22,
+    "strategy_id": "ind_87928",
+    "test_hit_rate": 0.556,
+    "train_hit_rate": 0.5258,
+    "score": 0.705,
+    "top6": [
+      "gap_马",
+      "gap_兔",
+      "gap_羊",
+      "streak_马",
+      "freq_20_兔",
+      "streak_羊"
+    ]
+  },
+  {
+    "rank": 23,
+    "strategy_id": "ind_18794",
+    "test_hit_rate": 0.5507,
+    "train_hit_rate": 0.5204,
+    "score": 0.7046,
+    "top6": [
+      "gap_猴",
+      "gap_羊",
+      "freq_50_兔",
+      "freq_20_猴",
+      "gap_马",
+      "streak_马"
+    ]
+  },
+  {
+    "rank": 24,
+    "strategy_id": "ind_26393",
+    "test_hit_rate": 0.5507,
+    "train_hit_rate": 0.5134,
+    "score": 0.7046,
+    "top6": [
+      "gap_马",
+      "gap_猴",
+      "gap_兔",
+      "gap_蛇",
+      "freq_10_虎",
+      "streak_马"
+    ]
+  },
+  {
+    "rank": 25,
+    "strategy_id": "ind_23893",
+    "test_hit_rate": 0.5587,
+    "train_hit_rate": 0.5253,
+    "score": 0.7044,
+    "top6": [
+      "gap_马",
+      "gap_羊",
+      "gap_蛇",
+      "streak_马",
+      "freq_20_龍",
+      "freq_20_羊"
+    ]
+  },
+  {
+    "rank": 26,
+    "strategy_id": "ind_54256",
+    "test_hit_rate": 0.556,
+    "train_hit_rate": 0.5308,
+    "score": 0.7043,
+    "top6": [
+      "gap_羊",
+      "color_freq_10_blue",
+      "streak_马",
+      "freq_10_雞",
+      "gap_鼠",
+      "freq_50_狗"
+    ]
+  },
+  {
+    "rank": 27,
+    "strategy_id": "ind_74055",
+    "test_hit_rate": 0.5573,
+    "train_hit_rate": 0.5148,
+    "score": 0.7042,
+    "top6": [
+      "gap_兔",
+      "gap_羊",
+      "freq_10_马",
+      "gap_马",
+      "streak_猴",
+      "streak_马"
+    ]
+  },
+  {
+    "rank": 28,
+    "strategy_id": "ind_24281",
+    "test_hit_rate": 0.5507,
+    "train_hit_rate": 0.5089,
+    "score": 0.704,
+    "top6": [
+      "gap_马",
+      "gap_羊",
+      "freq_20_牛",
+      "color_freq_10_blue",
+      "freq_20_马",
+      "freq_10_羊"
+    ]
+  },
+  {
+    "rank": 29,
+    "strategy_id": "ind_81254",
+    "test_hit_rate": 0.544,
+    "train_hit_rate": 0.5244,
+    "score": 0.7037,
+    "top6": [
+      "gap_羊",
+      "gap_蛇",
+      "gap_鼠",
+      "streak_马",
+      "freq_50_兔",
+      "freq_10_马"
+    ]
+  },
+  {
+    "rank": 30,
+    "strategy_id": "ind_66185",
+    "test_hit_rate": 0.548,
+    "train_hit_rate": 0.5248,
+    "score": 0.7035,
+    "top6": [
+      "gap_羊",
+      "gap_马",
+      "gap_蛇",
+      "gap_猴",
+      "color_freq_10_green",
+      "streak_马"
+    ]
+  },
+  {
+    "rank": 31,
+    "strategy_id": "ind_88779",
+    "test_hit_rate": 0.556,
+    "train_hit_rate": 0.5261,
+    "score": 0.7034,
+    "top6": [
+      "gap_羊",
+      "gap_马",
+      "gap_猴",
+      "gap_蛇",
+      "color_freq_10_green",
+      "freq_10_狗"
+    ]
+  },
+  {
+    "rank": 32,
+    "strategy_id": "ind_61942",
+    "test_hit_rate": 0.5493,
+    "train_hit_rate": 0.5251,
+    "score": 0.7027,
+    "top6": [
+      "gap_马",
+      "color_freq_10_green",
+      "gap_蛇",
+      "gap_兔",
+      "gap_猴",
+      "streak_马"
+    ]
+  },
+  {
+    "rank": 33,
+    "strategy_id": "ind_91703",
+    "test_hit_rate": 0.5453,
+    "train_hit_rate": 0.5151,
+    "score": 0.7023,
+    "top6": [
+      "gap_马",
+      "gap_羊",
+      "gap_猴",
+      "gap_蛇",
+      "color_freq_10_red",
+      "streak_马"
+    ]
+  },
+  {
+    "rank": 34,
+    "strategy_id": "ind_80290",
+    "test_hit_rate": 0.5533,
+    "train_hit_rate": 0.5222,
+    "score": 0.7022,
+    "top6": [
+      "gap_羊",
+      "gap_马",
+      "streak_马",
+      "streak_羊",
+      "freq_10_猴",
+      "freq_10_狗"
+    ]
+  },
+  {
+    "rank": 35,
+    "strategy_id": "ind_77816",
+    "test_hit_rate": 0.5427,
+    "train_hit_rate": 0.5211,
+    "score": 0.7021,
+    "top6": [
+      "color_freq_10_red",
+      "gap_羊",
+      "gap_蛇",
+      "gap_兔",
+      "gap_猴",
+      "streak_马"
+    ]
+  },
+  {
+    "rank": 36,
+    "strategy_id": "ind_50927",
+    "test_hit_rate": 0.548,
+    "train_hit_rate": 0.5098,
+    "score": 0.702,
+    "top6": [
+      "gap_羊",
+      "gap_马",
+      "gap_龍",
+      "gap_猴",
+      "streak_马",
+      "gap_蛇"
+    ]
+  },
+  {
+    "rank": 37,
+    "strategy_id": "ind_22034",
+    "test_hit_rate": 0.552,
+    "train_hit_rate": 0.5138,
+    "score": 0.702,
+    "top6": [
+      "gap_马",
+      "gap_兔",
+      "gap_羊",
+      "freq_20_马",
+      "freq_50_狗",
+      "freq_50_鼠"
+    ]
+  },
+  {
+    "rank": 38,
+    "strategy_id": "ind_50070",
+    "test_hit_rate": 0.544,
+    "train_hit_rate": 0.5178,
+    "score": 0.7019,
+    "top6": [
+      "gap_兔",
+      "freq_50_猴",
+      "color_freq_10_red",
+      "freq_20_羊",
+      "streak_雞",
+      "gap_鼠"
+    ]
+  },
+  {
+    "rank": 39,
+    "strategy_id": "ind_46748",
+    "test_hit_rate": 0.5427,
+    "train_hit_rate": 0.5151,
+    "score": 0.7018,
+    "top6": [
+      "gap_羊",
+      "gap_兔",
+      "gap_猴",
+      "gap_蛇",
+      "freq_10_羊",
+      "gap_牛"
+    ]
+  },
+  {
+    "rank": 40,
+    "strategy_id": "ind_70237",
+    "test_hit_rate": 0.5453,
+    "train_hit_rate": 0.5144,
+    "score": 0.7016,
+    "top6": [
+      "gap_羊",
+      "gap_马",
+      "gap_猴",
+      "streak_马",
+      "gap_兔",
+      "gap_蛇"
+    ]
+  },
+  {
+    "rank": 41,
+    "strategy_id": "ind_20357",
+    "test_hit_rate": 0.548,
+    "train_hit_rate": 0.5172,
+    "score": 0.7015,
+    "top6": [
+      "gap_羊",
+      "gap_马",
+      "streak_马",
+      "freq_20_狗",
+      "freq_50_兔",
+      "gap_蛇"
+    ]
+  },
+  {
+    "rank": 42,
+    "strategy_id": "ind_78724",
+    "test_hit_rate": 0.54,
+    "train_hit_rate": 0.5111,
+    "score": 0.7015,
+    "top6": [
+      "gap_马",
+      "gap_羊",
+      "color_freq_10_green",
+      "streak_马",
+      "freq_20_兔",
+      "freq_20_马"
+    ]
+  },
+  {
+    "rank": 43,
+    "strategy_id": "ind_37256",
+    "test_hit_rate": 0.5413,
+    "train_hit_rate": 0.5254,
+    "score": 0.7013,
+    "top6": [
+      "gap_羊",
+      "streak_马",
+      "freq_50_兔",
+      "freq_20_羊",
+      "freq_10_马",
+      "freq_10_雞"
+    ]
+  },
+  {
+    "rank": 44,
+    "strategy_id": "ind_50111",
+    "test_hit_rate": 0.544,
+    "train_hit_rate": 0.5278,
+    "score": 0.7012,
+    "top6": [
+      "gap_羊",
+      "gap_蛇",
+      "gap_猴",
+      "freq_10_羊",
+      "freq_50_鼠",
+      "freq_20_鼠"
+    ]
+  },
+  {
+    "rank": 45,
+    "strategy_id": "ind_91803",
+    "test_hit_rate": 0.5493,
+    "train_hit_rate": 0.5318,
+    "score": 0.7012,
+    "top6": [
+      "color_freq_10_red",
+      "gap_马",
+      "gap_羊",
+      "gap_蛇",
+      "gap_兔",
+      "gap_猴"
+    ]
+  },
+  {
+    "rank": 46,
+    "strategy_id": "ind_96645",
+    "test_hit_rate": 0.544,
+    "train_hit_rate": 0.5208,
+    "score": 0.701,
+    "top6": [
+      "gap_羊",
+      "gap_马",
+      "gap_蛇",
+      "gap_猴",
+      "freq_10_兔",
+      "streak_兔"
+    ]
+  },
+  {
+    "rank": 47,
+    "strategy_id": "ind_67677",
+    "test_hit_rate": 0.552,
+    "train_hit_rate": 0.5208,
+    "score": 0.7009,
+    "top6": [
+      "gap_马",
+      "gap_羊",
+      "gap_猴",
+      "freq_10_狗",
+      "freq_20_马",
+      "freq_20_牛"
+    ]
+  },
+  {
+    "rank": 48,
+    "strategy_id": "ind_94984",
+    "test_hit_rate": 0.5387,
+    "train_hit_rate": 0.5123,
+    "score": 0.7007,
+    "top6": [
+      "gap_马",
+      "color_freq_10_green",
+      "gap_兔",
+      "gap_猴",
+      "gap_龍",
+      "freq_50_龍"
+    ]
+  },
+  {
+    "rank": 49,
+    "strategy_id": "ind_18270",
+    "test_hit_rate": 0.544,
+    "train_hit_rate": 0.5274,
+    "score": 0.7004,
+    "top6": [
+      "gap_兔",
+      "freq_20_龍",
+      "streak_龍",
+      "streak_兔",
+      "freq_20_羊",
+      "freq_50_马"
+    ]
+  },
+  {
+    "rank": 50,
+    "strategy_id": "ind_31285",
+    "test_hit_rate": 0.5507,
+    "train_hit_rate": 0.5204,
+    "score": 0.6997,
+    "top6": [
+      "gap_羊",
+      "gap_猴",
+      "gap_蛇",
+      "streak_马",
+      "gap_牛",
+      "freq_50_龍"
+    ]
+  }
+]

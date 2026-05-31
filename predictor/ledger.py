@@ -3,6 +3,10 @@
 澳门六合预测账本 - 不可变预测记录系统
 遵循: Prediction Ledger Immutable Specification v1
 
+职责：
+- append-only ledger (预测记录写入 storage/prediction_ledger.jsonl)
+- 唯一数据源，不做聚合统计
+
 目录结构:
   storage/
     prediction_ledger.jsonl    # 预测记录（append-only）

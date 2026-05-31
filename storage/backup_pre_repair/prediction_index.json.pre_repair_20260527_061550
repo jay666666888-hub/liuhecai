@@ -1,0 +1,97 @@
+{
+  "version": 1,
+  "updated_at": "2026-05-27T05:48:09.474085",
+  "versions": {
+    "v10": {
+      "latest_issue": "2026142",
+      "pending_issue": "2026142",
+      "total_predictions": 861
+    },
+    "v11": {
+      "latest_issue": "2026142",
+      "pending_issue": "2026142",
+      "total_predictions": 866
+    },
+    "v12": {
+      "latest_issue": "2026147",
+      "pending_issue": "2026147",
+      "total_predictions": 866
+    },
+    "v13": {
+      "latest_issue": "2026142",
+      "pending_issue": "2026142",
+      "total_predictions": 863
+    },
+    "v14": {
+      "latest_issue": "2026142",
+      "pending_issue": "2026142",
+      "total_predictions": 863
+    },
+    "v17": {
+      "latest_issue": "2026142",
+      "pending_issue": "2026142",
+      "total_predictions": 863
+    },
+    "v19": {
+      "latest_issue": "idx_862",
+      "pending_issue": "idx_862",
+      "total_predictions": 50
+    },
+    "v21": {
+      "latest_issue": "2026147",
+      "pending_issue": "2026147",
+      "total_predictions": 857
+    },
+    "v22": {
+      "latest_issue": "2026141",
+      "pending_issue": "2026141",
+      "total_predictions": 405
+    },
+    "v23": {
+      "latest_issue": "2026147",
+      "pending_issue": "2026147",
+      "total_predictions": 767
+    },
+    "v24": {
+      "latest_issue": "2026147",
+      "pending_issue": "2026147",
+      "total_predictions": 767
+    },
+    "v26": {
+      "latest_issue": "2026146",
+      "pending_issue": "2026146",
+      "total_predictions": 861
+    },
+    "v5": {
+      "latest_issue": "2026147",
+      "pending_issue": "2026147",
+      "total_predictions": 847
+    },
+    "v7": {
+      "latest_issue": "2026147",
+      "pending_issue": "2026147",
+      "total_predictions": 847
+    },
+    "v9": {
+      "latest_issue": "2026142",
+      "pending_issue": "2026142",
+      "total_predictions": 861
+    },
+    "v27": {
+      "latest_issue": "2026147",
+      "pending_issue": "2026147"
+    },
+    "v28": {
+      "latest_issue": "2026147",
+      "pending_issue": "2026147"
+    },
+    "v29": {
+      "latest_issue": "2026147",
+      "pending_issue": "2026147"
+    },
+    "v99": {
+      "latest_issue": "2026998",
+      "pending_issue": "2026998"
+    }
+  }
+}

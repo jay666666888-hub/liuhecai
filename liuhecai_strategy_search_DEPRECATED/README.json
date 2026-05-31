@@ -1,0 +1,30 @@
+{
+  "version": "1.0.0",
+  "description": "六合六肖策略自动搜索系统",
+  "modules": {
+    "features": "特征工程模块 - 计算遗漏、热度、连出、波色等特征",
+    "backtest": "回测引擎 - Walk Forward滚动验证",
+    "evolution": "遗传算法引擎 - 策略进化",
+    "strategies": "策略执行器 - 加载并执行预测",
+    "api": "API服务器 - HTTP接口"
+  },
+  "workflow": {
+    "phase1": "初始筛选 - 生成10000+策略，Walk Forward验证",
+    "phase2": "遗传进化 - GA算法优化",
+    "phase3": "最终筛选 - TOP50"
+  },
+  "config": {
+    "train_size": 200,
+    "test_size": 50,
+    "initial_strategies": 10000,
+    "generations": 10,
+    "population": 300
+  },
+  "files": {
+    "search.py": "主程序入口",
+    "features/feature_engine.py": "特征工程",
+    "backtest/walk_forward.py": "Walk Forward回测",
+    "strategies/executor.py": "策略执行器",
+    "api/server.py": "API服务器"
+  }
+}

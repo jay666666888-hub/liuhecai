@@ -1,0 +1,108 @@
+{
+  "runs": [
+    {
+      "time": "2026-04-23 23:12:59",
+      "total_periods": 478,
+      "dist": null,
+      "perm": {
+        "real_rate": 52.0,
+        "perm_avg": 50.37,
+        "perm_rates": [
+          44.67,
+          50.0,
+          54.67,
+          45.33,
+          48.0,
+          52.0,
+          56.67,
+          47.33,
+          47.33,
+          51.33,
+          44.0,
+          56.0,
+          49.33,
+          54.67,
+          46.67,
+          51.33,
+          52.0,
+          48.67,
+          54.0,
+          53.33
+        ],
+        "advantage": 1.63,
+        "sample_size": 150,
+        "n_rounds": 20,
+        "verdict": "接近随机"
+      }
+    },
+    {
+      "time": "2026-04-23 23:14:32",
+      "total_periods": 478,
+      "dist": {
+        "entropy": 3.474,
+        "concentration_ratio": 1.8,
+        "max_count": 45,
+        "min_count": 8,
+        "over_predicted": [
+          "羊",
+          "豬"
+        ],
+        "under_predicted": [
+          "虎",
+          "馬"
+        ],
+        "distribution": {
+          "牛": 26,
+          "豬": 41,
+          "羊": 45,
+          "馬": 16,
+          "龍": 22,
+          "兔": 26,
+          "蛇": 31,
+          "猴": 18,
+          "鼠": 24,
+          "雞": 22,
+          "狗": 21,
+          "虎": 8
+        },
+        "window": 50
+      },
+      "perm": null
+    },
+    {
+      "time": "2026-04-23 23:16:24",
+      "total_periods": 478,
+      "dist": {
+        "entropy": 3.477,
+        "concentration_ratio": 1.8,
+        "max_count": 45,
+        "min_count": 9,
+        "over_predicted": [
+          "羊",
+          "豬"
+        ],
+        "under_predicted": [
+          "虎",
+          "馬"
+        ],
+        "distribution": {
+          "豬": 41,
+          "羊": 45,
+          "蛇": 32,
+          "馬": 15,
+          "龍": 21,
+          "兔": 25,
+          "猴": 19,
+          "鼠": 25,
+          "雞": 22,
+          "狗": 21,
+          "牛": 25,
+          "虎": 9
+        },
+        "window": 50
+      },
+      "perm": null
+    }
+  ],
+  "last_permutation": 478
+}

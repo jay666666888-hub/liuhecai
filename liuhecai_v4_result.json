@@ -1,0 +1,77 @@
+{
+  "timestamp": "2026-04-23T17:28:51.149431",
+  "top10_strategies": [
+    {
+      "rank": 1,
+      "name": "奇偶_偶",
+      "wf_rate": 0.43333333333333335,
+      "wf_hits": 13,
+      "wf_total": 30
+    },
+    {
+      "rank": 2,
+      "name": "相位_陰",
+      "wf_rate": 0.3333333333333333,
+      "wf_hits": 10,
+      "wf_total": 30
+    },
+    {
+      "rank": 3,
+      "name": "五行_火",
+      "wf_rate": 0.3333333333333333,
+      "wf_hits": 10,
+      "wf_total": 30
+    },
+    {
+      "rank": 4,
+      "name": "五行_金",
+      "wf_rate": 0.3333333333333333,
+      "wf_hits": 10,
+      "wf_total": 30
+    },
+    {
+      "rank": 5,
+      "name": "奇偶_奇",
+      "wf_rate": 0.3333333333333333,
+      "wf_hits": 10,
+      "wf_total": 30
+    },
+    {
+      "rank": 6,
+      "name": "波色_波",
+      "wf_rate": 0.3,
+      "wf_hits": 9,
+      "wf_total": 30
+    },
+    {
+      "rank": 7,
+      "name": "协变_牛",
+      "wf_rate": 0.3,
+      "wf_hits": 9,
+      "wf_total": 30
+    },
+    {
+      "rank": 8,
+      "name": "波色_紅",
+      "wf_rate": 0.26666666666666666,
+      "wf_hits": 8,
+      "wf_total": 30
+    },
+    {
+      "rank": 9,
+      "name": "波色_藍",
+      "wf_rate": 0.26666666666666666,
+      "wf_hits": 8,
+      "wf_total": 30
+    },
+    {
+      "rank": 10,
+      "name": "相位_陽",
+      "wf_rate": 0.26666666666666666,
+      "wf_hits": 8,
+      "wf_total": 30
+    }
+  ],
+  "ensemble_rate": 1.0,
+  "latest_prediction": "鼠虎馬猴兔龍"
+}

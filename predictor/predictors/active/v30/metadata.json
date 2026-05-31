@@ -1,0 +1,8 @@
+{
+  "version": "v30",
+  "play_type": "liuhe",
+  "status": "active",
+  "description": "动态权重融合预测器 - 融合 v12/v21/v23 六肖策略",
+  "strategy": "FusionDynamicWeight",
+  "schema_version": "1.0.0"
+}

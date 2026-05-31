@@ -1,0 +1,13 @@
+{
+  "mode": "SHADOW_MODE_V1",
+  "status": "SYSTEM_RUNNING",
+  "generated_at": "2026-05-22T04:50:42.885464",
+  "development_frozen": true,
+  "fault_triggers_enabled": true,
+  "total_predictions": 0,
+  "hit_rate": 0,
+  "rolling_30_hit": 0,
+  "max_drawdown": 0,
+  "current_drawdown": 0,
+  "fault_triggers": []
+}

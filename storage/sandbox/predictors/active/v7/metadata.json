@@ -1,0 +1,13 @@
+{
+  "version": "v7",
+  "strategy_type": "rank_based",
+  "params": {
+    "rank_method": "weighted"
+  },
+  "notes": "排名预测",
+  "frozen": false,
+  "created_at": "2026-05-25T00:00:00.000000",
+  "updated_at": "2026-05-26T03:10:46.173946",
+  "status": "active",
+  "play_type": "liuhe"
+}

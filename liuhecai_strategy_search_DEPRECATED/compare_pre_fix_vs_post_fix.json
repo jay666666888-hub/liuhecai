@@ -1,0 +1,102 @@
+{
+  "phase": "FULL_REVALIDATION_AFTER_DETECTOR_FIX",
+  "timestamp": "2026-05-21",
+
+  "comparisons": [
+    {
+      "metric": "period_200_670_mean_hit",
+      "old": 0.4604,
+      "new": 0.5191,
+      "delta": 0.0587,
+      "verdict": "IMPROVED"
+    },
+    {
+      "metric": "state_distribution_hot_pct",
+      "old": 100.0,
+      "new": 15.5,
+      "delta": -84.5,
+      "verdict": "IMPROVED"
+    },
+    {
+      "metric": "state_distribution_normalized",
+      "old": "HOT_only",
+      "new": "HOT_15.5_TRANSITION_84.5",
+      "delta": "N/A",
+      "verdict": "IMPROVED"
+    },
+    {
+      "metric": "walk_forward_std_percent",
+      "old": 9.74,
+      "new": 7.95,
+      "delta": -1.79,
+      "verdict": "IMPROVED"
+    },
+    {
+      "metric": "walk_forward_mean",
+      "old": 0.4462,
+      "new": 0.513,
+      "delta": 0.0668,
+      "verdict": "IMPROVED"
+    },
+    {
+      "metric": "seed_stability_std",
+      "old": 0,
+      "new": 0,
+      "delta": 0,
+      "verdict": "UNCHANGED"
+    },
+    {
+      "metric": "expert_contribution_skew",
+      "old": 0.42,
+      "new": 0.42,
+      "delta": 0,
+      "verdict": "UNCHANGED"
+    },
+    {
+      "metric": "momentum_frequency_corr",
+      "old": 0.7886,
+      "new": 0.3866,
+      "delta": -0.402,
+      "verdict": "IMPROVED"
+    },
+    {
+      "metric": "state_performance_hit_rate_range",
+      "old": 0.0,
+      "new": 0.0503,
+      "delta": 0.0503,
+      "verdict": "IMPROVED"
+    },
+    {
+      "metric": "hot_state_hit_rate",
+      "old": 0.4604,
+      "new": 0.5616,
+      "delta": 0.1012,
+      "verdict": "IMPROVED"
+    }
+  ],
+
+  "bug_fixes": [
+    {
+      "bug": "predict_top6_called_after_update_clearing_scores",
+      "status": "FIXED",
+      "delta": 0.03
+    },
+    {
+      "bug": "stability_calculation_wrong_index",
+      "status": "FIXED",
+      "delta": "stability varies now"
+    },
+    {
+      "bug": "state_detector_threshold_collapse",
+      "status": "FIXED",
+      "delta": "HOT 100% -> HOT 15.5%"
+    },
+    {
+      "bug": "momentum_frequency_high_correlation",
+      "status": "FIXED",
+      "delta": 0.79 -> 0.39
+    }
+  ],
+
+  "verdict": "PASS"
+}

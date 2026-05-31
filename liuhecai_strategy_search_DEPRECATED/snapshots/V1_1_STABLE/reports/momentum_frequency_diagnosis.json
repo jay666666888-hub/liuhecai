@@ -1,0 +1,19 @@
+{
+  "expert_pair": "Momentum_Frequency",
+  "shared_features": [
+    "Momentum: streak (consecutive count going backwards from current position)",
+    "Frequency: count in sliding window of last 10 periods",
+    "Both measure RECENT ACTIVITY of each zodiac"
+  ],
+  "prediction_corr": 0.5168,
+  "error_corr": 0.0238,
+  "jaccard_overlap": 0.5168,
+  "overlap_type": "Time Window Overlap + Structural Similarity",
+  "root_cause": {
+    "type": "Mathematical Consequence",
+    "explanation": "Both signals measure 'recent appearances' but in different ways. When a zodiac appears consecutively (streak >= 2), its frequency count in the sliding window also increases. This creates high prediction overlap even though the features are distinct.",
+    "evidence": "When Momentum streak >= 2, Frequency count >= 2 in 7/7 cases (100%)"
+  },
+  "key_observation": "error_corr is very low (0.0238) meaning these experts make DIFFERENT errors - this is good for ensemble diversity. The issue is not error correlation but prediction overlap.",
+  "recommended_fix": "Do NOT modify Momentum or Frequency formulas. The structural overlap is inherent. Instead, adjust the diversity penalty threshold in ExpertDiversityPenalty or accept this pair as a known structural correlation. The ensemble already applies Jaccard penalty at threshold 0.8 for similar expert pairs."
+}

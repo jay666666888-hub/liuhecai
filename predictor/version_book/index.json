@@ -1,0 +1,22 @@
+{
+  "_comment": "Auto-generated, do not edit manually",
+  "active": [
+    "v12",
+    "v21",
+    "v23",
+    "v24",
+    "v5",
+    "v7"
+  ],
+  "retired": [],
+  "experimental": [],
+  "versions": [
+    "v12",
+    "v21",
+    "v23",
+    "v24",
+    "v5",
+    "v7"
+  ],
+  "updated_at": "2026-05-25T12:09:49.979537"
+}

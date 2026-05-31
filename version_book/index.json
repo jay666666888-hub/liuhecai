@@ -1,0 +1,152 @@
+{
+  "_comment": "Auto-generated, do not edit manually",
+  "active": [
+    "v12",
+    "v21",
+    "v23",
+    "v24",
+    "v27",
+    "v28",
+    "v29",
+    "v30",
+    "v31",
+    "v5",
+    "v7"
+  ],
+  "active_by_play_type": {
+    "liuhe": [
+      "v12",
+      "v21",
+      "v23",
+      "v24",
+      "v30",
+      "v5",
+      "v7"
+    ],
+    "pingte_yixiao": [
+      "v27",
+      "v28",
+      "v29"
+    ],
+    "special_24ma": [
+      "v31"
+    ]
+  },
+  "retired": [
+    {
+      "version": "v10",
+      "status": "retired",
+      "play_type": "liuhe",
+      "reason": "已退役",
+      "strategy_type": null,
+      "hit_rate": null,
+      "notes": "已退役"
+    },
+    {
+      "version": "v11",
+      "status": "retired",
+      "play_type": "liuhe",
+      "reason": "已退役",
+      "strategy_type": null,
+      "hit_rate": null,
+      "notes": "已退役"
+    },
+    {
+      "version": "v13",
+      "status": "retired",
+      "play_type": "liuhe",
+      "reason": "已退役",
+      "strategy_type": null,
+      "hit_rate": null,
+      "notes": "已退役"
+    },
+    {
+      "version": "v14",
+      "status": "retired",
+      "play_type": "liuhe",
+      "reason": "已退役",
+      "strategy_type": null,
+      "hit_rate": null,
+      "notes": "已退役"
+    },
+    {
+      "version": "v17",
+      "status": "retired",
+      "play_type": "liuhe",
+      "reason": "已退役",
+      "strategy_type": null,
+      "hit_rate": null,
+      "notes": "已退役"
+    },
+    {
+      "version": "v19",
+      "status": "retired",
+      "play_type": "liuhe",
+      "reason": "已退役",
+      "strategy_type": null,
+      "hit_rate": null,
+      "notes": "已退役"
+    },
+    {
+      "version": "v20",
+      "status": "retired",
+      "play_type": "liuhe",
+      "reason": "已退役",
+      "strategy_type": null,
+      "hit_rate": null,
+      "notes": "已退役"
+    },
+    {
+      "version": "v22",
+      "status": "retired",
+      "play_type": "liuhe",
+      "reason": "已退役",
+      "strategy_type": null,
+      "hit_rate": null,
+      "notes": "已退役"
+    },
+    {
+      "version": "v26",
+      "status": "retired",
+      "play_type": "pingte_yixiao",
+      "reason": "平特一肖 - 预测1个生肖，7码中包含即命中",
+      "strategy_type": null,
+      "hit_rate": null,
+      "notes": "平特一肖 - 预测1个生肖，7码中包含即命中"
+    },
+    {
+      "version": "v9",
+      "status": "retired",
+      "play_type": "liuhe",
+      "reason": "已退役",
+      "strategy_type": null,
+      "hit_rate": null,
+      "notes": "已退役"
+    }
+  ],
+  "experimental": [],
+  "versions": [
+    "v12",
+    "v21",
+    "v23",
+    "v24",
+    "v27",
+    "v28",
+    "v29",
+    "v30",
+    "v31",
+    "v5",
+    "v7",
+    "v10",
+    "v11",
+    "v13",
+    "v14",
+    "v17",
+    "v19",
+    "v20",
+    "v22",
+    "v26",
+    "v9"
+  ],
+  "updated_at": "2026-06-01T01:30:17.393910"
+}

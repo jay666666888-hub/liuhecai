@@ -1,0 +1,7 @@
+{
+  "mean_latency": 1.0,
+  "latencies_sample": [],
+  "transition_count": 0,
+  "gate": "PASS",
+  "verdict": "DETECTOR_OK"
+}

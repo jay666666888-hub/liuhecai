@@ -1,0 +1,2868 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+    <title>澳门六合预测</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Hiragino Sans GB', sans-serif;
+            background: #f5f5f7;
+            color: #1d1d1f;
+            min-height: 100vh;
+            -webkit-tap-highlight-color: transparent;
+            touch-action: manipulation;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            user-select: none;
+        }
+
+        /* Header */
+        .header {
+            background: #fff;
+            padding: 20px 16px;
+            text-align: center;
+            border-bottom: 1px solid #e5e5e5;
+            position: relative;
+        }
+
+        /* View Switcher - Segmented Control */
+        .view-switcher {
+            display: flex;
+            justify-content: center;
+            padding: 8px 16px;
+            background: #fff;
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        .view-switcher-btn {
+            flex: 1;
+            max-width: 200px;
+            padding: 10px 16px;
+            border: 1px solid #e5e5e5;
+            background: #fff;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+            color: #86868b;
+        }
+
+        .view-switcher-btn:first-child {
+            border-radius: 8px 0 0 8px;
+            border-right: none;
+        }
+
+        .view-switcher-btn:last-child {
+            border-radius: 0 8px 8px 0;
+        }
+
+        .view-switcher-btn.active {
+            background: #007aff;
+            color: #fff;
+            border-color: #007aff;
+        }
+
+        .view-switcher-btn:not(.active):hover {
+            background: #f5f5f7;
+        }
+
+        /* View States */
+        .predictor-view-content { display: block; }
+        .foundation-stats-section { display: none; }
+
+        .foundation-view .predictor-view-content { display: none !important; }
+        .foundation-view .foundation-stats-section { display: block !important; }
+
+        .header h1 {
+            font-size: 24px;
+            font-weight: 700;
+            color: #1d1d1f;
+        }
+
+        .refresh-btn {
+            position: absolute;
+            right: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: #007aff;
+            color: white;
+            border: none;
+            padding: 6px 14px;
+            border-radius: 6px;
+            font-size: 13px;
+            cursor: pointer;
+        }
+
+        /* Stats Row */
+        .stats-row {
+            display: flex;
+            background: #fff;
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        .stat-item {
+            flex: 1;
+            padding: 16px 8px;
+            text-align: center;
+            border-right: 1px solid #e5e5e5;
+        }
+
+        .stat-item:last-child { border-right: none; }
+
+        .stat-num {
+            font-size: 22px;
+            font-weight: 700;
+            color: #1d1d1f;
+        }
+
+        .stat-num.green { color: #34c759; }
+        .stat-num.red { color: #ff3b30; }
+
+        .stat-label {
+            font-size: 10px;
+            color: #86868b;
+            margin-top: 4px;
+        }
+
+        /* Version Tabs */
+        .version-tabs {
+            background: #fff;
+            padding: 10px 16px;
+            display: block;
+            border-bottom: 1px solid #e5e5e5;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            flex-wrap: nowrap;
+        }
+
+        .play-type-group {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            flex-shrink: 0;
+            padding: 4px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .play-type-group:last-child {
+            border-bottom: none;
+        }
+
+        .play-type-label {
+            font-size: 10px;
+            font-weight: 600;
+            color: #fff;
+            background: #007aff;
+            padding: 3px 8px;
+            border-radius: 10px;
+            white-space: nowrap;
+        }
+
+        .play-type-label.pingte {
+            background: #34c759;
+        }
+
+        .version-tab {
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 500;
+            background: #f5f5f7;
+            color: #1d1d1f;
+            cursor: pointer;
+            white-space: nowrap;
+            transition: all 0.15s;
+        }
+
+        .version-tab:active {
+            transform: scale(0.96);
+        }
+
+        .version-tab .dot {
+            display: inline-block;
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background: #34c759;
+            margin-right: 4px;
+        }
+
+        .version-tab.selected {
+            background: #007aff;
+            color: #fff;
+        }
+
+        .version-tab.selected .dot {
+            background: #fff;
+        }
+
+        .play-type-label.special24ma {
+            background: #ff6b35;
+        }
+
+        /* Prediction Card */
+        .prediction-card {
+            background: linear-gradient(135deg, #007aff 0%, #5856d6 100%);
+            margin: 12px;
+            border-radius: 12px;
+            padding: 16px;
+            color: #fff;
+        }
+
+        .prediction-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+
+        .prediction-label {
+            font-size: 13px;
+            color: #86868b;
+            font-weight: 500;
+        }
+
+        .prediction-status {
+            font-size: 11px;
+            color: #ff9500;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .prediction-issue {
+            padding: 16px;
+            text-align: center;
+            font-size: 13px;
+            color: #86868b;
+        }
+
+        .prediction-issue-num {
+            font-size: 24px;
+            font-weight: 700;
+            color: #1d1d1f;
+            margin-top: 4px;
+        }
+
+        .prediction-zodiac {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            flex-wrap: wrap;
+            padding: 0 16px 16px;
+        }
+
+        .zodiac-tag {
+            background: rgba(255,255,255,0.3);
+            padding: 8px 14px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            color: #fff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+            border: 1px solid rgba(255,255,255,0.4);
+        }
+
+        /* Records */
+        .section-header {
+            font-size: 13px;
+            color: #86868b;
+            font-weight: 500;
+            padding: 12px 16px 8px;
+        }
+
+        .record-list {
+            background: #fff;
+            margin: 0 12px 12px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+        }
+
+        .record-item {
+            padding: 12px 16px;
+            border-bottom: 1px solid #f0f0f0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .record-item:last-child { border-bottom: none; }
+
+        .record-status-icon {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            margin-right: 8px;
+            flex-shrink: 0;
+        }
+
+        .record-status-icon.hit { background: #34c759; }
+        .record-status-icon.miss { background: #ff3b30; }
+        .record-status-icon.pending { background: #ff9500; }
+
+        .record-left {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            flex: 1;
+            min-width: 0;
+        }
+
+        .record-issue {
+            font-size: 15px;
+            font-weight: 600;
+            color: #1d1d1f;
+            flex-shrink: 0;
+        }
+
+        .record-prediction {
+            display: flex;
+            gap: 3px;
+            flex-wrap: wrap;
+        }
+
+        .pred-tag {
+            font-size: 11px;
+            color: #86868b;
+            background: #f5f5f7;
+            padding: 2px 5px;
+            border-radius: 4px;
+        }
+
+        .record-right {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            flex-shrink: 0;
+        }
+
+        .record-result {
+            font-size: 16px;
+            font-weight: 600;
+            min-width: 24px;
+            text-align: center;
+        }
+
+        .actual-list {
+            font-size: 11px;
+            color: #888;
+            margin-left: 4px;
+            font-weight: 400;
+        }
+
+        .record-status-text {
+            font-size: 11px;
+            min-width: 50px;
+            text-align: right;
+        }
+
+        .record-status-text.hit { color: #34c759; }
+        .record-status-text.miss { color: #ff3b30; }
+        .record-status-text.pending { color: #ff9500; }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 16px;
+            color: #c7c7c7;
+            font-size: 11px;
+        }
+
+        /* Health Status Capsule */
+        .health-capsule {
+            position: absolute;
+            right: 70px;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            padding: 5px 10px;
+            border-radius: 16px;
+            font-size: 11px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: transform 0.15s, box-shadow 0.15s;
+            background: #f5f5f7;
+            border: 1px solid #e5e5e5;
+        }
+
+        .health-capsule:hover {
+            transform: translateY(-50%) scale(1.03);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .health-capsule.healthy { background: #e8f5e9; color: #2e7d32; border-color: #a5d6a7; }
+        .health-capsule.degraded { background: #fff8e1; color: #f57c00; border-color: #ffe082; }
+        .health-capsule.critical { background: #ffebee; color: #c62828; border-color: #ef9a9a; }
+        .health-capsule.unknown { background: #f5f5f7; color: #757575; border-color: #e0e0e0; }
+
+        .health-dot { font-size: 7px; }
+
+        /* Health Popover */
+        .health-popover {
+            position: absolute;
+            right: 12px;
+            top: 100%;
+            margin-top: 8px;
+            width: 250px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+            padding: 14px;
+            z-index: 1000;
+            display: none;
+            opacity: 0;
+            transform: translateY(-8px);
+            transition: opacity 0.2s, transform 0.2s;
+        }
+
+        .health-popover.show {
+            display: block;
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .health-popover-header {
+            font-size: 13px;
+            font-weight: 600;
+            color: #1d1d1f;
+            margin-bottom: 3px;
+        }
+
+        .health-popover-time {
+            font-size: 10px;
+            color: #86868b;
+            margin-bottom: 10px;
+        }
+
+        .health-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 7px 0;
+            border-bottom: 1px solid #f0f0f0;
+            font-size: 12px;
+        }
+
+        .health-item:last-of-type { border-bottom: none; }
+
+        .health-item-label { color: #1d1d1f; }
+
+        .health-item-status { font-weight: 600; }
+        .health-item-status.ok { color: #34c759; }
+        .health-item-status.warn { color: #ff9500; }
+        .health-item-status.error { color: #ff3b30; }
+        .health-item-status.unknown { color: #c7c7c7; }
+
+        .health-popover-footer {
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px solid #e5e5e5;
+            font-size: 11px;
+            color: #86868b;
+            text-align: center;
+        }
+
+        .health-popover-footer .status-label { font-weight: 500; color: #1d1d1f; }
+
+        /* Dark mode */
+        @media (prefers-color-scheme: dark) {
+            body { background: #1d1d1f; color: #f5f5f7; }
+            .header { background: #2d2d2f; border-bottom-color: #3d3d3f; }
+            .header h1 { color: #f5f5f7; }
+            .health-capsule { background: #2d2d2f; border-color: #3d3d3f; }
+            .health-capsule.healthy { background: #1b3d1b; color: #6f6; border-color: #2e7d32; }
+            .health-capsule.degraded { background: #3d3020; color: #fa0; border-color: #f57c00; }
+            .health-capsule.critical { background: #3d1b1b; color: #f66; border-color: #c62828; }
+            .health-capsule.unknown { background: #2d2d2f; color: #98989d; border-color: #3d3d3f; }
+            .health-popover { background: #2d2d2f; box-shadow: 0 4px 20px rgba(0,0,0,0.5); }
+            .health-popover-header { color: #f5f5f7; }
+            .health-popover-time { color: #98989d; }
+            .health-item { border-bottom-color: #3d3d3f; }
+            .health-item-label { color: #f5f5f7; }
+            .health-popover-footer { border-top-color: #3d3d3f; color: #98989d; }
+            .health-popover-footer .status-label { color: #f5f5f7; }
+            .stats-row { background: #2d2d2f; border-bottom-color: #3d3d3f; }
+            .stat-item { border-right-color: #3d3d3f; }
+            .stat-num { color: #f5f5f7; }
+            .stat-label { color: #98989d; }
+            .version-tabs { background: #2d2d2f; border-bottom-color: #3d3d3f; }
+            .version-tab { background: #3d3d3f; color: #f5f5f7; }
+            .version-tab.selected { background: #007aff; color: #fff; }
+            .record-list { background: #2d2d2f; }
+            .record-item { border-bottom-color: #3d3d3f; }
+            .record-issue { color: #f5f5f7; }
+            .pred-tag { background: #3d3d3f; color: #98989d; }
+            .section-header { color: #98989d; }
+            .footer { color: #98989d; }
+            .play-type-label { background: #007aff; }
+            .play-type-label.pingte { background: #34c759; }
+            .foundation-stats-section .section-header { color: #98989d; }
+            .foundation-category-header { color: #98989d; }
+            .foundation-card { background: #2d2d2f; box-shadow: 0 1px 3px rgba(0,0,0,0.3); }
+            .foundation-card-title { color: #f5f5f7; }
+            .foundation-row { color: #f5f5f7; }
+            .foundation-row-label { color: #98989d; }
+            .foundation-row-value { color: #f5f5f7; }
+        }
+
+        /* Foundation Stats Section - UX Refactored */
+        .foundation-stats-section {
+            padding: 0 12px 12px;
+        }
+
+        .foundation-stats-section .section-header {
+            padding-left: 0;
+            font-size: 16px;
+            font-weight: 600;
+            color: #1d1d1f;
+            margin-bottom: 12px;
+        }
+
+        .foundation-category {
+            margin-bottom: 20px;
+        }
+
+        .foundation-category-header {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: baseline;
+            gap: 6px;
+            margin-bottom: 12px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #e5e5e5;
+        }
+
+        .foundation-cat-name {
+            font-size: 15px;
+            font-weight: 600;
+            color: #1d1d1f;
+        }
+
+        .foundation-cat-desc {
+            font-size: 12px;
+            color: #86868b;
+        }
+
+        .foundation-meta {
+            font-size: 11px;
+            color: #c7c7c7;
+            margin-left: auto;
+        }
+
+        .foundation-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 12px;
+        }
+
+        /* Foundation Card - Analysis Panel Style */
+        .foundation-card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+            overflow: hidden;
+        }
+
+        .foundation-card-header {
+            padding: 12px 14px;
+            background: #f8f8f8;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .foundation-card-title {
+            font-size: 14px;
+            font-weight: 600;
+            color: #1d1d1f;
+            display: block;
+        }
+
+        .foundation-card-desc {
+            font-size: 11px;
+            color: #86868b;
+            margin-top: 2px;
+            display: block;
+        }
+
+        .foundation-card-body {
+            padding: 10px 14px;
+        }
+
+        /* 2-column zodiac layout */
+        .foundation-hot-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+            margin-bottom: 8px;
+        }
+
+        .foundation-zodiac {
+            display: flex;
+            justify-content: space-between;
+            padding: 4px 0;
+            border-bottom: 1px dashed #f0f0f0;
+        }
+
+        .foundation-zodiac:last-child {
+            border-bottom: none;
+        }
+
+        .fz-label {
+            font-size: 13px;
+            color: #1d1d1f;
+        }
+
+        .fz-value {
+            font-size: 13px;
+            font-weight: 600;
+            color: #1d1d1f;
+        }
+
+        .fz-value.miss { color: #ff3b30; }
+        .fz-value.hot { color: #ff9500; }
+
+        /* Wave row layout */
+        .foundation-wave-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 6px 0;
+            border-bottom: 1px dashed #f0f0f0;
+        }
+
+        .foundation-wave-row:last-child {
+            border-bottom: none;
+        }
+
+        .fw-name {
+            font-size: 14px;
+            color: #1d1d1f;
+        }
+
+        .fw-value {
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .fw-value.miss { color: #ff3b30; }
+
+        /* Stat header for hot_stats */
+        .foundation-stat-header {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: baseline;
+            gap: 6px;
+            margin-bottom: 10px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .foundation-stat-name {
+            font-size: 13px;
+            font-weight: 600;
+            color: #1d1d1f;
+        }
+
+        .foundation-stat-desc {
+            font-size: 11px;
+            color: #86868b;
+        }
+
+        .foundation-window {
+            font-size: 10px;
+            color: #c7c7c7;
+            margin-left: auto;
+        }
+
+        .foundation-error {
+            font-size: 12px;
+            color: #ff3b30;
+            padding: 8px;
+            text-align: center;
+        }
+
+        /* Single Stat Workspace - Tab Bar */
+        .stat-tab-bar {
+            display: flex;
+            gap: 8px;
+            padding: 12px 16px;
+            background: #fff;
+            border-bottom: 1px solid #e5e5e5;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .stat-tab {
+            padding: 8px 16px;
+            border: none;
+            background: #f5f5f7;
+            color: #86868b;
+            font-size: 14px;
+            font-weight: 500;
+            border-radius: 8px;
+            cursor: pointer;
+            white-space: nowrap;
+            transition: all 0.2s;
+            flex-shrink: 0;
+        }
+
+        .stat-tab:active {
+            transform: scale(0.97);
+        }
+
+        .stat-tab.active {
+            background: #007aff;
+            color: #fff;
+        }
+
+        .stat-tab:not(.active):hover {
+            background: #e5e5e5;
+            color: #1d1d1f;
+        }
+
+        /* Hot Stats Grid - 方案A: 横向表格 */
+        .hs-table {
+            padding: 0 16px 16px;
+        }
+
+        .hs-thead {
+            display: grid;
+            grid-template-columns: 44px repeat(4, 1fr);
+            gap: 4px;
+            padding: 6px 8px;
+            background: #f5f5f7;
+            border-radius: 8px 8px 0 0;
+            font-size: 11px;
+            font-weight: 600;
+            color: #86868b;
+            letter-spacing: 0.5px;
+        }
+
+        .hs-thead span {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hs-trow {
+            display: grid;
+            grid-template-columns: 44px repeat(4, 1fr);
+            gap: 4px;
+            padding: 6px 8px;
+            border-bottom: 1px solid #f0f0f0;
+            align-items: center;
+        }
+
+        .hs-trow:last-child {
+            border-radius: 0 0 8px 8px;
+        }
+
+        .hs-tzodiac {
+            font-size: 15px;
+            font-weight: 700;
+            color: #1d1d1f;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hs-badge {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: 700;
+            color: #fff;
+            border-radius: 4px;
+            min-width: 28px;
+            height: 22px;
+            padding: 0 4px;
+            margin: 0 auto;
+        }
+
+        /* Workspace Header */
+        .stat-workspace-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 14px 16px;
+            background: #fff;
+            border-bottom: 1px solid #f0f0f0;
+            gap: 12px;
+            min-width: 0;
+        }
+
+        .stat-workspace-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #1d1d1f;
+            margin: 0;
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+
+        .stat-workspace-meta {
+            display: flex;
+            gap: 8px;
+            font-size: 11px;
+            color: #86868b;
+            align-items: center;
+            flex-shrink: 0;
+        }
+
+        .meta-pill {
+            display: inline-flex;
+            align-items: center;
+            padding: 3px 8px;
+            background: #f0f0f5;
+            border-radius: 12px;
+            font-size: 11px;
+            color: #515154;
+            white-space: nowrap;
+        }
+
+        /* Workspace Content */
+        .stat-workspace-content {
+            padding: 16px;
+            min-height: 300px;
+            background: #fff;
+        }
+
+        .loading-state, .error-state {
+            text-align: center;
+            padding: 40px 20px;
+            font-size: 14px;
+            color: #86868b;
+        }
+
+        .error-state { color: #ff3b30; }
+
+        /* Number Miss Grid */
+        .number-miss-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+            gap: 8px;
+        }
+
+        @media (min-width: 600px) {
+            .number-miss-grid {
+                grid-template-columns: repeat(7, 1fr);
+            }
+        }
+
+        .number-miss-cell {
+            padding: 14px 8px;
+            text-align: center;
+            background: #f8f8f8;
+            border-radius: 10px;
+            border: 1px solid #e5e5e5;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .number-miss-cell:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .number-miss-cell .nm-number {
+            font-size: 18px;
+            font-weight: 700;
+            color: #1d1d1f;
+            margin-bottom: 4px;
+        }
+
+        .number-miss-cell .nm-miss {
+            font-size: 12px;
+            color: #86868b;
+        }
+
+        .number-miss-cell.high-miss {
+            background: rgba(255, 59, 48, 0.08);
+            border-color: rgba(255, 59, 48, 0.3);
+        }
+
+        .number-miss-cell.high-miss .nm-miss { color: #ff3b30; font-weight: 600; }
+
+        .number-miss-cell.medium-miss {
+            background: rgba(255, 149, 0, 0.08);
+            border-color: rgba(255, 149, 0, 0.3);
+        }
+
+        .number-miss-cell.medium-miss .nm-miss { color: #ff9500; font-weight: 600; }
+
+        .number-miss-cell.filtered { background: #e8f4ff; border: 1px solid #007aff; }
+
+        .number-miss-cell.selected { background: #007aff !important; border: 2px solid #0051b3; }
+        .number-miss-cell.selected .nm-number { color: #fff; }
+        .number-miss-cell.selected .nm-miss { color: rgba(255,255,255,0.8); }
+
+        /* Special Number Miss Filter Bar */
+        .snm-filter-bar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            padding: 10px 12px;
+            background: #f0f0f2;
+            border-radius: 10px;
+            margin-bottom: 12px;
+        }
+
+        .snm-filter-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            align-items: center;
+            width: 100%;
+        }
+
+        .snm-filter-label {
+            font-size: 12px;
+            color: #666;
+            font-weight: 600;
+            min-width: 28px;
+        }
+
+        .snm-filter-btn {
+            padding: 6px 4px;
+            border: 1px solid #ddd;
+            background: #fff;
+            border-radius: 6px;
+            font-size: 13px;
+            cursor: pointer;
+            transition: all 0.15s;
+            flex: 1;
+            text-align: center;
+        }
+
+        .snm-filter-btn:hover { background: #f0f0f0; }
+
+        .snm-filter-btn.active {
+            background: #007aff;
+            color: #fff;
+            border-color: #007aff;
+        }
+
+        .snm-reset-btn {
+            padding: 6px 12px;
+            border: 1px solid #ff3b30;
+            background: #fff;
+            color: #ff3b30;
+            border-radius: 6px;
+            font-size: 12px;
+            cursor: pointer;
+            margin-left: auto;
+        }
+
+        .snm-reset-btn:hover { background: #fff0f0; }
+
+        /* Selection Bar */
+        .snm-selection-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 16px;
+            background: #fff;
+            border: 1px solid #e5e5e5;
+            border-radius: 10px;
+            margin-bottom: 12px;
+        }
+
+        .snm-selected-count {
+            font-size: 14px;
+            color: #1d1d1f;
+        }
+
+        .snm-selected-count strong {
+            color: #007aff;
+            font-weight: 600;
+        }
+
+        .snm-copy-btn {
+            padding: 8px 16px;
+            background: #007aff;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .snm-copy-btn:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+        }
+
+        .snm-copy-btn:active:not(:disabled) {
+            transform: scale(0.97);
+        }
+
+        @media (max-width: 600px) {
+            .snm-filter-bar {
+                padding: 10px;
+                gap: 8px;
+            }
+            .snm-filter-row {
+                gap: 6px;
+            }
+            .snm-filter-btn {
+                padding: 8px 4px;
+                font-size: 14px;
+                min-height: 40px;
+            }
+            .snm-reset-btn {
+                padding: 8px 10px;
+            }
+        }
+
+        /* 历史最高遗漏排名 - 收起/展开 */
+        .snm-max-miss-toggle {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 14px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #fff;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            transition: opacity 0.2s;
+        }
+
+        .snm-max-miss-toggle:hover {
+            opacity: 0.9;
+        }
+
+        .snm-max-miss-toggle .toggle-icon {
+            font-size: 10px;
+            transition: transform 0.2s;
+        }
+
+        /* 历史最高遗漏排名 */
+        .snm-max-miss-ranking {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 12px;
+            padding: 16px;
+            margin-bottom: 16px;
+            color: #fff;
+            overflow-x: auto;
+        }
+
+        .snm-ranking-title {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            text-align: center;
+        }
+
+        .snm-ranking-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            justify-content: flex-start;
+        }
+
+        .snm-ranking-item {
+            display: flex;
+            align-items: center;
+            background: rgba(255,255,255,0.15);
+            border-radius: 8px;
+            padding: 6px 8px;
+            gap: 6px;
+            min-width: calc(33.33% - 8px);
+            flex: 0 0 calc(33.33% - 8px);
+        }
+
+        .snm-ranking-item .rank {
+            font-size: 10px;
+            font-weight: 600;
+            opacity: 0.8;
+            min-width: 14px;
+        }
+
+        .snm-ranking-item .rank-num {
+            font-size: 13px;
+            font-weight: 700;
+        }
+
+        .snm-ranking-item .rank-miss {
+            font-size: 10px;
+            opacity: 0.9;
+            line-height: 1.3;
+        }
+
+        .snm-ranking-item .rank-miss small {
+            font-size: 8px;
+            opacity: 0.7;
+            display: block;
+        }
+
+        .snm-ranking-item .rank-range {
+            display: block;
+            font-size: 8px;
+            opacity: 0.7;
+        }
+
+        @media (min-width: 600px) {
+            .snm-ranking-item .rank-range {
+                display: inline;
+            }
+        }
+
+        .snm-ranking-item.high {
+            background: rgba(255, 59, 48, 0.4);
+        }
+
+        .snm-ranking-item.medium {
+            background: rgba(255, 149, 0, 0.3);
+        }
+
+        @media (min-width: 600px) {
+            .snm-ranking-item {
+                min-width: calc(20% - 8px);
+                flex: 0 0 calc(20% - 8px);
+            }
+        }
+
+        @media (min-width: 900px) {
+            .snm-max-miss-ranking {
+                overflow-x: visible;
+            }
+            .snm-ranking-list {
+                display: grid;
+                grid-template-columns: repeat(5, 1fr);
+                gap: 8px;
+            }
+            .snm-ranking-item {
+                min-width: unset;
+                flex: unset;
+            }
+        }
+
+        /* Zodiac Miss Workspace */
+        .zodiac-miss-table {
+            width: 100%;
+        }
+
+        .zodiac-miss-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 14px;
+            background: #f8f8f8;
+            border-radius: 8px;
+            margin-bottom: 8px;
+        }
+
+        .zodiac-miss-row:last-child { margin-bottom: 0; }
+
+        .zodiac-miss-row .zm-zodiac {
+            font-size: 16px;
+            font-weight: 600;
+            color: #1d1d1f;
+        }
+
+        .zodiac-miss-row .zm-miss {
+            font-size: 15px;
+            font-weight: 600;
+        }
+
+        .zodiac-miss-row .zm-miss.low { color: #34c759; }
+        .zodiac-miss-row .zm-miss.medium { color: #ff9500; }
+        .zodiac-miss-row .zm-miss.high { color: #ff3b30; }
+
+        /* Zodiac Max Miss Toggle */
+        .zm-max-miss-toggle {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 14px;
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: #fff;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            transition: opacity 0.2s;
+        }
+
+        .zm-max-miss-toggle:hover {
+            opacity: 0.9;
+        }
+
+        .zm-max-miss-toggle .toggle-icon {
+            font-size: 10px;
+            transition: transform 0.2s;
+        }
+
+        /* Zodiac Max Miss Ranking */
+        .zodiac-max-miss-ranking {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            border-radius: 12px;
+            padding: 12px;
+            margin-bottom: 16px;
+            color: #fff;
+            overflow-x: auto;
+        }
+
+        .zm-ranking-title {
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .zm-ranking-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            justify-content: flex-start;
+        }
+
+        .zm-ranking-item {
+            display: flex;
+            align-items: center;
+            background: rgba(255,255,255,0.2);
+            border-radius: 6px;
+            padding: 5px 8px;
+            gap: 5px;
+            min-width: calc(50% - 6px);
+            flex: 0 0 calc(50% - 6px);
+        }
+
+        .zm-ranking-item .rank {
+            font-size: 9px;
+            font-weight: 600;
+            opacity: 0.8;
+            min-width: 12px;
+        }
+
+        .zm-ranking-item .rank-zodiac {
+            font-size: 13px;
+            font-weight: 700;
+        }
+
+        .zm-ranking-item .rank-miss {
+            font-size: 9px;
+            opacity: 0.9;
+            line-height: 1.3;
+        }
+
+        .zm-ranking-item .rank-range {
+            display: block;
+            font-size: 7px;
+            opacity: 0.7;
+        }
+
+        .zm-ranking-item.high {
+            background: rgba(255, 59, 48, 0.4);
+        }
+
+        .zm-ranking-item.medium {
+            background: rgba(255, 149, 0, 0.3);
+        }
+
+        @media (min-width: 600px) {
+            .zm-ranking-item {
+                min-width: calc(33.33% - 6px);
+                flex: 0 0 calc(33.33% - 6px);
+            }
+            .zm-ranking-list {
+                display: grid;
+                grid-template-columns: repeat(5, 1fr);
+            }
+            .zm-ranking-item {
+                min-width: unset;
+                flex: unset;
+            }
+            .zm-ranking-item .rank-range {
+                display: inline;
+            }
+        }
+
+        /* Wave Max Miss Ranking */
+        .wave-max-miss-ranking {
+            background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+            border-radius: 12px;
+            padding: 12px;
+            margin-bottom: 16px;
+            color: #fff;
+            text-align: center;
+        }
+
+        .wm-ranking-title {
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .wm-ranking-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            justify-content: center;
+        }
+
+        .wm-ranking-item {
+            display: flex;
+            align-items: center;
+            background: rgba(255,255,255,0.2);
+            border-radius: 8px;
+            padding: 6px 12px;
+            gap: 8px;
+        }
+
+        .wm-ranking-item .rank {
+            font-size: 10px;
+            font-weight: 600;
+            opacity: 0.8;
+            min-width: 14px;
+        }
+
+        .wm-ranking-item .rank-waves {
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+        .wm-ranking-item .rank-miss {
+            font-size: 11px;
+            opacity: 0.9;
+        }
+
+        .wm-ranking-item .rank-range {
+            display: block;
+            font-size: 9px;
+            opacity: 0.7;
+        }
+
+        .wm-ranking-item.high {
+            background: rgba(255, 59, 48, 0.4);
+        }
+
+        .wm-ranking-item.medium {
+            background: rgba(255, 149, 0, 0.3);
+        }
+
+        /* Wave Miss Workspace */
+        .wave-miss-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+        }
+
+        .wave-miss-cell {
+            padding: 16px;
+            text-align: center;
+            background: #f8f8f8;
+            border-radius: 12px;
+            border: 1px solid #e5e5e5;
+        }
+
+        .wave-miss-cell .wm-name {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .wave-miss-cell .wm-miss {
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        .wave-miss-cell .wm-label {
+            font-size: 11px;
+            color: #86868b;
+            margin-top: 4px;
+        }
+
+        .wave-miss-cell.high-miss { background: rgba(255,59,48,0.08); border-color: rgba(255,59,48,0.3); }
+        .wave-miss-cell.high-miss .wm-miss { color: #ff3b30; }
+
+        /* Hot Stats Workspace */
+        .hot-stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 10px;
+            width: 100%;
+        }
+
+        .hs-card {
+            background: #f8f8f8;
+            border-radius: 10px;
+            padding: 12px;
+            position: relative;
+            border: 1px solid transparent;
+            transition: all 0.2s;
+        }
+
+        .hs-card.high { border-color: #ff3b30; background: #fff5f5; }
+        .hs-card.mid { border-color: #ff9500; background: #fff9f0; }
+        .hs-card.low { border-color: #34c759; background: #f0fff4; }
+        .hs-card.none { opacity: 0.5; }
+
+        .hs-rank {
+            position: absolute;
+            top: 8px;
+            right: 10px;
+            font-size: 10px;
+            color: #c7c7c7;
+            font-weight: 600;
+        }
+
+        .hs-zodiac-name {
+            font-size: 18px;
+            font-weight: 700;
+            color: #1d1d1f;
+            margin-bottom: 10px;
+        }
+
+        .hs-card.high .hs-zodiac-name { color: #ff3b30; }
+        .hs-card.mid .hs-zodiac-name { color: #ff9500; }
+
+        .hs-bars { display: flex; flex-direction: column; gap: 6px; }
+
+        .hs-bar-row {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .hs-label {
+            font-size: 10px;
+            color: #86868b;
+            width: 16px;
+            text-align: right;
+        }
+
+        .hs-bar-track {
+            flex: 1;
+            height: 6px;
+            background: #e5e5e5;
+            border-radius: 3px;
+            overflow: hidden;
+        }
+
+        .hs-bar-fill {
+            height: 100%;
+            background: #007aff;
+            border-radius: 3px;
+            transition: width 0.3s ease;
+        }
+
+        .hs-card.high .hs-bar-fill { background: #ff3b30; }
+        .hs-card.mid .hs-bar-fill { background: #ff9500; }
+        .hs-card.low .hs-bar-fill { background: #34c759; }
+
+        .hs-val {
+            font-size: 12px;
+            font-weight: 600;
+            color: #1d1d1f;
+            width: 20px;
+            text-align: right;
+        }
+
+        .hs-val.highlight { color: #007aff; font-weight: 700; }
+        .hs-card.high .hs-val.highlight { color: #ff3b30; }
+        .hs-card.mid .hs-val.highlight { color: #ff9500; }
+
+        .hot-stats-footer {
+            font-size: 11px;
+            color: #86868b;
+            text-align: center;
+            margin-top: 12px;
+            padding-top: 8px;
+            border-top: 1px solid #f0f0f0;
+        }
+
+        .hs-window-selector {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            margin-bottom: 16px;
+        }
+
+        .hs-window-btn {
+            padding: 6px 14px;
+            border: 1px solid #e5e5e5;
+            background: #fff;
+            border-radius: 16px;
+            font-size: 12px;
+            color: #515154;
+            cursor: pointer;
+        }
+
+        .hs-window-btn.active {
+            background: #007aff;
+            color: #fff;
+            border-color: #007aff;
+        }
+
+        .hs-main-val {
+            text-align: center;
+            font-size: 12px;
+            color: #007aff;
+            font-weight: 600;
+            margin-top: 4px;
+        }
+
+        .hs-list {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+
+        .hs-row {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 8px 12px;
+            background: #fff;
+            border-radius: 8px;
+        }
+
+        .hs-row.none { opacity: 0.5; }
+        .hs-row.low { border-left: 3px solid #34c759; }
+        .hs-row.mid { border-left: 3px solid #ff9500; }
+        .hs-row.high { border-left: 3px solid #ff3b30; }
+
+        .hs-rank {
+            width: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            color: #86868b;
+            text-align: center;
+        }
+
+        .hs-zodiac-name {
+            width: 40px;
+            font-size: 14px;
+            font-weight: 600;
+            color: #1d1d1f;
+        }
+
+        .hs-progress {
+            flex: 1;
+            height: 8px;
+            background: #f0f0f2;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .hs-progress-fill {
+            height: 100%;
+            background: #007aff;
+            border-radius: 4px;
+            transition: width 0.3s;
+        }
+
+        .hs-row.high .hs-progress-fill { background: #ff3b30; }
+        .hs-row.mid .hs-progress-fill { background: #ff9500; }
+        .hs-row.low .hs-progress-fill { background: #34c759; }
+
+        .hs-count {
+            width: 30px;
+            font-size: 14px;
+            font-weight: 600;
+            color: #007aff;
+            text-align: right;
+        }
+
+        .hs-row.high .hs-count { color: #ff3b30; }
+        .hs-row.mid .hs-count { color: #ff9500; }
+        .hs-row.low .hs-count { color: #34c759; }
+</style>
+</head>
+<body class="predictor-view">
+    <div class="header">
+        <h1>澳门六合预测</h1>
+
+        <div class="health-capsule unknown" id="health-capsule" onclick="toggleHealthPopover()">
+            <span class="health-dot" id="health-dot">⚪️</span>
+            <span id="health-text">加载中</span>
+        </div>
+
+        <div class="health-popover" id="health-popover">
+            <div class="health-popover-header">系统健康状态</div>
+            <div class="health-popover-time" id="health-update-time">更新时间: --:--:--</div>
+            <div class="health-item">
+                <span class="health-item-label">数据源</span>
+                <span class="health-item-status unknown" id="health-data">-</span>
+            </div>
+            <div class="health-item">
+                <span class="health-item-label">缓存层</span>
+                <span class="health-item-status unknown" id="health-cache">-</span>
+            </div>
+            <div class="health-item">
+                <span class="health-item-label">Hash链</span>
+                <span class="health-item-status unknown" id="health-hash">-</span>
+            </div>
+            <div class="health-item">
+                <span class="health-item-label">预测流水线</span>
+                <span class="health-item-status unknown" id="health-pipeline">-</span>
+            </div>
+            <div class="health-popover-footer">
+                状态: <span class="status-label" id="health-popover-status">加载中</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="view-switcher" id="view-switcher">
+        <button class="view-switcher-btn active" id="btn-predictor" onclick="switchView('predictor')">预测模式</button>
+        <button class="view-switcher-btn" id="btn-foundation" onclick="switchView('foundation')">统计模式</button>
+    </div>
+
+    <!-- Foundation Stats View -->
+    <div class="foundation-stats-section" id="foundation-stats-section">
+        <!-- Tab Bar (Version Tabs 风格) -->
+        <div class="stat-tab-bar" id="stat-tab-bar">
+            <button class="stat-tab active" data-tab="special_number_miss">特码遗漏</button>
+            <button class="stat-tab" data-tab="hot_stats">特码热度</button>
+            <button class="stat-tab" data-tab="zodiac_miss">生肖遗漏</button>
+            <button class="stat-tab" data-tab="wave_miss">波色遗漏</button>
+        </div>
+
+        <!-- Workspace Header -->
+        <div class="stat-workspace-header">
+            <h3 class="stat-workspace-title" id="ws-title">热门生肖</h3>
+            <div class="stat-workspace-meta">
+                <span class="meta-pill" id="ws-issue">第--期</span>
+                <span class="meta-pill" id="ws-records">--期</span>
+                <span class="meta-pill" id="ws-update">--</span>
+            </div>
+        </div>
+
+        <!-- Single Workspace Content -->
+        <div class="stat-workspace-content" id="workspace-content">
+            <div class="loading-state">加载中...</div>
+        </div>
+    </div>
+
+    <!-- Predictor View Content -->
+    <div class="predictor-view-content">
+        <div class="stats-row" id="stats-row">
+            <div class="stat-item">
+                <div class="stat-num" id="stat-total">-</div>
+                <div class="stat-label">总命中率</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-num green" id="stat-recent100">-</div>
+                <div class="stat-label">近100期</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-num" id="stat-recent50">-</div>
+                <div class="stat-label">近50期</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-num red" id="stat-maxstreak">-</div>
+                <div class="stat-label">最长连错</div>
+            </div>
+        </div>
+
+        <div class="version-tabs" id="version-tabs"></div>
+
+        <div class="prediction-card" id="prediction-card" style="background: linear-gradient(135deg, #007aff 0%, #5856d6 100%);">
+            <div class="prediction-header">
+                <span class="prediction-label" style="color:rgba(255,255,255,0.8)">下一期预测</span>
+                <span class="prediction-status">⚡️待开奖</span>
+            </div>
+            <div class="prediction-issue" style="color:rgba(255,255,255,0.8)">
+                第<span class="prediction-issue-num" id="pred-issue" style="color:#fff">-</span>期
+            </div>
+            <div class="prediction-zodiac" id="pred-zodiac" onclick="copyPrediction()" style="cursor:pointer;" title="点击复制"></div>
+        </div>
+
+        <div class="section-header">近期记录</div>
+
+        <div class="record-list" id="record-list"></div>
+
+        <div class="footer">数据自动同步 · 每分钟检测一次</div>
+    </div>
+
+    <script>
+
+        function bootlog(...args) {
+            console.log(...args);
+        }
+
+        // Watchdog interval
+        setInterval(() => {
+            console.log('[WATCH]', 'ready=', document.readyState, 'body=', !!document.body, 'children=', document.body?.children?.length);
+        }, 1000);
+
+        bootlog('[BOOT] script parsing start');
+        bootlog('[BOOT] body exists:', !!document.body, 'children:', document.body?.children?.length);
+
+        let initialized = false;
+        let allVersions = [];
+        let activeVersions = [];
+        let activeByPlayType = {};
+        let retiredVersions = [];
+        let selectedVersion = 'v12';
+        let versionRecords = {};  // { version: records }
+        let versionStats = {};   // { version: stats }
+        let isHistoricalMode = false;  // 退役版本只读统计
+        let bestVersion = null;  // 最高命中率版本
+
+        let lastPendingIssue = null;
+        let autoRefreshInterval = null;
+
+        let __initialized = false;
+
+        async function loadData() {
+            if (__initialized) return;
+            __initialized = true;
+            bootlog('[BOOT] loadData start');
+            try {
+                const versionsRes = await fetch('/api/versions');
+                const versionsInfo = await versionsRes.json();
+                bootlog('[BOOT] versions loaded');
+
+                // 获取汇总统计（包含最高命中率版本）
+                const summaryRes = await fetch('/api/summary');
+                const summaryInfo = await summaryRes.json();
+                bestVersion = summaryInfo.best_version;
+
+                // 兼容新旧格式
+                allVersions = versionsInfo.all_versions || versionsInfo.versions || [];
+                activeVersions = versionsInfo.active || [];
+                activeByPlayType = versionsInfo.active_by_play_type || {};
+                retiredVersions = versionsInfo.retired || [];
+
+                // 优先加载活跃版本（并行），退役版本按需懒加载
+                const activePromises = activeVersions.map(v =>
+                    fetch(`/api/records/${v}`)
+                        .then(res => res.json())
+                        .then(data => {
+                            versionRecords[v] = data.records || [];
+                            versionStats[v] = data.stats || {};
+                        })
+                        .catch(e => console.error(`Failed to load ${v}:`, e))
+                );
+
+                // 等待活跃版本加载完成后再渲染
+                bootlog('[BOOT] before Promise.all, activeVersions:', activeVersions.length);
+                Promise.all(activePromises).then(() => {
+                    bootlog('[BOOT] Promise resolved');
+                    bootlog('[BOOT] before buildVersionTabs');
+                    buildVersionTabs();
+                    bootlog('[BOOT] after buildVersionTabs');
+                    bootlog('[BOOT] before selectVersion', selectedVersion);
+                    selectVersion(selectedVersion);
+                    bootlog('[BOOT] after selectVersion');
+                    bootlog('[BOOT] render complete');
+
+                    // 设置退役版本后续按需加载
+                    retiredVersions.forEach(v => {
+                        setTimeout(() => {
+                            fetch(`/api/records/${v}`)
+                                .then(res => res.json())
+                                .then(data => {
+                                    versionRecords[v] = data.records || [];
+                                    versionStats[v] = data.stats || {};
+                                }).catch(e => {});
+                        }, 100);
+                    });
+
+                    // Check for pending issue and set up auto-refresh
+                    const v24Records = versionRecords['v24'] || [];
+                    const pending = v24Records.find(r => r.hit === null || r.hit === undefined);
+                    lastPendingIssue = pending ? pending.issue : null;
+
+                    if (!autoRefreshInterval) {
+                        autoRefreshInterval = setInterval(checkAndRefresh, 60000);
+                    }
+                }).catch(e => {
+                    console.error('[BOOT CHAIN ERROR]', e, e.stack);
+                });
+            } catch (e) {
+                console.error('Load data failed:', e);
+            }
+        }
+
+        async function checkAndRefresh() {
+            try {
+                const res = await fetch('/api/records/v24');
+                const data = await res.json();
+                const records = data.records || [];
+                const pending = records.find(r => r.hit === null || r.hit === undefined);
+
+                // If pending issue changed or resolved, refresh
+                if (pending && pending.issue !== lastPendingIssue) {
+                    lastPendingIssue = pending.issue;
+                    loadData();
+                } else if (!pending && lastPendingIssue) {
+                    // Previous pending was resolved
+                    loadData();
+                }
+            } catch (e) {
+                console.error('Auto refresh check failed:', e);
+            }
+        }
+
+        function buildVersionTabs() {
+            bootlog('[BUILD] container:', !!document.getElementById('version-tabs'));
+            const container = document.getElementById('version-tabs');
+            container.innerHTML = '';
+            bootlog('[BUILD] container.innerHTML cleared');
+            bootlog('[BOOT] after container.innerHTML, body children:', document.body.children.length);
+
+            const versionNames = {
+                'v24': 'V24',
+                'v23': 'V23',
+                'v21': 'V21',
+                'v12': '稳',
+                'v7': 'V7',
+                'v5': 'V5'
+            };
+
+            const playTypeLabels = {
+                'liuhe': '六肖',
+                'pingte_yixiao': '平特一肖',
+                'special_24ma': '24码'
+            };
+
+            const playTypeColors = {
+                'liuhe': '',
+                'pingte_yixiao': 'pingte',
+                'special_24ma': 'special24ma'
+            };
+
+            // 按玩法分组显示所有版本
+            if (Object.keys(activeByPlayType).length > 0) {
+                for (const [playType, versions] of Object.entries(activeByPlayType)) {
+                    // 玩法分组
+                    const group = document.createElement('div');
+                    group.className = 'play-type-group';
+
+                    const label = document.createElement('span');
+                    label.className = 'play-type-label ' + (playTypeColors[playType] || '');
+                    label.textContent = playTypeLabels[playType] || playType;
+                    group.appendChild(label);
+
+                    // 该玩法下的版本
+                    versions.forEach(v => {
+                        if (allVersions.includes(v)) {
+                            const tab = document.createElement('div');
+                            const isRecommended = v === bestVersion;
+                            tab.className = 'version-tab' + (v === selectedVersion ? ' selected' : '') + (isRecommended ? ' recommended' : '');
+                            tab.dataset.version = v;
+                            const isRetired = retiredVersions.includes(v);
+                            if (isRetired) tab.style.opacity = '0.5';
+                            tab.innerHTML = '<span class="dot"></span>' + (versionNames[v] || v.toUpperCase());
+                            tab.addEventListener('click', () => selectVersion(v));
+                            group.appendChild(tab);
+                        }
+                    });
+
+                    container.appendChild(group);
+                }
+            } else {
+                // 旧格式兼容：直接显示活跃版本
+                activeVersions.forEach(v => {
+                    if (allVersions.includes(v)) {
+                        const tab = document.createElement('div');
+                        const isRecommended = v === bestVersion;
+                        tab.className = 'version-tab' + (v === selectedVersion ? ' selected' : '') + (isRecommended ? ' recommended' : '');
+                        tab.dataset.version = v;
+                        tab.innerHTML = '<span class="dot"></span>' + (versionNames[v] || v.toUpperCase());
+                        tab.addEventListener('click', () => selectVersion(v));
+                        container.appendChild(tab);
+                    }
+                });
+            }
+        }
+
+        function showVersionModal() {
+            const grid = document.getElementById('version-modal-grid');
+            grid.innerHTML = '';
+
+            // 活跃版本
+            if (activeVersions.length > 0) {
+                const activeLabel = document.createElement('div');
+                activeLabel.style.gridColumn = '1 / -1';
+                activeLabel.style.fontSize = '11px';
+                activeLabel.style.color = '#34c759';
+                activeLabel.style.fontWeight = '600';
+                activeLabel.style.marginTop = '8px';
+                activeLabel.textContent = '● 活跃版本（完整预测记录）';
+                grid.appendChild(activeLabel);
+            }
+
+            activeVersions.forEach(v => {
+                const item = document.createElement('div');
+                const isRecommended = v === bestVersion;
+                item.className = 'version-modal-item' + (v === selectedVersion ? ' selected' : '');
+                item.textContent = (versionNames[v] || v.toUpperCase()) + ' 🟢';
+                item.addEventListener('click', () => {
+                    selectVersion(v);
+                    hideVersionModal();
+                });
+                grid.appendChild(item);
+            });
+
+            // 历史版本（只读统计）
+            if (retiredVersions.length > 0) {
+                const retiredLabel = document.createElement('div');
+                retiredLabel.style.gridColumn = '1 / -1';
+                retiredLabel.style.fontSize = '11px';
+                retiredLabel.style.color = '#86868b';
+                retiredLabel.style.fontWeight = '600';
+                retiredLabel.style.marginTop = '12px';
+                retiredLabel.textContent = '○ 历史版本（仅统计摘要）';
+                grid.appendChild(retiredLabel);
+
+                retiredVersions.forEach(v => {
+                    const item = document.createElement('div');
+                    item.className = 'version-modal-item' + (v === selectedVersion ? ' selected' : '');
+                    item.style.color = '#c7c7cc';
+                    item.textContent = versionNames[v] || v.toUpperCase();
+                    item.title = '历史版本，仅显示统计';
+                    item.addEventListener('click', () => {
+                        selectVersion(v);
+                        hideVersionModal();
+                    });
+                    grid.appendChild(item);
+                });
+            }
+
+            document.getElementById('version-modal').classList.add('show');
+        }
+
+        function selectVersion(version) {
+            bootlog('[SELECT]', version, 'stats:', !!versionStats[version], 'records:', !!versionRecords[version]);
+            selectedVersion = version;
+            isHistoricalMode = retiredVersions.includes(version);
+
+            document.querySelectorAll('.version-tab').forEach(t => {
+                t.classList.remove('selected');
+                if (t.dataset.version === version) t.classList.add('selected');
+            });
+
+            displayVersionData(version);
+        }
+
+        function displayVersionData(version) {
+            bootlog('[DISPLAY]', version, 'isHistorical:', isHistoricalMode);
+            const stats = versionStats[version] || {};
+            const records = versionRecords[version] || [];
+
+            // Historical 模式：只显示统计，隐藏预测列表
+            if (isHistoricalMode) {
+                document.getElementById('stat-total').textContent = stats.hit_rate ? (stats.hit_rate * 100).toFixed(2) + '%' : '-';
+                document.getElementById('stat-recent100').textContent = stats.hit_rate_100 ? (stats.hit_rate_100 * 100).toFixed(2) + '%' : '-';
+                document.getElementById('stat-recent50').textContent = stats.hit_rate_50 ? (stats.hit_rate_50 * 100).toFixed(2) + '%' : '-';
+                document.getElementById('stat-maxstreak').textContent = stats.max_streak ? stats.max_streak + '期' : '-';
+
+                // 清空预测卡
+                document.getElementById('pred-issue').textContent = '-';
+                document.getElementById('pred-zodiac').innerHTML = '<span class="zodiac-tag" style="background:rgba(255,255,255,0.1);color:#86868b">历史版本</span>';
+
+                // 显示统计摘要
+                const list = document.getElementById('record-list');
+                list.innerHTML = '';
+
+                const summaryItem = document.createElement('div');
+                summaryItem.className = 'record-item';
+                summaryItem.style.flexDirection = 'column';
+                summaryItem.style.alignItems = 'flex-start';
+                summaryItem.style.gap = '8px';
+                summaryItem.innerHTML = `
+                    <div style="font-size:13px;color:#86868b;margin-bottom:4px;">📊 历史版本统计摘要</div>
+                    <div style="font-size:12px;color:#1d1d1f;">
+                        <span style="margin-right:16px;">总期数: <b>${stats.total_results || 0}</b></span>
+                        <span style="margin-right:16px;">命中率: <b>${stats.hit_rate ? (stats.hit_rate * 100).toFixed(2) + '%' : '-'}</b></span>
+                    </div>
+                    <div style="font-size:11px;color:#86868b;margin-top:4px;">
+                        ⚠️ 退役版本仅显示统计，不提供逐条预测
+                    </div>
+                `;
+                list.appendChild(summaryItem);
+                return;
+            }
+
+            // Active 模式：完整显示
+            document.getElementById('stat-total').textContent = stats.hit_rate ? (stats.hit_rate * 100).toFixed(2) + '%' : '-';
+            document.getElementById('stat-recent100').textContent = stats.hit_rate_100 ? (stats.hit_rate_100 * 100).toFixed(2) + '%' : '-';
+            document.getElementById('stat-recent50').textContent = stats.hit_rate_50 ? (stats.hit_rate_50 * 100).toFixed(2) + '%' : '-';
+            document.getElementById('stat-maxstreak').textContent = stats.max_streak ? stats.max_streak + '期' : '-';
+
+            const pending = records.find(r => r.hit === null || r.hit === undefined);
+            if (pending) {
+                document.getElementById('pred-issue').textContent = pending.issue;
+                const zodiacEl = document.getElementById('pred-zodiac');
+                zodiacEl.innerHTML = pending.prediction.map(p =>
+                    `<span class="zodiac-tag">${p}</span>`
+                ).join('');
+            }
+
+            const list = document.getElementById('record-list');
+            list.innerHTML = '';
+
+            const displayRecords = records.slice(0, 100);
+            displayRecords.forEach(r => {
+                const item = document.createElement('div');
+                item.className = 'record-item';
+
+                const statusClass = r.hit === true ? 'hit' : (r.hit === false ? 'miss' : 'pending');
+                const statusIcon = r.hit === true ? '🟢' : (r.hit === false ? '🔴' : '🟡');
+
+                let preds = r.prediction || [];
+                if (typeof preds === 'string') preds = preds.split(',');
+
+                // 平特一肖：显示完整7码（用pred-tag样式）；六肖：显示特码
+                const isPingte = r.play_type === 'pingte_yixiao';
+                let resultHtml;
+                if (isPingte && r.actual_list && r.actual_list.length > 0) {
+                    resultHtml = r.actual_list.map(z => `<span class="record-result">${z}</span>`).join(' ');
+                } else {
+                    resultHtml = `<span class="record-result">${r.actual || '-'}</span>`;
+                }
+
+                item.innerHTML = `
+                    <div class="record-left">
+                        <span class="record-status-icon ${statusClass}"></span>
+                        <span class="record-issue">${r.issue}</span>
+                        <div class="record-prediction">
+                            ${preds.map(p => `<span class="pred-tag">${p}</span>`).join('')}
+                        </div>
+                    </div>
+                    <div class="record-right">
+                        ${resultHtml}
+                        <span class="record-status-icon ${statusClass}" style="width:16px;height:16px;font-size:14px">${statusIcon}</span>
+                    </div>
+                `;
+                list.appendChild(item);
+            });
+        }
+
+        function formatTime(timestamp) {
+            const d = new Date(timestamp);
+            const m = (d.getMonth() + 1).toString().padStart(2, '0');
+            const day = d.getDate().toString().padStart(2, '0');
+            return `${d.getFullYear()}/${m}/${day}`;
+        }
+
+        function copyPrediction() {
+            const zodiacEl = document.getElementById('pred-zodiac');
+            const text = zodiacEl.textContent.trim();
+            if (!text || text === '-' || text === '暂无预测') return;
+
+            const original = zodiacEl.innerHTML;
+            zodiacEl.innerHTML = '<span style="opacity:0.7">复制中...</span>';
+
+            // Try primary: navigator.clipboard (HTTPS + user gesture)
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(text).then(() => {
+                    zodiacEl.innerHTML = '<span style="opacity:0.7">已复制 ✓</span>';
+                    setTimeout(() => { zodiacEl.innerHTML = original; }, 1500);
+                }).catch(() => {
+                    fallbackCopy(text, zodiacEl, original);
+                });
+            } else {
+                fallbackCopy(text, zodiacEl, original);
+            }
+        }
+
+        function fallbackCopy(text, zodiacEl, original) {
+            // Fallback for non-HTTPS or restricted browsers
+            const textarea = document.createElement('textarea');
+            textarea.value = text;
+            textarea.style.position = 'fixed';
+            textarea.style.left = '-9999px';
+            textarea.style.top = '0';
+            textarea.readOnly = true;
+            document.body.appendChild(textarea);
+            textarea.focus();
+            textarea.select();
+            try {
+                document.execCommand('copy');
+                zodiacEl.innerHTML = '<span style="opacity:0.7">已复制 ✓</span>';
+            } catch (e) {
+                // Final fallback: select all via selection API
+                const selection = window.getSelection();
+                const range = document.createRange();
+                range.selectNodeContents(zodiacEl);
+                selection.removeAllRanges();
+                selection.addRange(range);
+                try {
+                    document.execCommand('copy');
+                    zodiacEl.innerHTML = '<span style="opacity:0.7">已复制 ✓</span>';
+                } catch (e2) {
+                    zodiacEl.innerHTML = '<span style="opacity:0.7">复制失败</span>';
+                }
+                selection.removeAllRanges();
+            }
+            document.body.removeChild(textarea);
+            setTimeout(() => { zodiacEl.innerHTML = original; }, 1500);
+        }
+
+        document.addEventListener('DOMContentLoaded', async () => {
+            try {
+                bootlog('[BOOT] start');
+                await loadData();
+                bootlog('[BOOT] done');
+            } catch(e) {
+                console.error('[BOOT ERROR]', e);
+                document.body.innerHTML = `<div style="padding:20px">面板加载失败<pre>${e.stack}</pre></div>`;
+            }
+        });
+        bootlog('[BOOT] script parsed');
+
+        // Health Status
+        let healthPopoverOpen = false;
+        let lastTouchEnd = 0;
+        let healthCache = null;
+        let healthInterval = null;
+
+        const STATUS_MAP = {
+            healthy: { dot: '🟢', text: '正常运行', class: 'healthy' },
+            degraded: { dot: '🟡', text: '部分异常', class: 'degraded' },
+            critical: { dot: '🔴', text: '严重异常', class: 'critical' },
+            unknown: { dot: '⚪️', text: '状态不可用', class: 'unknown' }
+        };
+
+        const ITEM_STATUS_MAP = {
+            ok: { symbol: '✓', class: 'ok' },
+            warn: { symbol: '⚠️', class: 'warn' },
+            error: { symbol: '✗', class: 'error' },
+            unknown: { symbol: '?', class: 'unknown' }
+        };
+
+        function getItemStatus(status) {
+            if (status === 'ok') return ITEM_STATUS_MAP.ok;
+            if (status === 'degraded') return ITEM_STATUS_MAP.warn;
+            if (status === 'critical') return ITEM_STATUS_MAP.error;
+            return ITEM_STATUS_MAP.unknown;
+        }
+
+        async function fetchHealthSummary() {
+            try {
+                const controller = new AbortController();
+                const timeoutId = setTimeout(() => controller.abort(), 3000);
+                const res = await fetch('/health', { signal: controller.signal });
+                clearTimeout(timeoutId);
+                if (!res.ok) throw new Error('health endpoint error');
+                const data = await res.json();
+                healthCache = data;
+                updateHealthCapsule(data);
+            } catch (e) {
+                healthCache = { status: 'unknown', timestamp: new Date().toISOString(), checks: [] };
+                updateHealthCapsule(healthCache);
+            }
+        }
+
+        function updateHealthCapsule(data) {
+            const statusInfo = STATUS_MAP[data.status] || STATUS_MAP.unknown;
+            const capsule = document.getElementById('health-capsule');
+            const dot = document.getElementById('health-dot');
+            const text = document.getElementById('health-text');
+
+            capsule.className = 'health-capsule ' + statusInfo.class;
+            dot.textContent = statusInfo.dot;
+            text.textContent = statusInfo.text;
+        }
+
+        async function fetchDetailedHealth() {
+            try {
+                const [dataRes, cacheRes, hashRes, pipelineRes] = await Promise.all([
+                    fetch('/health/data', { signal: AbortSignal.timeout(3000) }),
+                    fetch('/health/cache', { signal: AbortSignal.timeout(3000) }),
+                    fetch('/health/hashchain', { signal: AbortSignal.timeout(3000) }),
+                    fetch('/health/pipeline', { signal: AbortSignal.timeout(3000) })
+                ]);
+
+                const data = await dataRes.json();
+                const cache = await cacheRes.json();
+                const hash = await hashRes.json();
+                const pipeline = await pipelineRes.json();
+
+                updateItemStatus('health-data', data.status || 'unknown');
+                updateItemStatus('health-cache', cache.status || 'unknown');
+                updateItemStatus('health-hash', hash.status || 'unknown');
+                updateItemStatus('health-pipeline', pipeline.status || 'unknown');
+
+                const statuses = [data.status, cache.status, hash.status, pipeline.status];
+                let overall = 'healthy';
+                if (statuses.includes('critical')) overall = 'critical';
+                else if (statuses.includes('degraded')) overall = 'degraded';
+
+                const statusInfo = STATUS_MAP[overall] || STATUS_MAP.unknown;
+                document.getElementById('health-popover-status').textContent = statusInfo.text;
+            } catch (e) {
+                updateItemStatus('health-data', 'unknown');
+                updateItemStatus('health-cache', 'unknown');
+                updateItemStatus('health-hash', 'unknown');
+                updateItemStatus('health-pipeline', 'unknown');
+                document.getElementById('health-popover-status').textContent = '状态不可用';
+            }
+
+            const now = new Date();
+            document.getElementById('health-update-time').textContent = '更新时间: ' +
+                now.toLocaleTimeString('zh-CN', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+        }
+
+        function updateItemStatus(id, status) {
+            const el = document.getElementById(id);
+            if (!el) return;
+            const info = getItemStatus(status);
+            el.textContent = info.symbol;
+            el.className = 'health-item-status ' + info.class;
+        }
+
+        function toggleHealthPopover() {
+            healthPopoverOpen = !healthPopoverOpen;
+            const popover = document.getElementById('health-popover');
+            popover.classList.toggle('show', healthPopoverOpen);
+
+            if (healthPopoverOpen) {
+                if (healthCache) {
+                    const checkMap = {};
+                    (healthCache.checks || []).forEach(c => { checkMap[c.name] = c.status; });
+                    updateItemStatus('health-data', checkMap.data || 'unknown');
+                    updateItemStatus('health-cache', checkMap.cache || 'unknown');
+                    updateItemStatus('health-hash', checkMap.hashchain || 'unknown');
+                    updateItemStatus('health-pipeline', checkMap.pipeline || 'unknown');
+                    const statusInfo = STATUS_MAP[healthCache.status] || STATUS_MAP.unknown;
+                    document.getElementById('health-popover-status').textContent = statusInfo.text;
+                }
+                fetchDetailedHealth();
+            }
+        }
+
+        document.addEventListener('click', function(e) {
+            const capsule = document.getElementById('health-capsule');
+            const popover = document.getElementById('health-popover');
+            if (!capsule.contains(e.target) && !popover.contains(e.target)) {
+                popover.classList.remove('show');
+                healthPopoverOpen = false;
+            }
+        });
+
+        // 禁用双击缩放
+        document.addEventListener('dblclick', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+        }, { passive: false });
+
+        // 禁用触控板双击缩放
+        document.addEventListener('touchend', function(e) {
+            const now = Date.now();
+            if (now - lastTouchEnd <= 300) {
+                e.preventDefault();
+            }
+            lastTouchEnd = now;
+        }, { passive: false });
+
+        fetchHealthSummary();
+        setInterval(fetchHealthSummary, 30000);
+
+        // View Switcher
+        let currentView = 'predictor';
+
+        function switchView(view) {
+            if (currentView === view) return;
+            currentView = view;
+
+            const body = document.body;
+            body.classList.remove('predictor-view', 'foundation-view');
+            body.classList.add(view + '-view');
+
+            document.getElementById('btn-predictor').classList.toggle('active', view === 'predictor');
+            document.getElementById('btn-foundation').classList.toggle('active', view === 'foundation');
+
+            // Trigger foundation stats load if switching to foundation view
+            if (view === 'foundation') {
+                loadFoundationStats();
+            }
+        }
+
+        // Foundation Stats - Tab-based Workspace
+        let currentStatTab = 'special_number_miss';
+        let cachedStats = {};  // Cache loaded stats data
+
+        function initStatTabs() {
+            document.querySelectorAll('.stat-tab').forEach(tab => {
+                tab.addEventListener('click', () => {
+                    switchStatTab(tab.dataset.tab);
+                });
+            });
+        }
+
+        function switchStatTab(statType) {
+            // Skip if same tab and we have fresh cache data (user can still re-click to refresh)
+            if (currentStatTab === statType && cachedStats[statType] && document.querySelector(`[data-tab="${statType}"]`)?.classList.contains('active')) {
+                // User clicked same active tab - just refresh
+                renderStatWorkspace(statType, cachedStats[statType].data || cachedStats[statType], document.getElementById('workspace-content'));
+                return;
+            }
+            currentStatTab = statType;
+
+            // Update tab active state
+            document.querySelectorAll('.stat-tab').forEach(t => t.classList.remove('active'));
+            document.querySelector(`[data-tab="${statType}"]`).classList.add('active');
+
+            // Update title
+            const TITLES = {
+                'hot_stats': '特码热度',
+                'zodiac_miss': '生肖遗漏',
+                'wave_miss': '波色遗漏',
+                'special_number_miss': '特码遗漏'
+            };
+            document.getElementById('ws-title').textContent = TITLES[statType] || statType;
+
+            // Load stat data
+            loadStatData(statType);
+        }
+
+        async function loadStatData(statType) {
+            const content = document.getElementById('workspace-content');
+
+            // Check cache first - zero latency tab switches
+            if (cachedStats[statType]) {
+                const data = cachedStats[statType];
+                document.getElementById('ws-issue').textContent = `第${data.latest_issue || '--'}期`;
+                document.getElementById('ws-records').textContent = `统计:${data.record_count || 0}期`;
+                document.getElementById('ws-update').textContent = data.computed_at ? formatTime(data.computed_at) : '';
+                renderStatWorkspace(statType, data.data || data, content);
+                return;
+            }
+
+            // Cache miss - show loading and fetch
+            content.innerHTML = '<div class="loading-state">加载中...</div>';
+
+            try {
+                const res = await fetch(`/api/stats/all`);
+                if (!res.ok) throw new Error('fetch failed');
+
+                const result = await res.json();
+                if (!result.success) throw new Error('api error');
+
+                // Store all stats in cache
+                Object.entries(result.stats).forEach(([type, data]) => {
+                    cachedStats[type] = data;
+                });
+
+                // Update meta
+                if (result.meta) {
+                    document.getElementById('ws-issue').textContent = `第${result.meta.latest_issue || '--'}期`;
+                    document.getElementById('ws-records').textContent = `统计:${result.meta.record_count || 0}期`;
+                    document.getElementById('ws-update').textContent = result.meta.computed_at ? formatTime(result.meta.computed_at) : '';
+                }
+
+                const data = cachedStats[statType] || result.stats[statType];
+                if (data) {
+                    renderStatWorkspace(statType, data.data || data, content);
+                } else {
+                    throw new Error('no data for ' + statType);
+                }
+
+            } catch (e) {
+                console.error('Load stat failed:', e);
+                content.innerHTML = `<div class="error-state">加载失败: ${e.message}</div>`;
+            }
+        }
+
+        function renderStatWorkspace(statType, data, container) {
+            switch(statType) {
+                case 'hot_stats': renderHotStats(data, container); break;
+                case 'zodiac_miss': renderZodiacMiss(data, container); break;
+                case 'wave_miss': renderWaveMiss(data, container); break;
+                case 'special_number_miss': renderSpecialNumberMiss(data, container); break;
+                default: container.innerHTML = '<div class="error-state">未知统计类型</div>';
+            }
+        }
+
+        function renderSpecialNumberMiss(data, container) {
+            try {
+                const ZODIAC_NUMBERS = {
+                    '馬': ['01','13','25','37','49'],
+                    '蛇': ['02','14','26','38'],
+                    '龍': ['03','15','27','39'],
+                    '兔': ['04','16','28','40'],
+                    '虎': ['05','17','29','41'],
+                    '牛': ['06','18','30','42'],
+                    '鼠': ['07','19','31','43'],
+                    '豬': ['08','20','32','44'],
+                    '狗': ['09','21','33','45'],
+                    '雞': ['10','22','34','46'],
+                    '羊': ['11','23','35','47'],
+                    '猴': ['12','24','36','48']
+                };
+                const WAVE_NUMBERS = {
+                    '红波': ['01','02','07','08','12','13','18','19','23','24','29','30','34','35','40','45','46'],
+                    '蓝波': ['03','04','09','10','14','15','20','25','26','31','36','37','41','42','47','48'],
+                    '绿波': ['05','06','11','16','17','21','22','27','28','32','33','38','39','43','44','49']
+                };
+                let activeFilters = [];
+                let activeFilterNumbers = [];
+                let selectedNumbers = new Set();
+                const getZodiacNumbers = (z) => ZODIAC_NUMBERS[z] || null;
+                const getWaveNumbers = (w) => WAVE_NUMBERS[w] || null;
+                const applyFilters = () => {
+                    activeFilterNumbers = [];
+                    activeFilters.forEach(f => {
+                        const nums = getZodiacNumbers(f) || getWaveNumbers(f);
+                        if (nums) activeFilterNumbers.push(...nums);
+                    });
+                    activeFilterNumbers = activeFilterNumbers.map(n => String(n).padStart(2, '0'));
+                };
+                const render = () => {
+                    const sorted = Object.entries(data)
+                        .sort((a, b) => parseInt(typeof b[1] === 'object' ? b[1].current_miss : b[1]) - parseInt(typeof a[1] === 'object' ? a[1].current_miss : a[1]));
+                    const filteredEntries = activeFilterNumbers.length > 0
+                        ? sorted.filter(([num]) => {
+                            const numStr = String(num).padStart(2, '0');
+                            return activeFilterNumbers.includes(numStr);
+                        })
+                        : sorted;
+                    const maxMissRanking = Object.entries(data)
+                        .map(([num, info]) => ({ num, max_miss: typeof info === 'object' ? (info.max_miss || 0) : 0 }))
+                        .sort((a, b) => b.max_miss - a.max_miss)
+                        .slice(0, 30);
+                    let html = '<div class="snm-filter-bar">';
+                    const zodiacs = Object.keys(ZODIAC_NUMBERS);
+                    const zodiacMid = Math.ceil(zodiacs.length / 2);
+                    html += '<div class="snm-filter-row">';
+                    zodiacs.slice(0, zodiacMid).forEach(z => {
+                        const active = activeFilters.includes(z) ? 'active' : '';
+                        html += '<button class="snm-filter-btn ' + active + '" data-filter="' + z + '">' + z + '</button>';
+                    });
+                    html += '</div><div class="snm-filter-row">';
+                    zodiacs.slice(zodiacMid).forEach(z => {
+                        const active = activeFilters.includes(z) ? 'active' : '';
+                        html += '<button class="snm-filter-btn ' + active + '" data-filter="' + z + '">' + z + '</button>';
+                    });
+                    html += '</div>';
+                    Object.keys(WAVE_NUMBERS).forEach(w => {
+                        const active = activeFilters.includes(w) ? 'active' : '';
+                        const colorMap = {'红波':'#ff3b30','蓝波':'#007aff','绿波':'#34c759'};
+                        const color = colorMap[w] || '#1d1d1f';
+                        html += '<button class="snm-filter-btn ' + active + '" data-filter="' + w + '" style="border-left-color:' + color + '">' + w + '</button>';
+                    });
+                    if (activeFilters.length > 0) html += '<button class="snm-reset-btn">✕</button>';
+                    html += '</div></div>';
+                    html += '<div class="snm-max-miss-toggle" id="snm-max-miss-toggle"><span class="toggle-icon">▶</span> 历史最高遗漏 TOP30</div>';
+                    html += '<div class="snm-max-miss-ranking" id="snm-max-miss-content" style="display:none;"><div class="snm-ranking-list">';
+                    maxMissRanking.forEach((item, idx) => {
+                        const info = data[item.num] || {};
+                        const level = item.max_miss > 50 ? 'high' : item.max_miss > 30 ? 'medium' : '';
+                        html += '<div class="snm-ranking-item ' + level + '"><span class="rank">' + (idx + 1) + '</span><span class="rank-num">' + item.num + '</span><span class="rank-miss">' + item.max_miss + '期<span class="rank-range">(' + (info.max_miss_start || '?') + '~' + (info.max_miss_end || '?') + ')</span></span></div>';
+                    });
+                    html += '</div></div>';
+                    html += '<div class="number-miss-grid">';
+                    filteredEntries.forEach(([num, info]) => {
+                        const missVal = typeof info === 'object' ? (info.current_miss || 0) : parseInt(info) || 0;
+                        const level = missVal > 50 ? 'high' : missVal > 30 ? 'medium' : '';
+                        const isSelected = selectedNumbers.has(num);
+                        html += '<div class="number-miss-cell ' + level + '-miss' + (isSelected ? ' selected' : '') + '" data-num="' + num + '"><div class="nm-number">' + num + '</div><div class="nm-miss">' + missVal + '期</div></div>';
+                    });
+                    html += '</div>';
+                    container.innerHTML = html;
+
+                    // Update selection count display
+                    const countEl = container.querySelector('#snm-selected-num');
+                    const copyBtn = container.querySelector('#snm-copy-btn');
+                    if (countEl) countEl.textContent = selectedNumbers.size;
+                    if (copyBtn) copyBtn.disabled = selectedNumbers.size === 0;
+
+                    // Cell click handlers
+                    container.querySelectorAll('.number-miss-cell').forEach(cell => {
+                        cell.addEventListener('click', () => {
+                            const num = cell.dataset.num;
+                            if (selectedNumbers.has(num)) {
+                                selectedNumbers.delete(num);
+                                cell.classList.remove('selected');
+                            } else {
+                                selectedNumbers.add(num);
+                                cell.classList.add('selected');
+                            }
+                            // Show/hide selection bar
+                            let selBar = container.querySelector('.snm-selection-bar');
+                            if (selectedNumbers.size > 0) {
+                                if (!selBar) {
+                                    // Insert selection bar after filter bar
+                                    const filterBar = container.querySelector('.snm-filter-bar');
+                                    if (filterBar) {
+                                        const barHtml = '<div class="snm-selection-bar"><span class="snm-selected-count">已选: <strong id="snm-selected-num">0</strong> 个</span><button class="snm-copy-btn" id="snm-copy-btn">复制号码</button></div>';
+                                        filterBar.insertAdjacentHTML('afterend', barHtml);
+                                        selBar = container.querySelector('.snm-selection-bar');
+                                        const newBtn = container.querySelector('#snm-copy-btn');
+                                        if (newBtn) {
+                                            newBtn.addEventListener('click', () => {
+                                                const nums = Array.from(selectedNumbers).sort((a, b) => parseInt(a) - parseInt(b));
+                                                const text = nums.join(', ');
+                                                newBtn.textContent = '复制中...';
+                                                // Try clipboard API first
+                                                if (navigator.clipboard && navigator.clipboard.writeText) {
+                                                    navigator.clipboard.writeText(text).then(() => {
+                                                        newBtn.textContent = '已复制!';
+                                                        setTimeout(() => { newBtn.textContent = '复制号码'; }, 1500);
+                                                    }).catch(() => {
+                                                        fallbackCopy(text);
+                                                    });
+                                                } else {
+                                                    fallbackCopy(text);
+                                                }
+                                                function fallbackCopy(t) {
+                                                    const ta = document.createElement('textarea');
+                                                    ta.value = t;
+                                                    ta.style.position = 'fixed';
+                                                    ta.style.opacity = '0';
+                                                    document.body.appendChild(ta);
+                                                    ta.select();
+                                                    try { document.execCommand('copy'); newBtn.textContent = '已复制!'; }
+                                                    catch(e) { newBtn.textContent = '复制失败'; }
+                                                    setTimeout(() => { document.body.removeChild(ta); newBtn.textContent = '复制号码'; }, 1500);
+                                                }
+                                            });
+                                        }
+                                    }
+                                }
+                                const countEl = container.querySelector('#snm-selected-num');
+                                const copyBtn = container.querySelector('#snm-copy-btn');
+                                if (countEl) countEl.textContent = selectedNumbers.size;
+                                if (copyBtn) copyBtn.disabled = false;
+                            } else {
+                                if (selBar) selBar.remove();
+                            }
+                        });
+                    });
+
+                    const toggle = container.querySelector('#snm-max-miss-toggle');
+                    const content = container.querySelector('#snm-max-miss-content');
+                    if (toggle && content) {
+                        toggle.addEventListener('click', () => {
+                            const isHidden = content.style.display === 'none';
+                            content.style.display = isHidden ? 'block' : 'none';
+                            toggle.querySelector('.toggle-icon').textContent = isHidden ? '▼' : '▶';
+                        });
+                    }
+                    container.querySelectorAll('.snm-filter-btn').forEach(btn => {
+                        btn.addEventListener('click', () => {
+                            const key = btn.dataset.filter;
+                            const idx = activeFilters.indexOf(key);
+                            if (idx >= 0) activeFilters.splice(idx, 1);
+                            else activeFilters.push(key);
+                            applyFilters();
+                            render();
+                        });
+                    });
+                    const resetBtn = container.querySelector('.snm-reset-btn');
+                    if (resetBtn) resetBtn.addEventListener('click', () => { activeFilters = []; activeFilterNumbers = []; render(); });
+                };
+                render();
+            } catch(e) {
+                console.error('renderSpecialNumberMiss error:', e);
+                container.innerHTML = '<div class="error-state">渲染失败: ' + e.message + '</div>';
+            }
+        }
+
+        function renderZodiacMiss(data, container) {
+            const ZODIAC_ORDER = ['鼠','牛','虎','兔','龍','蛇','馬','羊','猴','雞','狗','豬'];
+            const entries = ZODIAC_ORDER.map(z => [z, data[z]]).filter(([k, v]) => v && typeof v === 'object');
+            // Sort by current_miss DESC - highest miss at top (render layer only)
+            entries.sort((a, b) => (b[1].current_miss || 0) - (a[1].current_miss || 0));
+
+            // 历史最高遗漏 TOP10
+            const maxMissRanking = entries
+                .map(([zodiac, info]) => ({
+                    zodiac,
+                    max_miss: info.max_miss || 0,
+                    max_miss_start: info.max_miss_start,
+                    max_miss_end: info.max_miss_end
+                }))
+                .sort((a, b) => b.max_miss - a.max_miss)
+                .slice(0, 10);
+
+            let html = '';
+            // 历史最高遗漏排名（默认收起，点击展开）
+            html += '<div class="zm-max-miss-toggle">';
+            html += '<span class="toggle-icon">▶</span> 历史最高遗漏 TOP10';
+            html += '</div>';
+            html += '<div class="zodiac-max-miss-ranking" style="display:none;">';
+            html += '<div class="zm-ranking-list">';
+            maxMissRanking.forEach((item, idx) => {
+                const level = item.max_miss > 50 ? 'high' : item.max_miss > 30 ? 'medium' : '';
+                const startIssue = item.max_miss_start || '?';
+                const endIssue = item.max_miss_end || '?';
+                html += `
+                    <div class="zm-ranking-item ${level}">
+                        <span class="rank">${idx + 1}</span>
+                        <span class="rank-zodiac">${item.zodiac}</span>
+                        <span class="rank-miss">${item.max_miss}期<span class="rank-range">(${startIssue}~${endIssue})</span></span>
+                    </div>
+                `;
+            });
+            html += '</div></div>';
+
+            html += '<div class="zodiac-miss-table">';
+            entries.forEach(([zodiac, info]) => {
+                const miss = info.current_miss || 0;
+                const level = miss > 50 ? 'high' : miss > 30 ? 'medium' : 'low';
+                html += `
+                    <div class="zodiac-miss-row">
+                        <span class="zm-zodiac">${zodiac}</span>
+                        <span class="zm-miss ${level}">${miss}期</span>
+                    </div>
+                `;
+            });
+            html += '</div>';
+            container.innerHTML = html;
+
+            // 绑定收起/展开事件
+            const toggle = container.querySelector('.zm-max-miss-toggle');
+            const content = container.querySelector('.zodiac-max-miss-ranking');
+            if (toggle && content) {
+                toggle.addEventListener('click', () => {
+                    const isHidden = content.style.display === 'none';
+                    content.style.display = isHidden ? 'block' : 'none';
+                    toggle.querySelector('.toggle-icon').textContent = isHidden ? '▼' : '▶';
+                });
+            }
+        }
+
+        function renderWaveMiss(data, container) {
+            // 历史最高遗漏 TOP3
+            const waves = Object.entries(data).filter(([k, v]) => typeof v === 'object');
+            waves.sort((a, b) => (b[1].max_miss || 0) - (a[1].max_miss || 0));
+            const top3 = waves.slice(0, 3);
+
+            const WAVE_COLORS = {'红波': '#ff3b30', '蓝波': '#007aff', '绿波': '#34c759'};
+
+            let html = '';
+            // 历史最高遗漏排名（默认收起，点击展开）
+            html += '<div class="wm-max-miss-toggle">';
+            html += '<span class="toggle-icon">▶</span> 历史最高遗漏 TOP3';
+            html += '</div>';
+            html += '<div class="wave-max-miss-ranking" style="display:none;">';
+            html += '<div class="wm-ranking-list">';
+            top3.forEach(([wave, info], idx) => {
+                const level = info.max_miss > 15 ? 'high' : info.max_miss > 10 ? 'medium' : '';
+                const color = WAVE_COLORS[wave] || '#1d1d1f';
+                const startIssue = info.max_miss_start || '?';
+                const endIssue = info.max_miss_end || '?';
+                html += `
+                    <div class="wm-ranking-item ${level}">
+                        <span class="rank">${idx + 1}</span>
+                        <span class="rank-waves" style="color:${color}">${wave}</span>
+                        <span class="rank-miss">${info.max_miss}期<span class="rank-range">(${startIssue}~${endIssue})</span></span>
+                    </div>
+                `;
+            });
+            html += '</div></div>';
+
+            html += '<div class="wave-miss-grid">';
+
+            for (const [wave, info] of Object.entries(data)) {
+                if (typeof info !== 'object') continue;
+                const miss = info.current_miss || 0;
+                const level = miss > 10 ? 'high' : '';
+                const color = WAVE_COLORS[wave] || '#1d1d1f';
+                html += `
+                    <div class="wave-miss-cell ${level}-miss">
+                        <div class="wm-name" style="color:${color}">${wave}</div>
+                        <div class="wm-miss">${miss}</div>
+                        <div class="wm-label">期未开出</div>
+                    </div>
+                `;
+            }
+            html += '</div>';
+            container.innerHTML = html;
+
+            // 绑定收起/展开事件
+            const toggle = container.querySelector('.wm-max-miss-toggle');
+            const content = container.querySelector('.wave-max-miss-ranking');
+            if (toggle && content) {
+                toggle.addEventListener('click', () => {
+                    const isHidden = content.style.display === 'none';
+                    content.style.display = isHidden ? 'block' : 'none';
+                    toggle.querySelector('.toggle-icon').textContent = isHidden ? '▼' : '▶';
+                });
+            }
+        }
+
+        function renderHotStats(data, container) {
+            const ZODIAC_ORDER = ['鼠','牛','虎','兔','龍','蛇','馬','羊','猴','雞','狗','豬'];
+
+            const getHeatColor = (val, max) => {
+                const ratio = max > 0 ? val / max : 0;
+                if (ratio > 0.8) return 'rgba(255, 68, 68, 0.85)';
+                if (ratio > 0.6) return 'rgba(255, 136, 51, 0.80)';
+                if (ratio > 0.4) return 'rgba(255, 200, 51, 0.70)';
+                if (ratio > 0.2) return 'rgba(102, 204, 255, 0.60)';
+                return 'rgba(102, 187, 255, 0.35)';
+            };
+
+            const badge = (val, max) => {
+                const bg = getHeatColor(val, max);
+                return `<span class="hs-badge" style="background:${bg}">${val}</span>`;
+            };
+
+            const render = () => {
+                const max30 = Math.max(...ZODIAC_ORDER.map(z => data[z]?.hot_30 || 0));
+                const max50 = Math.max(...ZODIAC_ORDER.map(z => data[z]?.hot_50 || 0));
+                const max100 = Math.max(...ZODIAC_ORDER.map(z => data[z]?.hot_100 || 0));
+                const max200 = Math.max(...ZODIAC_ORDER.map(z => data[z]?.hot_200 || 0));
+
+                let html = `
+                <div class="hs-table">
+                    <div class="hs-thead">
+                        <span>生肖</span>
+                        <span>30期</span>
+                        <span>50期</span>
+                        <span>100期</span>
+                        <span>200期</span>
+                    </div>`;
+
+                ZODIAC_ORDER.forEach(z => {
+                    const info = data[z];
+                    if (!info) return;
+                    html += `
+                    <div class="hs-trow">
+                        <span class="hs-tzodiac">${z}</span>
+                        <span>${badge(info.hot_30 || 0, max30)}</span>
+                        <span>${badge(info.hot_50 || 0, max50)}</span>
+                        <span>${badge(info.hot_100 || 0, max100)}</span>
+                        <span>${badge(info.hot_200 || 0, max200)}</span>
+                    </div>`;
+                });
+
+                html += `</div>`;
+                container.innerHTML = html;
+            };
+
+            render();
+        }
+
+        // Foundation Stats - Auto Discover, Fetch, Render
+        async function loadFoundationStats() {
+            const container = document.getElementById('foundation-stats-section');
+
+            try {
+                // Use merged API - single request for all stats
+                const res = await fetch('/api/stats/all');
+                if (!res.ok) throw new Error('stats/all endpoint error');
+                const result = await res.json();
+
+                if (!result.success || !result.stats) {
+                    throw new Error('invalid response');
+                }
+
+                // Store all stats in cache
+                Object.entries(result.stats).forEach(([type, data]) => {
+                    cachedStats[type] = data;
+                });
+
+                // Initialize tabs
+                initStatTabs();
+
+                // Update meta display
+                if (result.meta) {
+                    document.getElementById('ws-issue').textContent = `第${result.meta.latest_issue || '--'}期`;
+                    document.getElementById('ws-records').textContent = `统计:${result.meta.record_count || 0}期`;
+                    document.getElementById('ws-update').textContent = result.meta.computed_at ? formatTime(result.meta.computed_at) : '';
+                }
+
+                // Render first tab (from cache, zero latency)
+                switchStatTab('special_number_miss');
+
+            } catch (e) {
+                console.error('Foundation stats load failed:', e);
+                document.getElementById('workspace-content').innerHTML = `<div class="error-state">加载失败: ${e.message}</div>`;
+            }
+        }
+
+        function renderFoundationCard(type, statData, label) {
+            // Direct render: no computation, no filtering, no ranking
+            const data = statData.data || statData;
+            const statLabel = label || { name: type, desc: '' };
+
+            let rows = '';
+
+            if (type === 'zodiac_miss') {
+                const items = data.data || data;
+                const entries = Object.entries(items).filter(([k, v]) => typeof v === 'object');
+                // 2-column layout
+                for (let i = 0; i < entries.length; i += 2) {
+                    const row = entries.slice(i, i + 2);
+                    const cols = row.map(([zodiac, info]) => {
+                        const missClass = info.current_miss > 50 ? 'miss' : '';
+                        return `<span class="foundation-zodiac"><span class="fz-label">${zodiac}</span><span class="fz-value ${missClass}">${info.current_miss}期</span></span>`;
+                    }).join('');
+                    rows += `<div class="foundation-hot-row">${cols}</div>`;
+                }
+            } else if (type === 'wave_miss') {
+                const items = data.data || data;
+                for (const [wave, info] of Object.entries(items)) {
+                    if (typeof info !== 'object') continue;
+                    const missClass = info.current_miss > 10 ? 'miss' : '';
+                    rows += `
+                        <div class="foundation-wave-row">
+                            <span class="fw-name">${wave}</span>
+                            <span class="fw-value ${missClass}">${info.current_miss}期</span>
+                        </div>
+                    `;
+                }
+            } else if (type === 'hot_stats') {
+                const items = data.data || data;
+                const firstZodiac = Object.values(items)[0] || {};
+                const effectiveWindow = firstZodiac.effective_window || 50;
+                const entries = Object.entries(items).filter(([k, v]) => typeof v === 'object');
+
+                // 2-column layout with hot values
+                for (let i = 0; i < entries.length; i += 2) {
+                    const row = entries.slice(i, i + 2);
+                    const cols = row.map(([zodiac, info]) => {
+                        const hotClass = info.hot_50 > 40 ? 'hot' : '';
+                        return `<span class="foundation-zodiac"><span class="fz-label">${zodiac}</span><span class="fz-value ${hotClass}">${info.hot_10 || 0}/${info.hot_30 || 0}/${info.hot_50 || 0}</span></span>`;
+                    }).join('');
+                    rows += `<div class="foundation-hot-row">${cols}</div>`;
+                }
+                rows = `
+                    <div class="foundation-stat-header">
+                        <span class="foundation-stat-name">${statLabel.name}</span>
+                        <span class="foundation-stat-desc">${statLabel.desc}</span>
+                        <span class="foundation-window">窗口: ${effectiveWindow}期</span>
+                    </div>
+                ` + rows;
+            } else {
+                // Generic fallback
+                const items = data.data || data;
+                const entries = Object.entries(items).filter(([k, v]) => typeof v === 'object');
+                for (let i = 0; i < entries.length; i += 2) {
+                    const row = entries.slice(i, i + 2);
+                    const cols = row.map(([key, value]) => {
+                        const displayValue = Object.entries(value).map(([k, v]) => `${k}=${v}`).join(', ');
+                        return `<span class="foundation-zodiac"><span class="fz-label">${key}</span><span class="fz-value">${displayValue}</span></span>`;
+                    }).join('');
+                    rows += `<div class="foundation-hot-row">${cols}</div>`;
+                }
+            }
+
+            return `
+                <div class="foundation-card">
+                    <div class="foundation-card-header">
+                        <span class="foundation-card-title">${statLabel.name}</span>
+                        <span class="foundation-card-desc">${statLabel.desc}</span>
+                    </div>
+                    <div class="foundation-card-body">
+                        ${rows}
+                    </div>
+                </div>
+            `;
+        }
+
+        // Tab-based workspace auto-initializes on view switch
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "version": "v26",
+  "strategy_type": "pingte_yixiao",
+  "play_type": "pingte_yixiao",
+  "params": {
+    "lookback": 30,
+    "gap_weight": 0.603,
+    "freq_weight": 0.474,
+    "streak_weight": 0.092,
+    "trend_weight": 1.566,
+    "variance_weight": 1.869
+  },
+  "notes": "平特一肖 - 预测1个生肖，7码中包含即命中",
+  "frozen": false,
+  "status": "active",
+  "created_at": "2026-05-25T16:10:00.000000",
+  "updated_at": "2026-05-25T21:47:29.858428",
+  "backtest": {
+    "total": 861,
+    "hits": 423,
+    "hit_rate": 0.4912891986062718
+  }
+}

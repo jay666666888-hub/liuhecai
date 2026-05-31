@@ -1,0 +1,8 @@
+{
+  "n_samples": 870,
+  "n_features": 278,
+  "feature_sample_ratio": 0.3195402298850575,
+  "threshold": 0.1,
+  "is_high_risk": true,
+  "interpretation": "HIGH_OVERFITTING_RISK - 特征数超过样本数的10%，存在严重过拟合风险"
+}

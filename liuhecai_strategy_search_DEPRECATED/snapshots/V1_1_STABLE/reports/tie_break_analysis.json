@@ -1,0 +1,9 @@
+{
+  "baseline_overlap": 0.5168,
+  "diversity_overlap": 0.5284,
+  "noise_overlap": 0.3830,
+  "baseline_hit": 0.4625,
+  "diversity_hit": 0.4375,
+  "noise_hit": 0.4519,
+  "recommendation": "Mode C (micro-noise) is the only option that reduces overlap, but at cost to hit rate. Mode B (diversity) makes both metrics worse. If reducing overlap is critical, use micro-noise but expect small hit rate degradation (~0.01). Otherwise, accept the current overlap as the cost of the data distribution."
+}

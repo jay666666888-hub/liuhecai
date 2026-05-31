@@ -1,0 +1,46 @@
+{
+  "cycle": {
+    "feature": "cycle",
+    "baseline": 0.5333,
+    "new_score": 0.5333,
+    "gain": 0.0,
+    "std": 0.0,
+    "p_value": NaN,
+    "importance": 0.0,
+    "leak_risk": "MEDIUM",
+    "status": "REMOVE"
+  },
+  "decay": {
+    "feature": "decay",
+    "baseline": 0.5333,
+    "new_score": 0.5333,
+    "gain": 0.0,
+    "std": 0.0,
+    "p_value": NaN,
+    "importance": 0.0,
+    "leak_risk": "LOW",
+    "status": "REMOVE"
+  },
+  "volatility": {
+    "feature": "volatility",
+    "baseline": 0.5333,
+    "new_score": 0.5333,
+    "gain": 0.0,
+    "std": 0.0,
+    "p_value": NaN,
+    "importance": 0.0,
+    "leak_risk": "LOW",
+    "status": "REMOVE"
+  },
+  "state": {
+    "feature": "state",
+    "baseline": 0.5333,
+    "new_score": 0.5333,
+    "gain": 0.0,
+    "std": 0.0,
+    "p_value": NaN,
+    "importance": 0.0,
+    "leak_risk": "LOW",
+    "status": "REMOVE"
+  }
+}

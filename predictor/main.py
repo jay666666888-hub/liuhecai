@@ -2,6 +2,11 @@
 """
 澳门六合预测系统 - 主入口
 每日 21:35 cron 触发
+
+⚠️ DEPRECATED (2026-05-25)
+此文件已被 scripts/run_pipeline.py 替代。
+统一入口：使用 Orchestrator，数据源为 aggregated_live.jsonl
+保留此文件仅用于向后兼容。
 """
 
 import json
@@ -14,8 +19,8 @@ from typing import Optional
 # 添加路径
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from predictor.data_fetcher import get_all_records, build_standard_records, extract_zodiac_mapping
-from predictor.predictor import run_prediction_pipeline, predict_next
+from predictor.data_fetcher import get_all_records, build_standard_records
+from predictor.six_zodiac_predictor import run_prediction_pipeline, predict_next
 from predictor.config import load_strategy, save_strategy
 from predictor.notification import send_notification
 
@@ -54,8 +59,8 @@ def main() -> Optional[dict]:
     try:
         # 1. 获取数据
         log("[1/4] 获取数据...")
-        records = get_all_records([2024, 2025])
-        standard_records = build_standard_records(records, extract_zodiac_mapping(records))
+        records = get_all_records([2024, 2025, 2026])
+        standard_records = build_standard_records(records)
         log(f"  数据: {len(standard_records)} 期")
         log(f"  输入数据: 最新期号={records[-1]['expect']}, 特码={records[-1]['zodiac'].split(',')[6]}")
 

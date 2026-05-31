@@ -1,0 +1,37 @@
+{
+  "version": "V1.1_STABLE",
+  "project_status": "COMPLETE",
+  "runtime_status": "RUNNING",
+  "shadow_mode": "ACTIVE",
+  "faults_open": [],
+  "known_exceptions": [
+    "baseline drift caused by zodiac data format mismatch (zodiacs column simulated via rolling window from raw_zodiac for compatibility)"
+  ],
+  "allowed_actions": [
+    "bug fix (runtime fault only)",
+    "runtime monitoring",
+    "view logs",
+    "view status"
+  ],
+  "forbidden_actions": [
+    "change formulas",
+    "change weights",
+    "training",
+    "new experts",
+    "optimization",
+    "architecture modification",
+    "automatic continuation",
+    "automatic improvement",
+    "code changes beyond fault fix"
+  ],
+  "system_freeze_date": "2026-05-22",
+  "snapshot": "snapshots/V1_1_STABLE",
+  "runtime_dirs": {
+    "predictions": "runtime/predictions",
+    "actual_results": "runtime/actual_results",
+    "daily_metrics": "runtime/daily_metrics",
+    "shadow_reports": "runtime/shadow_reports",
+    "snapshots": "runtime/snapshots"
+  },
+  "status": "SYSTEM_FROZEN"
+}

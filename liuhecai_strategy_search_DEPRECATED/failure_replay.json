@@ -1,0 +1,146 @@
+{
+  "period": "200-300",
+  "total_rounds": 100,
+  "hit_rate": 0.45,
+  "errors": 55,
+  "state_errors": 44,
+  "routing_errors": 11,
+  "error_sources": {
+    "state_judgment_errors": 44,
+    "expert_routing_errors": 11,
+    "expert_prediction_errors": 0
+  },
+  "replay_sample": [
+    {
+      "idx": 200,
+      "true_state": "UNCERTAIN",
+      "detected_state": "UNCERTAIN",
+      "entropy": 2.016,
+      "volatility": 0.959,
+      "weights": {
+        "Gap": 0.2527,
+        "Trend": 0.3609,
+        "Momentum": 0.1263,
+        "Frequency": 0.1263,
+        "Color": 0.1338
+      },
+      "frozen_experts": [],
+      "top6": [
+        "鼠",
+        "牛",
+        "虎",
+        "兔",
+        "龍",
+        "蛇"
+      ],
+      "actual": "龍",
+      "hit": 1,
+      "state_correct": 1
+    },
+    {
+      "idx": 201,
+      "true_state": "UNCERTAIN",
+      "detected_state": "UNCERTAIN",
+      "entropy": 1.921,
+      "volatility": 1.02,
+      "weights": {
+        "Gap": 0.2658,
+        "Trend": 0.3797,
+        "Momentum": 0.1329,
+        "Frequency": 0.1329,
+        "Color": 0.0886
+      },
+      "frozen_experts": [],
+      "top6": [
+        "鼠",
+        "牛",
+        "虎",
+        "兔",
+        "龍",
+        "蛇"
+      ],
+      "actual": "狗",
+      "hit": 0,
+      "state_correct": 1
+    },
+    {
+      "idx": 202,
+      "true_state": "UNCERTAIN",
+      "detected_state": "UNCERTAIN",
+      "entropy": 1.987,
+      "volatility": 0.894,
+      "weights": {
+        "Gap": 0.2527,
+        "Trend": 0.3609,
+        "Momentum": 0.1263,
+        "Frequency": 0.1263,
+        "Color": 0.1338
+      },
+      "frozen_experts": [],
+      "top6": [
+        "鼠",
+        "牛",
+        "虎",
+        "兔",
+        "龍",
+        "蛇"
+      ],
+      "actual": "鼠",
+      "hit": 1,
+      "state_correct": 1
+    },
+    {
+      "idx": 203,
+      "true_state": "UNCERTAIN",
+      "detected_state": "UNCERTAIN",
+      "entropy": 1.999,
+      "volatility": 0.86,
+      "weights": {
+        "Gap": 0.2658,
+        "Trend": 0.3797,
+        "Momentum": 0.1329,
+        "Frequency": 0.1329,
+        "Color": 0.0886
+      },
+      "frozen_experts": [],
+      "top6": [
+        "鼠",
+        "牛",
+        "虎",
+        "兔",
+        "龍",
+        "蛇"
+      ],
+      "actual": "猴",
+      "hit": 0,
+      "state_correct": 1
+    },
+    {
+      "idx": 204,
+      "true_state": "UNCERTAIN",
+      "detected_state": "UNCERTAIN",
+      "entropy": 1.999,
+      "volatility": 0.86,
+      "weights": {
+        "Gap": 0.2658,
+        "Trend": 0.3797,
+        "Momentum": 0.1329,
+        "Frequency": 0.1329,
+        "Color": 0.0886
+      },
+      "frozen_experts": [],
+      "top6": [
+        "鼠",
+        "牛",
+        "虎",
+        "兔",
+        "龍",
+        "蛇"
+      ],
+      "actual": "羊",
+      "hit": 0,
+      "state_correct": 1
+    }
+  ],
+  "verdict": "STATE_DETECTOR_PROBLEM"
+}

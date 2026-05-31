@@ -1,0 +1,109 @@
+{
+  "phase": "DETECTOR_AUDIT",
+  "timestamp": "2026-05-21",
+
+  "summary": {
+    "status": "threshold_collapse + detector_dead",
+    "hot_pct": 100.0,
+    "total_rounds": 470,
+    "verdict": "CRITICAL"
+  },
+
+  "state_distribution": {
+    "HOT": {"count": 470, "pct": 100.0},
+    "COLD": {"count": 0, "pct": 0.0},
+    "TRANSITION": {"count": 0, "pct": 0.0},
+    "CHAOTIC": {"count": 0, "pct": 0.0},
+    "UNCERTAIN": {"count": 0, "pct": 0.0}
+  },
+
+  "detector_contributions": {
+    "entropy_detector": {
+      "status": "partially_dead",
+      "total_votes": 72,
+      "no_votes": 398,
+      "vote_rate": 15.3,
+      "breakdown": {
+        "CHAOTIC": {"threshold": ">2.40", "votes": 0, "pct": 0.0},
+        "HOT": {"threshold": "<2.05", "votes": 72, "pct": 15.3},
+        "NO_VOTE": {"threshold": "2.05-2.40", "count": 398, "pct": 84.7}
+      },
+      "diagnosis": "ENTROPY_THRESHOLD_DEAD: entropy range (1.86-2.39) never exceeds 2.40, so CHAOTIC never votes. Falls in middle band 84.7% of time."
+    },
+    "volatility_detector": {
+      "status": "mostly_dead",
+      "total_votes": 38,
+      "no_votes": 432,
+      "vote_rate": 8.1,
+      "breakdown": {
+        "COLD": {"threshold": ">0.90", "votes": 16, "pct": 3.4},
+        "HOT": {"threshold": "<0.50", "votes": 22, "pct": 4.7},
+        "NO_VOTE": {"threshold": "0.50-0.90", "count": 432, "pct": 91.9}
+      },
+      "diagnosis": "VOLATILITY_THRESHOLD_DEAD: volatility range (0.37-1.05) never exceeds 0.90 by enough, stays in middle band 91.9% of time."
+    },
+    "stability_detector": {
+      "status": "fully_dead",
+      "total_votes": 0,
+      "no_votes": 470,
+      "vote_rate": 0.0,
+      "breakdown": {
+        "TRANSITION": {"threshold": "<p20", "votes": 0, "pct": 0.0},
+        "other": {"threshold": ">=p20", "votes": 470, "pct": 100.0}
+      },
+      "diagnosis": "STABILITY_THRESHOLD_DEAD: stability value is constant at 0.500 (due to _calc_state_features bug: using first expert top6 predictions instead of actual aggregated predictions). Never drops below p20."
+    },
+    "regime_detector": {
+      "status": "fully_dead",
+      "total_votes": 0,
+      "no_votes": 470,
+      "vote_rate": 0.0,
+      "breakdown": {
+        "TRANSITION": {"threshold": "regime_shift=True", "votes": 0, "pct": 0.0},
+        "other": {"threshold": "regime_shift=False", "votes": 470, "pct": 100.0}
+      },
+      "diagnosis": "REGIME_THRESHOLD_DEAD: regime_shift condition (|first_half_hits - second_half_hits| > 3) never triggers in the data."
+    }
+  },
+
+  "window_analysis": {
+    "entropy_window": {
+      "current": 20,
+      "range_at_20": "1.86-2.39",
+      "chaotic_threshold": 2.40,
+      "pct_below_chaotic": 0.0,
+      "at_window_50": {
+        "range": "2.22-2.46",
+        "pct_above_2.40": 38.1
+      }
+    },
+    "volatility_window": {
+      "current": 20,
+      "range_at_20": "0.37-1.05",
+      "cold_threshold": 0.90,
+      "pct_above_cold": 3.4,
+      "at_window_10": {
+        "range": "0.66-1.46",
+        "pct_above_0.90": 68.1
+      }
+    }
+  },
+
+  "root_causes": [
+    {
+      "detector": "stability",
+      "cause": "stability is calculated using first expert's top6 predictions (from prediction_history) but the check `if actual in pred.get(list(EXPERTS)[0], [])` is wrong - should use actual aggregated top6"
+    },
+    {
+      "detector": "entropy",
+      "cause": "window=20 puts entropy in middle band (2.05-2.40) 84.7% of time. Need larger window to detect chaotic regimes (entropy>2.40)."
+    },
+    {
+      "detector": "regime",
+      "cause": "regime_shift condition too strict: |first_half - second_half| > 3 never triggers."
+    }
+  ],
+
+  "verdict": "CRITICAL",
+  "recommendation": "Need to fix: (1) stability calculation to use actual predictions, (2) entropy window to 30-50, (3) regime threshold relaxation, (4) middle-band handling for entropy/volatility"
+}

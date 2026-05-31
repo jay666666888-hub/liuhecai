@@ -1,0 +1,29 @@
+{
+  "period": "200-300",
+  "total_rounds": 100,
+  "old_mean_hit": 0.45,
+  "new_mean_hit": 0.48,
+  "delta": 0.03,
+  "improvement_pct": 6.67,
+  "hits": 48,
+  "max_drawdown": -4.0,
+  "rolling_30": 0.4667,
+  "state_distribution": {
+    "HOT": 100
+  },
+  "missed_by_color": {
+    "红": 19,
+    "蓝": 11,
+    "绿": 22
+  },
+  "root_cause": "predict_top6 called AFTER update() which clears _current_expert_scores, causing aggregation on empty/default scores instead of actual expert scores",
+  "fix_summary": [
+    "1. Reordered run_backtest: predict_top6() before update()",
+    "2. Added Frequency to EXPERTS list (5 experts instead of 4)",
+    "3. Updated BASE_WEIGHTS to include Frequency in all states",
+    "4. Fixed _calc_uncertain_weights to include Frequency",
+    "5. Fixed get_recent_hit_rates to include Frequency",
+    "6. Fixed expert_histories length in tests (4->5)"
+  ],
+  "verdict": "FIXED"
+}

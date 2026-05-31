@@ -1,0 +1,52 @@
+{
+  "zodiac_consensus": {
+    "total_strategies": 50,
+    "zodiac_counts": {
+      "马": 46,
+      "羊": 44,
+      "兔": 34,
+      "猴": 33,
+      "蛇": 27,
+      "狗": 9,
+      "鼠": 8,
+      "龍": 8,
+      "雞": 7,
+      "牛": 5,
+      "虎": 4,
+      "豬": 3
+    },
+    "zodiac_percentages": {
+      "马": "92.0%",
+      "羊": "88.0%",
+      "兔": "68.0%",
+      "猴": "66.0%",
+      "蛇": "54.0%",
+      "狗": "18.0%",
+      "鼠": "16.0%",
+      "龍": "16.0%",
+      "雞": "14.0%",
+      "牛": "10.0%",
+      "虎": "8.0%",
+      "豬": "6.0%"
+    },
+    "top6_zodiacs": [
+      "马",
+      "羊",
+      "兔",
+      "猴",
+      "蛇",
+      "狗"
+    ],
+    "top6_avg_coverage": "3.9%",
+    "most_common_zodiac": {
+      "zodiac": "马",
+      "in_strategies": 46,
+      "percentage": "92.0%"
+    }
+  },
+  "consensus_status": "STRONG_CONSENSUS",
+  "top50_stats": {
+    "avg_hit_rate": 0.552,
+    "avg_score": 0.7047
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "version": "v20",
+  "type": "residual_learning",
+  "architecture": "v12_base + Markov + error_bias + drift_detection",
+  "params": {
+    "v12": {
+      "lookback": 11,
+      "pattern_weight": 1.45,
+      "gap_weight": 0.098,
+      "trend_weight": 0.267,
+      "variance_weight": 0.177,
+      "alt_mode": "trend"
+    },
+    "error_window": 30,
+    "drift_window": 50
+  },
+  "validation": {
+    "hit_rate": 0.4942528735632184,
+    "max_streak": 5,
+    "num_tests": 174
+  },
+  "updated_at": "2026-05-24T10:15:04.137786"
+}

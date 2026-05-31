@@ -1,0 +1,316 @@
+{
+  "data_layer": "PASS",
+  "feature_layer": "PASS",
+  "label_layer": "PASS",
+  "baseline_layer": "PASS",
+  "status": "GREEN",
+  "details": {
+    "feature_snapshot": {
+      "total_checked": 50,
+      "all_valid": true,
+      "feature_time_check": "PASS",
+      "samples": [
+        {
+          "period": "2025318",
+          "predict_date": "2025-11-14",
+          "train_end_date": "2025-11-13",
+          "train_size": 684,
+          "feature_time_check": "valid",
+          "details": [
+            "训练数据最后日期: 2025-11-13 < 预测日期: 2025-11-14"
+          ]
+        },
+        {
+          "period": "2024144",
+          "predict_date": "2024-05-23",
+          "train_end_date": "2024-05-22",
+          "train_size": 144,
+          "feature_time_check": "valid",
+          "details": [
+            "训练数据最后日期: 2024-05-22 < 预测日期: 2024-05-23"
+          ]
+        },
+        {
+          "period": "2024055",
+          "predict_date": "2024-02-24",
+          "train_end_date": "2024-02-23",
+          "train_size": 55,
+          "feature_time_check": "valid",
+          "details": [
+            "训练数据最后日期: 2024-02-23 < 预测日期: 2024-02-24"
+          ]
+        },
+        {
+          "period": "2026058",
+          "predict_date": "2026-02-27",
+          "train_end_date": "2026-02-26",
+          "train_size": 789,
+          "feature_time_check": "valid",
+          "details": [
+            "训练数据最后日期: 2026-02-26 < 预测日期: 2026-02-27"
+          ]
+        },
+        {
+          "period": "2024311",
+          "predict_date": "2024-11-06",
+          "train_end_date": "2024-11-05",
+          "train_size": 311,
+          "feature_time_check": "valid",
+          "details": [
+            "训练数据最后日期: 2024-11-05 < 预测日期: 2024-11-06"
+          ]
+        },
+        {
+          "period": "2024280",
+          "predict_date": "2024-10-06",
+          "train_end_date": "2024-10-05",
+          "train_size": 280,
+          "feature_time_check": "valid",
+          "details": [
+            "训练数据最后日期: 2024-10-05 < 预测日期: 2024-10-06"
+          ]
+        },
+        {
+          "period": "2024258",
+          "predict_date": "2024-09-14",
+          "train_end_date": "2024-09-13",
+          "train_size": 258,
+          "feature_time_check": "valid",
+          "details": [
+            "训练数据最后日期: 2024-09-13 < 预测日期: 2024-09-14"
+          ]
+        },
+        {
+          "period": "2024172",
+          "predict_date": "2024-06-20",
+          "train_end_date": "2024-06-19",
+          "train_size": 172,
+          "feature_time_check": "valid",
+          "details": [
+            "训练数据最后日期: 2024-06-19 < 预测日期: 2024-06-20"
+          ]
+        },
+        {
+          "period": "2026053",
+          "predict_date": "2026-02-22",
+          "train_end_date": "2026-02-21",
+          "train_size": 784,
+          "feature_time_check": "valid",
+          "details": [
+            "训练数据最后日期: 2026-02-21 < 预测日期: 2026-02-22"
+          ]
+        },
+        {
+          "period": "2024134",
+          "predict_date": "2024-05-13",
+          "train_end_date": "2024-05-12",
+          "train_size": 134,
+          "feature_time_check": "valid",
+          "details": [
+            "训练数据最后日期: 2024-05-12 < 预测日期: 2024-05-13"
+          ]
+        }
+      ]
+    },
+    "label_validation": {
+      "sample_size": 100,
+      "hit_count": 48,
+      "hit_rate": 0.48,
+      "expected_rate": 0.5,
+      "formula": "predicted ∩ actual > 0",
+      "definition": "六肖中有任意1个命中特码生肖即为命中",
+      "status": "PASS",
+      "samples": [
+        {
+          "period": "2024053",
+          "actual_zodiac": "龍",
+          "predicted_6": [
+            "狗",
+            "雞",
+            "牛",
+            "鼠",
+            "蛇",
+            "豬"
+          ],
+          "hit": false,
+          "formula": "predicted ∩ actual > 0"
+        },
+        {
+          "period": "2024274",
+          "actual_zodiac": "龍",
+          "predicted_6": [
+            "狗",
+            "马",
+            "猴",
+            "龍",
+            "鼠",
+            "兔"
+          ],
+          "hit": true,
+          "formula": "predicted ∩ actual > 0"
+        },
+        {
+          "period": "2024089",
+          "actual_zodiac": "龍",
+          "predicted_6": [
+            "狗",
+            "牛",
+            "虎",
+            "羊",
+            "猴",
+            "兔"
+          ],
+          "hit": false,
+          "formula": "predicted ∩ actual > 0"
+        },
+        {
+          "period": "2026056",
+          "actual_zodiac": "蛇",
+          "predicted_6": [
+            "狗",
+            "羊",
+            "马",
+            "猴",
+            "鼠",
+            "豬"
+          ],
+          "hit": false,
+          "formula": "predicted ∩ actual > 0"
+        },
+        {
+          "period": "2025051",
+          "actual_zodiac": "蛇",
+          "predicted_6": [
+            "虎",
+            "羊",
+            "马",
+            "龍",
+            "鼠",
+            "兔"
+          ],
+          "hit": false,
+          "formula": "predicted ∩ actual > 0"
+        },
+        {
+          "period": "2024272",
+          "actual_zodiac": "雞",
+          "predicted_6": [
+            "狗",
+            "马",
+            "猴",
+            "龍",
+            "鼠",
+            "蛇"
+          ],
+          "hit": false,
+          "formula": "predicted ∩ actual > 0"
+        },
+        {
+          "period": "2024110",
+          "actual_zodiac": "兔",
+          "predicted_6": [
+            "雞",
+            "牛",
+            "羊",
+            "猴",
+            "蛇",
+            "豬"
+          ],
+          "hit": false,
+          "formula": "predicted ∩ actual > 0"
+        },
+        {
+          "period": "2026127",
+          "actual_zodiac": "虎",
+          "predicted_6": [
+            "雞",
+            "牛",
+            "马",
+            "猴",
+            "鼠",
+            "豬"
+          ],
+          "hit": false,
+          "formula": "predicted ∩ actual > 0"
+        },
+        {
+          "period": "2024039",
+          "actual_zodiac": "雞",
+          "predicted_6": [
+            "狗",
+            "虎",
+            "马",
+            "猴",
+            "鼠",
+            "蛇"
+          ],
+          "hit": false,
+          "formula": "predicted ∩ actual > 0"
+        },
+        {
+          "period": "2025022",
+          "actual_zodiac": "羊",
+          "predicted_6": [
+            "虎",
+            "羊",
+            "马",
+            "猴",
+            "鼠",
+            "蛇"
+          ],
+          "hit": true,
+          "formula": "predicted ∩ actual > 0"
+        }
+      ]
+    },
+    "baseline_report": {
+      "baseline_random": {
+        "name": "随机策略",
+        "mean": 0.4992,
+        "std": 0.0165,
+        "p5": 0.4724,
+        "p95": 0.5264,
+        "n_experiments": 1000
+      },
+      "baseline_frequency": {
+        "name": "频率策略",
+        "hit_rate": 0.5402,
+        "top_6": [
+          "马",
+          "羊",
+          "蛇",
+          "猴",
+          "狗",
+          "龍"
+        ],
+        "strategy": "选择历史出现最多的6个生肖"
+      },
+      "baseline_hot_cold": {
+        "name": "冷热策略",
+        "hit_rate": 0.477,
+        "top_6": [
+          "马",
+          "豬",
+          "雞",
+          "狗",
+          "鼠",
+          "虎"
+        ],
+        "strategy": "选择近50期出现最多的6个生肖"
+      },
+      "baseline_markov": {
+        "name": "马尔可夫策略",
+        "hit_rate": 0.4839,
+        "top_6": [
+          "鼠",
+          "牛",
+          "虎",
+          "兔",
+          "龍",
+          "蛇"
+        ],
+        "strategy": "基于状态转移矩阵选择概率最高的6个生肖"
+      }
+    }
+  }
+}

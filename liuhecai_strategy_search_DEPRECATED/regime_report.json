@@ -1,0 +1,35 @@
+{
+  "per_period": [
+    {
+      "period": "200-300",
+      "start": 200,
+      "end": 300,
+      "hit_rate": 0.46
+    },
+    {
+      "period": "300-400",
+      "start": 300,
+      "end": 400,
+      "hit_rate": 0.52
+    },
+    {
+      "period": "400-500",
+      "start": 400,
+      "end": 500,
+      "hit_rate": 0.58
+    },
+    {
+      "period": "500-600",
+      "start": 500,
+      "end": 600,
+      "hit_rate": 0.59
+    }
+  ],
+  "summary": {
+    "max_rate": 0.59,
+    "min_rate": 0.46,
+    "range": 0.13
+  },
+  "gate": "FAIL",
+  "verdict": "REGIME_DEPENDENCY_DETECTED"
+}

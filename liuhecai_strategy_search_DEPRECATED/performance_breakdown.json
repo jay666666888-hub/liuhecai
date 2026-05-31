@@ -1,0 +1,20 @@
+{
+  "feature_generation": 0.0,
+  "walk_forward": 0.603,
+  "monte_carlo": 0,
+  "ga_evaluation": 0.5,
+  "strategy_execution": 0.0,
+  "baseline_computation": 0.4,
+  "other": 0.011,
+  "total": 1.514,
+  "optimization_effect": {
+    "before": "257.573s",
+    "after": "1.514s",
+    "speedup": "170x",
+    "main_fixes": [
+      "Feature caching (210s -> 0s after first compute)",
+      "Strategy prediction vectorization (called once per window not per sample)",
+      "Numpy vectorization in feature computation"
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "version": "v26",
+  "status": "retired",
+  "retire_reason": "被v27替代，v27 Walk-Forward验证54.4%",
+  "notes": "平特一肖 - 预测1个生肖，7码中包含即命中",
+  "created_at": "2026-05-25T16:10:00.000000",
+  "updated_at": "2026-05-26T03:10:46.135873",
+  "play_type": "pingte_yixiao",
+  "schema_version": "1.0.0"
+}

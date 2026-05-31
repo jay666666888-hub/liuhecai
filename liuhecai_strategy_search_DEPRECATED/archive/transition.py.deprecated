@@ -1,0 +1,124 @@
+# meta_v2/transition.py
+"""过渡控制器 - 平滑状态切换（可插拔组件）"""
+from typing import Dict, Optional
+
+
+class TransitionController:
+    """自适应混合过渡（可插拔组件）"""
+
+    def __init__(self):
+        self.current_state = "HOT"
+        self.transition_active = False
+        self.transition_period = 0
+        self.current_step = 0
+        self.old_state = "HOT"
+        self.new_state = "HOT"
+        self.blend_weights = {}
+
+    def get_weight(self, old_weights: Dict[str, float] = None,
+                   new_weights: Dict[str, float] = None) -> Dict[str, float]:
+        """
+        获取混合权重（接口方法）
+        """
+        if not self.transition_active or old_weights is None or new_weights is None:
+            return new_weights or old_weights or {}
+
+        alpha = self.get_current_alpha()
+        result = {}
+        for expert in old_weights.keys():
+            ow = old_weights.get(expert, 0)
+            nw = new_weights.get(expert, 0)
+            result[expert] = (1 - alpha) * ow + alpha * nw
+
+        total = sum(result.values())
+        if total > 0:
+            result = {k: v / total for k, v in result.items()}
+        return result
+
+    def update(self, old_state: str, new_state: str, confidence: float = None):
+        """
+        启动或更新过渡（接口方法）
+        """
+        if old_state == new_state:
+            self.transition_active = False
+            self.current_state = new_state
+            return
+
+        if not self.transition_active:
+            self.start_transition(old_state, new_state, confidence)
+        else:
+            # 检查是否需要重定向
+            self.current_step += 1
+            if self.current_step >= self.transition_period:
+                self.transition_active = False
+                self.current_state = self.new_state
+
+    def report(self) -> Dict:
+        """
+        生成报告（接口方法）
+        """
+        return {
+            "old_state": self.old_state,
+            "new_state": self.new_state,
+            "transition_active": self.transition_active,
+            "transition_period": self.transition_period,
+            "current_step": self.current_step,
+            "alpha": self.get_current_alpha() if self.transition_active else 1.0,
+            "current_state": self.current_state
+        }
+
+    def start_transition(self, old_state: str, new_state: str, confidence: float) -> int:
+        """启动过渡，返回过渡期长度"""
+        self.old_state = old_state
+        self.new_state = new_state
+        self.transition_active = True
+        self.current_step = 0
+
+        if confidence is not None:
+            if confidence > 0.5:
+                self.transition_period = 3
+            elif confidence > 0.3:
+                self.transition_period = 5
+            else:
+                self.transition_period = 8
+        else:
+            self.transition_period = 5  # default
+
+        return self.transition_period
+
+    def get_current_alpha(self) -> float:
+        """获取当前混合因子"""
+        if not self.transition_active:
+            return 1.0
+        if self.transition_period == 0:
+            return 1.0
+        return (self.current_step + 1) / self.transition_period
+
+    def check_abort(self, third_state_scores: Dict[str, int]) -> bool:
+        """检查是否需要中止过渡（第三状态成为第一）"""
+        if not self.transition_active or len(third_state_scores) < 3:
+            return False
+        sorted_states = sorted(third_state_scores.items(), key=lambda x: x[1], reverse=True)
+        if len(sorted_states) >= 3:
+            top_state = sorted_states[0][0]
+            if top_state not in [self.old_state, self.new_state]:
+                return True
+        return False
+
+    def force_transition(self, new_state: str):
+        """强制切换到新状态"""
+        self.old_state = self.current_state
+        self.new_state = new_state
+        self.transition_active = True
+        self.current_step = 0
+        self.transition_period = 3
+
+    def reset(self):
+        """重置"""
+        self.current_state = "HOT"
+        self.transition_active = False
+        self.transition_period = 0
+        self.current_step = 0
+        self.old_state = "HOT"
+        self.new_state = "HOT"
+        self.blend_weights = {}

@@ -1,0 +1,50 @@
+{
+  "status": "PASS",
+  "missing_fields": [],
+  "field_missing_rates": {
+    "period": "0.00%",
+    "date": "0.00%",
+    "number": "0.00%",
+    "zodiac": "0.00%",
+    "color": "0.00%",
+    "size": "0.00%",
+    "parity": "0.00%",
+    "tail": "0.00%",
+    "lunar_year": "0.00%",
+    "lunar_month": "0.00%",
+    "lunar_day": "0.00%",
+    "solar_term": "0.00%"
+  },
+  "date_validity": {
+    "invalid_count": 0,
+    "invalid_rate": "0.00%"
+  },
+  "zodiac_validity": {
+    "invalid_count": 0,
+    "invalid_values": []
+  },
+  "number_completeness": {
+    "out_of_range": 0,
+    "missing": 0,
+    "valid_count": 870
+  },
+  "time_continuity": {
+    "total_records": 870,
+    "gaps_found": 3,
+    "sample_gaps": [
+      [
+        "2023004",
+        "2024001"
+      ],
+      [
+        "2024366",
+        "2025001"
+      ],
+      [
+        "2025365",
+        "2026001"
+      ]
+    ]
+  },
+  "errors": []
+}

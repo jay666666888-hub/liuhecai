@@ -1,0 +1,14 @@
+{
+  "before": "93.25 sec",
+  "after": "0.78 sec",
+  "speedup": "119.6x",
+  "per_strategy_before": "9.33 sec",
+  "per_strategy_after": "0.078 sec (78ms)",
+  "target": "< 0.5 sec per strategy",
+  "achieved": true,
+  "main_optimizations": [
+    "Feature caching by upto_idx",
+    "Strategy prediction vectorized (once per window instead of per sample)",
+    "Numpy vectorization in feature computation"
+  ]
+}

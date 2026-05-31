@@ -1,0 +1,9102 @@
+[
+  {
+    "version": "v5",
+    "actual_period": "2025031",
+    "actual_zodiac": "猴",
+    "verified_top6": [
+      "狗",
+      "虎",
+      "雞",
+      "馬",
+      "羊",
+      "兔"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025032",
+    "actual_zodiac": "兔",
+    "verified_top6": [
+      "狗",
+      "虎",
+      "雞",
+      "馬",
+      "羊",
+      "兔"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025033",
+    "actual_zodiac": "馬",
+    "verified_top6": [
+      "狗",
+      "虎",
+      "雞",
+      "馬",
+      "羊",
+      "兔"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025034",
+    "actual_zodiac": "羊",
+    "verified_top6": [
+      "狗",
+      "虎",
+      "雞",
+      "羊",
+      "鼠",
+      "兔"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025035",
+    "actual_zodiac": "雞",
+    "verified_top6": [
+      "狗",
+      "虎",
+      "雞",
+      "羊",
+      "豬",
+      "鼠"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025036",
+    "actual_zodiac": "牛",
+    "verified_top6": [
+      "狗",
+      "虎",
+      "羊",
+      "豬",
+      "鼠",
+      "兔"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025037",
+    "actual_zodiac": "蛇",
+    "verified_top6": [
+      "狗",
+      "虎",
+      "羊",
+      "豬",
+      "鼠",
+      "龍"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025038",
+    "actual_zodiac": "狗",
+    "verified_top6": [
+      "狗",
+      "虎",
+      "羊",
+      "豬",
+      "鼠",
+      "龍"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025039",
+    "actual_zodiac": "虎",
+    "verified_top6": [
+      "虎",
+      "羊",
+      "豬",
+      "鼠",
+      "龍",
+      "兔"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025040",
+    "actual_zodiac": "狗",
+    "verified_top6": [
+      "鼠",
+      "羊",
+      "豬",
+      "龍",
+      "兔",
+      "牛"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025041",
+    "actual_zodiac": "虎",
+    "verified_top6": [
+      "豬",
+      "鼠",
+      "猴",
+      "羊",
+      "龍",
+      "兔"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025042",
+    "actual_zodiac": "鼠",
+    "verified_top6": [
+      "豬",
+      "鼠",
+      "兔",
+      "猴",
+      "羊",
+      "龍"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025043",
+    "actual_zodiac": "蛇",
+    "verified_top6": [
+      "豬",
+      "龍",
+      "兔",
+      "猴",
+      "羊",
+      "馬"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025044",
+    "actual_zodiac": "豬",
+    "verified_top6": [
+      "豬",
+      "龍",
+      "羊",
+      "兔",
+      "猴",
+      "馬"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v7",
+    "actual_period": "2025045",
+    "actual_zodiac": "鼠",
+    "verified_top6": [
+      "龍",
+      "羊",
+      "兔",
+      "猴",
+      "雞",
+      "馬"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v7",
+    "actual_period": "2025046",
+    "actual_zodiac": "馬",
+    "verified_top6": [
+      "龍",
+      "羊",
+      "兔",
+      "牛",
+      "猴",
+      "雞"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025047",
+    "actual_zodiac": "馬",
+    "verified_top6": [
+      "猴",
+      "龍",
+      "羊",
+      "兔",
+      "牛",
+      "雞"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025048",
+    "actual_zodiac": "鼠",
+    "verified_top6": [
+      "兔",
+      "猴",
+      "龍",
+      "羊",
+      "牛",
+      "雞"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025049",
+    "actual_zodiac": "豬",
+    "verified_top6": [
+      "兔",
+      "猴",
+      "龍",
+      "羊",
+      "牛",
+      "雞"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025050",
+    "actual_zodiac": "牛",
+    "verified_top6": [
+      "羊",
+      "兔",
+      "猴",
+      "龍",
+      "牛",
+      "狗"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025051",
+    "actual_zodiac": "蛇",
+    "verified_top6": [
+      "羊",
+      "兔",
+      "猴",
+      "雞",
+      "龍",
+      "狗"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025052",
+    "actual_zodiac": "猴",
+    "verified_top6": [
+      "羊",
+      "兔",
+      "猴",
+      "雞",
+      "龍",
+      "狗"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025053",
+    "actual_zodiac": "羊",
+    "verified_top6": [
+      "羊",
+      "兔",
+      "雞",
+      "龍",
+      "狗",
+      "虎"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025054",
+    "actual_zodiac": "蛇",
+    "verified_top6": [
+      "兔",
+      "雞",
+      "龍",
+      "狗",
+      "羊",
+      "虎"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025055",
+    "actual_zodiac": "狗",
+    "verified_top6": [
+      "兔",
+      "雞",
+      "龍",
+      "狗",
+      "羊",
+      "虎"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025056",
+    "actual_zodiac": "鼠",
+    "verified_top6": [
+      "兔",
+      "雞",
+      "龍",
+      "羊",
+      "虎",
+      "牛"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025057",
+    "actual_zodiac": "狗",
+    "verified_top6": [
+      "兔",
+      "虎",
+      "雞",
+      "龍",
+      "羊",
+      "馬"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025058",
+    "actual_zodiac": "豬",
+    "verified_top6": [
+      "兔",
+      "虎",
+      "雞",
+      "龍",
+      "羊",
+      "馬"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025059",
+    "actual_zodiac": "馬",
+    "verified_top6": [
+      "兔",
+      "虎",
+      "雞",
+      "龍",
+      "羊",
+      "馬"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025060",
+    "actual_zodiac": "羊",
+    "verified_top6": [
+      "兔",
+      "虎",
+      "雞",
+      "龍",
+      "牛",
+      "羊"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025061",
+    "actual_zodiac": "猴",
+    "verified_top6": [
+      "兔",
+      "虎",
+      "雞",
+      "龍",
+      "牛",
+      "羊"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025062",
+    "actual_zodiac": "羊",
+    "verified_top6": [
+      "兔",
+      "虎",
+      "雞",
+      "龍",
+      "牛",
+      "羊"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025063",
+    "actual_zodiac": "羊",
+    "verified_top6": [
+      "兔",
+      "虎",
+      "雞",
+      "龍",
+      "牛",
+      "羊"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025064",
+    "actual_zodiac": "豬",
+    "verified_top6": [
+      "兔",
+      "虎",
+      "雞",
+      "龍",
+      "牛",
+      "羊"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025065",
+    "actual_zodiac": "馬",
+    "verified_top6": [
+      "兔",
+      "虎",
+      "雞",
+      "龍",
+      "牛",
+      "羊"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025066",
+    "actual_zodiac": "馬",
+    "verified_top6": [
+      "兔",
+      "牛",
+      "虎",
+      "雞",
+      "龍",
+      "羊"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025067",
+    "actual_zodiac": "狗",
+    "verified_top6": [
+      "兔",
+      "牛",
+      "虎",
+      "雞",
+      "龍",
+      "狗"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025068",
+    "actual_zodiac": "狗",
+    "verified_top6": [
+      "兔",
+      "牛",
+      "虎",
+      "雞",
+      "龍",
+      "羊"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025069",
+    "actual_zodiac": "牛",
+    "verified_top6": [
+      "兔",
+      "牛",
+      "虎",
+      "雞",
+      "龍",
+      "羊"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025070",
+    "actual_zodiac": "豬",
+    "verified_top6": [
+      "兔",
+      "虎",
+      "蛇",
+      "雞",
+      "龍",
+      "羊"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025071",
+    "actual_zodiac": "蛇",
+    "verified_top6": [
+      "兔",
+      "虎",
+      "蛇",
+      "雞",
+      "龍",
+      "猴"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025072",
+    "actual_zodiac": "虎",
+    "verified_top6": [
+      "兔",
+      "虎",
+      "雞",
+      "鼠",
+      "龍",
+      "猴"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025073",
+    "actual_zodiac": "兔",
+    "verified_top6": [
+      "兔",
+      "雞",
+      "鼠",
+      "龍",
+      "羊",
+      "猴"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025074",
+    "actual_zodiac": "羊",
+    "verified_top6": [
+      "雞",
+      "鼠",
+      "龍",
+      "羊",
+      "猴",
+      "兔"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025075",
+    "actual_zodiac": "雞",
+    "verified_top6": [
+      "雞",
+      "鼠",
+      "龍",
+      "猴",
+      "羊",
+      "兔"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025076",
+    "actual_zodiac": "兔",
+    "verified_top6": [
+      "鼠",
+      "龍",
+      "猴",
+      "羊",
+      "馬",
+      "兔"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025077",
+    "actual_zodiac": "猴",
+    "verified_top6": [
+      "猴",
+      "鼠",
+      "龍",
+      "羊",
+      "馬",
+      "兔"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025078",
+    "actual_zodiac": "虎",
+    "verified_top6": [
+      "鼠",
+      "龍",
+      "狗",
+      "羊",
+      "馬",
+      "兔"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025079",
+    "actual_zodiac": "猴",
+    "verified_top6": [
+      "鼠",
+      "龍",
+      "牛",
+      "狗",
+      "羊",
+      "馬"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025080",
+    "actual_zodiac": "馬",
+    "verified_top6": [
+      "鼠",
+      "龍",
+      "牛",
+      "狗",
+      "羊",
+      "豬"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025081",
+    "actual_zodiac": "龍",
+    "verified_top6": [
+      "鼠",
+      "龍",
+      "牛",
+      "狗",
+      "羊",
+      "蛇"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025082",
+    "actual_zodiac": "猴",
+    "verified_top6": [
+      "鼠",
+      "牛",
+      "狗",
+      "羊",
+      "蛇",
+      "豬"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025083",
+    "actual_zodiac": "虎",
+    "verified_top6": [
+      "鼠",
+      "牛",
+      "狗",
+      "羊",
+      "蛇",
+      "豬"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025084",
+    "actual_zodiac": "狗",
+    "verified_top6": [
+      "狗",
+      "鼠",
+      "羊",
+      "牛",
+      "蛇",
+      "豬"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025085",
+    "actual_zodiac": "羊",
+    "verified_top6": [
+      "牛",
+      "鼠",
+      "羊",
+      "蛇",
+      "豬",
+      "雞"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025086",
+    "actual_zodiac": "鼠",
+    "verified_top6": [
+      "牛",
+      "豬",
+      "鼠",
+      "兔",
+      "羊",
+      "蛇"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025087",
+    "actual_zodiac": "兔",
+    "verified_top6": [
+      "牛",
+      "蛇",
+      "豬",
+      "兔",
+      "羊",
+      "雞"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025088",
+    "actual_zodiac": "兔",
+    "verified_top6": [
+      "牛",
+      "蛇",
+      "豬",
+      "羊",
+      "雞",
+      "兔"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025089",
+    "actual_zodiac": "龍",
+    "verified_top6": [
+      "牛",
+      "蛇",
+      "豬",
+      "羊",
+      "雞",
+      "兔"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025090",
+    "actual_zodiac": "羊",
+    "verified_top6": [
+      "牛",
+      "蛇",
+      "豬",
+      "羊",
+      "雞",
+      "馬"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025091",
+    "actual_zodiac": "虎",
+    "verified_top6": [
+      "牛",
+      "蛇",
+      "豬",
+      "雞",
+      "羊",
+      "馬"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025092",
+    "actual_zodiac": "兔",
+    "verified_top6": [
+      "牛",
+      "蛇",
+      "豬",
+      "雞",
+      "猴",
+      "羊"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025093",
+    "actual_zodiac": "猴",
+    "verified_top6": [
+      "牛",
+      "蛇",
+      "豬",
+      "雞",
+      "猴",
+      "羊"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025094",
+    "actual_zodiac": "雞",
+    "verified_top6": [
+      "牛",
+      "蛇",
+      "豬",
+      "雞",
+      "狗",
+      "羊"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025095",
+    "actual_zodiac": "狗",
+    "verified_top6": [
+      "牛",
+      "蛇",
+      "豬",
+      "狗",
+      "羊",
+      "馬"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025096",
+    "actual_zodiac": "猴",
+    "verified_top6": [
+      "牛",
+      "蛇",
+      "豬",
+      "馬",
+      "羊",
+      "鼠"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025097",
+    "actual_zodiac": "豬",
+    "verified_top6": [
+      "牛",
+      "蛇",
+      "豬",
+      "馬",
+      "羊",
+      "鼠"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025098",
+    "actual_zodiac": "兔",
+    "verified_top6": [
+      "牛",
+      "蛇",
+      "馬",
+      "羊",
+      "鼠",
+      "兔"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025099",
+    "actual_zodiac": "狗",
+    "verified_top6": [
+      "牛",
+      "蛇",
+      "馬",
+      "羊",
+      "鼠",
+      "龍"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025100",
+    "actual_zodiac": "鼠",
+    "verified_top6": [
+      "牛",
+      "蛇",
+      "馬",
+      "羊",
+      "鼠",
+      "龍"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025101",
+    "actual_zodiac": "蛇",
+    "verified_top6": [
+      "牛",
+      "蛇",
+      "馬",
+      "羊",
+      "虎",
+      "龍"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025102",
+    "actual_zodiac": "龍",
+    "verified_top6": [
+      "牛",
+      "馬",
+      "羊",
+      "虎",
+      "龍",
+      "兔"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025103",
+    "actual_zodiac": "狗",
+    "verified_top6": [
+      "牛",
+      "馬",
+      "羊",
+      "虎",
+      "兔",
+      "狗"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025104",
+    "actual_zodiac": "鼠",
+    "verified_top6": [
+      "牛",
+      "馬",
+      "羊",
+      "虎",
+      "雞",
+      "兔"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025105",
+    "actual_zodiac": "龍",
+    "verified_top6": [
+      "牛",
+      "馬",
+      "羊",
+      "虎",
+      "雞",
+      "兔"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025106",
+    "actual_zodiac": "鼠",
+    "verified_top6": [
+      "羊",
+      "牛",
+      "馬",
+      "猴",
+      "虎",
+      "雞"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025107",
+    "actual_zodiac": "猴",
+    "verified_top6": [
+      "羊",
+      "牛",
+      "虎",
+      "馬",
+      "猴",
+      "豬"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025108",
+    "actual_zodiac": "兔",
+    "verified_top6": [
+      "羊",
+      "牛",
+      "虎",
+      "馬",
+      "兔",
+      "豬"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025109",
+    "actual_zodiac": "兔",
+    "verified_top6": [
+      "羊",
+      "牛",
+      "虎",
+      "馬",
+      "豬",
+      "雞"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025110",
+    "actual_zodiac": "羊",
+    "verified_top6": [
+      "羊",
+      "牛",
+      "虎",
+      "雞",
+      "馬",
+      "豬"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025111",
+    "actual_zodiac": "雞",
+    "verified_top6": [
+      "牛",
+      "虎",
+      "雞",
+      "馬",
+      "羊",
+      "蛇"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025112",
+    "actual_zodiac": "雞",
+    "verified_top6": [
+      "牛",
+      "虎",
+      "馬",
+      "羊",
+      "蛇",
+      "豬"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025113",
+    "actual_zodiac": "猴",
+    "verified_top6": [
+      "牛",
+      "虎",
+      "豬",
+      "馬",
+      "狗",
+      "羊"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025114",
+    "actual_zodiac": "龍",
+    "verified_top6": [
+      "牛",
+      "虎",
+      "豬",
+      "馬",
+      "狗",
+      "羊"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025115",
+    "actual_zodiac": "兔",
+    "verified_top6": [
+      "牛",
+      "虎",
+      "豬",
+      "馬",
+      "狗",
+      "羊"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025116",
+    "actual_zodiac": "羊",
+    "verified_top6": [
+      "牛",
+      "虎",
+      "豬",
+      "馬",
+      "狗",
+      "羊"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025117",
+    "actual_zodiac": "羊",
+    "verified_top6": [
+      "牛",
+      "虎",
+      "蛇",
+      "豬",
+      "馬",
+      "狗"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025118",
+    "actual_zodiac": "馬",
+    "verified_top6": [
+      "牛",
+      "虎",
+      "蛇",
+      "豬",
+      "馬",
+      "狗"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025119",
+    "actual_zodiac": "龍",
+    "verified_top6": [
+      "牛",
+      "狗",
+      "虎",
+      "蛇",
+      "豬",
+      "羊"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025120",
+    "actual_zodiac": "虎",
+    "verified_top6": [
+      "牛",
+      "狗",
+      "虎",
+      "蛇",
+      "豬",
+      "羊"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025121",
+    "actual_zodiac": "馬",
+    "verified_top6": [
+      "牛",
+      "狗",
+      "蛇",
+      "豬",
+      "羊",
+      "鼠"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025122",
+    "actual_zodiac": "雞",
+    "verified_top6": [
+      "牛",
+      "狗",
+      "蛇",
+      "豬",
+      "鼠",
+      "羊"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025123",
+    "actual_zodiac": "雞",
+    "verified_top6": [
+      "牛",
+      "狗",
+      "蛇",
+      "豬",
+      "鼠",
+      "猴"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025124",
+    "actual_zodiac": "猴",
+    "verified_top6": [
+      "牛",
+      "狗",
+      "蛇",
+      "豬",
+      "鼠",
+      "猴"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025125",
+    "actual_zodiac": "蛇",
+    "verified_top6": [
+      "牛",
+      "狗",
+      "蛇",
+      "豬",
+      "鼠",
+      "兔"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025126",
+    "actual_zodiac": "龍",
+    "verified_top6": [
+      "牛",
+      "狗",
+      "豬",
+      "鼠",
+      "兔",
+      "羊"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025127",
+    "actual_zodiac": "蛇",
+    "verified_top6": [
+      "牛",
+      "狗",
+      "豬",
+      "鼠",
+      "羊",
+      "兔"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025128",
+    "actual_zodiac": "蛇",
+    "verified_top6": [
+      "牛",
+      "狗",
+      "豬",
+      "鼠",
+      "羊",
+      "兔"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025129",
+    "actual_zodiac": "虎",
+    "verified_top6": [
+      "牛",
+      "狗",
+      "豬",
+      "鼠",
+      "羊",
+      "兔"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025130",
+    "actual_zodiac": "羊",
+    "verified_top6": [
+      "牛",
+      "狗",
+      "豬",
+      "鼠",
+      "羊",
+      "兔"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025131",
+    "actual_zodiac": "羊",
+    "verified_top6": [
+      "兔",
+      "牛",
+      "狗",
+      "豬",
+      "鼠",
+      "羊"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025132",
+    "actual_zodiac": "龍",
+    "verified_top6": [
+      "兔",
+      "牛",
+      "狗",
+      "豬",
+      "鼠",
+      "羊"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025133",
+    "actual_zodiac": "猴",
+    "verified_top6": [
+      "兔",
+      "牛",
+      "狗",
+      "豬",
+      "鼠",
+      "羊"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025134",
+    "actual_zodiac": "龍",
+    "verified_top6": [
+      "兔",
+      "牛",
+      "狗",
+      "豬",
+      "鼠",
+      "羊"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025135",
+    "actual_zodiac": "蛇",
+    "verified_top6": [
+      "兔",
+      "牛",
+      "狗",
+      "豬",
+      "鼠",
+      "羊"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025136",
+    "actual_zodiac": "雞",
+    "verified_top6": [
+      "兔",
+      "牛",
+      "狗",
+      "豬",
+      "鼠",
+      "羊"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025137",
+    "actual_zodiac": "馬",
+    "verified_top6": [
+      "兔",
+      "牛",
+      "狗",
+      "豬",
+      "馬",
+      "鼠"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025138",
+    "actual_zodiac": "牛",
+    "verified_top6": [
+      "兔",
+      "牛",
+      "狗",
+      "豬",
+      "鼠",
+      "羊"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025139",
+    "actual_zodiac": "龍",
+    "verified_top6": [
+      "兔",
+      "狗",
+      "豬",
+      "鼠",
+      "羊",
+      "虎"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025140",
+    "actual_zodiac": "羊",
+    "verified_top6": [
+      "兔",
+      "狗",
+      "豬",
+      "鼠",
+      "羊",
+      "虎"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025141",
+    "actual_zodiac": "蛇",
+    "verified_top6": [
+      "兔",
+      "狗",
+      "豬",
+      "鼠",
+      "羊",
+      "虎"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025142",
+    "actual_zodiac": "狗",
+    "verified_top6": [
+      "兔",
+      "狗",
+      "豬",
+      "鼠",
+      "羊",
+      "虎"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025143",
+    "actual_zodiac": "猴",
+    "verified_top6": [
+      "兔",
+      "豬",
+      "鼠",
+      "猴",
+      "羊",
+      "虎"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025144",
+    "actual_zodiac": "蛇",
+    "verified_top6": [
+      "兔",
+      "豬",
+      "鼠",
+      "羊",
+      "虎",
+      "牛"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025145",
+    "actual_zodiac": "牛",
+    "verified_top6": [
+      "兔",
+      "虎",
+      "豬",
+      "鼠",
+      "羊",
+      "牛"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025146",
+    "actual_zodiac": "龍",
+    "verified_top6": [
+      "兔",
+      "虎",
+      "豬",
+      "鼠",
+      "羊",
+      "雞"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025147",
+    "actual_zodiac": "狗",
+    "verified_top6": [
+      "兔",
+      "虎",
+      "豬",
+      "鼠",
+      "羊",
+      "雞"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025148",
+    "actual_zodiac": "龍",
+    "verified_top6": [
+      "兔",
+      "虎",
+      "豬",
+      "鼠",
+      "羊",
+      "雞"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025149",
+    "actual_zodiac": "牛",
+    "verified_top6": [
+      "兔",
+      "虎",
+      "豬",
+      "鼠",
+      "羊",
+      "雞"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025150",
+    "actual_zodiac": "虎",
+    "verified_top6": [
+      "兔",
+      "虎",
+      "豬",
+      "鼠",
+      "羊",
+      "雞"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025151",
+    "actual_zodiac": "龍",
+    "verified_top6": [
+      "兔",
+      "豬",
+      "鼠",
+      "羊",
+      "雞",
+      "馬"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025152",
+    "actual_zodiac": "猴",
+    "verified_top6": [
+      "兔",
+      "豬",
+      "雞",
+      "鼠",
+      "羊",
+      "馬"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025153",
+    "actual_zodiac": "豬",
+    "verified_top6": [
+      "兔",
+      "豬",
+      "雞",
+      "馬",
+      "鼠",
+      "羊"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025154",
+    "actual_zodiac": "龍",
+    "verified_top6": [
+      "兔",
+      "雞",
+      "馬",
+      "鼠",
+      "羊",
+      "蛇"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025155",
+    "actual_zodiac": "雞",
+    "verified_top6": [
+      "兔",
+      "雞",
+      "馬",
+      "鼠",
+      "羊",
+      "蛇"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025156",
+    "actual_zodiac": "鼠",
+    "verified_top6": [
+      "羊",
+      "兔",
+      "馬",
+      "鼠",
+      "蛇",
+      "牛"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025157",
+    "actual_zodiac": "羊",
+    "verified_top6": [
+      "羊",
+      "兔",
+      "馬",
+      "狗",
+      "蛇",
+      "牛"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025158",
+    "actual_zodiac": "牛",
+    "verified_top6": [
+      "兔",
+      "馬",
+      "狗",
+      "羊",
+      "蛇",
+      "牛"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025159",
+    "actual_zodiac": "豬",
+    "verified_top6": [
+      "兔",
+      "馬",
+      "狗",
+      "羊",
+      "蛇",
+      "牛"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025160",
+    "actual_zodiac": "羊",
+    "verified_top6": [
+      "兔",
+      "蛇",
+      "馬",
+      "狗",
+      "羊",
+      "虎"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025161",
+    "actual_zodiac": "虎",
+    "verified_top6": [
+      "兔",
+      "蛇",
+      "馬",
+      "狗",
+      "羊",
+      "虎"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025162",
+    "actual_zodiac": "蛇",
+    "verified_top6": [
+      "兔",
+      "蛇",
+      "馬",
+      "狗",
+      "猴",
+      "羊"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025163",
+    "actual_zodiac": "羊",
+    "verified_top6": [
+      "兔",
+      "狗",
+      "馬",
+      "猴",
+      "羊",
+      "牛"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025164",
+    "actual_zodiac": "蛇",
+    "verified_top6": [
+      "兔",
+      "狗",
+      "馬",
+      "猴",
+      "羊",
+      "龍"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025165",
+    "actual_zodiac": "羊",
+    "verified_top6": [
+      "兔",
+      "狗",
+      "馬",
+      "猴",
+      "羊",
+      "雞"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025166",
+    "actual_zodiac": "牛",
+    "verified_top6": [
+      "兔",
+      "狗",
+      "馬",
+      "猴",
+      "羊",
+      "雞"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025167",
+    "actual_zodiac": "雞",
+    "verified_top6": [
+      "兔",
+      "狗",
+      "馬",
+      "猴",
+      "羊",
+      "雞"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025168",
+    "actual_zodiac": "虎",
+    "verified_top6": [
+      "兔",
+      "狗",
+      "猴",
+      "馬",
+      "羊",
+      "鼠"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025169",
+    "actual_zodiac": "豬",
+    "verified_top6": [
+      "兔",
+      "狗",
+      "猴",
+      "馬",
+      "羊",
+      "豬"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025170",
+    "actual_zodiac": "雞",
+    "verified_top6": [
+      "兔",
+      "狗",
+      "猴",
+      "馬",
+      "龍",
+      "羊"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025171",
+    "actual_zodiac": "羊",
+    "verified_top6": [
+      "兔",
+      "狗",
+      "猴",
+      "馬",
+      "龍",
+      "羊"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025172",
+    "actual_zodiac": "馬",
+    "verified_top6": [
+      "兔",
+      "狗",
+      "猴",
+      "馬",
+      "鼠",
+      "龍"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025173",
+    "actual_zodiac": "龍",
+    "verified_top6": [
+      "兔",
+      "狗",
+      "猴",
+      "鼠",
+      "龍",
+      "羊"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025174",
+    "actual_zodiac": "兔",
+    "verified_top6": [
+      "兔",
+      "狗",
+      "猴",
+      "鼠",
+      "羊",
+      "蛇"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025175",
+    "actual_zodiac": "鼠",
+    "verified_top6": [
+      "狗",
+      "猴",
+      "鼠",
+      "羊",
+      "蛇",
+      "兔"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025176",
+    "actual_zodiac": "馬",
+    "verified_top6": [
+      "狗",
+      "猴",
+      "牛",
+      "羊",
+      "蛇",
+      "兔"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025177",
+    "actual_zodiac": "虎",
+    "verified_top6": [
+      "狗",
+      "猴",
+      "牛",
+      "羊",
+      "蛇",
+      "兔"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025178",
+    "actual_zodiac": "兔",
+    "verified_top6": [
+      "狗",
+      "猴",
+      "牛",
+      "羊",
+      "蛇",
+      "兔"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025179",
+    "actual_zodiac": "馬",
+    "verified_top6": [
+      "狗",
+      "猴",
+      "牛",
+      "羊",
+      "蛇",
+      "豬"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025180",
+    "actual_zodiac": "牛",
+    "verified_top6": [
+      "狗",
+      "猴",
+      "蛇",
+      "牛",
+      "羊",
+      "豬"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025181",
+    "actual_zodiac": "羊",
+    "verified_top6": [
+      "狗",
+      "猴",
+      "蛇",
+      "羊",
+      "豬",
+      "雞"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025182",
+    "actual_zodiac": "鼠",
+    "verified_top6": [
+      "狗",
+      "猴",
+      "蛇",
+      "羊",
+      "豬",
+      "雞"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025183",
+    "actual_zodiac": "雞",
+    "verified_top6": [
+      "狗",
+      "猴",
+      "蛇",
+      "羊",
+      "豬",
+      "雞"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025184",
+    "actual_zodiac": "虎",
+    "verified_top6": [
+      "狗",
+      "猴",
+      "蛇",
+      "羊",
+      "豬",
+      "龍"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025185",
+    "actual_zodiac": "牛",
+    "verified_top6": [
+      "狗",
+      "猴",
+      "蛇",
+      "豬",
+      "羊",
+      "龍"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025186",
+    "actual_zodiac": "狗",
+    "verified_top6": [
+      "狗",
+      "猴",
+      "蛇",
+      "豬",
+      "羊",
+      "龍"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025187",
+    "actual_zodiac": "雞",
+    "verified_top6": [
+      "猴",
+      "蛇",
+      "豬",
+      "羊",
+      "龍",
+      "兔"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025188",
+    "actual_zodiac": "兔",
+    "verified_top6": [
+      "猴",
+      "蛇",
+      "豬",
+      "兔",
+      "羊",
+      "龍"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025189",
+    "actual_zodiac": "牛",
+    "verified_top6": [
+      "猴",
+      "蛇",
+      "豬",
+      "龍",
+      "羊",
+      "馬"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025190",
+    "actual_zodiac": "鼠",
+    "verified_top6": [
+      "猴",
+      "蛇",
+      "豬",
+      "龍",
+      "羊",
+      "馬"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025191",
+    "actual_zodiac": "牛",
+    "verified_top6": [
+      "猴",
+      "蛇",
+      "豬",
+      "龍",
+      "羊",
+      "馬"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025192",
+    "actual_zodiac": "雞",
+    "verified_top6": [
+      "猴",
+      "蛇",
+      "豬",
+      "龍",
+      "羊",
+      "馬"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025193",
+    "actual_zodiac": "馬",
+    "verified_top6": [
+      "猴",
+      "蛇",
+      "豬",
+      "龍",
+      "羊",
+      "馬"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025194",
+    "actual_zodiac": "牛",
+    "verified_top6": [
+      "猴",
+      "蛇",
+      "豬",
+      "龍",
+      "羊",
+      "虎"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025195",
+    "actual_zodiac": "蛇",
+    "verified_top6": [
+      "猴",
+      "蛇",
+      "豬",
+      "龍",
+      "羊",
+      "虎"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025196",
+    "actual_zodiac": "龍",
+    "verified_top6": [
+      "猴",
+      "豬",
+      "龍",
+      "羊",
+      "狗",
+      "虎"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025197",
+    "actual_zodiac": "猴",
+    "verified_top6": [
+      "羊",
+      "猴",
+      "豬",
+      "狗",
+      "虎",
+      "兔"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025198",
+    "actual_zodiac": "豬",
+    "verified_top6": [
+      "羊",
+      "豬",
+      "兔",
+      "狗",
+      "虎",
+      "牛"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025199",
+    "actual_zodiac": "猴",
+    "verified_top6": [
+      "羊",
+      "兔",
+      "狗",
+      "虎",
+      "牛",
+      "猴"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025200",
+    "actual_zodiac": "羊",
+    "verified_top6": [
+      "羊",
+      "虎",
+      "兔",
+      "狗",
+      "鼠",
+      "牛"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025201",
+    "actual_zodiac": "羊",
+    "verified_top6": [
+      "虎",
+      "兔",
+      "狗",
+      "羊",
+      "鼠",
+      "牛"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025202",
+    "actual_zodiac": "狗",
+    "verified_top6": [
+      "狗",
+      "虎",
+      "兔",
+      "羊",
+      "雞",
+      "鼠"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025203",
+    "actual_zodiac": "鼠",
+    "verified_top6": [
+      "虎",
+      "兔",
+      "羊",
+      "雞",
+      "馬",
+      "鼠"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025204",
+    "actual_zodiac": "鼠",
+    "verified_top6": [
+      "兔",
+      "虎",
+      "牛",
+      "羊",
+      "雞",
+      "馬"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025205",
+    "actual_zodiac": "蛇",
+    "verified_top6": [
+      "兔",
+      "虎",
+      "牛",
+      "羊",
+      "蛇",
+      "雞"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025206",
+    "actual_zodiac": "猴",
+    "verified_top6": [
+      "兔",
+      "虎",
+      "牛",
+      "羊",
+      "雞",
+      "馬"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025207",
+    "actual_zodiac": "馬",
+    "verified_top6": [
+      "兔",
+      "虎",
+      "牛",
+      "羊",
+      "雞",
+      "馬"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025208",
+    "actual_zodiac": "雞",
+    "verified_top6": [
+      "兔",
+      "虎",
+      "雞",
+      "牛",
+      "羊",
+      "豬"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025209",
+    "actual_zodiac": "蛇",
+    "verified_top6": [
+      "兔",
+      "虎",
+      "牛",
+      "羊",
+      "豬",
+      "龍"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025210",
+    "actual_zodiac": "兔",
+    "verified_top6": [
+      "兔",
+      "牛",
+      "虎",
+      "羊",
+      "豬",
+      "龍"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025211",
+    "actual_zodiac": "龍",
+    "verified_top6": [
+      "牛",
+      "虎",
+      "羊",
+      "豬",
+      "龍",
+      "兔"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025212",
+    "actual_zodiac": "鼠",
+    "verified_top6": [
+      "牛",
+      "虎",
+      "羊",
+      "狗",
+      "豬",
+      "兔"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025213",
+    "actual_zodiac": "羊",
+    "verified_top6": [
+      "牛",
+      "虎",
+      "羊",
+      "狗",
+      "豬",
+      "兔"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025214",
+    "actual_zodiac": "兔",
+    "verified_top6": [
+      "牛",
+      "虎",
+      "豬",
+      "狗",
+      "羊",
+      "兔"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025215",
+    "actual_zodiac": "雞",
+    "verified_top6": [
+      "牛",
+      "虎",
+      "豬",
+      "狗",
+      "羊",
+      "兔"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025216",
+    "actual_zodiac": "羊",
+    "verified_top6": [
+      "牛",
+      "虎",
+      "豬",
+      "狗",
+      "猴",
+      "羊"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025217",
+    "actual_zodiac": "猴",
+    "verified_top6": [
+      "牛",
+      "虎",
+      "豬",
+      "狗",
+      "猴",
+      "羊"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025218",
+    "actual_zodiac": "羊",
+    "verified_top6": [
+      "牛",
+      "狗",
+      "虎",
+      "豬",
+      "羊",
+      "馬"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025219",
+    "actual_zodiac": "雞",
+    "verified_top6": [
+      "牛",
+      "狗",
+      "虎",
+      "豬",
+      "羊",
+      "蛇"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025220",
+    "actual_zodiac": "狗",
+    "verified_top6": [
+      "牛",
+      "狗",
+      "虎",
+      "豬",
+      "羊",
+      "蛇"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025221",
+    "actual_zodiac": "狗",
+    "verified_top6": [
+      "牛",
+      "虎",
+      "豬",
+      "羊",
+      "蛇",
+      "馬"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025222",
+    "actual_zodiac": "豬",
+    "verified_top6": [
+      "牛",
+      "虎",
+      "豬",
+      "羊",
+      "蛇",
+      "馬"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025223",
+    "actual_zodiac": "蛇",
+    "verified_top6": [
+      "牛",
+      "虎",
+      "馬",
+      "羊",
+      "蛇",
+      "鼠"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025224",
+    "actual_zodiac": "虎",
+    "verified_top6": [
+      "牛",
+      "虎",
+      "馬",
+      "兔",
+      "羊",
+      "鼠"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025225",
+    "actual_zodiac": "狗",
+    "verified_top6": [
+      "牛",
+      "馬",
+      "兔",
+      "羊",
+      "鼠",
+      "龍"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025226",
+    "actual_zodiac": "豬",
+    "verified_top6": [
+      "牛",
+      "馬",
+      "兔",
+      "羊",
+      "鼠",
+      "龍"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025227",
+    "actual_zodiac": "虎",
+    "verified_top6": [
+      "牛",
+      "馬",
+      "龍",
+      "兔",
+      "猴",
+      "羊"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025228",
+    "actual_zodiac": "兔",
+    "verified_top6": [
+      "牛",
+      "馬",
+      "鼠",
+      "龍",
+      "羊",
+      "兔"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025229",
+    "actual_zodiac": "龍",
+    "verified_top6": [
+      "牛",
+      "馬",
+      "鼠",
+      "龍",
+      "羊",
+      "猴"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025230",
+    "actual_zodiac": "兔",
+    "verified_top6": [
+      "牛",
+      "馬",
+      "鼠",
+      "羊",
+      "猴",
+      "雞"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025231",
+    "actual_zodiac": "龍",
+    "verified_top6": [
+      "牛",
+      "馬",
+      "鼠",
+      "羊",
+      "猴",
+      "雞"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025232",
+    "actual_zodiac": "鼠",
+    "verified_top6": [
+      "牛",
+      "馬",
+      "鼠",
+      "羊",
+      "猴",
+      "雞"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025233",
+    "actual_zodiac": "蛇",
+    "verified_top6": [
+      "牛",
+      "猴",
+      "馬",
+      "羊",
+      "蛇",
+      "雞"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025234",
+    "actual_zodiac": "蛇",
+    "verified_top6": [
+      "羊",
+      "牛",
+      "猴",
+      "馬",
+      "雞",
+      "兔"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025235",
+    "actual_zodiac": "鼠",
+    "verified_top6": [
+      "羊",
+      "牛",
+      "猴",
+      "雞",
+      "馬",
+      "狗"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025236",
+    "actual_zodiac": "兔",
+    "verified_top6": [
+      "羊",
+      "牛",
+      "猴",
+      "雞",
+      "馬",
+      "狗"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025237",
+    "actual_zodiac": "龍",
+    "verified_top6": [
+      "羊",
+      "牛",
+      "猴",
+      "雞",
+      "馬",
+      "狗"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025238",
+    "actual_zodiac": "猴",
+    "verified_top6": [
+      "羊",
+      "牛",
+      "猴",
+      "雞",
+      "馬",
+      "狗"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025239",
+    "actual_zodiac": "虎",
+    "verified_top6": [
+      "羊",
+      "牛",
+      "雞",
+      "馬",
+      "狗",
+      "虎"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025240",
+    "actual_zodiac": "虎",
+    "verified_top6": [
+      "羊",
+      "牛",
+      "雞",
+      "馬",
+      "狗",
+      "豬"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025241",
+    "actual_zodiac": "蛇",
+    "verified_top6": [
+      "羊",
+      "牛",
+      "狗",
+      "雞",
+      "馬",
+      "豬"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025242",
+    "actual_zodiac": "猴",
+    "verified_top6": [
+      "羊",
+      "牛",
+      "狗",
+      "豬",
+      "雞",
+      "馬"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025243",
+    "actual_zodiac": "狗",
+    "verified_top6": [
+      "羊",
+      "牛",
+      "狗",
+      "豬",
+      "雞",
+      "馬"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025244",
+    "actual_zodiac": "馬",
+    "verified_top6": [
+      "羊",
+      "牛",
+      "豬",
+      "雞",
+      "馬",
+      "兔"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025245",
+    "actual_zodiac": "狗",
+    "verified_top6": [
+      "羊",
+      "牛",
+      "豬",
+      "雞",
+      "鼠",
+      "兔"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025246",
+    "actual_zodiac": "鼠",
+    "verified_top6": [
+      "羊",
+      "牛",
+      "豬",
+      "雞",
+      "兔",
+      "鼠"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025247",
+    "actual_zodiac": "蛇",
+    "verified_top6": [
+      "羊",
+      "牛",
+      "豬",
+      "雞",
+      "兔",
+      "龍"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025248",
+    "actual_zodiac": "馬",
+    "verified_top6": [
+      "羊",
+      "牛",
+      "豬",
+      "雞",
+      "兔",
+      "龍"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025249",
+    "actual_zodiac": "龍",
+    "verified_top6": [
+      "羊",
+      "牛",
+      "豬",
+      "雞",
+      "兔",
+      "龍"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025250",
+    "actual_zodiac": "馬",
+    "verified_top6": [
+      "羊",
+      "牛",
+      "豬",
+      "雞",
+      "兔",
+      "虎"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025251",
+    "actual_zodiac": "羊",
+    "verified_top6": [
+      "羊",
+      "牛",
+      "豬",
+      "雞",
+      "兔",
+      "虎"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025252",
+    "actual_zodiac": "羊",
+    "verified_top6": [
+      "兔",
+      "牛",
+      "豬",
+      "雞",
+      "猴",
+      "羊"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025253",
+    "actual_zodiac": "雞",
+    "verified_top6": [
+      "兔",
+      "牛",
+      "豬",
+      "雞",
+      "猴",
+      "羊"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025254",
+    "actual_zodiac": "牛",
+    "verified_top6": [
+      "兔",
+      "牛",
+      "豬",
+      "猴",
+      "羊",
+      "虎"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025255",
+    "actual_zodiac": "鼠",
+    "verified_top6": [
+      "兔",
+      "豬",
+      "狗",
+      "猴",
+      "羊",
+      "虎"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025256",
+    "actual_zodiac": "馬",
+    "verified_top6": [
+      "兔",
+      "虎",
+      "豬",
+      "狗",
+      "猴",
+      "羊"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025257",
+    "actual_zodiac": "虎",
+    "verified_top6": [
+      "兔",
+      "虎",
+      "豬",
+      "狗",
+      "猴",
+      "羊"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025258",
+    "actual_zodiac": "龍",
+    "verified_top6": [
+      "兔",
+      "猴",
+      "豬",
+      "狗",
+      "羊",
+      "蛇"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025259",
+    "actual_zodiac": "羊",
+    "verified_top6": [
+      "兔",
+      "猴",
+      "豬",
+      "狗",
+      "羊",
+      "蛇"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025260",
+    "actual_zodiac": "兔",
+    "verified_top6": [
+      "兔",
+      "猴",
+      "豬",
+      "狗",
+      "羊",
+      "蛇"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025261",
+    "actual_zodiac": "雞",
+    "verified_top6": [
+      "狗",
+      "猴",
+      "豬",
+      "羊",
+      "蛇",
+      "兔"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025262",
+    "actual_zodiac": "狗",
+    "verified_top6": [
+      "狗",
+      "猴",
+      "豬",
+      "羊",
+      "蛇",
+      "兔"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025263",
+    "actual_zodiac": "龍",
+    "verified_top6": [
+      "猴",
+      "蛇",
+      "豬",
+      "羊",
+      "兔",
+      "牛"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025264",
+    "actual_zodiac": "豬",
+    "verified_top6": [
+      "猴",
+      "蛇",
+      "豬",
+      "牛",
+      "羊",
+      "兔"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025265",
+    "actual_zodiac": "猴",
+    "verified_top6": [
+      "猴",
+      "蛇",
+      "牛",
+      "羊",
+      "鼠",
+      "兔"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025266",
+    "actual_zodiac": "牛",
+    "verified_top6": [
+      "蛇",
+      "牛",
+      "羊",
+      "馬",
+      "鼠",
+      "兔"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025267",
+    "actual_zodiac": "牛",
+    "verified_top6": [
+      "蛇",
+      "羊",
+      "虎",
+      "馬",
+      "鼠",
+      "兔"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025268",
+    "actual_zodiac": "猴",
+    "verified_top6": [
+      "蛇",
+      "羊",
+      "虎",
+      "馬",
+      "鼠",
+      "兔"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025269",
+    "actual_zodiac": "豬",
+    "verified_top6": [
+      "蛇",
+      "羊",
+      "虎",
+      "馬",
+      "鼠",
+      "兔"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025270",
+    "actual_zodiac": "羊",
+    "verified_top6": [
+      "蛇",
+      "羊",
+      "兔",
+      "虎",
+      "馬",
+      "鼠"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025271",
+    "actual_zodiac": "鼠",
+    "verified_top6": [
+      "蛇",
+      "鼠",
+      "兔",
+      "羊",
+      "虎",
+      "雞"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025272",
+    "actual_zodiac": "馬",
+    "verified_top6": [
+      "蛇",
+      "馬",
+      "兔",
+      "狗",
+      "羊",
+      "虎"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025273",
+    "actual_zodiac": "虎",
+    "verified_top6": [
+      "虎",
+      "蛇",
+      "兔",
+      "狗",
+      "羊",
+      "雞"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025274",
+    "actual_zodiac": "狗",
+    "verified_top6": [
+      "蛇",
+      "兔",
+      "狗",
+      "羊",
+      "雞",
+      "龍"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025275",
+    "actual_zodiac": "雞",
+    "verified_top6": [
+      "蛇",
+      "兔",
+      "羊",
+      "雞",
+      "龍",
+      "牛"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025276",
+    "actual_zodiac": "雞",
+    "verified_top6": [
+      "兔",
+      "蛇",
+      "羊",
+      "龍",
+      "牛",
+      "狗"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025277",
+    "actual_zodiac": "虎",
+    "verified_top6": [
+      "兔",
+      "蛇",
+      "牛",
+      "羊",
+      "龍",
+      "狗"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025278",
+    "actual_zodiac": "虎",
+    "verified_top6": [
+      "兔",
+      "蛇",
+      "牛",
+      "猴",
+      "羊",
+      "龍"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025279",
+    "actual_zodiac": "兔",
+    "verified_top6": [
+      "兔",
+      "蛇",
+      "龍",
+      "牛",
+      "猴",
+      "羊"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025280",
+    "actual_zodiac": "鼠",
+    "verified_top6": [
+      "蛇",
+      "龍",
+      "羊",
+      "牛",
+      "猴",
+      "豬"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025281",
+    "actual_zodiac": "羊",
+    "verified_top6": [
+      "蛇",
+      "龍",
+      "羊",
+      "牛",
+      "猴",
+      "豬"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025282",
+    "actual_zodiac": "牛",
+    "verified_top6": [
+      "蛇",
+      "龍",
+      "牛",
+      "猴",
+      "羊",
+      "豬"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025283",
+    "actual_zodiac": "雞",
+    "verified_top6": [
+      "蛇",
+      "龍",
+      "猴",
+      "羊",
+      "豬",
+      "馬"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025284",
+    "actual_zodiac": "牛",
+    "verified_top6": [
+      "猴",
+      "蛇",
+      "龍",
+      "狗",
+      "羊",
+      "豬"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025285",
+    "actual_zodiac": "馬",
+    "verified_top6": [
+      "猴",
+      "蛇",
+      "豬",
+      "龍",
+      "狗",
+      "羊"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025286",
+    "actual_zodiac": "兔",
+    "verified_top6": [
+      "猴",
+      "蛇",
+      "豬",
+      "龍",
+      "狗",
+      "羊"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025287",
+    "actual_zodiac": "猴",
+    "verified_top6": [
+      "猴",
+      "蛇",
+      "豬",
+      "龍",
+      "狗",
+      "羊"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025288",
+    "actual_zodiac": "龍",
+    "verified_top6": [
+      "蛇",
+      "豬",
+      "龍",
+      "狗",
+      "羊",
+      "虎"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025289",
+    "actual_zodiac": "鼠",
+    "verified_top6": [
+      "蛇",
+      "豬",
+      "狗",
+      "羊",
+      "虎",
+      "兔"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025290",
+    "actual_zodiac": "豬",
+    "verified_top6": [
+      "狗",
+      "蛇",
+      "豬",
+      "羊",
+      "虎",
+      "兔"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025291",
+    "actual_zodiac": "狗",
+    "verified_top6": [
+      "狗",
+      "蛇",
+      "羊",
+      "虎",
+      "兔",
+      "牛"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025292",
+    "actual_zodiac": "龍",
+    "verified_top6": [
+      "蛇",
+      "羊",
+      "虎",
+      "兔",
+      "牛",
+      "狗"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025293",
+    "actual_zodiac": "羊",
+    "verified_top6": [
+      "蛇",
+      "羊",
+      "虎",
+      "雞",
+      "兔",
+      "牛"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025294",
+    "actual_zodiac": "鼠",
+    "verified_top6": [
+      "虎",
+      "蛇",
+      "牛",
+      "羊",
+      "雞",
+      "兔"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025295",
+    "actual_zodiac": "牛",
+    "verified_top6": [
+      "虎",
+      "蛇",
+      "牛",
+      "羊",
+      "雞",
+      "馬"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025296",
+    "actual_zodiac": "猴",
+    "verified_top6": [
+      "虎",
+      "蛇",
+      "兔",
+      "羊",
+      "雞",
+      "馬"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025297",
+    "actual_zodiac": "狗",
+    "verified_top6": [
+      "虎",
+      "蛇",
+      "兔",
+      "羊",
+      "雞",
+      "馬"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025298",
+    "actual_zodiac": "羊",
+    "verified_top6": [
+      "虎",
+      "蛇",
+      "兔",
+      "羊",
+      "雞",
+      "馬"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025299",
+    "actual_zodiac": "蛇",
+    "verified_top6": [
+      "虎",
+      "蛇",
+      "雞",
+      "兔",
+      "羊",
+      "馬"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025300",
+    "actual_zodiac": "虎",
+    "verified_top6": [
+      "虎",
+      "雞",
+      "兔",
+      "羊",
+      "豬",
+      "馬"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025301",
+    "actual_zodiac": "牛",
+    "verified_top6": [
+      "雞",
+      "馬",
+      "兔",
+      "羊",
+      "豬",
+      "牛"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025302",
+    "actual_zodiac": "猴",
+    "verified_top6": [
+      "兔",
+      "雞",
+      "馬",
+      "羊",
+      "豬",
+      "龍"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025303",
+    "actual_zodiac": "兔",
+    "verified_top6": [
+      "兔",
+      "雞",
+      "馬",
+      "羊",
+      "豬",
+      "龍"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025304",
+    "actual_zodiac": "馬",
+    "verified_top6": [
+      "雞",
+      "馬",
+      "羊",
+      "豬",
+      "鼠",
+      "龍"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025305",
+    "actual_zodiac": "鼠",
+    "verified_top6": [
+      "雞",
+      "羊",
+      "豬",
+      "鼠",
+      "龍",
+      "兔"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025306",
+    "actual_zodiac": "牛",
+    "verified_top6": [
+      "豬",
+      "雞",
+      "羊",
+      "龍",
+      "兔",
+      "牛"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025307",
+    "actual_zodiac": "狗",
+    "verified_top6": [
+      "豬",
+      "雞",
+      "狗",
+      "羊",
+      "龍",
+      "兔"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025308",
+    "actual_zodiac": "兔",
+    "verified_top6": [
+      "豬",
+      "雞",
+      "龍",
+      "羊",
+      "兔",
+      "牛"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025309",
+    "actual_zodiac": "鼠",
+    "verified_top6": [
+      "豬",
+      "雞",
+      "龍",
+      "羊",
+      "蛇",
+      "兔"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025310",
+    "actual_zodiac": "虎",
+    "verified_top6": [
+      "豬",
+      "雞",
+      "龍",
+      "羊",
+      "虎",
+      "蛇"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025311",
+    "actual_zodiac": "蛇",
+    "verified_top6": [
+      "豬",
+      "雞",
+      "龍",
+      "羊",
+      "蛇",
+      "兔"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025312",
+    "actual_zodiac": "龍",
+    "verified_top6": [
+      "豬",
+      "雞",
+      "龍",
+      "羊",
+      "猴",
+      "兔"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025313",
+    "actual_zodiac": "龍",
+    "verified_top6": [
+      "豬",
+      "雞",
+      "羊",
+      "猴",
+      "兔",
+      "牛"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025314",
+    "actual_zodiac": "羊",
+    "verified_top6": [
+      "羊",
+      "豬",
+      "雞",
+      "猴",
+      "馬",
+      "兔"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025315",
+    "actual_zodiac": "虎",
+    "verified_top6": [
+      "豬",
+      "雞",
+      "猴",
+      "羊",
+      "馬",
+      "兔"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025316",
+    "actual_zodiac": "馬",
+    "verified_top6": [
+      "豬",
+      "雞",
+      "牛",
+      "猴",
+      "羊",
+      "馬"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025317",
+    "actual_zodiac": "鼠",
+    "verified_top6": [
+      "豬",
+      "雞",
+      "牛",
+      "狗",
+      "猴",
+      "羊"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025318",
+    "actual_zodiac": "鼠",
+    "verified_top6": [
+      "猴",
+      "豬",
+      "雞",
+      "兔",
+      "牛",
+      "狗"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025319",
+    "actual_zodiac": "雞",
+    "verified_top6": [
+      "猴",
+      "豬",
+      "雞",
+      "兔",
+      "牛",
+      "狗"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025320",
+    "actual_zodiac": "虎",
+    "verified_top6": [
+      "猴",
+      "豬",
+      "兔",
+      "牛",
+      "狗",
+      "羊"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025321",
+    "actual_zodiac": "羊",
+    "verified_top6": [
+      "猴",
+      "豬",
+      "兔",
+      "牛",
+      "狗",
+      "羊"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025322",
+    "actual_zodiac": "羊",
+    "verified_top6": [
+      "牛",
+      "猴",
+      "豬",
+      "兔",
+      "狗",
+      "羊"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025323",
+    "actual_zodiac": "雞",
+    "verified_top6": [
+      "牛",
+      "狗",
+      "猴",
+      "豬",
+      "兔",
+      "羊"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025324",
+    "actual_zodiac": "兔",
+    "verified_top6": [
+      "兔",
+      "牛",
+      "狗",
+      "猴",
+      "豬",
+      "羊"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025325",
+    "actual_zodiac": "虎",
+    "verified_top6": [
+      "牛",
+      "狗",
+      "猴",
+      "豬",
+      "羊",
+      "蛇"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025326",
+    "actual_zodiac": "豬",
+    "verified_top6": [
+      "牛",
+      "狗",
+      "猴",
+      "豬",
+      "羊",
+      "蛇"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025327",
+    "actual_zodiac": "蛇",
+    "verified_top6": [
+      "牛",
+      "狗",
+      "猴",
+      "蛇",
+      "羊",
+      "馬"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025328",
+    "actual_zodiac": "兔",
+    "verified_top6": [
+      "牛",
+      "狗",
+      "猴",
+      "羊",
+      "馬",
+      "鼠"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025329",
+    "actual_zodiac": "牛",
+    "verified_top6": [
+      "牛",
+      "狗",
+      "猴",
+      "龍",
+      "羊",
+      "馬"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025330",
+    "actual_zodiac": "馬",
+    "verified_top6": [
+      "狗",
+      "猴",
+      "龍",
+      "羊",
+      "馬",
+      "鼠"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025331",
+    "actual_zodiac": "龍",
+    "verified_top6": [
+      "狗",
+      "猴",
+      "龍",
+      "羊",
+      "鼠",
+      "兔"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025332",
+    "actual_zodiac": "龍",
+    "verified_top6": [
+      "狗",
+      "猴",
+      "羊",
+      "鼠",
+      "兔",
+      "牛"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025333",
+    "actual_zodiac": "鼠",
+    "verified_top6": [
+      "狗",
+      "猴",
+      "羊",
+      "雞",
+      "鼠",
+      "兔"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025334",
+    "actual_zodiac": "猴",
+    "verified_top6": [
+      "狗",
+      "猴",
+      "羊",
+      "雞",
+      "兔",
+      "牛"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025335",
+    "actual_zodiac": "狗",
+    "verified_top6": [
+      "狗",
+      "羊",
+      "虎",
+      "雞",
+      "兔",
+      "牛"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025336",
+    "actual_zodiac": "牛",
+    "verified_top6": [
+      "羊",
+      "虎",
+      "豬",
+      "雞",
+      "兔",
+      "牛"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025337",
+    "actual_zodiac": "雞",
+    "verified_top6": [
+      "羊",
+      "虎",
+      "蛇",
+      "豬",
+      "雞",
+      "兔"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025338",
+    "actual_zodiac": "狗",
+    "verified_top6": [
+      "羊",
+      "兔",
+      "虎",
+      "蛇",
+      "豬",
+      "牛"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025339",
+    "actual_zodiac": "馬",
+    "verified_top6": [
+      "羊",
+      "兔",
+      "虎",
+      "蛇",
+      "豬",
+      "牛"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025340",
+    "actual_zodiac": "虎",
+    "verified_top6": [
+      "羊",
+      "兔",
+      "虎",
+      "蛇",
+      "豬",
+      "牛"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025341",
+    "actual_zodiac": "鼠",
+    "verified_top6": [
+      "羊",
+      "兔",
+      "蛇",
+      "豬",
+      "牛",
+      "狗"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025342",
+    "actual_zodiac": "虎",
+    "verified_top6": [
+      "羊",
+      "豬",
+      "兔",
+      "蛇",
+      "龍",
+      "牛"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025343",
+    "actual_zodiac": "龍",
+    "verified_top6": [
+      "羊",
+      "蛇",
+      "豬",
+      "兔",
+      "龍",
+      "牛"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025344",
+    "actual_zodiac": "兔",
+    "verified_top6": [
+      "羊",
+      "兔",
+      "蛇",
+      "豬",
+      "猴",
+      "牛"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025345",
+    "actual_zodiac": "馬",
+    "verified_top6": [
+      "羊",
+      "蛇",
+      "豬",
+      "猴",
+      "兔",
+      "牛"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025346",
+    "actual_zodiac": "兔",
+    "verified_top6": [
+      "羊",
+      "蛇",
+      "豬",
+      "牛",
+      "猴",
+      "兔"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025347",
+    "actual_zodiac": "蛇",
+    "verified_top6": [
+      "羊",
+      "蛇",
+      "豬",
+      "牛",
+      "猴",
+      "雞"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025348",
+    "actual_zodiac": "虎",
+    "verified_top6": [
+      "羊",
+      "豬",
+      "牛",
+      "狗",
+      "猴",
+      "雞"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025349",
+    "actual_zodiac": "猴",
+    "verified_top6": [
+      "羊",
+      "豬",
+      "牛",
+      "狗",
+      "猴",
+      "雞"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025350",
+    "actual_zodiac": "蛇",
+    "verified_top6": [
+      "羊",
+      "豬",
+      "牛",
+      "狗",
+      "雞",
+      "兔"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025351",
+    "actual_zodiac": "虎",
+    "verified_top6": [
+      "羊",
+      "豬",
+      "牛",
+      "狗",
+      "雞",
+      "鼠"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025352",
+    "actual_zodiac": "狗",
+    "verified_top6": [
+      "羊",
+      "牛",
+      "豬",
+      "狗",
+      "雞",
+      "鼠"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025353",
+    "actual_zodiac": "蛇",
+    "verified_top6": [
+      "羊",
+      "牛",
+      "豬",
+      "雞",
+      "鼠",
+      "龍"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025354",
+    "actual_zodiac": "鼠",
+    "verified_top6": [
+      "羊",
+      "牛",
+      "豬",
+      "雞",
+      "鼠",
+      "龍"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025355",
+    "actual_zodiac": "狗",
+    "verified_top6": [
+      "羊",
+      "牛",
+      "豬",
+      "雞",
+      "馬",
+      "龍"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025356",
+    "actual_zodiac": "馬",
+    "verified_top6": [
+      "羊",
+      "牛",
+      "豬",
+      "雞",
+      "兔",
+      "馬"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025357",
+    "actual_zodiac": "蛇",
+    "verified_top6": [
+      "羊",
+      "牛",
+      "豬",
+      "雞",
+      "兔",
+      "龍"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025358",
+    "actual_zodiac": "豬",
+    "verified_top6": [
+      "羊",
+      "牛",
+      "豬",
+      "雞",
+      "兔",
+      "龍"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025359",
+    "actual_zodiac": "羊",
+    "verified_top6": [
+      "羊",
+      "牛",
+      "雞",
+      "龍",
+      "兔",
+      "猴"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025360",
+    "actual_zodiac": "牛",
+    "verified_top6": [
+      "牛",
+      "雞",
+      "龍",
+      "兔",
+      "猴",
+      "羊"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025361",
+    "actual_zodiac": "馬",
+    "verified_top6": [
+      "雞",
+      "龍",
+      "兔",
+      "猴",
+      "羊",
+      "虎"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025362",
+    "actual_zodiac": "羊",
+    "verified_top6": [
+      "兔",
+      "雞",
+      "龍",
+      "猴",
+      "羊",
+      "虎"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025363",
+    "actual_zodiac": "龍",
+    "verified_top6": [
+      "兔",
+      "雞",
+      "龍",
+      "猴",
+      "羊",
+      "虎"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025364",
+    "actual_zodiac": "馬",
+    "verified_top6": [
+      "兔",
+      "雞",
+      "猴",
+      "羊",
+      "虎",
+      "鼠"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2025365",
+    "actual_zodiac": "龍",
+    "verified_top6": [
+      "兔",
+      "猴",
+      "雞",
+      "狗",
+      "羊",
+      "虎"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026001",
+    "actual_zodiac": "牛",
+    "verified_top6": [
+      "兔",
+      "猴",
+      "雞",
+      "狗",
+      "羊",
+      "虎"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026002",
+    "actual_zodiac": "猴",
+    "verified_top6": [
+      "兔",
+      "猴",
+      "虎",
+      "雞",
+      "狗",
+      "羊"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026003",
+    "actual_zodiac": "雞",
+    "verified_top6": [
+      "兔",
+      "虎",
+      "雞",
+      "狗",
+      "羊",
+      "蛇"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026004",
+    "actual_zodiac": "雞",
+    "verified_top6": [
+      "兔",
+      "虎",
+      "狗",
+      "羊",
+      "蛇",
+      "豬"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026005",
+    "actual_zodiac": "豬",
+    "verified_top6": [
+      "兔",
+      "虎",
+      "鼠",
+      "狗",
+      "羊",
+      "蛇"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026006",
+    "actual_zodiac": "蛇",
+    "verified_top6": [
+      "兔",
+      "狗",
+      "虎",
+      "鼠",
+      "羊",
+      "蛇"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026007",
+    "actual_zodiac": "牛",
+    "verified_top6": [
+      "兔",
+      "狗",
+      "虎",
+      "鼠",
+      "羊",
+      "牛"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026008",
+    "actual_zodiac": "雞",
+    "verified_top6": [
+      "兔",
+      "狗",
+      "虎",
+      "鼠",
+      "羊",
+      "牛"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026009",
+    "actual_zodiac": "虎",
+    "verified_top6": [
+      "兔",
+      "狗",
+      "虎",
+      "鼠",
+      "羊",
+      "馬"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026010",
+    "actual_zodiac": "兔",
+    "verified_top6": [
+      "兔",
+      "狗",
+      "鼠",
+      "羊",
+      "馬",
+      "龍"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026011",
+    "actual_zodiac": "羊",
+    "verified_top6": [
+      "狗",
+      "鼠",
+      "羊",
+      "馬",
+      "龍",
+      "兔"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026012",
+    "actual_zodiac": "羊",
+    "verified_top6": [
+      "狗",
+      "鼠",
+      "猴",
+      "羊",
+      "馬",
+      "龍"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026013",
+    "actual_zodiac": "蛇",
+    "verified_top6": [
+      "狗",
+      "鼠",
+      "猴",
+      "羊",
+      "馬",
+      "龍"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026014",
+    "actual_zodiac": "龍",
+    "verified_top6": [
+      "狗",
+      "鼠",
+      "猴",
+      "羊",
+      "馬",
+      "龍"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026015",
+    "actual_zodiac": "豬",
+    "verified_top6": [
+      "狗",
+      "馬",
+      "鼠",
+      "猴",
+      "羊",
+      "豬"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026016",
+    "actual_zodiac": "鼠",
+    "verified_top6": [
+      "狗",
+      "馬",
+      "鼠",
+      "猴",
+      "羊",
+      "兔"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026017",
+    "actual_zodiac": "狗",
+    "verified_top6": [
+      "狗",
+      "馬",
+      "牛",
+      "猴",
+      "羊",
+      "兔"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026018",
+    "actual_zodiac": "兔",
+    "verified_top6": [
+      "猴",
+      "馬",
+      "牛",
+      "羊",
+      "雞",
+      "兔"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026019",
+    "actual_zodiac": "猴",
+    "verified_top6": [
+      "猴",
+      "馬",
+      "牛",
+      "羊",
+      "虎",
+      "雞"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026020",
+    "actual_zodiac": "馬",
+    "verified_top6": [
+      "馬",
+      "牛",
+      "羊",
+      "虎",
+      "雞",
+      "兔"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026021",
+    "actual_zodiac": "鼠",
+    "verified_top6": [
+      "牛",
+      "羊",
+      "虎",
+      "雞",
+      "兔",
+      "狗"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026022",
+    "actual_zodiac": "鼠",
+    "verified_top6": [
+      "羊",
+      "牛",
+      "虎",
+      "雞",
+      "兔",
+      "狗"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026023",
+    "actual_zodiac": "羊",
+    "verified_top6": [
+      "牛",
+      "羊",
+      "虎",
+      "蛇",
+      "雞",
+      "兔"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026024",
+    "actual_zodiac": "虎",
+    "verified_top6": [
+      "牛",
+      "雞",
+      "羊",
+      "虎",
+      "蛇",
+      "龍"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026025",
+    "actual_zodiac": "蛇",
+    "verified_top6": [
+      "牛",
+      "雞",
+      "羊",
+      "蛇",
+      "豬",
+      "龍"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026026",
+    "actual_zodiac": "豬",
+    "verified_top6": [
+      "牛",
+      "雞",
+      "羊",
+      "豬",
+      "龍",
+      "兔"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026027",
+    "actual_zodiac": "雞",
+    "verified_top6": [
+      "牛",
+      "雞",
+      "狗",
+      "羊",
+      "龍",
+      "兔"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026028",
+    "actual_zodiac": "兔",
+    "verified_top6": [
+      "牛",
+      "兔",
+      "狗",
+      "羊",
+      "龍",
+      "猴"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026029",
+    "actual_zodiac": "蛇",
+    "verified_top6": [
+      "牛",
+      "狗",
+      "猴",
+      "羊",
+      "龍",
+      "兔"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026030",
+    "actual_zodiac": "牛",
+    "verified_top6": [
+      "牛",
+      "龍",
+      "狗",
+      "猴",
+      "羊",
+      "馬"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v7",
+    "actual_period": "2026031",
+    "actual_zodiac": "龍",
+    "verified_top6": [
+      "龍",
+      "狗",
+      "猴",
+      "羊",
+      "馬",
+      "兔"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026032",
+    "actual_zodiac": "鼠",
+    "verified_top6": [
+      "狗",
+      "猴",
+      "羊",
+      "馬",
+      "鼠",
+      "兔"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026033",
+    "actual_zodiac": "牛",
+    "verified_top6": [
+      "狗",
+      "羊",
+      "猴",
+      "馬",
+      "兔",
+      "牛"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026034",
+    "actual_zodiac": "豬",
+    "verified_top6": [
+      "狗",
+      "羊",
+      "猴",
+      "虎",
+      "馬",
+      "兔"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026035",
+    "actual_zodiac": "兔",
+    "verified_top6": [
+      "狗",
+      "猴",
+      "羊",
+      "虎",
+      "馬",
+      "兔"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026036",
+    "actual_zodiac": "蛇",
+    "verified_top6": [
+      "狗",
+      "猴",
+      "馬",
+      "羊",
+      "虎",
+      "兔"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026037",
+    "actual_zodiac": "豬",
+    "verified_top6": [
+      "狗",
+      "猴",
+      "馬",
+      "羊",
+      "虎",
+      "雞"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026038",
+    "actual_zodiac": "鼠",
+    "verified_top6": [
+      "狗",
+      "猴",
+      "馬",
+      "羊",
+      "虎",
+      "雞"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026039",
+    "actual_zodiac": "羊",
+    "verified_top6": [
+      "羊",
+      "狗",
+      "猴",
+      "馬",
+      "虎",
+      "雞"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026040",
+    "actual_zodiac": "虎",
+    "verified_top6": [
+      "狗",
+      "猴",
+      "虎",
+      "馬",
+      "羊",
+      "雞"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026041",
+    "actual_zodiac": "馬",
+    "verified_top6": [
+      "狗",
+      "猴",
+      "馬",
+      "羊",
+      "雞",
+      "龍"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026042",
+    "actual_zodiac": "虎",
+    "verified_top6": [
+      "狗",
+      "猴",
+      "羊",
+      "雞",
+      "龍",
+      "兔"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026043",
+    "actual_zodiac": "蛇",
+    "verified_top6": [
+      "狗",
+      "猴",
+      "雞",
+      "牛",
+      "羊",
+      "龍"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026044",
+    "actual_zodiac": "豬",
+    "verified_top6": [
+      "狗",
+      "猴",
+      "雞",
+      "牛",
+      "羊",
+      "龍"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026045",
+    "actual_zodiac": "蛇",
+    "verified_top6": [
+      "狗",
+      "猴",
+      "雞",
+      "兔",
+      "牛",
+      "羊"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026046",
+    "actual_zodiac": "兔",
+    "verified_top6": [
+      "狗",
+      "猴",
+      "雞",
+      "兔",
+      "牛",
+      "羊"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026047",
+    "actual_zodiac": "兔",
+    "verified_top6": [
+      "狗",
+      "猴",
+      "雞",
+      "龍",
+      "牛",
+      "羊"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026048",
+    "actual_zodiac": "羊",
+    "verified_top6": [
+      "狗",
+      "猴",
+      "雞",
+      "龍",
+      "牛",
+      "羊"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026049",
+    "actual_zodiac": "馬",
+    "verified_top6": [
+      "牛",
+      "狗",
+      "猴",
+      "雞",
+      "龍",
+      "羊"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026050",
+    "actual_zodiac": "猴",
+    "verified_top6": [
+      "牛",
+      "狗",
+      "猴",
+      "雞",
+      "龍",
+      "羊"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026051",
+    "actual_zodiac": "馬",
+    "verified_top6": [
+      "牛",
+      "狗",
+      "雞",
+      "龍",
+      "羊",
+      "鼠"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026052",
+    "actual_zodiac": "蛇",
+    "verified_top6": [
+      "牛",
+      "狗",
+      "雞",
+      "龍",
+      "羊",
+      "虎"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026053",
+    "actual_zodiac": "龍",
+    "verified_top6": [
+      "牛",
+      "狗",
+      "雞",
+      "龍",
+      "羊",
+      "虎"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026054",
+    "actual_zodiac": "羊",
+    "verified_top6": [
+      "牛",
+      "狗",
+      "雞",
+      "鼠",
+      "羊",
+      "虎"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026055",
+    "actual_zodiac": "蛇",
+    "verified_top6": [
+      "牛",
+      "狗",
+      "雞",
+      "鼠",
+      "羊",
+      "虎"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026056",
+    "actual_zodiac": "羊",
+    "verified_top6": [
+      "牛",
+      "狗",
+      "雞",
+      "鼠",
+      "羊",
+      "虎"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026057",
+    "actual_zodiac": "猴",
+    "verified_top6": [
+      "牛",
+      "狗",
+      "雞",
+      "鼠",
+      "兔",
+      "羊"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026058",
+    "actual_zodiac": "鼠",
+    "verified_top6": [
+      "牛",
+      "狗",
+      "虎",
+      "雞",
+      "鼠",
+      "兔"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026059",
+    "actual_zodiac": "雞",
+    "verified_top6": [
+      "牛",
+      "狗",
+      "虎",
+      "雞",
+      "兔",
+      "羊"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026060",
+    "actual_zodiac": "狗",
+    "verified_top6": [
+      "牛",
+      "狗",
+      "虎",
+      "豬",
+      "兔",
+      "羊"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026061",
+    "actual_zodiac": "虎",
+    "verified_top6": [
+      "牛",
+      "虎",
+      "豬",
+      "兔",
+      "羊",
+      "馬"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026062",
+    "actual_zodiac": "羊",
+    "verified_top6": [
+      "牛",
+      "豬",
+      "兔",
+      "羊",
+      "馬",
+      "狗"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026063",
+    "actual_zodiac": "兔",
+    "verified_top6": [
+      "兔",
+      "牛",
+      "豬",
+      "羊",
+      "馬",
+      "龍"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026064",
+    "actual_zodiac": "牛",
+    "verified_top6": [
+      "牛",
+      "豬",
+      "羊",
+      "馬",
+      "龍",
+      "兔"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026065",
+    "actual_zodiac": "虎",
+    "verified_top6": [
+      "豬",
+      "羊",
+      "蛇",
+      "馬",
+      "龍",
+      "兔"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026066",
+    "actual_zodiac": "馬",
+    "verified_top6": [
+      "豬",
+      "羊",
+      "蛇",
+      "馬",
+      "龍",
+      "兔"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026067",
+    "actual_zodiac": "虎",
+    "verified_top6": [
+      "豬",
+      "猴",
+      "羊",
+      "蛇",
+      "龍",
+      "兔"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026068",
+    "actual_zodiac": "猴",
+    "verified_top6": [
+      "豬",
+      "猴",
+      "羊",
+      "蛇",
+      "鼠",
+      "龍"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026069",
+    "actual_zodiac": "羊",
+    "verified_top6": [
+      "豬",
+      "龍",
+      "羊",
+      "蛇",
+      "雞",
+      "鼠"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026070",
+    "actual_zodiac": "馬",
+    "verified_top6": [
+      "豬",
+      "龍",
+      "狗",
+      "羊",
+      "蛇",
+      "雞"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026071",
+    "actual_zodiac": "羊",
+    "verified_top6": [
+      "蛇",
+      "豬",
+      "龍",
+      "狗",
+      "羊",
+      "雞"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026072",
+    "actual_zodiac": "雞",
+    "verified_top6": [
+      "蛇",
+      "豬",
+      "龍",
+      "狗",
+      "羊",
+      "雞"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026073",
+    "actual_zodiac": "雞",
+    "verified_top6": [
+      "蛇",
+      "豬",
+      "龍",
+      "兔",
+      "狗",
+      "羊"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026074",
+    "actual_zodiac": "雞",
+    "verified_top6": [
+      "蛇",
+      "豬",
+      "鼠",
+      "龍",
+      "兔",
+      "牛"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026075",
+    "actual_zodiac": "狗",
+    "verified_top6": [
+      "蛇",
+      "豬",
+      "鼠",
+      "龍",
+      "兔",
+      "牛"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026076",
+    "actual_zodiac": "蛇",
+    "verified_top6": [
+      "蛇",
+      "豬",
+      "鼠",
+      "龍",
+      "兔",
+      "牛"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026077",
+    "actual_zodiac": "虎",
+    "verified_top6": [
+      "豬",
+      "鼠",
+      "龍",
+      "兔",
+      "牛",
+      "羊"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026078",
+    "actual_zodiac": "雞",
+    "verified_top6": [
+      "豬",
+      "鼠",
+      "龍",
+      "兔",
+      "牛",
+      "猴"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026079",
+    "actual_zodiac": "猴",
+    "verified_top6": [
+      "兔",
+      "豬",
+      "鼠",
+      "龍",
+      "牛",
+      "猴"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026080",
+    "actual_zodiac": "龍",
+    "verified_top6": [
+      "兔",
+      "牛",
+      "豬",
+      "鼠",
+      "龍",
+      "羊"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026081",
+    "actual_zodiac": "虎",
+    "verified_top6": [
+      "兔",
+      "牛",
+      "豬",
+      "鼠",
+      "羊",
+      "馬"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026082",
+    "actual_zodiac": "龍",
+    "verified_top6": [
+      "兔",
+      "牛",
+      "豬",
+      "鼠",
+      "羊",
+      "馬"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026083",
+    "actual_zodiac": "虎",
+    "verified_top6": [
+      "兔",
+      "牛",
+      "豬",
+      "鼠",
+      "羊",
+      "馬"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026084",
+    "actual_zodiac": "兔",
+    "verified_top6": [
+      "兔",
+      "牛",
+      "豬",
+      "鼠",
+      "羊",
+      "馬"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026085",
+    "actual_zodiac": "鼠",
+    "verified_top6": [
+      "牛",
+      "豬",
+      "鼠",
+      "羊",
+      "狗",
+      "馬"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026086",
+    "actual_zodiac": "羊",
+    "verified_top6": [
+      "牛",
+      "豬",
+      "馬",
+      "羊",
+      "狗",
+      "蛇"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026087",
+    "actual_zodiac": "蛇",
+    "verified_top6": [
+      "牛",
+      "豬",
+      "馬",
+      "狗",
+      "羊",
+      "蛇"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026088",
+    "actual_zodiac": "龍",
+    "verified_top6": [
+      "牛",
+      "豬",
+      "馬",
+      "狗",
+      "羊",
+      "雞"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026089",
+    "actual_zodiac": "馬",
+    "verified_top6": [
+      "牛",
+      "豬",
+      "馬",
+      "狗",
+      "猴",
+      "羊"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026090",
+    "actual_zodiac": "羊",
+    "verified_top6": [
+      "牛",
+      "豬",
+      "狗",
+      "猴",
+      "羊",
+      "雞"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026091",
+    "actual_zodiac": "馬",
+    "verified_top6": [
+      "牛",
+      "狗",
+      "豬",
+      "猴",
+      "羊",
+      "雞"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026092",
+    "actual_zodiac": "牛",
+    "verified_top6": [
+      "牛",
+      "狗",
+      "豬",
+      "猴",
+      "羊",
+      "雞"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026093",
+    "actual_zodiac": "兔",
+    "verified_top6": [
+      "狗",
+      "豬",
+      "猴",
+      "羊",
+      "虎",
+      "雞"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026094",
+    "actual_zodiac": "虎",
+    "verified_top6": [
+      "狗",
+      "豬",
+      "雞",
+      "猴",
+      "羊",
+      "虎"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026095",
+    "actual_zodiac": "猴",
+    "verified_top6": [
+      "狗",
+      "猴",
+      "豬",
+      "雞",
+      "羊",
+      "鼠"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026096",
+    "actual_zodiac": "鼠",
+    "verified_top6": [
+      "狗",
+      "豬",
+      "雞",
+      "羊",
+      "鼠",
+      "兔"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026097",
+    "actual_zodiac": "猴",
+    "verified_top6": [
+      "狗",
+      "豬",
+      "雞",
+      "羊",
+      "蛇",
+      "兔"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026098",
+    "actual_zodiac": "虎",
+    "verified_top6": [
+      "狗",
+      "豬",
+      "雞",
+      "羊",
+      "蛇",
+      "龍"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026099",
+    "actual_zodiac": "羊",
+    "verified_top6": [
+      "狗",
+      "豬",
+      "雞",
+      "羊",
+      "蛇",
+      "龍"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026100",
+    "actual_zodiac": "狗",
+    "verified_top6": [
+      "狗",
+      "豬",
+      "雞",
+      "羊",
+      "蛇",
+      "龍"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026101",
+    "actual_zodiac": "龍",
+    "verified_top6": [
+      "豬",
+      "雞",
+      "羊",
+      "蛇",
+      "馬",
+      "龍"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026102",
+    "actual_zodiac": "豬",
+    "verified_top6": [
+      "豬",
+      "雞",
+      "牛",
+      "羊",
+      "蛇",
+      "馬"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026103",
+    "actual_zodiac": "牛",
+    "verified_top6": [
+      "蛇",
+      "雞",
+      "兔",
+      "牛",
+      "羊",
+      "馬"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026104",
+    "actual_zodiac": "馬",
+    "verified_top6": [
+      "蛇",
+      "雞",
+      "兔",
+      "羊",
+      "馬",
+      "牛"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026105",
+    "actual_zodiac": "兔",
+    "verified_top6": [
+      "蛇",
+      "雞",
+      "兔",
+      "羊",
+      "牛",
+      "狗"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026106",
+    "actual_zodiac": "雞",
+    "verified_top6": [
+      "蛇",
+      "雞",
+      "羊",
+      "鼠",
+      "兔",
+      "牛"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026107",
+    "actual_zodiac": "馬",
+    "verified_top6": [
+      "蛇",
+      "猴",
+      "羊",
+      "鼠",
+      "兔",
+      "牛"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026108",
+    "actual_zodiac": "狗",
+    "verified_top6": [
+      "蛇",
+      "猴",
+      "羊",
+      "虎",
+      "鼠",
+      "兔"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026109",
+    "actual_zodiac": "兔",
+    "verified_top6": [
+      "蛇",
+      "羊",
+      "猴",
+      "虎",
+      "鼠",
+      "兔"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026110",
+    "actual_zodiac": "牛",
+    "verified_top6": [
+      "蛇",
+      "羊",
+      "猴",
+      "虎",
+      "鼠",
+      "兔"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026111",
+    "actual_zodiac": "馬",
+    "verified_top6": [
+      "蛇",
+      "羊",
+      "猴",
+      "虎",
+      "鼠",
+      "龍"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026112",
+    "actual_zodiac": "狗",
+    "verified_top6": [
+      "蛇",
+      "鼠",
+      "羊",
+      "猴",
+      "虎",
+      "豬"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026113",
+    "actual_zodiac": "蛇",
+    "verified_top6": [
+      "猴",
+      "蛇",
+      "鼠",
+      "羊",
+      "虎",
+      "豬"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026114",
+    "actual_zodiac": "牛",
+    "verified_top6": [
+      "猴",
+      "虎",
+      "鼠",
+      "羊",
+      "豬",
+      "龍"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v7",
+    "actual_period": "2026114",
+    "actual_zodiac": "牛",
+    "verified_top6": [
+      "龍",
+      "雞",
+      "豬",
+      "鼠",
+      "蛇",
+      "虎"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026115",
+    "actual_zodiac": "兔",
+    "verified_top6": [
+      "羊",
+      "猴",
+      "虎",
+      "鼠",
+      "豬",
+      "龍"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v7",
+    "actual_period": "2026115",
+    "actual_zodiac": "兔",
+    "verified_top6": [
+      "龍",
+      "雞",
+      "豬",
+      "鼠",
+      "蛇",
+      "虎"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026116",
+    "actual_zodiac": "雞",
+    "verified_top6": [
+      "猴",
+      "羊",
+      "虎",
+      "鼠",
+      "龍",
+      "狗"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v7",
+    "actual_period": "2026116",
+    "actual_zodiac": "雞",
+    "verified_top6": [
+      "龍",
+      "雞",
+      "豬",
+      "鼠",
+      "蛇",
+      "虎"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026117",
+    "actual_zodiac": "兔",
+    "verified_top6": [
+      "羊",
+      "猴",
+      "虎",
+      "豬",
+      "鼠",
+      "龍"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v7",
+    "actual_period": "2026117",
+    "actual_zodiac": "兔",
+    "verified_top6": [
+      "龍",
+      "鼠",
+      "馬",
+      "雞",
+      "豬",
+      "蛇"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026118",
+    "actual_zodiac": "豬",
+    "verified_top6": [
+      "羊",
+      "猴",
+      "虎",
+      "豬",
+      "鼠",
+      "龍"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v7",
+    "actual_period": "2026118",
+    "actual_zodiac": "豬",
+    "verified_top6": [
+      "龍",
+      "豬",
+      "鼠",
+      "馬",
+      "雞",
+      "蛇"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026119",
+    "actual_zodiac": "猴",
+    "verified_top6": [
+      "羊",
+      "猴",
+      "虎",
+      "鼠",
+      "龍",
+      "狗"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v7",
+    "actual_period": "2026119",
+    "actual_zodiac": "猴",
+    "verified_top6": [
+      "龍",
+      "蛇",
+      "鼠",
+      "馬",
+      "雞",
+      "豬"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026120",
+    "actual_zodiac": "牛",
+    "verified_top6": [
+      "猴",
+      "羊",
+      "虎",
+      "鼠",
+      "龍",
+      "狗"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v7",
+    "actual_period": "2026120",
+    "actual_zodiac": "牛",
+    "verified_top6": [
+      "龍",
+      "鼠",
+      "雞",
+      "蛇",
+      "馬",
+      "豬"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026121",
+    "actual_zodiac": "豬",
+    "verified_top6": [
+      "羊",
+      "虎",
+      "鼠",
+      "龍",
+      "牛",
+      "狗"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v7",
+    "actual_period": "2026121",
+    "actual_zodiac": "豬",
+    "verified_top6": [
+      "龍",
+      "鼠",
+      "蛇",
+      "雞",
+      "馬",
+      "豬"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026122",
+    "actual_zodiac": "馬",
+    "verified_top6": [
+      "羊",
+      "虎",
+      "鼠",
+      "龍",
+      "馬",
+      "狗"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v7",
+    "actual_period": "2026122",
+    "actual_zodiac": "馬",
+    "verified_top6": [
+      "龍",
+      "雞",
+      "馬",
+      "鼠",
+      "蛇",
+      "猴"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026123",
+    "actual_zodiac": "雞",
+    "verified_top6": [
+      "羊",
+      "虎",
+      "鼠",
+      "龍",
+      "狗",
+      "馬"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v7",
+    "actual_period": "2026123",
+    "actual_zodiac": "雞",
+    "verified_top6": [
+      "龍",
+      "雞",
+      "鼠",
+      "蛇",
+      "馬",
+      "羊"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026124",
+    "actual_zodiac": "龍",
+    "verified_top6": [
+      "羊",
+      "虎",
+      "鼠",
+      "龍",
+      "狗",
+      "蛇"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v7",
+    "actual_period": "2026124",
+    "actual_zodiac": "龍",
+    "verified_top6": [
+      "龍",
+      "蛇",
+      "鼠",
+      "馬",
+      "雞",
+      "虎"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026125",
+    "actual_zodiac": "鼠",
+    "verified_top6": [
+      "羊",
+      "虎",
+      "鼠",
+      "龍",
+      "狗",
+      "蛇"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v7",
+    "actual_period": "2026125",
+    "actual_zodiac": "鼠",
+    "verified_top6": [
+      "蛇",
+      "鼠",
+      "龍",
+      "虎",
+      "羊",
+      "猴"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026126",
+    "actual_zodiac": "馬",
+    "verified_top6": [
+      "羊",
+      "虎",
+      "鼠",
+      "狗",
+      "蛇",
+      "兔"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v7",
+    "actual_period": "2026126",
+    "actual_zodiac": "馬",
+    "verified_top6": [
+      "蛇",
+      "龍",
+      "虎",
+      "鼠",
+      "羊",
+      "馬"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026127",
+    "actual_zodiac": "狗",
+    "verified_top6": [
+      "羊",
+      "虎",
+      "狗",
+      "蛇",
+      "兔",
+      "牛"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v7",
+    "actual_period": "2026127",
+    "actual_zodiac": "狗",
+    "verified_top6": [
+      "蛇",
+      "鼠",
+      "豬",
+      "龍",
+      "雞",
+      "虎"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026128",
+    "actual_zodiac": "馬",
+    "verified_top6": [
+      "羊",
+      "虎",
+      "兔",
+      "狗",
+      "蛇",
+      "牛"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v7",
+    "actual_period": "2026128",
+    "actual_zodiac": "馬",
+    "verified_top6": [
+      "龍",
+      "蛇",
+      "鼠",
+      "豬",
+      "虎",
+      "雞"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026129",
+    "actual_zodiac": "虎",
+    "verified_top6": [
+      "羊",
+      "虎",
+      "兔",
+      "蛇",
+      "牛",
+      "猴"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v7",
+    "actual_period": "2026129",
+    "actual_zodiac": "虎",
+    "verified_top6": [
+      "雞",
+      "鼠",
+      "龍",
+      "蛇",
+      "豬",
+      "虎"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026130",
+    "actual_zodiac": "虎",
+    "verified_top6": [
+      "羊",
+      "虎",
+      "蛇",
+      "兔",
+      "猴",
+      "牛"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v7",
+    "actual_period": "2026130",
+    "actual_zodiac": "虎",
+    "verified_top6": [
+      "龍",
+      "鼠",
+      "雞",
+      "蛇",
+      "豬",
+      "羊"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026131",
+    "actual_zodiac": "鼠",
+    "verified_top6": [
+      "羊",
+      "蛇",
+      "兔",
+      "牛",
+      "猴",
+      "豬"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v7",
+    "actual_period": "2026131",
+    "actual_zodiac": "鼠",
+    "verified_top6": [
+      "鼠",
+      "龍",
+      "雞",
+      "蛇",
+      "豬",
+      "猴"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026132",
+    "actual_zodiac": "牛",
+    "verified_top6": [
+      "羊",
+      "蛇",
+      "兔",
+      "牛",
+      "猴",
+      "豬"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v7",
+    "actual_period": "2026132",
+    "actual_zodiac": "牛",
+    "verified_top6": [
+      "龍",
+      "豬",
+      "雞",
+      "蛇",
+      "鼠",
+      "猴"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026133",
+    "actual_zodiac": "鼠",
+    "verified_top6": [
+      "羊",
+      "蛇",
+      "兔",
+      "牛",
+      "猴",
+      "豬"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v7",
+    "actual_period": "2026133",
+    "actual_zodiac": "鼠",
+    "verified_top6": [
+      "龍",
+      "豬",
+      "雞",
+      "蛇",
+      "鼠",
+      "猴"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026134",
+    "actual_zodiac": "馬",
+    "verified_top6": [
+      "兔",
+      "羊",
+      "蛇",
+      "猴",
+      "豬",
+      "雞"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v7",
+    "actual_period": "2026134",
+    "actual_zodiac": "馬",
+    "verified_top6": [
+      "龍",
+      "雞",
+      "豬",
+      "馬",
+      "蛇",
+      "猴"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026135",
+    "actual_zodiac": "牛",
+    "verified_top6": [
+      "兔",
+      "羊",
+      "蛇",
+      "猴",
+      "豬",
+      "雞"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v7",
+    "actual_period": "2026135",
+    "actual_zodiac": "牛",
+    "verified_top6": [
+      "龍",
+      "雞",
+      "豬",
+      "馬",
+      "蛇",
+      "猴"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v5",
+    "actual_period": "2026136",
+    "actual_zodiac": "羊",
+    "verified_top6": [
+      "兔",
+      "猴",
+      "羊",
+      "蛇",
+      "豬",
+      "雞"
+    ],
+    "hit": true,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "version": "v7",
+    "actual_period": "2026136",
+    "actual_zodiac": "羊",
+    "verified_top6": [
+      "龍",
+      "雞",
+      "豬",
+      "虎",
+      "蛇",
+      "鼠"
+    ],
+    "hit": false,
+    "timestamp": "",
+    "current_prediction_period": "",
+    "current_top6": [],
+    "strategy": ""
+  },
+  {
+    "timestamp": "2026-05-18T21:36:03.442765",
+    "version": "v5",
+    "strategy": "gap16*1.21 + gap10*1.66 + gap6*0.62 + r3*1.75 + streak*1.86",
+    "verified_period": "2026138",
+    "verified_top6": [
+      "兔",
+      "猴",
+      "蛇",
+      "豬",
+      "狗",
+      "雞"
+    ],
+    "actual_period": "2026138",
+    "actual_zodiac": "馬",
+    "hit": false,
+    "current_prediction_period": "2026139",
+    "current_top6": [
+      "兔",
+      "猴",
+      "豬",
+      "狗",
+      "雞",
+      "龍"
+    ]
+  },
+  {
+    "timestamp": "2026-05-18T21:36:05.437505",
+    "version": "v7",
+    "strategy": "排名法: gap=2.5, r5=1.5, r10=1.5, r20=0.0, r30=1.0, r3=1.0, streak=0.3",
+    "verified_period": "2026138",
+    "verified_top6": [
+      "龍",
+      "雞",
+      "豬",
+      "蛇",
+      "羊",
+      "鼠"
+    ],
+    "actual_period": "2026138",
+    "actual_zodiac": "馬",
+    "hit": false,
+    "current_prediction_period": "2026139",
+    "current_top6": [
+      "龍",
+      "雞",
+      "鼠",
+      "豬",
+      "蛇",
+      "羊"
+    ]
+  },
+  {
+    "timestamp": "2026-05-19T21:36:09.113430",
+    "version": "v5",
+    "strategy": "gap16*1.21 + gap10*1.66 + gap6*0.62 + r3*1.75 + streak*1.86",
+    "verified_period": "2026139",
+    "verified_top6": [
+      "兔",
+      "猴",
+      "豬",
+      "狗",
+      "雞",
+      "龍"
+    ],
+    "actual_period": "2026139",
+    "actual_zodiac": "羊",
+    "hit": false,
+    "current_prediction_period": "2026140",
+    "current_top6": [
+      "兔",
+      "猴",
+      "豬",
+      "雞",
+      "狗",
+      "龍"
+    ]
+  },
+  {
+    "timestamp": "2026-05-19T21:36:11.464257",
+    "version": "v7",
+    "strategy": "排名法: gap=2.5, r5=1.5, r10=1.5, r20=0.0, r30=1.0, r3=1.0, streak=0.3",
+    "verified_period": "2026139",
+    "verified_top6": [
+      "龍",
+      "雞",
+      "鼠",
+      "豬",
+      "蛇",
+      "羊"
+    ],
+    "actual_period": "2026139",
+    "actual_zodiac": "羊",
+    "hit": true,
+    "current_prediction_period": "2026140",
+    "current_top6": [
+      "龍",
+      "雞",
+      "鼠",
+      "豬",
+      "虎",
+      "蛇"
+    ]
+  },
+  {
+    "timestamp": "2026-05-20T21:35:34.325797",
+    "version": "v5",
+    "strategy": "gap16*1.21 + gap10*1.66 + gap6*0.62 + r3*1.75 + streak*1.86",
+    "verified_period": "2026140",
+    "verified_top6": [
+      "兔",
+      "猴",
+      "豬",
+      "雞",
+      "狗",
+      "龍"
+    ],
+    "actual_period": "2026140",
+    "actual_zodiac": "兔",
+    "hit": true,
+    "current_prediction_period": "2026141",
+    "current_top6": [
+      "兔",
+      "猴",
+      "豬",
+      "雞",
+      "龍",
+      "狗"
+    ]
+  },
+  {
+    "timestamp": "2026-05-20T21:35:37.268684",
+    "version": "v7",
+    "strategy": "排名法: gap=2.5, r5=1.5, r10=1.5, r20=0.0, r30=1.0, r3=1.0, streak=0.3",
+    "verified_period": "2026140",
+    "verified_top6": [
+      "龍",
+      "雞",
+      "鼠",
+      "豬",
+      "虎",
+      "蛇"
+    ],
+    "actual_period": "2026140",
+    "actual_zodiac": "兔",
+    "hit": false,
+    "current_prediction_period": "2026141",
+    "current_top6": [
+      "龍",
+      "雞",
+      "鼠",
+      "虎",
+      "蛇",
+      "豬"
+    ]
+  },
+  {
+    "timestamp": "2026-05-21T21:35:28.960436",
+    "version": "v5",
+    "strategy": "gap16*1.21 + gap10*1.66 + gap6*0.62 + r3*1.75 + streak*1.86",
+    "verified_period": "2026141",
+    "verified_top6": [
+      "兔",
+      "猴",
+      "豬",
+      "雞",
+      "龍",
+      "狗"
+    ],
+    "actual_period": "2026141",
+    "actual_zodiac": "狗",
+    "hit": true,
+    "current_prediction_period": "2026142",
+    "current_top6": [
+      "猴",
+      "豬",
+      "雞",
+      "龍",
+      "狗",
+      "虎"
+    ]
+  },
+  {
+    "timestamp": "2026-05-21T21:35:30.051985",
+    "version": "v7",
+    "strategy": "排名法: gap=2.5, r5=1.5, r10=1.5, r20=0.0, r30=1.0, r3=1.0, streak=0.3",
+    "verified_period": "2026141",
+    "verified_top6": [
+      "龍",
+      "雞",
+      "鼠",
+      "虎",
+      "蛇",
+      "豬"
+    ],
+    "actual_period": "2026141",
+    "actual_zodiac": "狗",
+    "hit": false,
+    "current_prediction_period": "2026142",
+    "current_top6": [
+      "龍",
+      "鼠",
+      "雞",
+      "豬",
+      "虎",
+      "蛇"
+    ]
+  }
+]

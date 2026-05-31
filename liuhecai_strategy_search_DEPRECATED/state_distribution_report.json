@@ -1,0 +1,18 @@
+{
+  "state_counts": {
+    "HOT": 223,
+    "COLD": 9,
+    "TRANSITION": 0,
+    "CHAOTIC": 0,
+    "UNCERTAIN": 68
+  },
+  "state_percentages": {
+    "HOT": 74.33,
+    "COLD": 3.0,
+    "TRANSITION": 0.0,
+    "CHAOTIC": 0.0,
+    "UNCERTAIN": 22.67
+  },
+  "max_percentage": 74.33,
+  "gate": "FAIL"
+}

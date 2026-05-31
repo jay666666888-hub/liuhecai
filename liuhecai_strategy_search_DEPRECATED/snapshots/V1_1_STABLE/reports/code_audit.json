@@ -1,0 +1,103 @@
+{
+  "audit_date": "2026-05-21",
+  "project": "liuhecai_strategy_search",
+  "language": "Python",
+  "findings": [
+    {
+      "file": "meta_v2/meta_strategy_v2.py",
+      "line": 154,
+      "issue": "hit_history duplication bug",
+      "severity": "HIGH",
+      "description": "self.hit_history.append(hit) is inside the loop 'for expert_name in EXPERTS' (7 iterations). hit_history gets 7 entries per prediction instead of 1. This corrupts ALL downstream metrics: mean_hit_rate (line 263), rolling_30_hit (line 262), max_drawdown (line 268), stability_score (line 274), and total_predictions (line 331) reports 7x actual count. FIX: move hit_history.append() outside the loop, or track it once per prediction."
+    },
+    {
+      "file": "meta_v2/meta_strategy_v2.py",
+      "line": 15,
+      "issue": "TransitionController instantiated but never used",
+      "severity": "HIGH",
+      "description": "self.transition = TransitionController() is created at line 52 but transition.update() is never called anywhere in the codebase. The transition mechanism for smoothing state changes is completely non-functional. The component occupies memory and has methods but zero effect on the system."
+    },
+    {
+      "file": "meta_v2/expert_manager.py",
+      "line": 120,
+      "issue": "ExpertManager hardcodes only 5 experts, missing AntiTrend and Cycle",
+      "severity": "HIGH",
+      "description": "get_expert_weights() iterates only [Gap, Trend, Momentum, Frequency, Color], but MetaStrategyV2.EXPERTS has 7 experts including AntiTrend and Cycle. Same issue at lines 137 and 147. AntiTrend and Cycle are never tracked for freeze/recovery, their hit rates are never computed, and their freeze reports are never generated. FIX: change hardcoded lists to use EXPERTS constant."
+    },
+    {
+      "file": "meta_v2/expert_aggregator.py",
+      "line": 124,
+      "issue": "Duplicate Jaccard penalty - applied twice with same threshold/factor",
+      "severity": "MEDIUM",
+      "description": "Jaccard similarity penalty is applied TWICE: (1) ExpertDiversityPenalty.apply_penalty() at meta_strategy_v2.py:201 with threshold=0.8, factor=0.7, then (2) ExpertAggregator._apply_diversity_penalty() at line 124 with the SAME threshold=0.8, factor=0.7. This double-penalization likely over-weakens correlated expert pairs. The two components should have differentiated responsibilities or one should be removed."
+    },
+    {
+      "file": "meta_v2/state_router.py",
+      "line": 70,
+      "issue": "apply_color_weight method is dead code",
+      "severity": "MEDIUM",
+      "description": "StateRouter.apply_color_weight() is never called from any code path. Color activation is handled by ColorActivator.inject_color() instead. The method in StateRouter is defined but unreachable."
+    },
+    {
+      "file": "meta_v2/expert_aggregator.py",
+      "line": 226,
+      "issue": "calc_expert_correlation is dead code - never called",
+      "severity": "LOW",
+      "description": "ExpertAggregator.calc_expert_correlation() is defined but never called from any production code path. It's a diagnostic method that returns pairwise expert correlations. Marked as '用于诊断' but no caller exists."
+    },
+    {
+      "file": "meta_v2/state_detector.py",
+      "line": 159,
+      "issue": "get_scores method is dead code",
+      "severity": "LOW",
+      "description": "StateDetector.get_scores() is never called anywhere in the codebase. It returns raw vote counts which are not directly meaningful. The detect_state() method handles state detection internally."
+    },
+    {
+      "file": "meta_v2/meta_strategy_v2.py",
+      "line": 235,
+      "issue": "Dead pass statement with explanatory comment",
+      "severity": "LOW",
+      "description": "The line 'pass  # 状态切换由detector的三期确认机制处理' is a no-op comment indicating state transition is handled by the detector. There's no actual code here - it's just a comment explaining why no code exists. Either implement something or remove the comment."
+    },
+    {
+      "file": "meta_v2/expert_manager.py",
+      "line": 147,
+      "issue": "Inconsistent expert list in get_all_reports - only 4 experts",
+      "severity": "LOW",
+      "description": "get_all_reports() only iterates [Gap, Trend, Momentum, Color], missing Frequency, AntiTrend, and Cycle. This is inconsistent with get_expert_weights() and get_recent_hit_rates() which both include Frequency."
+    },
+    {
+      "file": "meta_v2/expert_aggregator.py",
+      "line": 156,
+      "issue": "Conditional report fields cause inconsistent last_report structure",
+      "severity": "LOW",
+      "description": "last_report['penalties'] is only added when sim > similarity_threshold. last_report['exploration'] is only added under specific entropy/random conditions. Consumers of agg_report cannot rely on these fields being present. Consider always including these keys with empty values."
+    }
+  ],
+  "dead_code": [
+    "meta_v2/state_router.py:70 - apply_color_weight() - never called",
+    "meta_v2/expert_aggregator.py:226 - calc_expert_correlation() - never called",
+    "meta_v2/state_detector.py:159 - get_scores() - never called",
+    "meta_v2/meta_strategy_v2.py:235 - pass statement - no-op comment"
+  ],
+  "duplicate_logic": [
+    {
+      "location": "meta_v2/expert_aggregator.py:124 AND meta_v2/diversity_penalty.py:51",
+      "issue": "Jaccard similarity penalty applied twice",
+      "details": "Both ExpertAggregator._apply_diversity_penalty() and ExpertDiversityPenalty.apply_penalty() compute Jaccard(top6_a, top6_b) with threshold=0.8 and penalty_factor=0.7. Applied sequentially in predict_top6() at lines 201 then 51-54. Double application with identical parameters likely over-penalizes."
+    },
+    {
+      "location": "meta_v2/expert_aggregator.py:159-209 AND meta_v2/chaos_handler.py:43-114",
+      "issue": "Forced exploration logic duplicated",
+      "details": "ExpertAggregator._apply_forced_exploration() and ChaosHandler.get_explore_probability()/get_replacement() both implement exploration logic for high-entropy scenarios. ExpertAggregator uses random replacement with diversity_scores weighting; ChaosHandler uses dominance_counter and separate exploration. Both are invoked in predict_top6() flow."
+    }
+  ],
+  "state_leaks": [
+    {
+      "location": "meta_v2/meta_strategy_v2.py:158-160",
+      "issue": "_current_expert_scores stored as instance attribute then cleared",
+      "details": "prediction_history.append(self._current_expert_scores) stores a reference to the expert_scores dict, then _current_expert_scores is set to None. If the dict is modified later (e.g., by normalization in aggregate()), the stored history reflects those modifications. Should store a deep copy."
+    }
+  ],
+  "summary": "Code audit found 10 findings across 6 critical components. CRITICAL bugs: (1) hit_history gets 7x entries per prediction due to loop-append bug, corrupting all metrics; (2) TransitionController is dead - instantiated but never updated; (3) ExpertManager only tracks 5 of 7 experts, leaving AntiTrend/Cycle unmanaged. MEDIUM issues: (4) Jaccard penalty applied twice (ExpertAggregator + ExpertDiversityPenalty) with identical parameters; (5) apply_color_weight() is dead code. LOW issues include additional dead code (calc_expert_correlation, get_scores, pass statement) and inconsistent report structures. The hit_history bug is the most urgent - all backtest metrics are unreliable until fixed."
+}

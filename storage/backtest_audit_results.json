@@ -1,0 +1,74 @@
+{
+  "audit_date": "2026-05-27",
+  "data_file": "storage/aggregated_live.jsonl",
+  "total_records": 7374,
+  "findings": [
+    {
+      "id": "ISSUE-1",
+      "severity": "HIGH",
+      "category": "data-ordering",
+      "title": "Data is shuffled (grouped by version, not chronologically)",
+      "description": "aggregated_live.jsonl is grouped by version, not sorted by issue. 1712 shuffle positions detected.",
+      "impact": "Raw JSONL reading gives incorrect time-series order. loader.py applies sorting.",
+      "mitigation": "Ensure all consumers use loader.py or apply sorting."
+    },
+    {
+      "id": "ISSUE-2",
+      "severity": "LOW",
+      "category": "data-schema",
+      "title": "v12 backtest records missing status field",
+      "description": "v12 has 863 backtest records with status=None, while other versions use status='resolved'",
+      "impact": "Inconsistent data schema. Status filtering may behave differently.",
+      "mitigation": "Add status='resolved' to v12 backtest records."
+    },
+    {
+      "id": "ISSUE-3",
+      "severity": "LOW",
+      "category": "data-coverage",
+      "title": "v7 missing issue 2026144",
+      "description": "v7 has gap in issue coverage",
+      "impact": "v7 analysis for recent buckets may be incomplete.",
+      "mitigation": "Regenerate v7 prediction for issue 2026144."
+    },
+    {
+      "id": "ISSUE-4",
+      "severity": "INFO",
+      "category": "normal-behavior",
+      "title": "Multiple timestamps per issue",
+      "description": "863 issues have predictions from multiple versions at different times",
+      "impact": "This is expected for multi-version backtesting.",
+      "mitigation": "None required."
+    },
+    {
+      "id": "ISSUE-5",
+      "severity": "PASS",
+      "category": "walk-forward",
+      "title": "Walk-forward validation implemented correctly",
+      "description": "backtest_runner.py properly excludes current period from history.",
+      "mitigation": "None - implementation is correct."
+    },
+    {
+      "id": "ISSUE-6",
+      "severity": "PASS",
+      "category": "lookahead",
+      "title": "No lookahead bias detected",
+      "description": "No future function usage or feature leakage found.",
+      "mitigation": "None - implementation is correct."
+    },
+    {
+      "id": "ISSUE-7",
+      "severity": "PASS",
+      "category": "pending-handling",
+      "title": "Pending records properly excluded from metrics",
+      "description": "metrics.py correctly filters out pending=True records.",
+      "mitigation": "None - implementation is correct."
+    }
+  ],
+  "version_gaps": {
+    "v7": [
+      "2026144"
+    ]
+  },
+  "shuffled_records": 1712,
+  "total_shuffle_positions": 1712
+}

@@ -1,14 +1,15 @@
 {
-  "version": "v6_continuous",
-  "weights": {
-    "gap_weight": 4.0,
-    "r3": 3.5,
-    "streak": 1.5
+  "version": "v12_ultra_search",
+  "strategy_type": "pattern_based",
+  "params": {
+    "lookback": 11,
+    "pattern_weight": 1.45,
+    "gap_weight": 0.098,
+    "trend_weight": 0.267,
+    "variance_weight": 0.177,
+    "alt_mode": "trend"
   },
-  "feature_type": "continuous",
-  "hit_rate": 0.603,
-  "recent_50": 0.76,
+  "hit_rate": 0.5562,
   "updated_at": "2026-05-22",
-  "source": "continuous_gap_optimization",
-  "notes": "连续gap特征替代二值阈值，整体+1.1%，近期+2.0%"
+  "notes": "智能随机搜索找到的新最佳参数，命中率55.62%"
 }

@@ -1,0 +1,152 @@
+{
+  "version": "v7_optimized",
+  "strategy": "排名法: gap=2.5, r5=1.5, r10=1.5, r20=0.0, r30=1.0, r3=1.0, streak=0.3",
+  "strategy_full": "gap=2.5, recent5=1.5, recent10=1.5, recent20=0.0, recent30=1.0, recent3=1.0, streak=0.3",
+  "verified_period": "2026141",
+  "prev_top6": [
+    "龍",
+    "雞",
+    "鼠",
+    "虎",
+    "蛇",
+    "豬"
+  ],
+  "prev_actual": "狗",
+  "prev_hit": false,
+  "预测期号": "2026142",
+  "推荐6肖": [
+    "龍",
+    "鼠",
+    "雞",
+    "豬",
+    "虎",
+    "蛇"
+  ],
+  "n_train": 506,
+  "timestamp": "2026-05-21T21:35:30.055256",
+  "wf_rolling": 83.11,
+  "scores": {
+    "兔": 31.8,
+    "牛": 27.1,
+    "狗": 39.0,
+    "猴": 34.4,
+    "羊": 35.2,
+    "虎": 45.0,
+    "蛇": 44.3,
+    "豬": 45.1,
+    "雞": 52.9,
+    "馬": 40.7,
+    "鼠": 53.5,
+    "龍": 65.8
+  },
+  "cache": {
+    "兔": {
+      "gap": 1,
+      "recent3": 1,
+      "recent5": 1,
+      "recent10": 1,
+      "recent20": 1,
+      "recent30": 3,
+      "streak": 0
+    },
+    "牛": {
+      "gap": 6,
+      "recent3": 0,
+      "recent5": 0,
+      "recent10": 2,
+      "recent20": 2,
+      "recent30": 4,
+      "streak": 0
+    },
+    "狗": {
+      "gap": 0,
+      "recent3": 1,
+      "recent5": 1,
+      "recent10": 1,
+      "recent20": 2,
+      "recent30": 3,
+      "streak": 1
+    },
+    "猴": {
+      "gap": 22,
+      "recent3": 0,
+      "recent5": 0,
+      "recent10": 0,
+      "recent20": 0,
+      "recent30": 1,
+      "streak": 0
+    },
+    "羊": {
+      "gap": 2,
+      "recent3": 1,
+      "recent5": 1,
+      "recent10": 2,
+      "recent20": 2,
+      "recent30": 2,
+      "streak": 0
+    },
+    "虎": {
+      "gap": 11,
+      "recent3": 0,
+      "recent5": 0,
+      "recent10": 0,
+      "recent20": 2,
+      "recent30": 2,
+      "streak": 0
+    },
+    "蛇": {
+      "gap": 4,
+      "recent3": 0,
+      "recent5": 1,
+      "recent10": 1,
+      "recent20": 1,
+      "recent30": 2,
+      "streak": 0
+    },
+    "豬": {
+      "gap": 20,
+      "recent3": 0,
+      "recent5": 0,
+      "recent10": 0,
+      "recent20": 0,
+      "recent30": 2,
+      "streak": 0
+    },
+    "雞": {
+      "gap": 18,
+      "recent3": 0,
+      "recent5": 0,
+      "recent10": 0,
+      "recent20": 1,
+      "recent30": 2,
+      "streak": 0
+    },
+    "馬": {
+      "gap": 3,
+      "recent3": 0,
+      "recent5": 1,
+      "recent10": 2,
+      "recent20": 5,
+      "recent30": 5,
+      "streak": 0
+    },
+    "鼠": {
+      "gap": 8,
+      "recent3": 0,
+      "recent5": 0,
+      "recent10": 1,
+      "recent20": 3,
+      "recent30": 3,
+      "streak": 0
+    },
+    "龍": {
+      "gap": 17,
+      "recent3": 0,
+      "recent5": 0,
+      "recent10": 0,
+      "recent20": 1,
+      "recent30": 1,
+      "streak": 0
+    }
+  }
+}

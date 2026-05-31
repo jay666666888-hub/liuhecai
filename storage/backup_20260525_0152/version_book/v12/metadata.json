@@ -1,0 +1,32 @@
+{
+  "version": "v12",
+  "strategy_type": "pattern_based",
+  "params": {
+    "lookback": 11,
+    "pattern_weight": 1.45,
+    "gap_weight": 0.098,
+    "trend_weight": 0.267,
+    "variance_weight": 0.177,
+    "alt_mode": "trend"
+  },
+  "notes": "主力模型",
+  "frozen": false,
+  "created_at": "2026-05-24T22:29:22.733529",
+  "updated_at": "2026-05-24T22:29:22.733540",
+  "backtest": {
+    "total": 864,
+    "hits": 480,
+    "hit_rate": 0.5555555555555556,
+    "hit_rate_100": 0.53,
+    "hit_rate_50": 0.56,
+    "max_streak": 5
+  },
+  "live": {
+    "total": 876,
+    "hits": 0,
+    "hit_rate": 0.0,
+    "hit_rate_100": 0.0,
+    "hit_rate_50": 0.0,
+    "max_streak": 876
+  }
+}

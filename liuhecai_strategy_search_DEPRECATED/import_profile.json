@@ -1,0 +1,22 @@
+{
+  "modules": {
+    "search": {
+      "status": "OK",
+      "import_time": 0.4208
+    },
+    "features.feature_engine": {
+      "status": "OK",
+      "import_time": 0.0
+    },
+    "backtest.enhanced_backtest": {
+      "status": "OK",
+      "import_time": 0.0
+    },
+    "evolution.ga_engine": {
+      "status": "OK",
+      "import_time": 0.0
+    }
+  },
+  "total_time": 0.4208,
+  "timestamp": "2026-05-20T14:32:42.980614"
+}

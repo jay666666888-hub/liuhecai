@@ -1,0 +1,15 @@
+{
+  "current_state": "HOT",
+  "detection_signals": {
+    "entropy_signal": "HOT",
+    "volatility_signal": "HOT",
+    "stability_signal": "HOT",
+    "regime_signal": "HOT"
+  },
+  "scores": {
+    "HOT": 4,
+    "COLD": 0,
+    "TRANSITION": 0,
+    "CHAOTIC": 0
+  }
+}

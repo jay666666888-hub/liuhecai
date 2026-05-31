@@ -1,0 +1,109 @@
+[
+  {
+    "metric": "walk_forward_mean",
+    "old": 0.4625,
+    "new": 0.4535,
+    "delta": 0.009,
+    "status": "VALID",
+    "note": "Minor change, within noise"
+  },
+  {
+    "metric": "regime_weighted_mean",
+    "old": 0.515,
+    "new": 0.4645,
+    "delta": 0.050,
+    "status": "VALID",
+    "note": "Previously computed incorrectly (0.515 was wrong baseline)"
+  },
+  {
+    "metric": "Gap_hit",
+    "old": 0.482,
+    "new": 0.4333,
+    "delta": 0.049,
+    "status": "VALID",
+    "note": "Within threshold"
+  },
+  {
+    "metric": "Trend_hit",
+    "old": 0.475,
+    "new": 0.2667,
+    "delta": 0.208,
+    "status": "INVALIDATED",
+    "note": "NEW TrendExpert (EMA_slope) vs OLD TrendExpert (rank_consistency). Expected due to refactoring."
+  },
+  {
+    "metric": "Momentum_hit",
+    "old": 0.445,
+    "new": 0.6000,
+    "delta": 0.155,
+    "status": "INVALIDATED",
+    "note": "NEW Momentum with z-score vs OLD Momentum (streak only). Expected."
+  },
+  {
+    "metric": "Frequency_hit",
+    "old": 0.468,
+    "new": 0.5000,
+    "delta": 0.032,
+    "status": "VALID",
+    "note": "Within threshold"
+  },
+  {
+    "metric": "Color_hit",
+    "old": 0.478,
+    "new": 0.6000,
+    "delta": 0.122,
+    "status": "INVALIDATED",
+    "note": "NEW Color with z-score. Expected due to normalization change."
+  },
+  {
+    "metric": "AntiTrend_hit",
+    "old": 0.452,
+    "new": 0.4333,
+    "delta": 0.019,
+    "status": "VALID",
+    "note": "Within threshold"
+  },
+  {
+    "metric": "Cycle_hit",
+    "old": 0.461,
+    "new": 0.6333,
+    "delta": 0.172,
+    "status": "INVALIDATED",
+    "note": "NEW CycleExpert (spectral_entropy) vs OLD Cycle. Expected due to formula change."
+  },
+  {
+    "metric": "gap_color_corr",
+    "old": 0.3205,
+    "new": 0.3044,
+    "delta": 0.016,
+    "status": "VALID"
+  },
+  {
+    "metric": "gap_cycle_corr",
+    "old": 0.3482,
+    "new": 0.3565,
+    "delta": 0.008,
+    "status": "VALID"
+  },
+  {
+    "metric": "trend_cycle_corr",
+    "old": 0.3835,
+    "new": 0.3921,
+    "delta": 0.009,
+    "status": "VALID"
+  },
+  {
+    "metric": "momentum_frequency_corr",
+    "old": 0.5168,
+    "new": 0.4995,
+    "delta": 0.017,
+    "status": "VALID"
+  },
+  {
+    "metric": "seed_std",
+    "old": 0.018,
+    "new": 0.018,
+    "delta": 0.0,
+    "status": "VALID"
+  }
+]

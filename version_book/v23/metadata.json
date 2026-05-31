@@ -1,0 +1,29 @@
+{
+  "version": "v23",
+  "strategy_type": "2026_focused",
+  "params": {
+    "decay": 0.85,
+    "gap_weight": 4.0,
+    "freq_weight": 1.5
+  },
+  "notes": "专注2026年",
+  "frozen": false,
+  "created_at": "2026-05-28T03:54:21.288844",
+  "updated_at": "2026-05-28T03:54:21.288854",
+  "backtest": {
+    "total": 765,
+    "hits": 385,
+    "hit_rate": 0.5032679738562091,
+    "hit_rate_100": 0.59,
+    "hit_rate_50": 0.54,
+    "max_streak": 1
+  },
+  "live": {
+    "total": 4,
+    "hits": 3,
+    "hit_rate": 0.75,
+    "hit_rate_100": 0.75,
+    "hit_rate_50": 0.75,
+    "max_streak": 1
+  }
+}

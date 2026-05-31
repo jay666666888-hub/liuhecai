@@ -1,0 +1,25 @@
+{
+  "timestamp": "2026-05-19T14:26:22.622402",
+  "grade": "RED",
+  "summary": {
+    "total_records": 870,
+    "mapping_mismatches": 1664,
+    "mismatch_rate": 0.6375,
+    "data_issues": 1
+  },
+  "checks": {
+    "validation": {
+      "zodiac_mismatches": 794,
+      "color_mismatches": 0,
+      "wuxing_mismatches": 870
+    },
+    "integrity": {
+      "issues_found": 1,
+      "issues_list": [
+        "缺失期号: 1个年份"
+      ]
+    }
+  },
+  "can_proceed": false,
+  "message": "存在严重问题（1664处不一致，1处数据问题），禁止进入策略搜索"
+}

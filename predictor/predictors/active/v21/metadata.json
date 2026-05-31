@@ -1,0 +1,14 @@
+{
+  "version": "v21",
+  "strategy_type": "sunday_effect",
+  "params": {
+    "sunday_threshold": 0.6
+  },
+  "notes": "周日效应模型",
+  "frozen": false,
+  "created_at": "2026-05-25T00:00:00.000000",
+  "updated_at": "2026-05-26T03:10:46.102285",
+  "status": "active",
+  "play_type": "liuhe",
+  "schema_version": "1.0.0"
+}

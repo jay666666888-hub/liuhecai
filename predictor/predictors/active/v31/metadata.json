@@ -1,0 +1,18 @@
+{
+  "id": "v31",
+  "status": "active",
+  "created_at": "2026-06-01T01:30:00",
+  "predictor": "v31_special_24ma_predictor",
+  "data_source": "data_fetcher",
+  "strategy_type": "zodiac_partition_frequency",
+  "params": {
+    "lookback": 50,
+    "nums_per_zodiac": 2,
+    "top_k": 24
+  },
+  "notes": "24码预测：生肖分区频率策略，按特码生肖分区统计频率",
+  "frozen": false,
+  "play_type": "special_24ma",
+  "updated_at": "2026-06-01T02:20:00",
+  "schema_version": "1.0.0"
+}

@@ -1,0 +1,57 @@
+{
+  "cleanup_date": "2026-05-21",
+  "deleted_files": [
+    "expert_contribution_v3.py",
+    "expert_contribution_v3_real.py",
+    "run_expert_analysis.py"
+  ],
+  "remaining_files": {
+    "experts/": [
+      "antitrend_expert.py",
+      "color_expert.py",
+      "cycle_expert.py",
+      "frequency_expert.py",
+      "gap_expert.py",
+      "momentum_expert.py",
+      "trend_expert.py"
+    ],
+    "meta_v2/": [
+      "chaos_handler.py",
+      "color_activator.py",
+      "diversity_penalty.py",
+      "expert_aggregator.py",
+      "expert_manager.py",
+      "expert_priority.py",
+      "meta_strategy_v2.py",
+      "state_detector.py",
+      "state_router.py",
+      "transition.py"
+    ],
+    "reports/": [
+      "accepted_structural_overlap.json",
+      "expert_contribution_v2.json",
+      "expert_contribution_v3.json",
+      "final_validation_summary.json",
+      "metric_consistency_report.json",
+      "metric_consistency_validation.json",
+      "momentum_frequency_diagnosis.json",
+      "momentum_frequency_ranking_analysis.json",
+      "new_baseline_after_refactor.json",
+      "revalidation_after_metric_fix.json",
+      "step1_gap_expert_validation.json",
+      "step2_cycle_expert_validation.json",
+      "step3_trend_expert_validation.json",
+      "system_robustness_report.json",
+      "tie_break_analysis.json"
+    ],
+    "meta_v2/tests/": [
+      "test_expert_manager.py",
+      "test_meta_strategy_v2.py",
+      "test_regime_diagnosis.py",
+      "test_robustness_validation.py",
+      "test_state_detector.py",
+      "test_weight_effectiveness.py"
+    ]
+  },
+  "summary": "Deleted 3 temporary analysis scripts (expert_contribution_v3.py, expert_contribution_v3_real.py, run_expert_analysis.py). Preserved all expert modules (7 files), meta_v2 core modules (10 files), test files (6 files), and reports (15 JSON files)."
+}

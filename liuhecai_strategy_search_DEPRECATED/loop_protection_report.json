@@ -1,0 +1,26 @@
+{
+  "files": [
+    {
+      "file": "search.py",
+      "has_max_iterations": false,
+      "has_heartbeat": false,
+      "has_timeout": false,
+      "recommendation": "需要添加max_iterations限制"
+    },
+    {
+      "file": "ga_engine.py",
+      "has_max_iterations": false,
+      "has_heartbeat": false,
+      "has_timeout": false,
+      "recommendation": "需要添加max_iterations限制"
+    },
+    {
+      "file": "enhanced_backtest.py",
+      "has_max_iterations": false,
+      "has_heartbeat": false,
+      "has_timeout": false,
+      "recommendation": "需要添加max_iterations限制"
+    }
+  ],
+  "timestamp": "2026-05-20T14:32:55.029664"
+}

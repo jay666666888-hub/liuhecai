@@ -1,0 +1,22 @@
+{
+  "top6_zodiacs": [
+    "马",
+    "羊",
+    "兔",
+    "猴",
+    "蛇",
+    "龍"
+  ],
+  "zodiac_scores": {
+    "马": 0.8621,
+    "羊": 0.5961,
+    "兔": 0.4523,
+    "猴": 0.3976,
+    "蛇": 0.309,
+    "龍": 0.1101
+  },
+  "method": "weighted_vote",
+  "formula": "score = hit_rate × stability",
+  "total_strategies": 50,
+  "top50_avg_hit_rate": 0.552
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "function": "_run_strategy",
+    "module": "backtest/enhanced_backtest.py:218",
+    "call_count": 46,
+    "total_time": 0.603,
+    "avg_time": 0.013108695652173912,
+    "cumulative_time": 0.603
+  },
+  {
+    "function": "_get_train_rates",
+    "module": "backtest/enhanced_backtest.py (cached)",
+    "call_count": 42,
+    "total_time": 0.0,
+    "avg_time": 0.0,
+    "cumulative_time": 0.0,
+    "note": "features cached, minimal cost"
+  },
+  {
+    "function": "_compute_features",
+    "module": "backtest/enhanced_backtest.py (cached)",
+    "call_count": 42,
+    "total_time": 0.0,
+    "avg_time": 0.0,
+    "cumulative_time": 0.0,
+    "note": "now using cache - only 42 unique calls"
+  },
+  {
+    "function": "GA evolution",
+    "module": "evolution/ga_engine.py",
+    "call_count": 1,
+    "total_time": 0.5,
+    "avg_time": 0.5,
+    "cumulative_time": 0.5
+  },
+  {
+    "function": "baseline computation",
+    "module": "backtest/enhanced_backtest.py",
+    "call_count": 4,
+    "total_time": 0.4,
+    "avg_time": 0.1,
+    "cumulative_time": 0.4
+  }
+]
