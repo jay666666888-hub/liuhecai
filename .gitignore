@@ -19,3 +19,23 @@ node_modules/
 # Large files
 *.zip
 *.tar.gz
+
+# Security - Sensitive files
+.env
+.env.local
+.env.*
+*.key
+*.pem
+*.p12
+*.pfx
+id_rsa*
+id_ed25519*
+*.secret
+credentials.json
+secrets.json
+
+# Cache
+.cache/
+.cache/
+.pytest_cache/
+.mypy_cache/
