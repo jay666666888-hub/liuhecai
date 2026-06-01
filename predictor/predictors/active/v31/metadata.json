@@ -1,18 +1,26 @@
 {
   "id": "v31",
   "status": "active",
-  "created_at": "2026-06-01T01:30:00",
-  "predictor": "v31_special_24ma_predictor",
-  "data_source": "data_fetcher",
-  "strategy_type": "zodiac_partition_frequency",
+  "play_type": "number_selection",
+  "mode": "24ma",
+  "top_k": 24,
   "params": {
     "lookback": 50,
-    "nums_per_zodiac": 2,
-    "top_k": 24
+    "strategy": "zodiac_partition_frequency"
   },
-  "notes": "24码预测：生肖分区频率策略，按特码生肖分区统计频率",
+  "strategy_type": "zodiac_partition_frequency",
+  "notes": "24码 - 生肖分区频率策略",
   "frozen": false,
-  "play_type": "special_24ma",
-  "updated_at": "2026-06-01T02:20:00",
+  "created_at": "2026-06-01",
+  "backtest": {
+    "total": 0,
+    "hits": 0,
+    "hit_rate": 0.0
+  },
+  "live": {
+    "total": 0,
+    "hits": 0,
+    "hit_rate": 0.0
+  },
   "schema_version": "1.0.0"
 }
