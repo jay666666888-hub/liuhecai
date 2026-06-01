@@ -1,15 +1,15 @@
 {
-  "id": "v31",
+  "id": "v39",
   "status": "active",
   "play_type": "number_selection",
-  "mode": "24ma",
-  "top_k": 24,
+  "mode": "30ma",
+  "top_k": 30,
   "params": {
     "lookback": 50,
     "strategy": "zodiac_partition_frequency"
   },
   "strategy_type": "zodiac_partition_frequency",
-  "notes": "24码 - 生肖分区频率策略",
+  "notes": "30码 - 生肖分区频率策略",
   "frozen": false,
   "created_at": "2026-06-01",
   "backtest": {
