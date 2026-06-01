@@ -77,9 +77,10 @@ class PredictOrchestrator:
             try:
                 # 根据 play_type 决定 top_k
                 from predictor.predictor_registry import PredictorRegistry
-                play_type = PredictorRegistry.get_play_type(version)
-                if play_type == 'special_24ma':
-                    actual_top_k = 24
+                metadata = PredictorRegistry.get_metadata(version)
+                play_type = metadata.get('play_type', 'liuhe')
+                if play_type == 'number_selection':
+                    actual_top_k = metadata.get('top_k', 24)
                 else:
                     actual_top_k = top_k
                 result = predictor.predict(history, top_k=actual_top_k)
