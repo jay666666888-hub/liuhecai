@@ -12,7 +12,7 @@ from datetime import datetime
 from pathlib import Path
 
 
-ALLOWED_PLAY_TYPES = {"liuhe", "pingte_yixiao", "special_24ma"}
+ALLOWED_PLAY_TYPES = {"liuhe", "pingte_yixiao", "number_selection"}
 
 
 def generate_index(base_dir: str = None) -> dict:
@@ -43,7 +43,7 @@ def generate_index(base_dir: str = None) -> dict:
 
     active_versions = []
     retired_versions = []
-    active_by_play_type = {"liuhe": [], "pingte_yixiao": [], "special_24ma": []}
+    active_by_play_type = {"liuhe": [], "pingte_yixiao": [], "number_selection": []}
 
     # 扫描 active/ 目录
     if os.path.exists(active_dir):
