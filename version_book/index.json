@@ -1,7 +1,6 @@
 {
   "_comment": "Auto-generated, do not edit manually",
   "active": [
-    "number_selection_v1",
     "v12",
     "v21",
     "v23",
@@ -34,7 +33,6 @@
       "v29"
     ],
     "duoma": [
-      "number_selection_v1",
       "v31",
       "v36",
       "v37",
@@ -136,7 +134,6 @@
   ],
   "experimental": [],
   "versions": [
-    "number_selection_v1",
     "v12",
     "v21",
     "v23",
@@ -163,5 +160,5 @@
     "v26",
     "v9"
   ],
-  "updated_at": "2026-06-02T22:30:02.935336"
+  "updated_at": "2026-06-03T02:30:04.162131"
 }
