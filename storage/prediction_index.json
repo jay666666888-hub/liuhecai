@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-06-01T03:07:25.988066",
+  "updated_at": "2026-06-02T22:30:02.762556",
   "versions": {
     "v10": {
       "latest_issue": "2026142",
@@ -13,8 +13,8 @@
       "total_predictions": 866
     },
     "v12": {
-      "latest_issue": "2026152",
-      "pending_issue": "2026152",
+      "latest_issue": "2026154",
+      "pending_issue": "2026154",
       "total_predictions": 866
     },
     "v13": {
@@ -38,8 +38,8 @@
       "total_predictions": 50
     },
     "v21": {
-      "latest_issue": "2026152",
-      "pending_issue": "2026152",
+      "latest_issue": "2026154",
+      "pending_issue": "2026154",
       "total_predictions": 857
     },
     "v22": {
@@ -48,13 +48,13 @@
       "total_predictions": 405
     },
     "v23": {
-      "latest_issue": "2026152",
-      "pending_issue": "2026152",
+      "latest_issue": "2026154",
+      "pending_issue": "2026154",
       "total_predictions": 767
     },
     "v24": {
-      "latest_issue": "2026152",
-      "pending_issue": "2026152",
+      "latest_issue": "2026154",
+      "pending_issue": "2026154",
       "total_predictions": 767
     },
     "v26": {
@@ -63,13 +63,13 @@
       "total_predictions": 861
     },
     "v5": {
-      "latest_issue": "2026152",
-      "pending_issue": "2026152",
+      "latest_issue": "2026154",
+      "pending_issue": "2026154",
       "total_predictions": 847
     },
     "v7": {
-      "latest_issue": "2026152",
-      "pending_issue": "2026152",
+      "latest_issue": "2026154",
+      "pending_issue": "2026154",
       "total_predictions": 847
     },
     "v9": {
@@ -78,28 +78,88 @@
       "total_predictions": 861
     },
     "v27": {
-      "latest_issue": "2026152",
-      "pending_issue": "2026152"
+      "latest_issue": "2026154",
+      "pending_issue": "2026154"
     },
     "v28": {
-      "latest_issue": "2026152",
-      "pending_issue": "2026152"
+      "latest_issue": "2026154",
+      "pending_issue": "2026154"
     },
     "v29": {
-      "latest_issue": "2026152",
-      "pending_issue": "2026152"
+      "latest_issue": "2026154",
+      "pending_issue": "2026154"
     },
     "v99": {
       "latest_issue": "2026998",
       "pending_issue": "2026998"
     },
     "v30": {
-      "latest_issue": "2026152",
-      "pending_issue": "2026152"
+      "latest_issue": "2026154",
+      "pending_issue": "2026154"
     },
     "v31": {
-      "latest_issue": "2026152",
-      "pending_issue": "2026152"
+      "latest_issue": "2026154",
+      "pending_issue": "2026154"
+    },
+    "v36": {
+      "latest_issue": "2026154",
+      "pending_issue": "2026154"
+    },
+    "v37": {
+      "latest_issue": "2026154",
+      "pending_issue": "2026154"
+    },
+    "v38": {
+      "latest_issue": "2026154",
+      "pending_issue": "2026154"
+    },
+    "v39": {
+      "latest_issue": "2026154",
+      "pending_issue": "2026154"
+    },
+    "number_selection_v1": {
+      "latest_issue": "2026154",
+      "pending_issue": "2026154"
+    },
+    "v40": {
+      "latest_issue": "2026153",
+      "pending_issue": "2026153"
+    },
+    "v41": {
+      "latest_issue": "2026153",
+      "pending_issue": "2026153"
+    },
+    "v42": {
+      "latest_issue": "2026153",
+      "pending_issue": "2026153"
+    },
+    "v43": {
+      "latest_issue": "2026153",
+      "pending_issue": "2026153"
+    },
+    "v44": {
+      "latest_issue": "2026153",
+      "pending_issue": "2026153"
+    },
+    "v45": {
+      "latest_issue": "2026153",
+      "pending_issue": "2026153"
+    },
+    "v46": {
+      "latest_issue": "2026153",
+      "pending_issue": "2026153"
+    },
+    "v47": {
+      "latest_issue": "2026153",
+      "pending_issue": "2026153"
+    },
+    "v48": {
+      "latest_issue": "2026153",
+      "pending_issue": "2026153"
+    },
+    "v49": {
+      "latest_issue": "2026153",
+      "pending_issue": "2026153"
     }
   }
 }
