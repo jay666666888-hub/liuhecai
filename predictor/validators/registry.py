@@ -10,7 +10,7 @@ from .pingte_yixiao_validator import PingteYixiaoValidator
 from .special_24ma_validator import Special24maValidator
 from .number_selection_validator import NumberSelectionValidator
 
-ALLOWED_PLAY_TYPES = {"liuhe", "pingte_yixiao", "special_24ma", "number_selection"}
+ALLOWED_PLAY_TYPES = {"liuhe", "pingte_yixiao", "special_24ma", "duoma"}
 
 
 class MetadataError(Exception):
@@ -33,7 +33,7 @@ class ValidatorRegistry:
             "liuhe": LiuheValidator(),
             "pingte_yixiao": PingteYixiaoValidator(),
             "special_24ma": Special24maValidator(),
-            "number_selection": NumberSelectionValidator(),
+            "duoma": NumberSelectionValidator(),
         }
         cls._initialized = True
 

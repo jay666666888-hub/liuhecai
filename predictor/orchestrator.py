@@ -79,7 +79,7 @@ class PredictOrchestrator:
                 from predictor.predictor_registry import PredictorRegistry
                 metadata = PredictorRegistry.get_metadata(version)
                 play_type = metadata.get('play_type', 'liuhe')
-                if play_type == 'number_selection':
+                if play_type == 'duoma':
                     actual_top_k = metadata.get('top_k', 24)
                 else:
                     actual_top_k = top_k
@@ -108,7 +108,9 @@ class PredictOrchestrator:
             if not result.prediction:
                 continue
             try:
-                play_type = result.metadata.get("play_type", "liuhe")
+                from predictor.predictor_registry import PredictorRegistry
+                metadata = PredictorRegistry.get_metadata(version)
+                play_type = metadata.get('play_type', 'liuhe')
                 write_live_prediction(
                     version=version,
                     issue=issue,
@@ -214,11 +216,13 @@ def run_live_cycle(active_versions: List[str] = None) -> Dict[str, Any]:
     latest = standard[-1]
     latest_issue = latest["期号"]
     latest_actual = latest["特码生肖"]
+    latest_special_number = latest.get("特码号码")  # 多码验证用
     # 获取完整7个生肖列表（用于平特一肖验证）
     latest_zodiac_list = latest.get("开奖生肖", []) if latest.get("开奖生肖") else []
 
     print(f"  最新开奖: {latest_issue} ({latest_actual})")
     print(f"  开奖生肖: {latest_zodiac_list}")
+    print(f"  特码号码: {latest_special_number}")
     print(f"  历史数据: {n} 期")
 
     # 2. 验证上期预测
@@ -232,10 +236,11 @@ def run_live_cycle(active_versions: List[str] = None) -> Dict[str, Any]:
                 print(f"  {version}: - (无预测记录，跳过)")
                 continue
 
-            hit, updated = verify_prediction(version, latest_issue, latest_actual, latest_zodiac_list)
+            hit, updated = verify_prediction(version, latest_issue, latest_actual, latest_zodiac_list, latest_special_number)
             if hit is not None:
                 status = "✓ 命中" if hit else "✗ 未中"
-                print(f"  {version}: {status} ({latest_actual})")
+                duoma_info = f" ({latest_special_number})" if updated.get('play_type') == 'duoma' else f" ({latest_actual})"
+                print(f"  {version}: {status}{duoma_info}")
         except Exception as e:
             print(f"  {version}: 验证失败 - {e}")
 

@@ -80,6 +80,8 @@ class PredictorRegistry:
                 return
 
             # 查找预测器类（搜索所有继承 BasePredictor 的类）
+            # 优先选择最深子类（避免被父类截断）
+            candidates = []
             for attr_name in dir(module):
                 attr = getattr(module, attr_name)
                 if isinstance(attr, type):
@@ -88,9 +90,13 @@ class PredictorRegistry:
                     except TypeError:
                         is_sub = False
                     if is_sub:
-                        cls._predictors[version] = attr
-                        print(f"[Registry] 发现预测器: {version} -> {attr_name}")
-                        break
+                        candidates.append((attr, attr_name))
+
+            # 选择最深子类（max MRO depth）
+            if candidates:
+                best = max(candidates, key=lambda x: len(x[0].__mro__))
+                cls._predictors[version] = best[0]
+                print(f"[Registry] 发现预测器: {version} -> {best[1]}")
 
         except Exception as e:
             import traceback

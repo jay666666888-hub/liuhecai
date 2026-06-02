@@ -40,6 +40,12 @@ CIRCUIT_BREAKER_CONFIG = {
 }
 CACHE_METADATA_FILE = os.path.join(CACHE_DIR, "_cache_metadata.json")
 
+# Circuit breaker 持久化状态文件
+_CIRCUIT_STATE_FILE = os.path.join(
+    os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+    "data", "runtime", "circuit_breaker.json"
+)
+
 
 # Circuit breaker state
 _circuit_state = {
@@ -47,6 +53,31 @@ _circuit_state = {
     "opened_at": None,
     "last_error": None,
 }
+
+
+def _load_circuit_state():
+    """从持久化文件加载 circuit breaker 状态"""
+    global _circuit_state
+    if os.path.exists(_CIRCUIT_STATE_FILE):
+        try:
+            with open(_CIRCUIT_STATE_FILE, 'r') as f:
+                state = json.load(f)
+                _circuit_state["failures"] = state.get("failures", 0)
+                _circuit_state["opened_at"] = state.get("opened_at")
+                _circuit_state["last_error"] = state.get("last_error")
+        except:
+            pass
+
+
+def _save_circuit_state():
+    """保存 circuit breaker 状态到持久化文件"""
+    os.makedirs(os.path.dirname(_CIRCUIT_STATE_FILE), exist_ok=True)
+    with open(_CIRCUIT_STATE_FILE, 'w') as f:
+        json.dump(_circuit_state, f, ensure_ascii=False, indent=2)
+
+
+# 启动时加载持久化状态
+_load_circuit_state()
 
 
 def _get_cache_metadata() -> Dict:
@@ -73,9 +104,10 @@ def _is_circuit_open() -> bool:
     # 检查是否超过恢复时间
     elapsed = time.time() - _circuit_state["opened_at"]
     if elapsed > CIRCUIT_BREAKER_CONFIG["recovery_timeout"]:
-        # 恢复时间已过，尝试半开
+        # 恢复时间已过，尝试半开，重置状态
         _circuit_state["opened_at"] = None
         _circuit_state["failures"] = 0
+        _save_circuit_state()
         return False
 
     return True
@@ -91,12 +123,18 @@ def _record_failure(error: str):
     if _circuit_state["failures"] >= CIRCUIT_BREAKER_CONFIG["failure_threshold"]:
         _circuit_state["opened_at"] = time.time()
 
+    _save_circuit_state()
+
 
 def _record_success():
     """记录成功，重置计数器"""
     global _circuit_state
 
     _circuit_state["failures"] = 0
+    _circuit_state["opened_at"] = None
+    _circuit_state["last_error"] = None
+
+    _save_circuit_state()
     _circuit_state["opened_at"] = None
     _circuit_state["last_error"] = None
 

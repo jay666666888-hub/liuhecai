@@ -19,4 +19,5 @@ __all__ = [
     "get_validator",
     "MetadataError",
     "ALLOWED_PLAY_TYPES",
+    "duoma",  # alias for NumberSelectionValidator
 ]

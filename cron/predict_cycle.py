@@ -19,6 +19,8 @@ import os
 import fcntl
 import time
 import json
+import shutil
+import tempfile
 from pathlib import Path
 from datetime import datetime
 
@@ -29,6 +31,15 @@ from predictor.index_generator import write_index
 
 LOCK_FILE = Path("/tmp/liuhe_pipeline.lock")
 PID_FILE = Path("/tmp/liuhe_pipeline.pid")
+
+# 持久化状态目录
+BASE_DIR = Path(__file__).parent.parent
+DATA_DIR = BASE_DIR / "data"
+RUNTIME_DIR = DATA_DIR / "runtime"
+PROCESSED_ISSUE_FILE = RUNTIME_DIR / "processed_issue.json"
+PROCESSED_ISSUE_BACKUP = RUNTIME_DIR / "processed_issue.json._backup"
+
+RUNTIME_DIR.mkdir(parents=True, exist_ok=True)
 
 
 def get_lock():
@@ -95,9 +106,71 @@ def cleanup_stale_lock():
             print(f"[清理] 移除格式错误的锁文件")
 
 
+def load_last_processed_issue():
+    """加载上次处理的开奖期号（带 backup 恢复）"""
+    # 优先尝试主文件
+    if PROCESSED_ISSUE_FILE.exists():
+        try:
+            with open(PROCESSED_ISSUE_FILE, 'r') as f:
+                data = json.load(f)
+            return data.get('last_processed_result_issue')
+        except (json.JSONDecodeError, IOError):
+            pass
+
+    # 主文件损坏，尝试 backup
+    if PROCESSED_ISSUE_BACKUP.exists():
+        try:
+            with open(PROCESSED_ISSUE_BACKUP, 'r') as f:
+                data = json.load(f)
+            shutil.copy2(PROCESSED_ISSUE_BACKUP, PROCESSED_ISSUE_FILE)
+            print(f"  [恢复] 已从 backup 恢复 processed_issue.json")
+            return data.get('last_processed_result_issue')
+        except (json.JSONDecodeError, IOError):
+            pass
+
+    return None
+
+
+def save_last_processed_issue(issue, source="predict_cycle", duration_ms=None):
+    """保存最后处理的开奖期号（原子写入 + backup）"""
+    data = {
+        'last_processed_result_issue': issue,
+        'processed_at': datetime.now().isoformat(),
+        'source': source,
+    }
+    if duration_ms is not None:
+        data['duration_ms'] = duration_ms
+
+    # 原子写入：先写 backup，再 rename 到主文件
+    temp_fd, temp_path = tempfile.mkstemp(dir=RUNTIME_DIR, prefix='.tmp_', suffix='.json')
+    try:
+        with os.fdopen(temp_fd, 'w', encoding='utf-8') as f:
+            json.dump(data, f, ensure_ascii=False, indent=2)
+        if PROCESSED_ISSUE_FILE.exists():
+            shutil.copy2(PROCESSED_ISSUE_FILE, PROCESSED_ISSUE_BACKUP)
+        os.replace(temp_path, PROCESSED_ISSUE_FILE)
+    except Exception:
+        if os.path.exists(temp_path):
+            os.unlink(temp_path)
+        raise
+
+
 def verify_and_predict():
     """验证上期预测，生成下期预测（使用 Orchestrator）"""
+    start_time = time.time()
+
     result = run_live_cycle()
+
+    # 计算耗时并保存处理状态
+    if result and result.get('issue'):
+        cycle_elapsed_ms = int((time.time() - start_time) * 1000)
+        save_last_processed_issue(
+            issue=result['issue'],
+            source="predict_cycle",
+            duration_ms=cycle_elapsed_ms
+        )
+        print(f"[{datetime.now().isoformat()}] [RESULT_CONSUMED] issue={result['issue']} source=predict_cycle duration_ms={cycle_elapsed_ms}")
+
     write_index()
     return result
 

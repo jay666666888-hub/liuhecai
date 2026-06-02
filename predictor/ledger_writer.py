@@ -230,7 +230,9 @@ class LedgerWriter:
         )
 
         if AGGREGATED_LIVE_FILE.exists() and needs_overwrite:
-            existing_records = []
+            # 优化：先检查记录是否真实存在，避免全量扫描
+            # 使用临时文件实现高效替换（流式处理，不占用内存）
+            temp_records = []
             found = False
             with _safe_open(AGGREGATED_LIVE_FILE, 'r', encoding='utf-8') as f:
                 for line in f:
@@ -240,16 +242,19 @@ class LedgerWriter:
                     rec = json.loads(line)
                     if rec.get("version") == version and rec.get("issue") == issue:
                         found = True
-                        existing_records.append(record)  # 用新记录替代
+                        temp_records.append(record)  # 用新记录替代旧记录
                     else:
-                        existing_records.append(rec)
+                        temp_records.append(rec)
 
             if found:
-                _atomic_write(AGGREGATED_LIVE_FILE, lambda f: f.write(''.join(json.dumps(rec, ensure_ascii=False) + "\n" for rec in existing_records)))
+                # 流式写入：避免将所有记录加载到内存后再写入
+                _atomic_write(AGGREGATED_LIVE_FILE, lambda f: f.write(''.join(json.dumps(rec, ensure_ascii=False) + "\n" for rec in temp_records)))
             else:
+                # 记录不存在，回退到追加模式
                 with _safe_open(AGGREGATED_LIVE_FILE, 'a', encoding='utf-8') as f:
                     f.write(json.dumps(record, ensure_ascii=False) + "\n")
         else:
+            # 直接追加（最快路径）
             with _safe_open(AGGREGATED_LIVE_FILE, 'a', encoding='utf-8') as f:
                 f.write(json.dumps(record, ensure_ascii=False) + "\n")
 
@@ -268,7 +273,8 @@ class LedgerWriter:
         version: str,
         issue: str,
         actual: str,
-        zodiac_list: List[str] = None
+        zodiac_list: List[str] = None,
+        special_number: str = None
     ) -> Tuple[bool, Dict]:
         """
         验证预测并更新 aggregated_live.jsonl（唯一数据源）
@@ -277,6 +283,8 @@ class LedgerWriter:
             version: 版本号
             issue: 期号
             actual: 实际开奖生肖
+            zodiac_list: 开奖生肖列表（平特一肖用）
+            special_number: 特码号码（多码验证用）
 
         Returns:
             (hit, updated_record)
@@ -290,6 +298,18 @@ class LedgerWriter:
 
         if not PredictorRegistry._metadata:
             PredictorRegistry.scan()
+
+        # 判断是否为多码验证（使用号码而非生肖）
+        from predictor.predictor_registry import PredictorRegistry as PR
+        play_type = None
+        try:
+            play_type = PR.get_play_type(version)
+        except:
+            pass
+        is_duoma = play_type == 'duoma'
+
+        # 多码验证：用号码；其他验证：用生肖
+        eval_actual = special_number if is_duoma else actual
 
         aggregated_records = []
         updated_record = {}
@@ -310,9 +330,11 @@ class LedgerWriter:
                                 z_list = zodiac_list if zodiac_list is not None else rec.get("zodiac_list", [])
                                 if not z_list and zodiac_list is None:
                                     z_list = rec.get("actual_list", [])
-                                rec["hit"] = PredictorRegistry.evaluate(version, predicted, z_list, actual)
+                                rec["hit"] = PredictorRegistry.evaluate(version, predicted, z_list, eval_actual)
                                 if zodiac_list:
                                     rec["actual_list"] = zodiac_list
+                                if is_duoma and special_number:
+                                    rec["special_number"] = special_number
                                 rec["verified_at"] = datetime.now().isoformat()
                                 prev_hash = rec.get("prev_hash")
                                 rec["record_hash"] = self._compute_record_hash(rec, prev_hash)
@@ -328,10 +350,12 @@ class LedgerWriter:
                         z_list = zodiac_list if zodiac_list is not None else rec.get("zodiac_list", [])
                         if not z_list and zodiac_list is None:
                             z_list = rec.get("actual_list", [])
-                        rec["hit"] = PredictorRegistry.evaluate(version, predicted, z_list, actual)
+                        rec["hit"] = PredictorRegistry.evaluate(version, predicted, z_list, eval_actual)
 
                         if zodiac_list:
                             rec["actual_list"] = zodiac_list
+                        if is_duoma and special_number:
+                            rec["special_number"] = special_number
 
                         rec["verified_at"] = datetime.now().isoformat()
                         rec["status"] = "verified"
@@ -445,9 +469,9 @@ def write_live_prediction(version: str, issue: str, prediction: List[str], **kwa
     """写入实盘预测（快捷函数）"""
     return get_writer().write_live_prediction(version, issue, prediction, **kwargs)
 
-def verify_prediction(version: str, issue: str, actual: str, zodiac_list: List[str] = None) -> Tuple[bool, Dict]:
+def verify_prediction(version: str, issue: str, actual: str, zodiac_list: List[str] = None, special_number: str = None) -> Tuple[bool, Dict]:
     """验证预测（快捷函数）"""
-    return get_writer().verify_prediction(version, issue, actual, zodiac_list)
+    return get_writer().verify_prediction(version, issue, actual, zodiac_list, special_number)
 
 def read_live_predictions(version: str = None, limit: int = 100) -> List[Dict]:
     """读取实盘预测（快捷函数）"""

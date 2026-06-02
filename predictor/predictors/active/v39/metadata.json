@@ -1,7 +1,7 @@
 {
   "id": "v39",
   "status": "active",
-  "play_type": "number_selection",
+  "play_type": "duoma",
   "mode": "30ma",
   "top_k": 30,
   "params": {

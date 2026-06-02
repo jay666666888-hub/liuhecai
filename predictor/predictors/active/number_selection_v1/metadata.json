@@ -1,0 +1,21 @@
+{
+  "id": "number_selection_v1",
+  "status": "active",
+  "play_type": "duoma",
+  "predictor_class": "NumberSelectionPredictorV1",
+  "params": {
+    "lookback": 50,
+    "strategy": "balanced"
+  },
+  "strategy_presets": {
+    "freq_only": {"freq_weight": 1.0, "gap_weight": 0.0, "zodiac_weight": 0.0},
+    "gap_priority": {"freq_weight": 0.0, "gap_weight": 1.0, "zodiac_weight": 0.0},
+    "balanced": {"freq_weight": 0.5, "gap_weight": 0.5, "zodiac_weight": 0.0},
+    "balanced_zodiac": {"freq_weight": 0.45, "gap_weight": 0.45, "zodiac_weight": 0.1},
+    "zodiac_tuned": {"freq_weight": 0.4, "gap_weight": 0.4, "zodiac_weight": 0.2}
+  },
+  "notes": "多码预测器 v1 - 参数化策略，通过 strategy 配置 freq/gap/zodiac 权重",
+  "frozen": false,
+  "created_at": "2026-06-02",
+  "schema_version": "1.0.0"
+}

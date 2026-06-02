@@ -70,6 +70,11 @@ _cache_ttl = 30  # 秒
 _stats_all_cache = None
 _stats_all_timestamp = None
 
+# 标准记录缓存（避免每次重新构建）
+_standard_records_cache = None
+_standard_records_timestamp = None
+_STANDARD_RECORDS_TTL = 30  # 秒
+
 
 def _get_cached(key, loader, ttl=30):
     """带 TTL 的简单内存缓存"""
@@ -81,6 +86,20 @@ def _get_cached(key, loader, ttl=30):
     data = loader()
     _cache[key] = (data, now)
     return data
+
+
+def _get_standard_records():
+    """获取标准记录（带缓存）"""
+    global _standard_records_cache, _standard_records_timestamp
+    now = datetime.now().timestamp()
+    if _standard_records_cache and _standard_records_timestamp and (now - _standard_records_timestamp < _STANDARD_RECORDS_TTL):
+        return _standard_records_cache
+    from predictor.data_fetcher import get_all_records, build_standard_records
+    records = get_all_records([2024, 2025, 2026])
+    standard_records = build_standard_records(records)
+    _standard_records_cache = standard_records
+    _standard_records_timestamp = now
+    return standard_records
 
 
 def _get_stats_all_cached(loader, ttl=30):
@@ -97,15 +116,18 @@ def _get_stats_all_cached(loader, ttl=30):
 
 def _clear_cache():
     """清除缓存（数据更新时调用）"""
+    global _stats_all_cache, _stats_all_timestamp, _standard_records_cache, _standard_records_timestamp
     _cache.clear()
+    _stats_all_cache = None
+    _stats_all_timestamp = None
+    _standard_records_cache = None
+    _standard_records_timestamp = None
 
 
 # ========== Stats Engine 实时计算函数 ==========
 
 def _get_stats_stats(category, stat_type):
     """调用 stats_engine 实时计算 stats（带缓存）"""
-    # 延迟导入避免循环依赖
-    from predictor.data_fetcher import get_all_records, build_standard_records
     from predictor.stats_engine import (
         compute_zodiac_miss,
         compute_wave_miss,
@@ -113,9 +135,8 @@ def _get_stats_stats(category, stat_type):
         compute_special_number_miss,
     )
 
-    # 构建 standard_records
-    records = get_all_records([2024, 2025, 2026])
-    standard_records = build_standard_records(records)
+    # 使用缓存的标准记录
+    standard_records = _get_standard_records()
 
     # 计算 stats
     if category == "special_stats" and stat_type == "zodiac_miss":
@@ -433,6 +454,7 @@ def api_records():
             'source': source,
             'actual': p.get('actual'),
             'actual_list': p.get('actual_list') if play_type == 'pingte_yixiao' else None,
+            'special_number': p.get('special_number') if play_type == 'duoma' else None,
             'hit': p.get('hit'),
             'status': p.get('status', 'verified')
         })
@@ -466,6 +488,7 @@ def api_records_by_version(version):
             'created_at': p.get('created_at'),
             'actual': p.get('actual'),
             'actual_list': p.get('actual_list') if play_type == 'pingte_yixiao' else None,
+            'special_number': p.get('special_number') if play_type == 'duoma' else None,
             'hit': p.get('hit'),
             'status': p.get('status'),
         })

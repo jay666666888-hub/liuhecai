@@ -206,6 +206,10 @@
             background: #ff6b35;
         }
 
+        .play-type-label.duoma {
+            background: #af52de;
+        }
+
         /* Prediction Card */
         .prediction-card {
             background: linear-gradient(135deg, #007aff 0%, #5856d6 100%);
@@ -505,6 +509,7 @@
             .footer { color: #98989d; }
             .play-type-label { background: #007aff; }
             .play-type-label.pingte { background: #34c759; }
+            .play-type-label.duoma { background: #af52de; }
             .foundation-stats-section .section-header { color: #98989d; }
             .foundation-category-header { color: #98989d; }
             .foundation-card { background: #2d2d2f; box-shadow: 0 1px 3px rgba(0,0,0,0.3); }
@@ -1828,13 +1833,15 @@
             const playTypeLabels = {
                 'liuhe': '六肖',
                 'pingte_yixiao': '平特一肖',
-                'special_24ma': '24码'
+                'special_24ma': '24码',
+                'duoma': '多码'
             };
 
             const playTypeColors = {
                 'liuhe': '',
                 'pingte_yixiao': 'pingte',
-                'special_24ma': 'special24ma'
+                'special_24ma': 'special24ma',
+                'duoma': 'duoma'
             };
 
             // 按玩法分组显示所有版本
@@ -2019,11 +2026,14 @@
                 let preds = r.prediction || [];
                 if (typeof preds === 'string') preds = preds.split(',');
 
-                // 平特一肖：显示完整7码（用pred-tag样式）；六肖：显示特码
+                // 平特一肖：显示完整7码；多码：显示号码；其他：显示生肖
                 const isPingte = r.play_type === 'pingte_yixiao';
+                const isDuoma = r.play_type === 'duoma';
                 let resultHtml;
                 if (isPingte && r.actual_list && r.actual_list.length > 0) {
                     resultHtml = r.actual_list.map(z => `<span class="record-result">${z}</span>`).join(' ');
+                } else if (isDuoma && r.special_number) {
+                    resultHtml = `<span class="record-result">${r.special_number}</span>`;
                 } else {
                     resultHtml = `<span class="record-result">${r.actual || '-'}</span>`;
                 }
