@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>澳门六合预测 - Element Admin 风格</title>
+    <link href="https://cdn.jsdelivr.net/npm/element-plus@2.4.4/dist/index.css" rel="stylesheet">
+    <style>
+        :root {
+            --el-color-primary: #409eff;
+            --el-color-success: #67c23a;
+            --el-color-warning: #e6a23c;
+            --el-color-danger: #f56c6c;
+            --el-bg-color: #f5f7fa;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: var(--el-bg-color);
+            color: #303133;
+        }
+
+        /* Layout */
+        .layout-container {
+            display: flex;
+            min-height: 100vh;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 220px;
+            background: #fff;
+            box-shadow: 2px 0 8px rgba(0,0,0,0.05);
+            position: fixed;
+            height: 100vh;
+            overflow-y: auto;
+        }
+
+        .sidebar-header {
+            padding: 20px;
+            border-bottom: 1px solid #ebeef5;
+        }
+
+        .sidebar-logo {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--el-color-primary);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .sidebar-menu {
+            padding: 12px 0;
+        }
+
+        .menu-item {
+            padding: 12px 20px;
+            color: #606266;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 14px;
+            transition: all 0.2s;
+        }
+
+        .menu-item:hover, .menu-item.active {
+            background: #ecf5ff;
+            color: var(--el-color-primary);
+        }
+
+        .menu-item.active {
+            border-right: 3px solid var(--el-color-primary);
+        }
+
+        /* Main Content */
+        .main-content {
+            flex: 1;
+            margin-left: 220px;
+            padding: 20px 24px;
+        }
+
+        /* Header Bar */
+        .header-bar {
+            background: #fff;
+            padding: 16px 24px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+        }
+
+        .header-title {
+            font-size: 20px;
+            font-weight: 600;
+            color: #303133;
+        }
+
+        .header-actions {
+            display: flex;
+            gap: 12px;
+        }
+
+        .btn {
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-size: 13px;
+            cursor: pointer;
+            border: 1px solid #dcdfe6;
+            background: #fff;
+            color: #606266;
+            transition: all 0.2s;
+        }
+
+        .btn-primary {
+            background: var(--el-color-primary);
+            color: #fff;
+            border-color: var(--el-color-primary);
+        }
+
+        .btn:hover { opacity: 0.9; }
+
+        /* Stats Cards Row */
+        .stats-row {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+            margin-bottom: 20px;
+        }
+
+        .stat-card {
+            background: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+        }
+
+        .stat-card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+
+        .stat-card-title {
+            font-size: 13px;
+            color: #909399;
+        }
+
+        .stat-card-icon {
+            width: 36px;
+            height: 36px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+        }
+
+        .stat-card-icon.blue { background: #e6f0ff; color: #409eff; }
+        .stat-card-icon.green { background: #e6f7ed; color: #67c23a; }
+        .stat-card-icon.orange { background: #fff3e6; color: #e6a23c; }
+        .stat-card-icon.purple { background: #f3e8ff; color: #8b5cf6; }
+
+        .stat-card-value {
+            font-size: 28px;
+            font-weight: 700;
+            color: #303133;
+            margin-bottom: 4px;
+        }
+
+        .stat-card-label {
+            font-size: 12px;
+            color: #909399;
+        }
+
+        .stat-card-trend {
+            font-size: 12px;
+            margin-top: 8px;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .stat-card-trend.up { color: #67c23a; }
+        .stat-card-trend.down { color: #f56c6c; }
+
+        /* Content Grid */
+        .content-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 20px;
+        }
+
+        /* Panel Card */
+        .panel-card {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+            overflow: hidden;
+        }
+
+        .panel-header {
+            padding: 16px 20px;
+            border-bottom: 1px solid #ebeef5;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .panel-title {
+            font-size: 15px;
+            font-weight: 600;
+            color: #303133;
+        }
+
+        .panel-body {
+            padding: 20px;
+        }
+
+        /* Tabs */
+        .custom-tabs {
+            display: flex;
+            border-bottom: 1px solid #ebeef5;
+            padding: 0 20px;
+            background: #fafafa;
+        }
+
+        .custom-tab {
+            padding: 12px 20px;
+            font-size: 14px;
+            color: #606266;
+            cursor: pointer;
+            border-bottom: 2px solid transparent;
+            transition: all 0.2s;
+        }
+
+        .custom-tab:hover { color: var(--el-color-primary); }
+
+        .custom-tab.active {
+            color: var(--el-color-primary);
+            border-bottom-color: var(--el-color-primary);
+        }
+
+        /* Version Tags */
+        .version-group {
+            margin-bottom: 16px;
+        }
+
+        .version-group-label {
+            font-size: 12px;
+            color: #909399;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .version-tag {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-size: 12px;
+            background: #f5f7fa;
+            color: #606266;
+            margin-right: 6px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .version-tag:hover { background: #ecf5ff; color: var(--el-color-primary); }
+        .version-tag.active { background: var(--el-color-primary); color: #fff; }
+
+        .version-tag.liuhe { background: #e6f0ff; color: #409eff; }
+        .version-tag.liuhe.active { background: #409eff; color: #fff; }
+        .version-tag.pingte { background: #e6f7ed; color: #67c23a; }
+        .version-tag.pingte.active { background: #67c23a; color: #fff; }
+        .version-tag.duoma { background: #f3e8ff; color: #8b5cf6; }
+        .version-tag.duoma.active { background: #8b5cf6; color: #fff; }
+
+        /* Zodiac Tags */
+        .zodiac-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 12px;
+        }
+
+        .zodiac-tag {
+            padding: 14px 10px;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 600;
+            color: #fff;
+            box-shadow: 0 2px 8px rgba(64, 158, 255, 0.2);
+            transition: transform 0.15s, box-shadow 0.15s;
+        }
+
+        .zodiac-tag:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(64, 158, 255, 0.3);
+        }
+
+        .zodiac-tag.blue { background: linear-gradient(135deg, #667eea, #764ba2); }
+        .zodiac-tag.green { background: linear-gradient(135deg, #11998e, #38ef7d); }
+        .zodiac-tag.orange { background: linear-gradient(135deg, #f093fb, #f5576c); }
+        .zodiac-tag.red { background: linear-gradient(135deg, #ff416c, #ff4b2b); }
+
+        .zodiac-tag.hot {
+            background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.02); }
+        }
+
+        /* Miss Stats */
+        .miss-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+        }
+
+        .miss-item {
+            background: #f9fafb;
+            border-radius: 8px;
+            padding: 14px;
+        }
+
+        .miss-item-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .miss-zodiac {
+            font-size: 14px;
+            font-weight: 600;
+            color: #303133;
+        }
+
+        .miss-values {
+            font-size: 12px;
+            color: #909399;
+        }
+
+        .miss-progress {
+            height: 6px;
+            background: #ebeef5;
+            border-radius: 3px;
+            overflow: hidden;
+        }
+
+        .miss-bar {
+            height: 100%;
+            border-radius: 3px;
+            transition: width 0.3s;
+        }
+
+        .miss-bar.high { background: linear-gradient(90deg, #f56c6c, #ff9f43); }
+        .miss-bar.medium { background: linear-gradient(90deg, #e6a23c, #f7ba2a); }
+        .miss-bar.low { background: linear-gradient(90deg, #67c23a, #95d475); }
+
+        /* Record Table */
+        .record-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .record-table th {
+            text-align: left;
+            padding: 12px 16px;
+            background: #fafafa;
+            font-size: 13px;
+            font-weight: 600;
+            color: #909399;
+            border-bottom: 1px solid #ebeef5;
+        }
+
+        .record-table td {
+            padding: 14px 16px;
+            border-bottom: 1px solid #ebeef5;
+            font-size: 14px;
+            color: #606266;
+        }
+
+        .record-table tr:hover td {
+            background: #f5f7fa;
+        }
+
+        .record-issue {
+            font-weight: 600;
+            color: #303133;
+        }
+
+        .zodiac-mini-tags {
+            display: flex;
+            gap: 4px;
+        }
+
+        .zodiac-mini-tag {
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 11px;
+            color: #fff;
+        }
+
+        .result-status {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+
+        .result-status.hit {
+            background: #e6f7ed;
+            color: #67c23a;
+        }
+
+        .result-status.miss {
+            background: #fee;
+            color: #f56c6c;
+        }
+
+        .result-status.pending {
+            background: #fff3e6;
+            color: #e6a23c;
+        }
+
+        /* Right Sidebar Panel */
+        .side-panel {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .info-card {
+            background: #fff;
+            border-radius: 8px;
+            padding: 16px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+        }
+
+        .info-card-title {
+            font-size: 14px;
+            font-weight: 600;
+            color: #303133;
+            margin-bottom: 12px;
+        }
+
+        .info-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid #f0f0f0;
+            font-size: 13px;
+        }
+
+        .info-item:last-child { border-bottom: none; }
+
+        .info-label { color: #909399; }
+        .info-value { color: #303133; font-weight: 500; }
+
+        /* Wave Colors */
+        .wave-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+        }
+
+        .wave-item {
+            padding: 16px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .wave-item.red { background: #fff0f0; }
+        .wave-item.blue { background: #f0f4ff; }
+        .wave-item.green { background: #f0fff0; }
+
+        .wave-name {
+            font-size: 13px;
+            color: #909399;
+            margin-bottom: 8px;
+        }
+
+        .wave-value {
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        .wave-item.red .wave-value { color: #f56c6c; }
+        .wave-item.blue .wave-value { color: #409eff; }
+        .wave-item.green .wave-value { color: #67c23a; }
+
+        .wave-miss {
+            font-size: 11px;
+            color: #c0c4cc;
+            margin-top: 4px;
+        }
+
+        /* Hot Numbers Grid */
+        .number-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 8px;
+        }
+
+        .number-cell {
+            padding: 8px 4px;
+            border-radius: 4px;
+            text-align: center;
+            font-size: 13px;
+            font-weight: 600;
+            background: #f5f7fa;
+            color: #606266;
+        }
+
+        .number-cell.hot {
+            background: #fff0f0;
+            color: #f56c6c;
+        }
+
+        .number-cell.medium {
+            background: #fff3e6;
+            color: #e6a23c;
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .content-grid { grid-template-columns: 1fr; }
+            .stats-row { grid-template-columns: repeat(2, 1fr); }
+            .miss-list { grid-template-columns: 1fr; }
+        }
+
+        @media (max-width: 768px) {
+            .sidebar { display: none; }
+            .main-content { margin-left: 0; }
+            .stats-row { grid-template-columns: 1fr; }
+            .zodiac-grid { grid-template-columns: repeat(4, 1fr); }
+        }
+    </style>
+</head>
+<body>
+    <div class="layout-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <div class="sidebar-logo">
+                    <span>🎯</span>
+                    <span>六合预测</span>
+                </div>
+            </div>
+            <div class="sidebar-menu">
+                <div class="menu-item active">📊 数据面板</div>
+                <div class="menu-item">🎯 预测管理</div>
+                <div class="menu-item">📈 统计分析</div>
+                <div class="menu-item">🔧 版本设置</div>
+                <div class="menu-item">📋 历史记录</div>
+                <div class="menu-item">⚙️ 系统设置</div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Header -->
+            <div class="header-bar">
+                <div class="header-title">澳门六合预测系统</div>
+                <div class="header-actions">
+                    <button class="btn">🌙 深色模式</button>
+                    <button class="btn btn-primary">🔄 刷新数据</button>
+                </div>
+            </div>
+
+            <!-- Stats Row -->
+            <div class="stats-row">
+                <div class="stat-card">
+                    <div class="stat-card-header">
+                        <span class="stat-card-title">总期数</span>
+                        <div class="stat-card-icon blue">📊</div>
+                    </div>
+                    <div class="stat-card-value">1260</div>
+                    <div class="stat-card-label">数据期数</div>
+                    <div class="stat-card-trend up">↑ +10期</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-card-header">
+                        <span class="stat-card-title">平均命中率</span>
+                        <div class="stat-card-icon green">✓</div>
+                    </div>
+                    <div class="stat-card-value">85%</div>
+                    <div class="stat-card-label">近30期</div>
+                    <div class="stat-card-trend up">↑ +2.3%</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-card-header">
+                        <span class="stat-card-title">活跃版本</span>
+                        <div class="stat-card-icon orange">🎯</div>
+                    </div>
+                    <div class="stat-card-value">12</div>
+                    <div class="stat-card-label">预测版本</div>
+                    <div class="stat-card-trend">稳定运行中</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-card-header">
+                        <span class="stat-card-title">下次开奖</span>
+                        <div class="stat-card-icon purple">⏰</div>
+                    </div>
+                    <div class="stat-card-value">21:35</div>
+                    <div class="stat-card-label">约2小时后</div>
+                    <div class="stat-card-trend down">倒计时中</div>
+                </div>
+            </div>
+
+            <!-- Content Grid -->
+            <div class="content-grid">
+                <!-- Left Panel -->
+                <div class="left-content">
+                    <!-- Version Selection -->
+                    <div class="panel-card" style="margin-bottom: 20px;">
+                        <div class="panel-header">
+                            <span class="panel-title">版本选择</span>
+                        </div>
+                        <div class="panel-body">
+                            <div class="version-group">
+                                <div class="version-group-label">
+                                    <span style="background: #409eff; color: #fff; padding: 2px 8px; border-radius: 4px; font-size: 11px;">六肖</span>
+                                    6码预测
+                                </div>
+                                <div class="version-tags">
+                                    <span class="version-tag liuhe">v5</span>
+                                    <span class="version-tag liuhe">v7</span>
+                                    <span class="version-tag liuhe">v12</span>
+                                    <span class="version-tag liuhe">v21</span>
+                                    <span class="version-tag liuhe active">v24</span>
+                                    <span class="version-tag liuhe">v27</span>
+                                    <span class="version-tag liuhe">v28</span>
+                                    <span class="version-tag liuhe">v29</span>
+                                </div>
+                            </div>
+                            <div class="version-group">
+                                <div class="version-group-label">
+                                    <span style="background: #67c23a; color: #fff; padding: 2px 8px; border-radius: 4px; font-size: 11px;">平特一肖</span>
+                                    单码预测
+                                </div>
+                                <div class="version-tags">
+                                    <span class="version-tag pingte">v36</span>
+                                    <span class="version-tag pingte">v37</span>
+                                    <span class="version-tag pingte">v38</span>
+                                </div>
+                            </div>
+                            <div class="version-group">
+                                <div class="version-group-label">
+                                    <span style="background: #8b5cf6; color: #fff; padding: 2px 8px; border-radius: 4px; font-size: 11px;">多码</span>
+                                    复式预测
+                                </div>
+                                <div class="version-tags">
+                                    <span class="version-tag duoma">v39</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Current Prediction -->
+                    <div class="panel-card">
+                        <div class="panel-header">
+                            <span class="panel-title">第 2026150 期 · 六肖预测</span>
+                            <span class="result-status pending">待开奖</span>
+                        </div>
+                        <div class="panel-body">
+                            <div class="zodiac-grid">
+                                <div class="zodiac-tag blue">鼠</div>
+                                <div class="zodiac-tag blue">牛</div>
+                                <div class="zodiac-tag orange hot">虎</div>
+                                <div class="zodiac-tag green">兔</div>
+                                <div class="zodiac-tag blue">龙</div>
+                                <div class="zodiac-tag blue">蛇</div>
+                                <div class="zodiac-tag orange hot">马</div>
+                                <div class="zodiac-tag green">羊</div>
+                                <div class="zodiac-tag blue">猴</div>
+                                <div class="zodiac-tag blue">鸡</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- History Records -->
+                    <div class="panel-card" style="margin-top: 20px;">
+                        <div class="custom-tabs">
+                            <div class="custom-tab active">近期预测</div>
+                            <div class="custom-tab">全部记录</div>
+                            <div class="custom-tab">统计分析</div>
+                        </div>
+                        <div class="panel-body" style="padding: 0;">
+                            <table class="record-table">
+                                <thead>
+                                    <tr>
+                                        <th>期号</th>
+                                        <th>预测结果</th>
+                                        <th>状态</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="record-issue">2026149</td>
+                                        <td>
+                                            <div class="zodiac-mini-tags">
+                                                <span class="zodiac-mini-tag" style="background: #667eea;">鼠</span>
+                                                <span class="zodiac-mini-tag" style="background: #667eea;">牛</span>
+                                                <span class="zodiac-mini-tag" style="background: #667eea;">虎</span>
+                                                <span class="zodiac-mini-tag" style="background: #667eea;">兔</span>
+                                            </div>
+                                        </td>
+                                        <td><span class="result-status hit">✓ 命中</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="record-issue">2026148</td>
+                                        <td>
+                                            <div class="zodiac-mini-tags">
+                                                <span class="zodiac-mini-tag" style="background: #667eea;">龙</span>
+                                                <span class="zodiac-mini-tag" style="background: #667eea;">蛇</span>
+                                                <span class="zodiac-mini-tag" style="background: #667eea;">马</span>
+                                                <span class="zodiac-mini-tag" style="background: #667eea;">羊</span>
+                                            </div>
+                                        </td>
+                                        <td><span class="result-status hit">✓ 命中</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="record-issue">2026147</td>
+                                        <td>
+                                            <div class="zodiac-mini-tags">
+                                                <span class="zodiac-mini-tag" style="background: #667eea;">猴</span>
+                                                <span class="zodiac-mini-tag" style="background: #667eea;">鸡</span>
+                                                <span class="zodiac-mini-tag" style="background: #667eea;">狗</span>
+                                                <span class="zodiac-mini-tag" style="background: #667eea;">猪</span>
+                                            </div>
+                                        </td>
+                                        <td><span class="result-status miss">✗ 未中</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="record-issue">2026146</td>
+                                        <td>
+                                            <div class="zodiac-mini-tags">
+                                                <span class="zodiac-mini-tag" style="background: #667eea;">鼠</span>
+                                                <span class="zodiac-mini-tag" style="background: #667eea;">牛</span>
+                                                <span class="zodiac-mini-tag" style="background: #667eea;">虎</span>
+                                            </div>
+                                        </td>
+                                        <td><span class="result-status pending">... 验证中</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Panel -->
+                <div class="side-panel">
+                    <!-- Miss Stats -->
+                    <div class="info-card">
+                        <div class="info-card-title">生肖遗漏统计</div>
+                        <div class="miss-list">
+                            <div class="miss-item">
+                                <div class="miss-item-header">
+                                    <span class="miss-zodiac">🐭 鼠</span>
+                                    <span class="miss-values">当前 8 / 最高 15</span>
+                                </div>
+                                <div class="miss-progress">
+                                    <div class="miss-bar high" style="width: 53%"></div>
+                                </div>
+                            </div>
+                            <div class="miss-item">
+                                <div class="miss-item-header">
+                                    <span class="miss-zodiac">🐮 牛</span>
+                                    <span class="miss-values">当前 2 / 最高 12</span>
+                                </div>
+                                <div class="miss-progress">
+                                    <div class="miss-bar low" style="width: 17%"></div>
+                                </div>
+                            </div>
+                            <div class="miss-item">
+                                <div class="miss-item-header">
+                                    <span class="miss-zodiac">🐯 虎</span>
+                                    <span class="miss-values">当前 5 / 最高 18</span>
+                                </div>
+                                <div class="miss-progress">
+                                    <div class="miss-bar medium" style="width: 28%"></div>
+                                </div>
+                            </div>
+                            <div class="miss-item">
+                                <div class="miss-item-header">
+                                    <span class="miss-zodiac">🐰 兔</span>
+                                    <span class="miss-values">当前 12 / 最高 15</span>
+                                </div>
+                                <div class="miss-progress">
+                                    <div class="miss-bar high" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            <div class="miss-item">
+                                <div class="miss-item-header">
+                                    <span class="miss-zodiac">🐲 龙</span>
+                                    <span class="miss-values">当前 1 / 最高 10</span>
+                                </div>
+                                <div class="miss-progress">
+                                    <div class="miss-bar low" style="width: 10%"></div>
+                                </div>
+                            </div>
+                            <div class="miss-item">
+                                <div class="miss-item-header">
+                                    <span class="miss-zodiac">🐍 蛇</span>
+                                    <span class="miss-values">当前 6 / 最高 14</span>
+                                </div>
+                                <div class="miss-progress">
+                                    <div class="miss-bar medium" style="width: 43%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Wave Stats -->
+                    <div class="info-card">
+                        <div class="info-card-title">波色遗漏</div>
+                        <div class="wave-grid">
+                            <div class="wave-item red">
+                                <div class="wave-name">红波</div>
+                                <div class="wave-value">3</div>
+                                <div class="wave-miss">遗漏期数</div>
+                            </div>
+                            <div class="wave-item blue">
+                                <div class="wave-name">蓝波</div>
+                                <div class="wave-value">8</div>
+                                <div class="wave-miss">遗漏期数</div>
+                            </div>
+                            <div class="wave-item green">
+                                <div class="wave-name">绿波</div>
+                                <div class="wave-value">2</div>
+                                <div class="wave-miss">遗漏期数</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- System Info -->
+                    <div class="info-card">
+                        <div class="info-card-title">系统状态</div>
+                        <div class="info-item">
+                            <span class="info-label">数据更新</span>
+                            <span class="info-value">2026-06-03 21:32</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">预测版本</span>
+                            <span class="info-value">v24 (活跃)</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">缓存状态</span>
+                            <span class="info-value" style="color: #67c23a;">● 正常</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Circuit Breaker</span>
+                            <span class="info-value" style="color: #67c23a;">● 关闭</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
